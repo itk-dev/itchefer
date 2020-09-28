@@ -1,0 +1,33 @@
+uuid: e8644866-0816-4262-a122-9b1e2804b89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: Yy_BNByTXbY8nWGFFBwq_s4kiC6XR_8VMjnBtmkoxeA
+id: socialblue_views_block__topics_block_user_topics
+theme: socialblue
+region: complementary_bottom
+weight: 3
+provider: null
+plugin: 'views_block:topics-block_user_topics'
+settings:
+  id: 'views_block:topics-block_user_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

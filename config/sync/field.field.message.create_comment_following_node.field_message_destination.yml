@@ -1,0 +1,23 @@
+uuid: 54a74516-4d30-4198-a696-6fccfd6ece57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.create_comment_following_node
+  module:
+    - options
+_core:
+  default_config_hash: b4--iHQPtV5mQYxhUyLbItn5hIOs_4aUS86pnY-J3Lk
+id: message.create_comment_following_node.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: create_comment_following_node
+label: Destinations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

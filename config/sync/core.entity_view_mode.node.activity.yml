@@ -1,0 +1,12 @@
+uuid: 2b3e6012-38b1-4c50-8455-f3ef6d9808a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: RjjbxCyoqg16WIMiFve6eY34_V27jmHQFKagSCl-zFA
+id: node.activity
+label: Activity
+targetEntityType: node
+cache: true

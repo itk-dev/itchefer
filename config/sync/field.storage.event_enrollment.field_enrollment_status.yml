@@ -1,0 +1,29 @@
+uuid: d812d2d2-e65a-4d28-bdd9-ee89e7e73f59
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - social_event
+_core:
+  default_config_hash: IDR-PVmeWHlMfR29bvtQzCLTplOAdrc3eTFQscAEoYI
+id: event_enrollment.field_enrollment_status
+field_name: field_enrollment_status
+entity_type: event_enrollment
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Not enrolled'
+    -
+      value: '1'
+      label: Enrolled
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

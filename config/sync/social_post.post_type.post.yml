@@ -1,0 +1,8 @@
+uuid: 3ef8b894-ed04-40c1-b983-85a70bd0d782
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zoi7265pcyI7cVKwhXAshpc31HC1pkBHA4EXL3HodN0
+id: post
+label: Post

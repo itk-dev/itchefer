@@ -1,0 +1,22 @@
+uuid: 41e4ebc5-6a4e-413b-9036-0ade2abf0ca4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+_core:
+  default_config_hash: e-jiS90NXCV3iy4JG9hBvzHgxFafEWob5_KCvgSR4yQ
+id: node.field_event_managers
+field_name: field_event_managers
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

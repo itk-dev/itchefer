@@ -1,0 +1,12 @@
+uuid: cb54261d-2f3b-4143-9faf-2a325b091aac
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: QnVPm4ArLvBo4W12GVjC3TKNAoRwwR2BGU9A_gRw7YM
+id: profile.table
+label: Table
+targetEntityType: profile
+cache: true

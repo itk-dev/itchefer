@@ -1,0 +1,22 @@
+uuid: b1272d45-c910-40bf-8ab0-5ba9b68a8ee4
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_event
+    - user
+_core:
+  default_config_hash: akSS6UebD6asM4spHBslOjMsxIssqRcMvpKrfsdgmP8
+id: event_enrollment.field_account
+field_name: field_account
+entity_type: event_enrollment
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

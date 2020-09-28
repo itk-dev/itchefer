@@ -1,0 +1,25 @@
+uuid: 9e2ea1cc-d1d7-480b-a021-61362109f20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.public_group-group_membership.group_roles
+    - group.content_type.public_group-group_membership
+_core:
+  default_config_hash: AVQH0re9C4XjwLWT6TxFmGWATKY2vA2D-I0DiLGQ0CU
+id: group_content.public_group-group_membership.default
+targetEntityType: group_content
+bundle: public_group-group_membership
+mode: default
+content:
+  entity_id:
+    type: entity_reference_entity_id
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  group_roles: true
+  search_api_excerpt: true
+  uid: true

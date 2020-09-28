@@ -1,0 +1,16 @@
+uuid: a07df22f-7440-40f7-8350-5d99afef7c46
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+_core:
+  default_config_hash: H68x_1aJkYpFesLf_F8sNomP2DBNJekeQlIBSd2ANTE
+id: open_group-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: open_group
+permissions_ui: true
+permissions: {  }

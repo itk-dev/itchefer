@@ -1,0 +1,10 @@
+uuid: 4d88c9a3-ffa2-4af8-a9cc-119312e37f49
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7URYylHC5k84vsjEiIA9YQ1455ZCaW99zmCs_N_6bh0
+id: social_short_date
+label: 'Social short date'
+locked: false
+pattern: 'j M'
