@@ -1,5 +1,5 @@
 <?php
-
+/*
 $databases['default']['default'] = array(
   'database' => 'db',
   'username' => 'db',
@@ -11,7 +11,8 @@ $databases['default']['default'] = array(
 );
 
 $settings['hash_salt'] = '1234';
-$settings['file_private_path'] = '../private-files';
+$settings['file_private_path'] = 'sites/default/files/private';
 $settings['trusted_host_patterns'] = [
   '^itchefer\.local\.itkdev\.dk/$',
 ];
+*/
