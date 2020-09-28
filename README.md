@@ -4,11 +4,11 @@
 ## Installation instructions
 Setup Docker environment (Optional):
 ```
-itk-dev-docker-compose up -d
+itkdev-docker-compose up -d
 ```
 Get php packages
 ```
-itk-dev-docker-compose composer install
+itkdev-docker-compose composer install
 ```
 Setup settings.php file:
 ```
@@ -25,4 +25,22 @@ itkdev-docker-compose sync
 Import config to be sure we have the latest:
 ```
 itkdev-docker-compose vendor/bin/drush config-import
+```
+Get to work
+```
+itkdev-docker-compose open
+```
+
+## Drush
+One time login:
+```
+itkdev-docker-compose vendor/bin/drush uli
+```
+Clear cache
+```
+itkdev-docker-compose vendor/bin/drush cr
+```
+Other stuff
+```
+itkdev-docker-compose vendor/bin/drush
 ```
