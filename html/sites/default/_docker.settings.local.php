@@ -49,4 +49,3 @@ $settings['file_private_path'] = 'sites/default/files/private';
 $settings['trusted_host_patterns'] = [
   '^itchefer\.local\.itkdev\.dk$',
 ];
-

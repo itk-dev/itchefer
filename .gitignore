@@ -29,6 +29,7 @@ vendor/
 
 # Ignore settings.local.php
 /html/sites/default/settings.local.php
+/html/sites/default/docker.settings.local.php
 
 # Ignore private files
 private-files/
