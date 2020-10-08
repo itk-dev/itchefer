@@ -1,0 +1,33 @@
+uuid: e08aea4f-7202-4c66-9d7d-2fb52d00f021
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newest_users
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: OxzubQJRE2Y9ihgsgasPmuMwHXR42T5ipZi8mAObDGE
+id: itchefer_views_block__newest_users_block_newest_users
+theme: itchefer
+region: navigation
+weight: 5
+provider: null
+plugin: 'views_block:newest_users-block_newest_users'
+settings:
+  id: 'views_block:newest_users-block_newest_users'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/stream\r\n/explore"
+    negate: false
+    context_mapping: {  }

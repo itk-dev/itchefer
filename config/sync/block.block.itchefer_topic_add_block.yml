@@ -1,0 +1,28 @@
+uuid: 6c80af92-0013-490c-8c52-9626b822930f
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_topic
+    - system
+  theme:
+    - itchefer
+_core:
+  default_config_hash: eiC2CIa5Q7scScFEdXiTwbct8QT61s-7T-Uk8j0HYo4
+id: itchefer_topic_add_block
+theme: itchefer
+region: navigation
+weight: -98
+provider: null
+plugin: topic_add_block
+settings:
+  id: topic_add_block
+  label: 'Topic add block'
+  provider: social_topic
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/topics'
+    negate: false
+    context_mapping: {  }

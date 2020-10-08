@@ -18,6 +18,7 @@ module:
   config: 0
   config_update: 0
   crop: 0
+  csv_serialization: 0
   datetime: 0
   dblog: 0
   dropdown: 0
@@ -72,6 +73,7 @@ module:
   social_core: 0
   social_editor: 0
   social_event: 0
+  social_event_enrolments_export: 0
   social_event_invite: 0
   social_event_managers: 0
   social_file_private: 0
@@ -96,6 +98,7 @@ module:
   social_swiftmail: 0
   social_topic: 0
   social_user: 0
+  social_user_export: 0
   swiftmailer: 0
   system: 0
   taxonomy: 0
@@ -126,6 +129,7 @@ theme:
   claro: 0
   gin: 0
   seven: 0
+  itchefer: 0
 profile: social
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

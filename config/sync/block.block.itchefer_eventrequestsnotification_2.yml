@@ -1,0 +1,22 @@
+uuid: 81901f35-9562-40ad-afd4-693b2b714215
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_event
+  theme:
+    - itchefer
+_core:
+  default_config_hash: '-r3I1uYwwGgB1BXWU4J2NqaWRTxcWf0TLNyFRDFdYAk'
+id: itchefer_eventrequestsnotification_2
+theme: itchefer
+region: content
+weight: -29
+provider: null
+plugin: event_requests_notification
+settings:
+  id: event_requests_notification
+  label: 'Event requests notification'
+  provider: social_event
+  label_display: '0'
+visibility: {  }

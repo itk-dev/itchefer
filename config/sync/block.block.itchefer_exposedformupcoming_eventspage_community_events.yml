@@ -1,0 +1,31 @@
+uuid: aa6ce7cf-6391-4aef-952b-07bc5a9a1c0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: oVc0578yoYZdFfQmW3Vrmcf9RFF2MAk5H4T8f22ytyY
+id: itchefer_exposedformupcoming_eventspage_community_events
+theme: itchefer
+region: navigation
+weight: 3
+provider: null
+plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
+settings:
+  id: 'views_exposed_filter_block:upcoming_events-page_community_events'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /community-events
+    negate: false
+    context_mapping: {  }

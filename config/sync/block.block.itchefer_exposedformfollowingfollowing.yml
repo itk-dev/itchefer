@@ -1,0 +1,31 @@
+uuid: 34af2e72-0129-4885-a26a-e9e1c7c5ebf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.following
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: E1e2ChYjW2belIX2h1-Y7iAKgGV_ExQNS-PXvmrq5bk
+id: itchefer_exposedformfollowingfollowing
+theme: itchefer
+region: navigation
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:following-following'
+settings:
+  id: 'views_exposed_filter_block:following-following'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /following
+    negate: false
+    context_mapping: {  }
