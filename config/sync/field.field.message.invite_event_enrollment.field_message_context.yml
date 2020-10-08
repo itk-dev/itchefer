@@ -1,0 +1,21 @@
+uuid: 7a31963b-c041-4c54-8db1-6d61742a71f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.invite_event_enrollment
+  module:
+    - options
+id: message.invite_event_enrollment.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: invite_event_enrollment
+label: field_message_context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
