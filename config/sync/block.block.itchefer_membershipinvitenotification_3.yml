@@ -1,0 +1,39 @@
+uuid: 12c1dea1-26b2-4958-a58c-d380d95617e2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - social_group_invite
+  module:
+    - group
+    - social_group_invite
+    - system
+  theme:
+    - itchefer
+_core:
+  default_config_hash: F0C_mKczVq7hvDD13A2N3wdS97Eh6llMo5iqTRPQubQ
+id: itchefer_membershipinvitenotification_3
+theme: itchefer
+region: content
+weight: -100
+provider: null
+plugin: membership_invite_notification
+settings:
+  id: membership_invite_notification
+  label: 'Membership invite notification'
+  provider: social_group_invite
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/group/*/edit\r\n/group/*/delete\r\n/group/*/content/*/approve-membership\r\n/group/*/content/*/reject-membership\r\n/group/*/content/*"
+    negate: true
+    context_mapping: {  }
+  group_type:
+    id: group_type
+    group_types:
+      flexible_group: flexible_group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

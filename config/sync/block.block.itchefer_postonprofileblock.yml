@@ -1,0 +1,28 @@
+uuid: 65d26163-b827-4c4b-86d8-9e76e0c4f11d
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_post
+    - system
+  theme:
+    - itchefer
+_core:
+  default_config_hash: Keolfk9f2yJvo-tVh71uqBoVc2jm2oCVvhvjHciUayA
+id: itchefer_postonprofileblock
+theme: itchefer
+region: navigation
+weight: -9
+provider: null
+plugin: post_profile_block
+settings:
+  id: post_profile_block
+  label: 'Post on profile block'
+  provider: social_post
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

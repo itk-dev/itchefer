@@ -1,0 +1,33 @@
+uuid: 887c5c46-b780-4ab2-a326-7ac1d0b71339
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: Yy_BNByTXbY8nWGFFBwq_s4kiC6XR_8VMjnBtmkoxeA
+id: itchefer_views_block__topics_block_user_topics
+theme: itchefer
+region: navigation
+weight: 3
+provider: null
+plugin: 'views_block:topics-block_user_topics'
+settings:
+  id: 'views_block:topics-block_user_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,33 @@
+uuid: 0db52df4-6b6a-4eea-9e8f-9d5d720e51b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: DbkRKjd999M0Fung9e12mhQ00nRqNUFIvvgqwlKHRhA
+id: itchefer_views_block__upcoming_events_block_community_events
+theme: itchefer
+region: navigation
+weight: 2
+provider: null
+plugin: 'views_block:upcoming_events-block_community_events'
+settings:
+  id: 'views_block:upcoming_events-block_community_events'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/stream\r\n/explore"
+    negate: false
+    context_mapping: {  }
