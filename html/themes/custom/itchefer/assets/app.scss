@@ -1,0 +1,39 @@
+
+.card__link {
+    color:#000 !important;
+    fill:#000 !important;
+}
+
+.post-date {
+    color:#000 !important;
+    fill:#000 !important;
+
+}
+body {
+    color:#000;
+}
+
+.btn-primary {
+    color:#000 !important;
+    fill:#000 !important;
+
+}
+.vote-widget {
+     a.voted-like .icon-vote {
+        fill: #cd1719 !important;
+        stroke: #cd1719 !important;
+    }
+    a:hover {
+        .icon-vote {
+            stroke: #cd1719 !important;
+        }
+    }
+}
+
+.comment__metadata {
+    color:#000 !important;
+    fill:#000 !important;
+}
+.dropdown-menu li > a, .dropdown-menu li > span {
+    color:#000;
+}
