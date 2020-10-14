@@ -25,12 +25,10 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 reset_http_request_cache: ''
 table: ''
-card_radius: '2'
-form_control_radius: '2'
-button_radius: '2'
-font_primary: '1'
+card_radius: ''
+form_control_radius: ''
+button_radius: ''
+font_primary: '2'
 email_logo: {  }
 hero_gradient_opacity: '50'
 style: ''
-navbar_inverse: 1
-navbar_position: static-top
