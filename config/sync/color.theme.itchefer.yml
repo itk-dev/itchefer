@@ -1,0 +1,15 @@
+palette:
+  brand-primary: '#acdbdf'
+  brand-secondary: '#acdbdf'
+  brand-accent: '#acdbdf'
+  brand-link: '#39a8e0'
+  navbar-bg: '#acdbdf'
+  navbar-text: '#ffffff'
+  navbar-active-bg: '#000000'
+  navbar-active-text: '#ffffff'
+  navbar-sec-bg: '#39a8e0'
+  navbar-sec-text: '#ffffff'
+logo: 'public://color/itchefer-1675bb9a/logo.svg'
+stylesheets: {  }
+files:
+  - 'public://color/itchefer-1675bb9a/logo.svg'

@@ -1,6 +1,6 @@
-uuid: e08aea4f-7202-4c66-9d7d-2fb52d00f021
+uuid: 89cdf6cb-8249-4dd9-87bd-47fcd8df968e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.newest_users
@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__newest_users_block_newest_users
 theme: itchefer
 region: complementary_bottom
-weight: -23
+weight: 5
 provider: null
 plugin: 'views_block:newest_users-block_newest_users'
 settings:

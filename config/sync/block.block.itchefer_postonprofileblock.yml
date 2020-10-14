@@ -1,6 +1,6 @@
-uuid: 65d26163-b827-4c4b-86d8-9e76e0c4f11d
+uuid: 2f5b5465-fcc9-4ea5-b91c-b08e5e06d8bd
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_post
@@ -12,7 +12,7 @@ _core:
 id: itchefer_postonprofileblock
 theme: itchefer
 region: hidden
-weight: -30
+weight: -9
 provider: null
 plugin: post_profile_block
 settings:

@@ -1,6 +1,6 @@
-uuid: 3677a355-2b04-4c8b-9014-a611daf64c00
+uuid: 903365eb-a383-4872-b07d-4e5a4893b69c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.newest_groups
@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposed_form_newest_groups_page_all_groups
 theme: itchefer
 region: complementary_top
-weight: -27
+weight: 0
 provider: null
 plugin: 'views_exposed_filter_block:newest_groups-page_all_groups'
 settings:

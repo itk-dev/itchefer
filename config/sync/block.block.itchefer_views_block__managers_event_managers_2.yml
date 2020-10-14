@@ -1,6 +1,6 @@
-uuid: 4ae1b53d-d757-4f5e-ba81-a8b42b37984e
+uuid: 635190e0-3a50-44f6-af25-afd56e8a6fac
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.managers
@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__managers_event_managers_2
 theme: itchefer
 region: complementary_bottom
-weight: -29
+weight: 0
 provider: null
 plugin: 'views_block:managers-event_managers'
 settings:

@@ -1,6 +1,6 @@
-uuid: db48dd39-b028-4b4f-8460-c20e01f105b2
+uuid: bfd28066-7387-4bad-99c7-0a74db36de8a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.search_users
@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposed_form_search_users_page_sidebar
 theme: itchefer
 region: complementary_top
-weight: -30
+weight: 4
 provider: null
 plugin: 'views_exposed_filter_block:search_users-page'
 settings:

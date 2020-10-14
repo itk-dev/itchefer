@@ -1,4 +1,4 @@
-uuid: 81901f35-9562-40ad-afd4-693b2b714215
+uuid: ead301a5-cdbc-4726-a7ce-b6ce110945d4
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: itchefer_eventrequestsnotification_2
 theme: itchefer
 region: content
-weight: -27
+weight: -29
 provider: null
 plugin: event_requests_notification
 settings:

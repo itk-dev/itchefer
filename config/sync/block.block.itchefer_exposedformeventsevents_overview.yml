@@ -1,6 +1,6 @@
-uuid: 1effb8af-b0fc-404f-bf1b-e28ecf443a89
+uuid: ffd5da49-3c51-4829-b965-e934ec13f6c7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.events
@@ -15,7 +15,7 @@ _core:
 id: itchefer_exposedformeventsevents_overview
 theme: itchefer
 region: complementary_top
-weight: -16
+weight: 1
 provider: null
 plugin: 'views_exposed_filter_block:events-events_overview'
 settings:

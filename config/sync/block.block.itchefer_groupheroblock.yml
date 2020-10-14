@@ -1,6 +1,6 @@
-uuid: 51ddadf0-e6b1-4a59-a30e-7cc8c474db7e
+uuid: df0c18ea-3334-467f-b490-f2a828b66ba7
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_group
@@ -12,7 +12,7 @@ _core:
 id: itchefer_groupheroblock
 theme: itchefer
 region: hero
-weight: -30
+weight: null
 provider: null
 plugin: group_hero_block
 settings:

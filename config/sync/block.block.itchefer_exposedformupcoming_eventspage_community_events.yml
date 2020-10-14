@@ -1,6 +1,6 @@
-uuid: aa6ce7cf-6391-4aef-952b-07bc5a9a1c0a
+uuid: 9201efed-233a-42d5-a1ff-0cec38b52ab4
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.upcoming_events
@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposedformupcoming_eventspage_community_events
 theme: itchefer
 region: complementary_top
-weight: -13
+weight: 3
 provider: null
 plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
 settings:

@@ -1,6 +1,6 @@
-uuid: 5290fc0d-ed15-46b9-9654-b3bf32c3e378
+uuid: 956cfebf-7974-4855-adc4-76d50853b60b
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: itchefer_local_actions
 theme: itchefer
 region: complementary_top
-weight: -11
+weight: -18
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,6 +1,6 @@
-uuid: b4331eeb-364f-4e31-8b55-d20ca4313d2e
+uuid: d00bb1df-7a23-4ee8-a25b-10721d64ddba
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -12,7 +12,7 @@ _core:
 id: itchefer_breadcrumbs
 theme: itchefer
 region: breadcrumb
-weight: -30
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

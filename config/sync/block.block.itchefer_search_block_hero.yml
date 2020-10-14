@@ -1,6 +1,6 @@
-uuid: 98d4f507-a655-4d3b-ab42-cb805ab43a40
+uuid: ba17a7ff-ebc9-4f3d-8239-18c42c836d24
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_search
@@ -12,7 +12,7 @@ _core:
 id: itchefer_search_block_hero
 theme: itchefer
 region: hero
-weight: -29
+weight: null
 provider: null
 plugin: search_hero_block
 settings:

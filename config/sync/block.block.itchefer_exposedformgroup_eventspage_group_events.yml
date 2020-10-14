@@ -1,6 +1,6 @@
-uuid: 91c4e310-83ae-4b08-93da-70f068255105
+uuid: 85e3e971-5a78-4820-a1f2-9185fc6ce669
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.group_events
@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposedformgroup_eventspage_group_events
 theme: itchefer
 region: complementary_top
-weight: -23
+weight: -9
 provider: null
 plugin: 'views_exposed_filter_block:group_events-page_group_events'
 settings:

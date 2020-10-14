@@ -1,6 +1,6 @@
-uuid: a65bc895-e402-4d27-b026-b57bf380f0d0
+uuid: 0f7e16a2-ded6-4694-96c4-842a3e11c763
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.latest_topics
@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__latest_topics_default
 theme: itchefer
 region: complementary_bottom
-weight: -27
+weight: 3
 provider: null
 plugin: 'views_block:latest_topics-block_latest_topics'
 settings:
@@ -28,6 +28,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore"
+    pages: "/stream\r\n/explore\r\n<front>"
     negate: false
     context_mapping: {  }

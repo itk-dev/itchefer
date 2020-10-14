@@ -1,6 +1,6 @@
-uuid: 022395ef-dce7-46c4-8cfa-294fbd70292d
+uuid: 05c9410f-9af0-4296-89c7-cbb1c21cccae
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.latest_topics
@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposedformlatest_topicspage_latest_topics
 theme: itchefer
 region: complementary_top
-weight: -26
+weight: 1
 provider: null
 plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
 settings:

@@ -1,6 +1,6 @@
-uuid: fb8de9ec-5f2b-414d-8877-9c767bd98278
+uuid: 0dcdd484-dd64-40a5-a339-afd9729ea15f
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_core
@@ -12,7 +12,7 @@ _core:
 id: itchefer_pagetitleblock_content
 theme: itchefer
 region: title
-weight: -30
+weight: 0
 provider: null
 plugin: social_page_title_block
 settings:

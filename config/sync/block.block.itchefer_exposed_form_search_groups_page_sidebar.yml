@@ -1,6 +1,6 @@
-uuid: ffe2f444-bb0c-4140-bea3-5a1e7c3055b0
+uuid: 368b30c8-8cc6-454a-8ac9-997d5380166b
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.search_groups
@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposed_form_search_groups_page_sidebar
 theme: itchefer
 region: complementary_top
-weight: -28
+weight: 0
 provider: null
 plugin: 'views_exposed_filter_block:search_groups-page'
 settings:

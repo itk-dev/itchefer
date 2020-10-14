@@ -1,6 +1,6 @@
-uuid: 3ff6f408-934b-4f26-9cfc-b83c2f4c1860
+uuid: 3e827045-410b-4330-94e4-6342eb178858
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.group_members
@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__group_members_block_newest_members
 theme: itchefer
 region: complementary_bottom
-weight: -20
+weight: 5
 provider: null
 plugin: 'views_block:group_members-block_newest_members'
 settings:

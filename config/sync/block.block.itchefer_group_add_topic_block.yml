@@ -1,6 +1,6 @@
-uuid: e012289f-29e8-4276-8f06-ac10a08e87b3
+uuid: de957156-a028-4fe6-bc13-45d8d2c6fd70
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_group
@@ -12,7 +12,7 @@ _core:
 id: itchefer_group_add_topic_block
 theme: itchefer
 region: complementary_top
-weight: -17
+weight: -95
 provider: null
 plugin: group_add_topic_block
 settings:

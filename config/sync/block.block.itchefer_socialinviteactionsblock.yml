@@ -1,6 +1,6 @@
-uuid: 4c16fc97-e253-4b4d-aab0-fb9402071da1
+uuid: 4bbef26f-d03e-4cba-9885-61cb5abfb89f
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_group_invite
@@ -12,7 +12,7 @@ _core:
 id: itchefer_socialinviteactionsblock
 theme: itchefer
 region: hidden
-weight: -27
+weight: 0
 provider: null
 plugin: social_invite_actions_block
 settings:

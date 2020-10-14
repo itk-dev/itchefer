@@ -1,4 +1,4 @@
-uuid: 37cdcbf0-5d75-4d6b-9fd2-928520db7f26
+uuid: 69cf49be-d62b-4a2c-abac-0378f12d9a38
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ _core:
 id: itchefer_views_block__group_managers_block_list_managers
 theme: itchefer
 region: content
-weight: -25
+weight: -15
 provider: null
 plugin: 'views_block:group_managers-block_list_managers'
 settings:

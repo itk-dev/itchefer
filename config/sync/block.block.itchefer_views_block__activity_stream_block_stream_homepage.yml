@@ -1,4 +1,4 @@
-uuid: 0e2c518a-5daa-4ed1-8c1a-1ebf622e1078
+uuid: fc17660e-e16d-402e-8e67-d3cae62ff2d2
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__activity_stream_block_stream_homepage
 theme: itchefer
 region: content
-weight: -28
+weight: null
 provider: null
 plugin: 'views_block:activity_stream-block_stream_homepage'
 settings:

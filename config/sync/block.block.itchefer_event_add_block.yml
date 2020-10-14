@@ -1,6 +1,6 @@
-uuid: 5d7c5604-d6fb-4428-a53b-b9ae01fa7d21
+uuid: d6f81e49-2435-4f3d-ad56-4171c33a627b
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_event
@@ -12,7 +12,7 @@ _core:
 id: itchefer_event_add_block
 theme: itchefer
 region: complementary_top
-weight: -22
+weight: -99
 provider: null
 plugin: event_add_block
 settings:

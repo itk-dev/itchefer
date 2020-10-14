@@ -1,6 +1,6 @@
-uuid: 41bea84d-1ed9-45a8-a0d3-552669bc214c
+uuid: d0ad8e24-433c-4b0c-b1af-893c21414398
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.upcoming_events
@@ -15,7 +15,7 @@ _core:
 id: itchefer_views_block__upcoming_events_block_my_upcoming_events
 theme: itchefer
 region: complementary_bottom
-weight: -19
+weight: 1
 provider: null
 plugin: 'views_block:upcoming_events-block_my_upcoming_events'
 settings:

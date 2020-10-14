@@ -1,6 +1,6 @@
-uuid: 27865a56-781e-4ff3-81b8-3ccc90cdd3ef
+uuid: fc0fa273-e7f9-4652-9581-eb315e6c7b3d
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - social_post
@@ -12,7 +12,7 @@ _core:
 id: itchefer_postongroupblock
 theme: itchefer
 region: hidden
-weight: -31
+weight: -9
 provider: null
 plugin: post_group_block
 settings:
