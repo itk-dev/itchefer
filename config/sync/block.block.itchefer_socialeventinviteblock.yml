@@ -1,6 +1,6 @@
 uuid: 01e48936-1e65-41df-997f-f7c798ece48c
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_event_invite
@@ -11,8 +11,8 @@ _core:
   default_config_hash: y0PwSwCPY4oP9IOp1RFKptUoZ339C9q42Rt3-wSFpfM
 id: itchefer_socialeventinviteblock
 theme: itchefer
-region: navigation
-weight: 0
+region: hidden
+weight: -28
 provider: null
 plugin: social_event_invite_block
 settings:

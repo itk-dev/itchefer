@@ -1,6 +1,6 @@
 uuid: 98d4f507-a655-4d3b-ab42-cb805ab43a40
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_search
@@ -11,8 +11,8 @@ _core:
   default_config_hash: tSS53SEnohp-c3wENp3brzC_nwNRH4DavQ72DYABDQ4
 id: itchefer_search_block_hero
 theme: itchefer
-region: navigation
-weight: null
+region: hero
+weight: -29
 provider: null
 plugin: search_hero_block
 settings:

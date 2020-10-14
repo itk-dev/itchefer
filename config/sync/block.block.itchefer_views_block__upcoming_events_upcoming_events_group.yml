@@ -1,6 +1,6 @@
 uuid: 34234fe6-d4e3-473a-8461-1258f523e4f2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.upcoming_events
@@ -13,8 +13,8 @@ _core:
   default_config_hash: 5ebCasYMYINKifGY18veNANcc2T3_6ouAiB6kUvojco
 id: itchefer_views_block__upcoming_events_upcoming_events_group
 theme: itchefer
-region: navigation
-weight: 2
+region: complementary_bottom
+weight: -30
 provider: null
 plugin: 'views_block:upcoming_events-upcoming_events_group'
 settings:

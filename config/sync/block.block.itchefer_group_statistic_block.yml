@@ -1,6 +1,6 @@
 uuid: 58ffe8f5-f11a-4dba-82b5-8abd07511cb4
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_group
@@ -11,8 +11,8 @@ _core:
   default_config_hash: BFY2OSj7iZemS6zLLd2sewKFmrahCDpKbxZCFXdtNJ8
 id: itchefer_group_statistic_block
 theme: itchefer
-region: navigation
-weight: -100
+region: complementary_top
+weight: -24
 provider: null
 plugin: group_statistic_block
 settings:

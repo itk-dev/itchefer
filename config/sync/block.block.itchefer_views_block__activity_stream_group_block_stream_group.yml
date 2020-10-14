@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__activity_stream_group_block_stream_group
 theme: itchefer
 region: content
-weight: -9
+weight: -23
 provider: null
 plugin: 'views_block:activity_stream_group-block_stream_group'
 settings:

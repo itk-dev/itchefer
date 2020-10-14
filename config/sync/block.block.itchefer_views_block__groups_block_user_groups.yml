@@ -1,6 +1,6 @@
 uuid: 007d73e5-5afb-4f17-ba48-de0a8e8b1666
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.groups
@@ -13,8 +13,8 @@ _core:
   default_config_hash: CkJxvoJ7X52KqUuazveJCzB-g9OaveHaZxM7deoydxE
 id: itchefer_views_block__groups_block_user_groups
 theme: itchefer
-region: navigation
-weight: 4
+region: complementary_bottom
+weight: -21
 provider: null
 plugin: 'views_block:groups-block_user_groups'
 settings:

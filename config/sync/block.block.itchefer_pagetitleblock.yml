@@ -1,6 +1,6 @@
 uuid: 59998b4e-89c4-4303-be4a-d1f5740c236a
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - node
@@ -12,8 +12,8 @@ _core:
   default_config_hash: tQ-MDDsFp4RzTuHm5OMu2SjbOtVGMK1rzYhxhYnrsBw
 id: itchefer_pagetitleblock
 theme: itchefer
-region: navigation
-weight: -15
+region: hero
+weight: -28
 provider: null
 plugin: social_page_title_block
 settings:

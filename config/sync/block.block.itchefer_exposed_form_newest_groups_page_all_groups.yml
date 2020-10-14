@@ -1,6 +1,6 @@
 uuid: 3677a355-2b04-4c8b-9014-a611daf64c00
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.newest_groups
@@ -13,8 +13,8 @@ _core:
   default_config_hash: 2pIi1KbMaKhE051d8bsREZj0FQG1Hw0HYRY7T7w7uUw
 id: itchefer_exposed_form_newest_groups_page_all_groups
 theme: itchefer
-region: navigation
-weight: 0
+region: complementary_top
+weight: -27
 provider: null
 plugin: 'views_exposed_filter_block:newest_groups-page_all_groups'
 settings:

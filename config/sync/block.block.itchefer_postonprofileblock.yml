@@ -1,6 +1,6 @@
 uuid: 65d26163-b827-4c4b-86d8-9e76e0c4f11d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_post
@@ -11,8 +11,8 @@ _core:
   default_config_hash: Keolfk9f2yJvo-tVh71uqBoVc2jm2oCVvhvjHciUayA
 id: itchefer_postonprofileblock
 theme: itchefer
-region: navigation
-weight: -9
+region: hidden
+weight: -30
 provider: null
 plugin: post_profile_block
 settings:

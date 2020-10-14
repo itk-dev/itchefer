@@ -1,6 +1,6 @@
 uuid: 97239c0f-ce76-4637-827b-fefdbd327a8e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.topics
@@ -14,8 +14,8 @@ _core:
   default_config_hash: 0MO8kRMzukuFcnRLLugyr7OwKplACfFPLV7582vt5Uc
 id: itchefer_exposedformtopicspage_profile
 theme: itchefer
-region: navigation
-weight: 3
+region: complementary_top
+weight: -29
 provider: null
 plugin: 'views_exposed_filter_block:topics-page_profile'
 settings:

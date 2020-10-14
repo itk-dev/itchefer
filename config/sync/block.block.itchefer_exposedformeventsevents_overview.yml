@@ -1,6 +1,6 @@
 uuid: 1effb8af-b0fc-404f-bf1b-e28ecf443a89
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.events
@@ -14,8 +14,8 @@ _core:
   default_config_hash: nh5w2HyyMdVmLkORoql-7P8RXgsF_bl26XLi2MFy49w
 id: itchefer_exposedformeventsevents_overview
 theme: itchefer
-region: navigation
-weight: 1
+region: complementary_top
+weight: -16
 provider: null
 plugin: 'views_exposed_filter_block:events-events_overview'
 settings:

@@ -1,6 +1,6 @@
 uuid: 65deafc1-5ea6-4878-81f6-43369119dc45
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_profile
@@ -11,8 +11,8 @@ _core:
   default_config_hash: 1-3wpbt9WAgh89uA-61n8vctdXV8ITMl5Q65Pig_MdY
 id: itchefer_profile_statistic_block
 theme: itchefer
-region: navigation
-weight: -100
+region: complementary_top
+weight: -21
 provider: null
 plugin: profile_statistic_block
 settings:

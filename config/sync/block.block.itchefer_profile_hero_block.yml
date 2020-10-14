@@ -1,6 +1,6 @@
 uuid: ab5590ac-7d91-4638-bcd8-9d0ff05d8deb
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_profile
@@ -11,8 +11,8 @@ _core:
   default_config_hash: dJJt3qkQQ6s-ogGKHAbMcPCTlcMIUUF8026kdUtlmho
 id: itchefer_profile_hero_block
 theme: itchefer
-region: navigation
-weight: -15
+region: hero
+weight: -26
 provider: null
 plugin: profile_hero_block
 settings:

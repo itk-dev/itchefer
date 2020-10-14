@@ -1,6 +1,6 @@
 uuid: 91c4e310-83ae-4b08-93da-70f068255105
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.group_events
@@ -13,8 +13,8 @@ _core:
   default_config_hash: kMyq_C7u_4IGEVq6D7EJdS_FZvB8Ed37MdJ7x8e900Y
 id: itchefer_exposedformgroup_eventspage_group_events
 theme: itchefer
-region: navigation
-weight: -9
+region: complementary_top
+weight: -23
 provider: null
 plugin: 'views_exposed_filter_block:group_events-page_group_events'
 settings:

@@ -1,6 +1,6 @@
 uuid: 5290fc0d-ed15-46b9-9654-b3bf32c3e378
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NL1397KnWS55ZMZaKh-Y_HhLSct4qIQ70lN7FPdPjSg
 id: itchefer_local_actions
 theme: itchefer
-region: navigation
-weight: -18
+region: complementary_top
+weight: -11
 provider: null
 plugin: local_actions_block
 settings:

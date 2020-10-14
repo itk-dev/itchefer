@@ -1,6 +1,6 @@
 uuid: 887c5c46-b780-4ab2-a326-7ac1d0b71339
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.topics
@@ -13,8 +13,8 @@ _core:
   default_config_hash: Yy_BNByTXbY8nWGFFBwq_s4kiC6XR_8VMjnBtmkoxeA
 id: itchefer_views_block__topics_block_user_topics
 theme: itchefer
-region: navigation
-weight: 3
+region: complementary_bottom
+weight: -22
 provider: null
 plugin: 'views_block:topics-block_user_topics'
 settings:

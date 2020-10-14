@@ -1,6 +1,6 @@
 uuid: 801f6bf5-6b2e-4978-a6e6-7085937c20f1
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:hero_call_to_action_block:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
@@ -14,8 +14,8 @@ _core:
   default_config_hash: _2nk0nU1RIaVO43S8JTkEA9lALoySulaYH_bbsS4j7o
 id: itchefer_anhomepageheroblock
 theme: itchefer
-region: navigation
-weight: -15
+region: hero
+weight: -27
 provider: null
 plugin: 'block_content:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
 settings:

@@ -1,6 +1,6 @@
 uuid: aa6ce7cf-6391-4aef-952b-07bc5a9a1c0a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.upcoming_events
@@ -13,8 +13,8 @@ _core:
   default_config_hash: oVc0578yoYZdFfQmW3Vrmcf9RFF2MAk5H4T8f22ytyY
 id: itchefer_exposedformupcoming_eventspage_community_events
 theme: itchefer
-region: navigation
-weight: 3
+region: complementary_top
+weight: -13
 provider: null
 plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
 settings:

@@ -1,6 +1,6 @@
 uuid: ffe2f444-bb0c-4140-bea3-5a1e7c3055b0
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.search_groups
@@ -13,8 +13,8 @@ _core:
   default_config_hash: '-6ABidCJcLgsPywIcsaCBkxqRyntngTLlv_rZynSr58'
 id: itchefer_exposed_form_search_groups_page_sidebar
 theme: itchefer
-region: navigation
-weight: 0
+region: complementary_top
+weight: -28
 provider: null
 plugin: 'views_exposed_filter_block:search_groups-page'
 settings:

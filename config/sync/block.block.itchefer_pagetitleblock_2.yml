@@ -1,6 +1,6 @@
 uuid: c256b29e-9935-47fa-bd5e-f247f78d2b54
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_core
@@ -11,8 +11,8 @@ _core:
   default_config_hash: L-yGDnhJpWTUZo0pkCchj5d8szzjH7OR8itCWuf4NPQ
 id: itchefer_pagetitleblock_2
 theme: itchefer
-region: navigation
-weight: -20
+region: hero
+weight: -25
 provider: null
 plugin: social_page_title_block
 settings:

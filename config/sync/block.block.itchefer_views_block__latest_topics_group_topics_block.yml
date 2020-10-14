@@ -1,6 +1,6 @@
 uuid: 739d99e1-0d5a-47bc-86ba-f69767a45717
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.latest_topics
@@ -13,8 +13,8 @@ _core:
   default_config_hash: EvCkD77gpygY5UP2Hi6bGX1qjoff05znzcClwPsP8iY
 id: itchefer_views_block__latest_topics_group_topics_block
 theme: itchefer
-region: navigation
-weight: 3
+region: complementary_bottom
+weight: -28
 provider: null
 plugin: 'views_block:latest_topics-group_topics_block'
 settings:

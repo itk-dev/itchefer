@@ -1,6 +1,6 @@
 uuid: 51ddadf0-e6b1-4a59-a30e-7cc8c474db7e
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - social_group
@@ -11,8 +11,8 @@ _core:
   default_config_hash: f6Ksf9342jZNofFmN2HRAElWXSHUQ_80JIBipOam4rM
 id: itchefer_groupheroblock
 theme: itchefer
-region: navigation
-weight: null
+region: hero
+weight: -30
 provider: null
 plugin: group_hero_block
 settings:
