@@ -40,5 +40,23 @@ body {
 }
 
 .dropdown-menu li > a, .dropdown-menu li > span {
-    color: $black;
+    color: $black !important;
+}
+
+[type="checkbox"]:checked:not(:disabled) + label, [type="radio"]:checked:not(:disabled) + label {
+    color: $black !important;
+
+}
+
+.offcanvas-head .complementary-title {
+    color: $black !important;
+}
+
+[type="radio"]:checked + label::before {
+    border-color: $black !important;
+}
+
+[type="checkbox"]:checked + label::after, [type="radio"]:checked + label::after {
+    border-color: #39a8e0 !important;
+    background-color: #39a8e0 !important;
 }
