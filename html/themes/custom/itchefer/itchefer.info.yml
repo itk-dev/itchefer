@@ -1,27 +1,27 @@
-name: ITchefer
-description: Foreningen af Kommunale it-chefer
-screenshot: kita-logo.png
+core: 8.x
 type: theme
-
 base theme: socialblue
 
-core: 8.x
+name: 'ITChefer'
+description: 'A social blue sub-theme.'
+package: 'ITK'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - itchefer/app_theme
 
 libraries:
   - itchefer/base
-
-regions:
-  hidden: Hidden
-  header: Header
-  breadcrumb: Breadcrumb
-  hero: Hero
-  secondary_navigation: Secondary navigation
-  content_top: Content top
-  title: Page title
-  content: Content
-  complementary_top: Complementary top
-  complementary_bottom: Complementary bottom
-  content_bottom: Content bottom
-  sidebar_first: Sidebar First
-  sidebar_second: Sidebar Second
-  footer: Footer

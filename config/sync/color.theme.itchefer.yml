@@ -10,8 +10,6 @@ palette:
   navbar-sec-bg: '#39a8e0'
   navbar-sec-text: '#ffffff'
 logo: 'public://color/itchefer-9aa36c0a/logo.svg'
-stylesheets: 
-  - 'public://color/socialblue-1f66ecb4/brand.css'
-  - 'public://color/socialblue-1f66ecb4/brand--sky.css'
+stylesheets: { }
 files:
   - 'public://color/itchefer-9aa36c0a/logo.svg'
