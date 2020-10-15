@@ -1,5 +1,7 @@
 
-base:
+app_theme:
   css:
     theme:
-      assets/friv.css: {}
+      build/app.css: {}
+  js:
+    build/app.js: {}
