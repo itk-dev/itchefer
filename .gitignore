@@ -33,3 +33,6 @@ vendor/
 
 # Ignore private files
 private-files/
+
+# Ignore VS-code 
+.vscode
