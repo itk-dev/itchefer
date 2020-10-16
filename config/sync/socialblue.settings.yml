@@ -8,7 +8,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://itchefer.docker.localhost/profiles/contrib/social/themes/socialblue/favicon.ico'
+  url: 'http://itchefer.local.itkdev.dk/profiles/contrib/social/themes/socialblue/favicon.ico'
   use_default: 1
 schemas:
   bootstrap: 8000
@@ -37,12 +37,12 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 reset_http_request_cache: ''
 table: ''
+logo:
+  path: ''
+  url: ''
+  use_default: 0
 features:
   comment_user_picture: true
   comment_user_verification: 0
   favicon: 1
   node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: 1

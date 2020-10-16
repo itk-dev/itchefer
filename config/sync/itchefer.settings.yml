@@ -9,9 +9,9 @@ features:
   favicon: 1
   node_user_picture: true
 logo:
-  path: ''
+  path: themes/custom/itchefer/logo.svg
   url: ''
-  use_default: 1
+  use_default: 0
 schemas:
   bootstrap: 8000
   socialbase: 8000

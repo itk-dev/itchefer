@@ -9,7 +9,7 @@ palette:
   navbar-active-text: '#ffffff'
   navbar-sec-bg: '#39a8e0'
   navbar-sec-text: '#ffffff'
-logo: 'public://color/itchefer-9aa36c0a/logo.svg'
-stylesheets: { }
+logo: 'public://color/itchefer-ce17dea4/logo.svg'
+stylesheets: {  }
 files:
-  - 'public://color/itchefer-9aa36c0a/logo.svg'
+  - 'public://color/itchefer-ce17dea4/logo.svg'
