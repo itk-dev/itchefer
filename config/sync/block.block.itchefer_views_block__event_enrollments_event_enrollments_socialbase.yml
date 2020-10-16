@@ -1,4 +1,4 @@
-uuid: cb09f02d-bc8f-4500-b1f1-ce0a84a82b5a
+uuid: a52dd198-5872-4fed-88af-660fb30bfec5
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ _core:
   default_config_hash: WoH7kJIJuRWNxIKfVBMMzetSmnHFu2n5YQfpZHZl8zU
 id: itchefer_views_block__event_enrollments_event_enrollments_socialbase
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: -20
 provider: null
 plugin: 'views_block:event_enrollments-event_enrollments'

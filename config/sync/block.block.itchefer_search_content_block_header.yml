@@ -1,4 +1,4 @@
-uuid: c88388a5-78ef-4814-bd57-29f29e495742
+uuid: a007ba7f-4c56-434e-92d5-77666ede211e
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VQ6q9FRybbWvnB24twPpJ2FYXWgncoYqXetQMbg7Gvs
 id: itchefer_search_content_block_header
 theme: itchefer
-region: navigation
+region: content_top
 weight: -9
 provider: null
 plugin: search_content_block

@@ -1,4 +1,4 @@
-uuid: 022395ef-dce7-46c4-8cfa-294fbd70292d
+uuid: 05c9410f-9af0-4296-89c7-cbb1c21cccae
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: L8rubYePSHlepkqciU4DySISrjsn9zgkhKrtrMKI4jY
 id: itchefer_exposedformlatest_topicspage_latest_topics
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: 1
 provider: null
 plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'

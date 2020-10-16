@@ -1,4 +1,4 @@
-uuid: 1d17ae58-b798-49b1-b1f3-15b0c8989b0a
+uuid: f1c60b0e-833f-4f9d-8a21-1a94d380d822
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: awPVKI9tiREex_ehHn3hcHv4yrRbcFMnfHRPJQ1J_9Q
 id: itchefer_exposedformgroup_topicspage_group_topics
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: -9
 provider: null
 plugin: 'views_exposed_filter_block:group_topics-page_group_topics'

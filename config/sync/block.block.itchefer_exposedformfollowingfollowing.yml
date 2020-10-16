@@ -1,4 +1,4 @@
-uuid: 34af2e72-0129-4885-a26a-e9e1c7c5ebf9
+uuid: f5b066cd-51b9-4998-a3db-e83d1e249857
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: E1e2ChYjW2belIX2h1-Y7iAKgGV_ExQNS-PXvmrq5bk
 id: itchefer_exposedformfollowingfollowing
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: 0
 provider: null
 plugin: 'views_exposed_filter_block:following-following'

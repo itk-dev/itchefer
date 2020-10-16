@@ -1,4 +1,4 @@
-uuid: a65bc895-e402-4d27-b026-b57bf380f0d0
+uuid: 0f7e16a2-ded6-4694-96c4-842a3e11c763
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: L0GbzYBp0tvEdRSIZ6uozmaIHK2-g1XxryF-kxttjTQ
 id: itchefer_views_block__latest_topics_default
 theme: itchefer
-region: navigation
+region: complementary_bottom
 weight: 3
 provider: null
 plugin: 'views_block:latest_topics-block_latest_topics'
@@ -28,6 +28,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore"
+    pages: "/stream\r\n/explore\r\n<front>"
     negate: false
     context_mapping: {  }

@@ -1,4 +1,4 @@
-uuid: 65deafc1-5ea6-4878-81f6-43369119dc45
+uuid: fab96692-4b90-4493-8970-53947b9b6115
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
   default_config_hash: 1-3wpbt9WAgh89uA-61n8vctdXV8ITMl5Q65Pig_MdY
 id: itchefer_profile_statistic_block
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: -100
 provider: null
 plugin: profile_statistic_block

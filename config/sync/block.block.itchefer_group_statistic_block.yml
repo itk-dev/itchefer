@@ -1,4 +1,4 @@
-uuid: 58ffe8f5-f11a-4dba-82b5-8abd07511cb4
+uuid: cec901fe-7576-49c7-b1eb-ef75cc82c65a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
   default_config_hash: BFY2OSj7iZemS6zLLd2sewKFmrahCDpKbxZCFXdtNJ8
 id: itchefer_group_statistic_block
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: -100
 provider: null
 plugin: group_statistic_block

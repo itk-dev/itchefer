@@ -1,4 +1,4 @@
-uuid: 08489dec-094b-4d62-a765-9b0f02457406
+uuid: 62cce59a-2b89-42f3-b9f9-b528229d7b31
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: QRo3tGvHr084jZ0ZUS31X0Z9_VJcHRdtVG0B6IxLllQ
 id: itchefer_exposed_form_search_content_page_sidebar
 theme: itchefer
-region: navigation
+region: complementary_top
 weight: 3
 provider: null
 plugin: 'views_exposed_filter_block:search_content-page'

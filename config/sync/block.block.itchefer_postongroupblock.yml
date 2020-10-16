@@ -1,4 +1,4 @@
-uuid: 27865a56-781e-4ff3-81b8-3ccc90cdd3ef
+uuid: fc0fa273-e7f9-4652-9581-eb315e6c7b3d
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
   default_config_hash: NYfgZobU2seVo1qPqOzGjLK-vS3C_QIe-wRzb60OeJk
 id: itchefer_postongroupblock
 theme: itchefer
-region: navigation
+region: hidden
 weight: -9
 provider: null
 plugin: post_group_block

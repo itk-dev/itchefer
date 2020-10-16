@@ -1,4 +1,4 @@
-uuid: 63fc551e-bfc3-4aea-ab95-9fe3ab64ff16
+uuid: 8e0c6bb9-0f41-4d92-8d62-2331a0d96091
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: iFGheRPqpxtxvtlrb49kr6X5xYk27v0WHVYD3L6hkZw
 id: itchefer_views_block__events_block_events_on_profile
 theme: itchefer
-region: navigation
+region: complementary_bottom
 weight: 1
 provider: null
 plugin: 'views_block:events-block_events_on_profile'

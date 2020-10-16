@@ -1,0 +1,123 @@
+{#
+/**
+ * @file
+ * Default theme implementation for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A css-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   Javascript.
+ *
+ * @see template_preprocess_views_view()
+ *
+ * @ingroup templates
+ */
+#}
+
+{%
+  set classes = [
+    'mailto',
+    ]
+%}
+
+{%
+  set error_classes = [
+    display_id == 'page' ? 'alert alert-info',
+    display_id != 'page' ? 'small card__block',
+  ]
+%}
+
+
+{% set conBody %}
+     {{ rows }}
+{% endset %}
+{% set i = 1 %}
+{% set mailAddresses = '' %}
+{% set mailAddresses1 = '' %}
+{% set mailAddresses2 = '' %}
+{% set mailAddresses3 = '' %}
+{% set mailAddresses4 = '' %}
+
+<div class="cover" style = "height:55px">
+<div class= "btn-group pull-right">
+
+
+{% if view.total_rows < 500 %}
+<a href = "mailto:
+{% for row in conBody|split('<a href="mailto:')|slice(1) %}
+{{ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';'}}
+{% endfor %}
+" class = "btn btn-yellow">Send mail til alle</a>
+
+{% endif %}
+
+
+
+{% if view.total_rows >= 500 %}
+  {% for row in conBody|split('<a href="mailto:')|slice(1) %}
+    {% if i < 500 %}
+      {% set mailAddresses = mailAddresses ~ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';' %}
+    {% endif %}
+    {% if i >= 500 and i < 1000 %}
+      {% set mailAddresses1 = mailAddresses1 ~ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';' %}
+    {% endif %}
+    {% if i >= 1000 and i < 1500 %}
+      {% set mailAddresses2 = mailAddresses2 ~ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';' %}
+    {% endif %}
+    {% if i >= 1500  and i < 2000 %}
+      {% set mailAddresses3 = mailAddresses3 ~ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';' %}
+    {% endif %}
+    {% if i >= 2000  and i < 2500  %}
+      {% set mailAddresses4 = mailAddresses4 ~ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';' %}
+    {% endif %}
+  {% set i = i + 1 %}
+  {% endfor %}
+  {% if mailAddresses is not empty %}
+  <a href = "mailto: 
+  {{ mailAddresses }}
+  " class = "btn btn-yellow">Send mail til de første 500</a>
+  {% endif %}
+  {% if mailAddresses1 is not empty %}
+  <a href = "mailto: 
+  {{ mailAddresses1 }}
+  " class = "btn btn-yellow">Send mail til de næste 500</a>
+  {% endif %}
+  {% if mailAddresses2 is not empty %}
+  <a href = "mailto: 
+  {{ mailAddresses2 }}
+  " class = "btn btn-yellow">Send mail til de næste 500</a>
+  {% endif %}
+  {% if mailAddresses3 is not empty %}
+  <a href = "mailto: 
+  {{ mailAddresses3 }}
+  " class = "btn btn-yellow">Send mail til de næste 500</a>
+  {% endif %}
+  {% if mailAddresses4 is not empty %}
+  <a href = "mailto: 
+  {{ mailAddresses4 }}
+  " class = "btn btn-yellow">Send mail til de næste 500</a>
+  {% endif %}
+{% endif %}
+
+</div>
+</div>
+

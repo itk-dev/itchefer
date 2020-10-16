@@ -1,4 +1,4 @@
-uuid: e08aea4f-7202-4c66-9d7d-2fb52d00f021
+uuid: 89cdf6cb-8249-4dd9-87bd-47fcd8df968e
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: OxzubQJRE2Y9ihgsgasPmuMwHXR42T5ipZi8mAObDGE
 id: itchefer_views_block__newest_users_block_newest_users
 theme: itchefer
-region: navigation
+region: complementary_bottom
 weight: 5
 provider: null
 plugin: 'views_block:newest_users-block_newest_users'

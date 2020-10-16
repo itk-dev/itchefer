@@ -1,0 +1,67 @@
+// Accesibility contrast fixes
+$black: #000;
+$theme-red: #cd1719;
+
+body {
+    color: $black;
+}
+
+.card__link {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.post-date {
+    color: $black !important;
+    fill: $black !important;
+
+}
+
+.btn-primary {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.vote-widget {
+     a.voted-like .icon-vote {
+        fill: $theme-red !important;
+        stroke: $theme-red !important;
+    }
+    a:hover {
+        .icon-vote {
+            stroke: $theme-red !important;
+        }
+    }
+}
+
+.comment__metadata {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.dropdown-menu li > a, .dropdown-menu li > span {
+    color: $black !important;
+}
+
+[type="checkbox"]:checked:not(:disabled) + label, [type="radio"]:checked:not(:disabled) + label {
+    color: $black !important;
+
+}
+
+.offcanvas-head .complementary-title {
+    color: $black !important;
+}
+
+[type="radio"]:checked + label::before {
+    border-color: $black !important;
+}
+
+[type="checkbox"]:checked + label::after, [type="radio"]:checked + label::after {
+    border-color: #39a8e0 !important;
+    background-color: #39a8e0 !important;
+}
+
+.btn-flat {
+    color: $black !important;
+    fill: $black !important;
+}

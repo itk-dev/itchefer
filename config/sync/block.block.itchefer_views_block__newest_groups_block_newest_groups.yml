@@ -1,4 +1,4 @@
-uuid: 12980f7c-6921-476a-ba4e-0ae02bc7c58a
+uuid: f718a88c-f15b-48f1-a33a-3994e80e7da7
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
   default_config_hash: avPLiTLdMEzNvHjIKjuVC9TDVUmKBUwRCUn-ZomoGTo
 id: itchefer_views_block__newest_groups_block_newest_groups
 theme: itchefer
-region: navigation
+region: complementary_bottom
 weight: 4
 provider: null
 plugin: 'views_block:newest_groups-block_newest_groups'

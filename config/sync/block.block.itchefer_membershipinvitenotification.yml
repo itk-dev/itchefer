@@ -1,4 +1,4 @@
-uuid: 26b976f4-d082-43ed-b7e2-75c37603e2b1
+uuid: 2c7bca5f-d300-43b4-9473-3eb32f9fed9c
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,10 @@ dependencies:
       - social_group_invite
   module:
     - group
+    - node
     - social_group_invite
     - system
+    - user
   theme:
     - itchefer
 _core:
@@ -27,7 +29,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/edit\r\n/group/*/delete\r\n/group/*/content/*/approve-membership\r\n/group/*/content/*/reject-membership\r\n/group/*/content/*"
+    pages: "/group/*/edit\r\n/group/*/delete\r\n/group/*/content/*/approve-membership\r\n/group/*/content/*/reject-membership\r\n/group/*/content/*\r\n<front>"
     negate: true
     context_mapping: {  }
   group_type:
@@ -39,3 +41,17 @@ visibility:
     negate: false
     context_mapping:
       group: '@group.group_route_context:group'
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@social_user.user_route_context:user'

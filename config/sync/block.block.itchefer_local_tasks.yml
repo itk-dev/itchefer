@@ -1,4 +1,4 @@
-uuid: dd600b53-725e-4cb9-af92-5c4826a52a70
+uuid: 16030732-4744-4f30-9b7d-57805c79c581
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
   default_config_hash: DI3Pt8FWvvY7-xgU5TxTyM5chclowx82bUbSX3CYgZk
 id: itchefer_local_tasks
 theme: itchefer
-region: navigation
+region: secondary_navigation
 weight: -6
 provider: null
 plugin: local_tasks_block
