@@ -1,0 +1,21 @@
+uuid: c34fafa5-ec2e-4a63-8bf8-7d74b5d6555c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_municipality
+field_name: field_municipality
+entity_type: profile
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

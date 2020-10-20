@@ -1,0 +1,23 @@
+uuid: da16bca8-53c6-4a98-a16f-312331213102
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_representative_of_municipa
+    - profile.type.profile
+id: profile.profile.field_representative_of_municipa
+field_name: field_representative_of_municipa
+entity_type: profile
+bundle: profile
+label: 'Representative of municipality'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is a representative of the municipality'
+  off_label: 'Is not representative of the municipality'
+field_type: boolean
