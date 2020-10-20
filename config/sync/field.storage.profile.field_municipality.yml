@@ -10,7 +10,295 @@ field_name: field_municipality
 entity_type: profile
 type: list_string
 settings:
-  allowed_values: {  }
+  allowed_values:
+    -
+      value: albertslund_kommune
+      label: 'Albertslund Kommune'
+    -
+      value: allerød_kommune
+      label: 'Allerød Kommune'
+    -
+      value: ballerup_kommune
+      label: 'Ballerup Kommune'
+    -
+      value: 'bornholms_kegions|Bornholms Regionskommune'
+      label: 'Bornholms Regionskommunekommune'
+    -
+      value: brøndby_kommune
+      label: 'Brøndby Kommune'
+    -
+      value: dragør_kommune
+      label: 'Dragør Kommune'
+    -
+      value: egedal_kommune
+      label: 'Egedal Kommune'
+    -
+      value: fredensborg_kommune
+      label: 'Fredensborg Kommune'
+    -
+      value: frederiksberg_kommune
+      label: 'Frederiksberg Kommune'
+    -
+      value: frederikssund_kommune
+      label: 'Frederikssund Kommune'
+    -
+      value: halsnæs_kommune
+      label: 'Halsnæs Kommune'
+    -
+      value: furesø_kommune
+      label: 'Furesø Kommune'
+    -
+      value: gentofte_kommune
+      label: 'Gentofte Kommune'
+    -
+      value: gladsaxe_kommune
+      label: 'Gladsaxe Kommune'
+    -
+      value: glostrup_kommune
+      label: 'Glostrup Kommune'
+    -
+      value: gribskov_kommune
+      label: 'Gribskov Kommune'
+    -
+      value: helsingør_kommune
+      label: 'Helsingør Kommune'
+    -
+      value: herlev_kommune
+      label: 'Herlev Kommune'
+    -
+      value: hillerød_kommune
+      label: 'Hillerød Kommune'
+    -
+      value: hvidovre_kommune
+      label: 'Hvidovre Kommune'
+    -
+      value: høje-Taastrup_kommune
+      label: 'Høje-Taastrup Kommune'
+    -
+      value: hørsholm_kommune
+      label: 'Hørsholm Kommune'
+    -
+      value: ishøj_kommune
+      label: 'Ishøj Kommune'
+    -
+      value: københavns_kommune
+      label: 'Københavns Kommune'
+    -
+      value: lyngby-taarbæk_kommune
+      label: 'Lyngby-Taarbæk Kommune'
+    -
+      value: rudersdal_kommune
+      label: 'Rudersdal Kommune'
+    -
+      value: rødovre_kommune
+      label: 'Rødovre Kommune'
+    -
+      value: tårnby_kommune
+      label: 'Tårnby Kommune'
+    -
+      value: vallensbæk_kommune
+      label: 'Vallensbæk Kommune'
+    -
+      value: faxe_kommune
+      label: 'Faxe Kommune'
+    -
+      value: greve_kommune
+      label: 'Greve Kommune'
+    -
+      value: guldborgsund_kommune
+      label: 'Guldborgsund Kommune'
+    -
+      value: holbæk_kommune
+      label: 'Holbæk Kommune'
+    -
+      value: kalundborg_kommune
+      label: 'Kalundborg Kommune'
+    -
+      value: køge_kommune
+      label: 'Køge Kommune'
+    -
+      value: lejre_kommune
+      label: 'Lejre Kommune'
+    -
+      value: lolland_kommune
+      label: 'Lolland Kommune'
+    -
+      value: næstved_kommune
+      label: 'Næstved Kommune'
+    -
+      value: odsherred_kommune
+      label: 'Odsherred Kommune'
+    -
+      value: ringsted_kommune
+      label: 'Ringsted Kommune'
+    -
+      value: roskilde_kommune
+      label: 'Roskilde Kommune'
+    -
+      value: slagelse_kommune
+      label: 'Slagelse Kommune'
+    -
+      value: solrød_kommune
+      label: 'Solrød Kommune'
+    -
+      value: sorø_kommune
+      label: 'Sorø Kommune'
+    -
+      value: stevns_kommune
+      label: 'Stevns Kommune'
+    -
+      value: vordingborg_kommune
+      label: 'Vordingborg Kommune'
+    -
+      value: brønderslev-dronninglund_kommune
+      label: 'Brønderslev-Dronninglund Kommune'
+    -
+      value: frederikshavn_kommune
+      label: 'Frederikshavn Kommune'
+    -
+      value: hjørring_kommune
+      label: 'Hjørring Kommune'
+    -
+      value: jammerbugt_kommune
+      label: 'Jammerbugt Kommune'
+    -
+      value: læsø_kommune
+      label: 'Læsø Kommune'
+    -
+      value: mariagerfjord_kommune
+      label: 'Mariagerfjord Kommune'
+    -
+      value: morsø_kommune
+      label: 'Morsø Kommune'
+    -
+      value: rebild_kommune
+      label: 'Rebild Kommune'
+    -
+      value: thisted_kommune
+      label: 'Thisted Kommune'
+    -
+      value: vesthimmerlands_kommune
+      label: 'Vesthimmerlands Kommune'
+    -
+      value: aalborg_kommune
+      label: 'Aalborg Kommune'
+    -
+      value: favrskov_kommune
+      label: 'Favrskov Kommune'
+    -
+      value: hedensted_kommune
+      label: 'Hedensted Kommune'
+    -
+      value: herning_kommune
+      label: 'Herning Kommune'
+    -
+      value: holstebro_kommune
+      label: 'Holstebro Kommune'
+    -
+      value: horsens_kommune
+      label: 'Horsens Kommune'
+    -
+      value: ikast-Brande_kommune
+      label: 'Ikast-Brande Kommune'
+    -
+      value: lemvig_kommune
+      label: 'Lemvig Kommune'
+    -
+      value: norddjurs_kommune
+      label: 'Norddjurs Kommune'
+    -
+      value: odder_kommune
+      label: 'Odder Kommune'
+    -
+      value: randers_kommune
+      label: 'Randers Kommune'
+    -
+      value: ringkøbing-skjern_kommune
+      label: 'Ringkøbing-Skjern Kommune'
+    -
+      value: silkeborg_kommune
+      label: 'Silkeborg Kommune'
+    -
+      value: skanderborg_kommune
+      label: 'Skanderborg Kommune'
+    -
+      value: skive_kommune
+      label: 'Skive Kommune'
+    -
+      value: struer_kommune
+      label: 'Struer Kommune'
+    -
+      value: syddjurs_kommune
+      label: 'Syddjurs Kommune'
+    -
+      value: viborg_kommune
+      label: 'Viborg Kommune'
+    -
+      value: århus_kommune
+      label: 'Århus Kommune'
+    -
+      value: assens_kommune
+      label: 'Assens Kommune'
+    -
+      value: billund_kommune
+      label: 'Billund Kommune'
+    -
+      value: esbjerg_kommune
+      label: 'Esbjerg Kommune'
+    -
+      value: fanø_kommune
+      label: 'Fanø Kommune'
+    -
+      value: fredericia_kommune
+      label: 'Fredericia Kommune'
+    -
+      value: faaborg-midtfyn_kommune
+      label: 'Faaborg-Midtfyn Kommune'
+    -
+      value: haderslev_kommune
+      label: 'Haderslev Kommune'
+    -
+      value: kerteminde_kommune
+      label: 'Kerteminde Kommune'
+    -
+      value: kolding_kommune
+      label: 'Kolding Kommune'
+    -
+      value: langeland_kommune
+      label: 'Langeland Kommune'
+    -
+      value: nordfyn_kommune
+      label: 'Nordfyn Kommune'
+    -
+      value: nyborg_kommune
+      label: 'Nyborg Kommune'
+    -
+      value: odense_kommune
+      label: 'Odense Kommune'
+    -
+      value: svendborg_kommune
+      label: 'Svendborg Kommune'
+    -
+      value: sønderborg_kommune
+      label: 'Sønderborg Kommune'
+    -
+      value: tønder_kommune
+      label: 'Tønder Kommune'
+    -
+      value: varde_kommune
+      label: 'Varde Kommune'
+    -
+      value: vejen_kommune
+      label: 'Vejen Kommune'
+    -
+      value: ærø_kommune
+      label: 'Ærø Kommune'
+    -
+      value: aabenraa_kommune
+      label: 'Aabenraa Kommune'
+    -
+      value: grønland_sermersooq
+      label: 'Grønland - Sermersooq'
   allowed_values_function: ''
 module: options
 locked: false
