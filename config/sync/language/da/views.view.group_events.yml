@@ -1,0 +1,35 @@
+label: 'Gruppe Arrangement'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        label:
+          separator: ', '
+      filters:
+        event_date:
+          expose:
+            label: Løbsdato
+      title: 'Gruppe Arrangement'
+      arguments:
+        gid:
+          exception:
+            title: Alle
+  page_group_events:
+    display_title: Side

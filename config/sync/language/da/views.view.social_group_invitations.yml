@@ -1,0 +1,39 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        invitee_mail:
+          label: E-mail
+          separator: ', '
+        name:
+          label: Modtagere
+          separator: ', '
+        created:
+          separator: ', '
+        invitation_status:
+          separator: ', '
+        dropbutton:
+          label: Handlinger
+      empty:
+        area_text_custom:
+          content: 'Ingen invitationer til rådighed.'
+      arguments:
+        gid:
+          exception:
+            title: Alle
+  page_1:
+    display_title: Side

@@ -1,0 +1,36 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        field_profile_organization:
+          label: Organisation
+          separator: ', '
+        created:
+          separator: ', '
+        operations_1:
+          label: Handling
+      arguments:
+        nid:
+          exception:
+            title: Alle
+  page_manage_enrollments:
+    display_title: Side
