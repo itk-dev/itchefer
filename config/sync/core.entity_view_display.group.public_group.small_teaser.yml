@@ -42,6 +42,7 @@ hidden:
   field_group_address: true
   field_group_description: true
   field_group_location: true
+  langcode: true
   search_api_excerpt: true
   social_tagging: true
   uid: true

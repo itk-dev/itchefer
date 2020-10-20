@@ -62,6 +62,18 @@ third_party_settings:
         required_fields: true
       label: Settings
       region: content
+    group_request_membership:
+      children:
+        - allow_request
+      parent_name: ''
+      weight: 99
+      label: 'Request membership'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: false
 _core:
   default_config_hash: o6-nBnmCgRGCaHUZj2veQpAOLMCl7TLd_QD2rW2k-ag
 id: group.flexible_group.default
@@ -135,6 +147,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 3

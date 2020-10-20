@@ -78,6 +78,7 @@ hidden:
   field_topic_comments: true
   field_topic_type: true
   flag_follow_content: true
+  langcode: true
   like_and_dislike: true
   links: true
   search_api_excerpt: true
