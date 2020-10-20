@@ -47,6 +47,8 @@ third_party_settings:
       children:
         - field_profile_function
         - field_profile_organization
+        - field_municipality
+        - field_representative_of_municipa
       parent_name: ''
       weight: 1
       label: 'Function and organization'
