@@ -43,6 +43,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
 hidden:
   field_content_visibility: true
   field_files: true

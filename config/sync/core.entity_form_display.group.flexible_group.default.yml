@@ -69,6 +69,13 @@ targetEntityType: group
 bundle: flexible_group
 mode: default
 content:
+  allow_request:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 99
+    region: content
+    third_party_settings: {  }
   field_group_address:
     weight: 6
     settings: {  }

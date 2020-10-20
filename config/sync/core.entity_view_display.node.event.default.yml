@@ -74,6 +74,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   groups_type_public_group:
     label: above
     weight: -5
