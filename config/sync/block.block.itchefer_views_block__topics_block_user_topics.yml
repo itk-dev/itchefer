@@ -25,9 +25,10 @@ settings:
   views_label: ''
   items_per_page: none
   type: none
+  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/stream'
+    pages: "/user/*/stream\r\n<front>"
     negate: false
     context_mapping: {  }
