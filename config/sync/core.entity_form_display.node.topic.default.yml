@@ -17,6 +17,7 @@ dependencies:
     - file
     - image_widget_crop
     - path
+    - social_group
     - text
 third_party_settings:
   field_group:
@@ -134,10 +135,17 @@ content:
     type: options_buttons
     region: content
   groups:
-    type: options_select
+    type: social_group_selector_widget
     settings: {  }
     weight: 16
     region: content
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path

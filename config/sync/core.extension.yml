@@ -16,6 +16,7 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_translation: 0
   config_update: 0
   crop: 0
   csv_serialization: 0
@@ -31,6 +32,8 @@ module:
   exif_orientation: 0
   field: 0
   field_group: 0
+  field_permissions: 0
+  field_ui: 0
   file: 0
   file_mdm: 0
   file_mdm_exif: 0
@@ -48,9 +51,11 @@ module:
   image_effects: 0
   image_widget_crop: 0
   inline_form_errors: 0
+  language: 0
   lazy: 0
   like_and_dislike: 0
   link: 0
+  locale: 0
   mailsystem: 0
   mentions: 0
   menu_ui: 0
@@ -82,6 +87,7 @@ module:
   social_font: 0
   social_group_gvbo: 0
   social_group_invite: 0
+  social_language: 0
   social_lets_connect: 0
   social_lets_connect_contact: 0
   social_lets_connect_usage: 0
@@ -118,6 +124,7 @@ module:
   social_group: 2
   social_group_flexible_group: 5
   social_group_request: 6
+  content_translation: 10
   views: 10
   improved_theme_settings: 50
   social: 1000

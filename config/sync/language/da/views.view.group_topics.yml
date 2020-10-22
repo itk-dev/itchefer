@@ -1,0 +1,36 @@
+label: 'Emner for gruppe'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        label:
+          separator: ', '
+      filters:
+        status:
+          expose:
+            label: Publiceringsstatus
+      title: 'Emner for gruppe'
+      empty:
+        area_text_custom:
+          content: 'Ingen emner i denne gruppe'
+      arguments:
+        gid:
+          exception:
+            title: Alle
+  page_group_topics:
+    display_title: Side

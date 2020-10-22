@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.search_index
+    - field.field.profile.profile.field_municipality
     - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
@@ -17,6 +18,7 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_representative_of_municipa
     - profile.type.profile
   module:
     - address
@@ -83,10 +85,12 @@ content:
     type: text_default
     region: content
 hidden:
+  field_municipality: true
   field_profile_banner_image: true
   field_profile_first_name: true
   field_profile_image: true
   field_profile_last_name: true
   field_profile_profile_tag: true
   field_profile_show_email: true
+  field_representative_of_municipa: true
   search_api_excerpt: true

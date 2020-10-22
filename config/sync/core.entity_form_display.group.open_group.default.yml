@@ -56,6 +56,18 @@ third_party_settings:
         required_fields: true
       label: Settings
       region: content
+    group_request_membership:
+      children:
+        - allow_request
+      parent_name: ''
+      weight: 99
+      label: 'Request membership'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: false
 _core:
   default_config_hash: 0HmeHEUhBpg1HhFcX8aE7LzbgO2tWGRCDKpUMJl6uMY
 id: group.open_group.default
@@ -63,6 +75,13 @@ targetEntityType: group
 bundle: open_group
 mode: default
 content:
+  allow_request:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 99
+    region: content
+    third_party_settings: {  }
   field_group_address:
     weight: 33
     settings:
@@ -111,6 +130,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

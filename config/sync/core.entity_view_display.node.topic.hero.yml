@@ -52,6 +52,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   like_and_dislike:
     weight: 1
     region: content
@@ -75,4 +83,5 @@ hidden:
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
+  langcode: true
   search_api_excerpt: true

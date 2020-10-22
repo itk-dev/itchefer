@@ -46,5 +46,6 @@ hidden:
   field_group_allowed_visibility: true
   field_group_description: true
   field_group_location: true
+  langcode: true
   search_api_excerpt: true
   uid: true
