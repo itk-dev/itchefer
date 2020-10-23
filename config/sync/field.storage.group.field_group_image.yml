@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - field_permissions
     - file
     - group
     - image
+third_party_settings:
+  field_permissions:
+    permission_type: public
 _core:
   default_config_hash: '-iWULfNYfEBB3gIvotaf3LVU9gj0mppze9ITgLnSz5g'
 id: group.field_group_image
@@ -13,7 +17,7 @@ field_name: field_group_image
 entity_type: group
 type: image
 settings:
-  uri_scheme: public
+  uri_scheme: private
   default_image:
     uuid: ''
     alt: ''

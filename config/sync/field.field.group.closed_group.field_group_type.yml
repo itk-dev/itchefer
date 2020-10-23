@@ -1,0 +1,21 @@
+uuid: 2f9f23a4-201c-407e-a9fe-62951e8f34c5
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_type
+    - group.type.closed_group
+  module:
+    - options
+id: group.closed_group.field_group_type
+field_name: field_group_type
+entity_type: group
+bundle: closed_group
+label: Gruppetype
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
