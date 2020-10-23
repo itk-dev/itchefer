@@ -1,0 +1,21 @@
+uuid: 367c6dc5-2dc0-46a3-8502-15edda8c330a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_type
+    - group.type.open_group
+  module:
+    - options
+id: group.open_group.field_group_type
+field_name: field_group_type
+entity_type: group
+bundle: open_group
+label: Gruppetype
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

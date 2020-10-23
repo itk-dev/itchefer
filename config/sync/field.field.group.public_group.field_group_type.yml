@@ -1,0 +1,21 @@
+uuid: 35dd46a3-7482-4aa1-bc09-ae98750fefe5
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_type
+    - group.type.public_group
+  module:
+    - options
+id: group.public_group.field_group_type
+field_name: field_group_type
+entity_type: group
+bundle: public_group
+label: Gruppetype
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
