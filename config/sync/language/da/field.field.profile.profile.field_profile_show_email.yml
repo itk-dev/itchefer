@@ -1,3 +1,4 @@
 settings:
-  on_label: Tilsluttet
-  off_label: Afbrudt
+  on_label: Vises
+  off_label: Skjules
+label: 'Vis email'

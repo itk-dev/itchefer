@@ -1,4 +1,4 @@
-label: 'Profil billede'
+label: Profilbillede
 settings:
   default_image:
     alt: 'Standard profil billede'

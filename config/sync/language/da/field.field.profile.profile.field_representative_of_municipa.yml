@@ -1,4 +1,4 @@
 label: 'Ansvarlig for kommunen'
 settings:
-  on_label: 'Er ansvarlig for kommunen'
-  off_label: 'Er ikke ansvarlig for kommunen'
+  on_label: Ja
+  off_label: Nej
