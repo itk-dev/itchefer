@@ -1,5 +1,5 @@
 uuid: 32c772d8-8d9e-43c5-8bde-0acdb36dbbd6
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -25,10 +25,10 @@ third_party_settings:
         - field_page_image
       parent_name: ''
       weight: 0
-      label: Content
+      label: Indhold
       format_type: fieldset
       format_settings:
-        label: Content
+        label: Indhold
         required_fields: true
         id: content
         classes: 'card '

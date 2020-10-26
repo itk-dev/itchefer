@@ -8,3 +8,4 @@ invite_group_types:
   closed_group: 0
   open_group: open_group
   public_group: public_group
+langcode: da

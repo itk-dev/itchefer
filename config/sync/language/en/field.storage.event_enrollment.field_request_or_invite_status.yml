@@ -1,0 +1,16 @@
+settings:
+  allowed_values:
+    -
+      label: Pending
+    -
+      label: Approved
+    -
+      label: Declined
+    -
+      label: Invited
+    -
+      label: 'Pending reply'
+    -
+      label: 'Accepted and joined'
+    -
+      label: 'Invalid or expired'

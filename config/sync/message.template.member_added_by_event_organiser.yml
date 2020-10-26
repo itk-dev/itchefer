@@ -1,5 +1,5 @@
 uuid: 51bc7894-7f0b-4509-9d96-f0d760eb63e3
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -13,8 +13,8 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 0
-    activity_aggregate: 0
+    activity_create_direct: false
+    activity_aggregate: false
     activity_entity_condition: ''
 _core:
   default_config_hash: 1Tzc_4SfrpKngfm00ozreffKQbKiRzQ4bbmPhrERVIs

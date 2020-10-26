@@ -79,6 +79,7 @@ module:
   social_core: 0
   social_editor: 0
   social_event: 0
+  social_event_addtocal: 0
   social_event_enrolments_export: 0
   social_event_invite: 0
   social_event_managers: 0
@@ -119,6 +120,7 @@ module:
   user: 0
   views_bulk_operations: 0
   views_infinite_scroll: 0
+  views_ui: 0
   votingapi: 0
   menu_link_content: 1
   social_group: 2
@@ -141,3 +143,4 @@ theme:
 profile: social
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
+langcode: da

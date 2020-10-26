@@ -27,9 +27,3 @@ display:
   block_newest_groups:
     display_options:
       use_more_text: 'Alle grupper'
-  page_all_groups:
-    display_options:
-      filters:
-        type:
-          expose:
-            label: Gruppetype
