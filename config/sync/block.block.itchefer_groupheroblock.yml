@@ -12,7 +12,7 @@ _core:
 id: itchefer_groupheroblock
 theme: itchefer
 region: hero
-weight: null
+weight: -32
 provider: null
 plugin: group_hero_block
 settings:
