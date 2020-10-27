@@ -18,6 +18,8 @@ module:
   config: 0
   config_translation: 0
   config_update: 0
+  contact: 0
+  contact_block: 0
   crop: 0
   csv_serialization: 0
   datetime: 0
@@ -141,3 +143,4 @@ theme:
 profile: social
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
+langcode: da
