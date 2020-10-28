@@ -1,5 +1,5 @@
 uuid: 2b3273d2-ce07-4378-8bda-406aa736c97d
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -14,8 +14,8 @@ third_party_settings:
     activity_destinations:
       stream_home: stream_home
       stream_group: stream_group
-    activity_create_direct: 1
-    activity_aggregate: 0
+    activity_create_direct: true
+    activity_aggregate: false
     activity_entity_condition: ''
 _core:
   default_config_hash: YblqfSJAFwvF9Zlx_JVm6ZA0uwexjAdLfilegDF1tDc

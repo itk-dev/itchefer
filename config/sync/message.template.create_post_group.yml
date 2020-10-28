@@ -1,5 +1,5 @@
 uuid: 94b9cbc7-184c-45dc-bbca-60dd97b8c599
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -12,7 +12,7 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post

@@ -1,5 +1,5 @@
 uuid: 9bc98856-0f22-411c-b549-218a51c3ea89
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -10,11 +10,11 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_bundle_entities:
       post-post: post-post
     activity_action: create_entitiy_action
-    activity_aggregate: 0
+    activity_aggregate: false
 _core:
   default_config_hash: '-uWpQzoNQX4h_MuVNLJoB8qr6v1QVmRSZPk9d_d5AQk'
 template: create_post_profile

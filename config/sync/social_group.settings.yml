@@ -1,3 +1,4 @@
 allow_group_selection_in_node: false
 _core:
   default_config_hash: NO2xkUEhq_WAhBUrdnuQ9yHbgq_AS0tM8wR5dI0tYoM
+langcode: da

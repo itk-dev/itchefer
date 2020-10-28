@@ -46,3 +46,4 @@ features:
   comment_user_verification: 0
   favicon: 1
   node_user_picture: true
+langcode: da

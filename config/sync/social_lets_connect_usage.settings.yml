@@ -9,3 +9,4 @@ refresh_interval: 86400
 url: 'https://connect.getopensocial.com/usage'
 _core:
   default_config_hash: kYujB5MHv3f8GgMbxKRFJ84hk9ZnZjsp0GVagg878s0
+langcode: da
