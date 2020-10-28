@@ -11,7 +11,7 @@ id: group.flexible_group.field_group_purpose
 field_name: field_group_purpose
 entity_type: group
 bundle: flexible_group
-label: 'Group purpose'
+label: 'Gruppens formål'
 description: ''
 required: false
 translatable: true

@@ -32,6 +32,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: hidden
     group_location:
       children:
         - field_group_location
@@ -45,8 +46,10 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: hidden
     group_settings:
-      children: {  }
+      children:
+        - field_group_purpose
       parent_name: ''
       weight: -5
       format_type: fieldset
@@ -69,6 +72,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: false
+      region: hidden
 _core:
   default_config_hash: 0HmeHEUhBpg1HhFcX8aE7LzbgO2tWGRCDKpUMJl6uMY
 id: group.open_group.default
@@ -80,13 +84,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 99
+    weight: 5
     region: content
     third_party_settings: {  }
   field_group_address:
-    weight: 33
-    settings:
-      default_country: site_default
+    weight: 7
+    settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
@@ -116,7 +119,7 @@ content:
     type: image_widget_crop
     region: content
   field_group_location:
-    weight: 32
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -124,7 +127,7 @@ content:
     type: string_textfield
     region: content
   field_group_purpose:
-    weight: 100
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
