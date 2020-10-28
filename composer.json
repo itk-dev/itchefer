@@ -13,7 +13,8 @@
         "php": "^7.2",
         "monolog/monolog": "^1.17",
         "drush/drush": "^10.3",
-        "drupal/field_permissions": "^1.1"
+        "drupal/field_permissions": "^1.1",
+        "drupal/contact_block": "^1.5"
     },
     "repositories": [
         {
