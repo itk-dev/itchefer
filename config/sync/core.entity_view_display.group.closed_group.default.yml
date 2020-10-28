@@ -7,7 +7,10 @@ dependencies:
     - field.field.group.closed_group.field_group_description
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
+    - field.field.group.closed_group.field_group_purpose
     - group.type.closed_group
+  module:
+    - options
 _core:
   default_config_hash: isMnBU3AQ5AEIX1WIqi7UXzI2N-Tz27l97Xibim2cRY
 id: group.closed_group.default
@@ -21,6 +24,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_group_purpose:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden:
   changed: true

@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.group.teaser
   module:
     - group
+    - options
     - user
 _core:
   default_config_hash: OL21L2xjoXlc_17Fycs9SNyTwcbxw4axjRciaZOzl9Q
@@ -225,6 +226,53 @@ display:
       path: all-groups
       display_description: ''
       filters:
+        field_group_purpose_value_1:
+          id: field_group_purpose_value_1
+          table: group__field_group_purpose
+          field: field_group_purpose_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            municipality: municipality
+            region: region
+            discussion: discussion
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_group_purpose_value_1_op
+            label: 'Gruppens formål'
+            description: ''
+            use_operator: false
+            operator: field_group_purpose_value_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_group_purpose_value_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
         type:
           id: type
           table: groups_field_data

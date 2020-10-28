@@ -8,6 +8,7 @@ dependencies:
     - field.field.group.closed_group.field_group_description
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
+    - field.field.group.closed_group.field_group_purpose
     - group.type.closed_group
 _core:
   default_config_hash: U54lfToqSZxEiP0GdxNmfMuBSHLdoJRyQ16NALjYS1E
@@ -23,6 +24,7 @@ hidden:
   field_group_description: true
   field_group_image: true
   field_group_location: true
+  field_group_purpose: true
   label: true
   langcode: true
   search_api_excerpt: true

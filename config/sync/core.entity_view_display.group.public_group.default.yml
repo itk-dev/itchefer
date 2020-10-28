@@ -7,7 +7,10 @@ dependencies:
     - field.field.group.public_group.field_group_description
     - field.field.group.public_group.field_group_image
     - field.field.group.public_group.field_group_location
+    - field.field.group.public_group.field_group_purpose
     - group.type.public_group
+  module:
+    - options
 _core:
   default_config_hash: MaRO1E0Egt6QiPIC8Pjgs-_MTJGreH2JOeJEA7jaXPA
 id: group.public_group.default
@@ -21,6 +24,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_group_purpose:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden:
   changed: true

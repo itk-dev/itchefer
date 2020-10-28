@@ -1,0 +1,21 @@
+uuid: 620e00f9-58d6-47f4-a624-9a5a44ae751d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_purpose
+    - group.type.flexible_group
+  module:
+    - options
+id: group.flexible_group.field_group_purpose
+field_name: field_group_purpose
+entity_type: group
+bundle: flexible_group
+label: 'Gruppens formål'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

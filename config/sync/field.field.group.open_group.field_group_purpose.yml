@@ -1,0 +1,21 @@
+uuid: 3f86240c-716f-4f96-a1b8-18c48c7b6bbe
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_purpose
+    - group.type.open_group
+  module:
+    - options
+id: group.open_group.field_group_purpose
+field_name: field_group_purpose
+entity_type: group
+bundle: open_group
+label: 'Group purpose'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
