@@ -8,6 +8,7 @@ dependencies:
     - field.field.group.closed_group.field_group_description
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
+    - field.field.group.closed_group.field_group_purpose
     - group.type.closed_group
     - image.style.social_xx_large
   module:
@@ -56,6 +57,7 @@ hidden:
   changed: true
   created: true
   field_group_description: true
+  field_group_purpose: true
   langcode: true
   search_api_excerpt: true
   uid: true

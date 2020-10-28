@@ -7,6 +7,7 @@ dependencies:
     - field.field.group.closed_group.field_group_description
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
+    - field.field.group.closed_group.field_group_purpose
     - group.type.closed_group
     - image.style.social_x_large
   module:
@@ -24,7 +25,7 @@ third_party_settings:
         - field_group_image
       parent_name: ''
       weight: 0
-      label: Content
+      label: Indhold
       format_type: fieldset
       format_settings:
         description: ''
@@ -37,7 +38,7 @@ third_party_settings:
         - field_group_address
       parent_name: ''
       weight: 4
-      label: Location
+      label: Lokation
       format_type: fieldset
       format_settings:
         description: ''
@@ -54,7 +55,7 @@ third_party_settings:
         classes: ''
         description: ''
         required_fields: true
-      label: Settings
+      label: Indstillinger
       region: content
     group_request_membership:
       children:
@@ -121,6 +122,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_group_purpose:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   label:
     type: string_textfield
