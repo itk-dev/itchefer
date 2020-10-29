@@ -18,6 +18,8 @@ module:
   config: 0
   config_translation: 0
   config_update: 0
+  contact: 0
+  contact_block: 0
   crop: 0
   csv_serialization: 0
   datetime: 0
