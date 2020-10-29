@@ -16,23 +16,23 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: greenland
+      label: Greenland
+    -
       value: region_hovedstaden
       label: 'Region Hovedstaden'
     -
       value: region_midtjylland
       label: 'Region Midtjylland'
     -
+      value: region_nordjylland
+      label: 'Region Nordjylland'
+    -
       value: region_sjælland
       label: 'Region Sjælland'
     -
       value: region_syddanmark
       label: 'Region Syddanmark'
-    -
-      value: region_nordjylland
-      label: 'Region Nordjylland'
-    -
-      value: greenland
-      label: Greenland
   allowed_values_function: ''
 module: options
 locked: false
