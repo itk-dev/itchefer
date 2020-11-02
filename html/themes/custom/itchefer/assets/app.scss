@@ -1,6 +1,7 @@
 // Accesibility contrast fixes
 $black: #000;
 $theme-red: #cd1719;
+$theme-blue: #39a8e0;
 
 body {
     color: $black;
@@ -67,11 +68,33 @@ body {
 }
 
 [type="checkbox"]:checked + label::after, [type="radio"]:checked + label::after {
-    border-color: #39a8e0 !important;
-    background-color: #39a8e0 !important;
+    border-color: $theme-blue !important;
+    background-color: $theme-blue !important;
 }
 
 .btn-flat {
     color: $black !important;
     fill: $black !important;
+}
+
+.csv-feed .feed-icon {
+    background-color: $theme-blue;
+    color: $black;
+    width: 100px;
+    background-image: none;
+}
+
+.views-data-export-feed .feed-icon {
+    display: flex;
+    text-indent: 0px;
+    border-radius: 2px !important;
+    border-color: $theme-blue;
+    width: 130px;
+    justify-content: center;
+    padding: 5px 0;
+
+    &:hover {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
 }
