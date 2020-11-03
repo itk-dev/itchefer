@@ -14,7 +14,8 @@
         "monolog/monolog": "^1.17",
         "drush/drush": "^10.3",
         "drupal/field_permissions": "^1.1",
-        "drupal/contact_block": "^1.5"
+        "drupal/contact_block": "^1.5",
+        "drupal/views_data_export": "^1.0"
     },
     "repositories": [
         {
