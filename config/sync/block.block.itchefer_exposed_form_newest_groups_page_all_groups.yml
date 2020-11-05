@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /all-groups
+    pages: "/all-groups\r\n"
     negate: false
     context_mapping: {  }

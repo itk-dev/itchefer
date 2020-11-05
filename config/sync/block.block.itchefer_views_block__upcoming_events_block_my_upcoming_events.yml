@@ -30,7 +30,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n<front>"
+    pages: "/stream\r\n/forside\r\n<front>"
     negate: false
     context_mapping: {  }
   user_role:

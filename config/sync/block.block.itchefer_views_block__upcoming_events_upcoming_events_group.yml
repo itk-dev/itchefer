@@ -31,7 +31,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/stream\r\n/group/*/about\r\n"
+    pages: "/group/*/stream\r\n/group/*/about\r\n/forside\r\n<front>\r\n"
     negate: false
     context_mapping: {  }
   user_role:
