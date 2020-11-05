@@ -28,10 +28,10 @@ third_party_settings:
         - field_topic_image
       parent_name: ''
       weight: 0
-      label: Content
+      label: Indhold
       format_type: fieldset
       format_settings:
-        label: Content
+        label: Indhold
         required_fields: true
         id: content
         classes: 'card '

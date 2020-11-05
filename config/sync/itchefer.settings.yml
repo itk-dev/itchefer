@@ -9,7 +9,7 @@ features:
   favicon: 1
   node_user_picture: true
 logo:
-  path: themes/custom/itchefer/logo.svg
+  path: 'public://logo_0.png'
   url: ''
   use_default: 0
 schemas:
