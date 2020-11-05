@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.profile.profile.field_municipality
-    - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_first_name
@@ -17,10 +16,10 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_region
     - field.field.profile.profile.field_representative_of_municipa
     - profile.type.profile
   module:
-    - address
     - options
     - text
 _core:
@@ -36,13 +35,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
-    region: content
-  field_profile_address:
-    weight: 2
-    label: visually_hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
     region: content
   field_profile_expertise:
     weight: 5
@@ -82,6 +74,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_region:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_representative_of_municipa:
     weight: 7
