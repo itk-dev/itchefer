@@ -1,11 +1,11 @@
 uuid: 4a356ae3-1279-45a6-895f-0c7d07933e66
-name: 'Drush Site-Install'
+name: Itchefer
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/16
+  front: /forside
 admin_compact_mode: false
 weight_select_max: 100
 langcode: da

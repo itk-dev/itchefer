@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.profile.search_index
     - field.field.profile.profile.field_municipality
-    - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_first_name
@@ -18,10 +17,10 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_region
     - field.field.profile.profile.field_representative_of_municipa
     - profile.type.profile
   module:
-    - address
     - text
 _core:
   default_config_hash: u57gJAW3unq6DQx_kBGCNhKeh6NBB576gtbjMeNBIeE
@@ -30,13 +29,6 @@ targetEntityType: profile
 bundle: profile
 mode: search_index
 content:
-  field_profile_address:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
   field_profile_expertise:
     weight: 8
     label: above
@@ -92,5 +84,6 @@ hidden:
   field_profile_last_name: true
   field_profile_profile_tag: true
   field_profile_show_email: true
+  field_region: true
   field_representative_of_municipa: true
   search_api_excerpt: true

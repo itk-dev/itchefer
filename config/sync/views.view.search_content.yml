@@ -447,7 +447,7 @@ display:
       exposed_block: true
       menu:
         type: tab
-        title: Content
+        title: Indhold
         description: ''
         expanded: false
         parent: ''
