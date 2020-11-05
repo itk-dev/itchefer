@@ -1,0 +1,18 @@
+uuid: bdb07a40-943a-4f44-85ff-c35a45423b82
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Magazine
+type: magazine
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
