@@ -28,6 +28,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore\r\n/forside\r\n<front>"
+    pages: "/stream\r\n/explore\r\n<front>"
     negate: false
     context_mapping: {  }

@@ -29,6 +29,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*/stream\r\n/forside\r\n<front>"
+    ges: "/user/*/stream\r\n<front>"
     negate: false
     context_mapping: {  }
