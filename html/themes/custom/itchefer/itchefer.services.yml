@@ -1,3 +1,0 @@
-services:
-    itchefer.magazine_helper:
-        class: Drupal\itchefer\Magazine\Helper
