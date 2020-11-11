@@ -1,95 +1,70 @@
-uuid: 92fe2505-7088-4a3d-9cd7-466d1b0ee0ca
+uuid: 6436ab19-dc4b-4476-a468-5bf7bab42464
 langcode: da
 status: true
 dependencies:
   config:
-    - field.field.node.magazine.body
-    - field.field.node.magazine.field_articles
-    - field.field.node.magazine.field_highlighted_articles
-    - node.type.magazine
+    - field.field.node.article.body
+    - node.type.article
   module:
-    - dynamic_entity_reference
     - field_group
     - path
+    - text
 third_party_settings:
   field_group:
-    group_articles:
-      children:
-        - field_highlighted_articles
-        - field_articles
-      parent_name: ''
-      weight: 1
-      format_type: fieldset
-      region: content
-      format_settings:
-        description: ''
-        required_fields: true
-        id: ''
-        classes: ''
-      label: Artikler
-    group_meta_information:
-      children:
-        - created
-        - uid
-        - path
-        - status
-      parent_name: ''
-      weight: 2
-      format_type: fieldset
-      region: content
-      format_settings:
-        description: ''
-        required_fields: true
-        id: ''
-        classes: ''
-      label: Metainformation
-    group_magazine_tt:
+    group_indhold:
       children:
         - title
+        - body
       parent_name: ''
       weight: 0
       format_type: fieldset
       region: content
       format_settings:
-        description: ''
-        required_fields: true
         id: ''
         classes: ''
-      label: 'Magasinets titel'
-id: node.magazine.default
+        description: ''
+        required_fields: true
+      label: Indhold
+    group_meta_information:
+      children:
+        - uid
+        - created
+        - path
+        - status
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Meta information'
+id: node.article.default
 targetEntityType: node
-bundle: magazine
+bundle: article
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_articles:
-    weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 40
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: dynamic_entity_reference_default
-    region: content
-  field_highlighted_articles:
-    weight: 6
-    settings:
-      match_operator: CONTAINS
-      size: 40
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: dynamic_entity_reference_default
-    region: content
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -119,7 +94,6 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  body: true
   groups: true
   langcode: true
   promote: true

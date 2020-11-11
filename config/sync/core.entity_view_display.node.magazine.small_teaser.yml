@@ -1,8 +1,9 @@
-uuid: ec3b1c38-a6ef-4bd2-9508-84a993aaab99
+uuid: 07352a59-318b-44aa-94c8-61cd0b764ef4
 langcode: da
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.small_teaser
     - field.field.node.magazine.body
     - field.field.node.magazine.field_articles
     - field.field.node.magazine.field_highlighted_articles
@@ -11,10 +12,10 @@ dependencies:
     - dynamic_entity_reference
     - text
     - user
-id: node.magazine.default
+id: node.magazine.small_teaser
 targetEntityType: node
 bundle: magazine
-mode: default
+mode: small_teaser
 content:
   body:
     label: hidden

@@ -1,11 +1,11 @@
-uuid: 7058d245-6715-405d-9bbd-f16810325dcc
+uuid: a2b8f3e3-dcbe-48f0-b67e-32abab855824
 langcode: da
 status: true
 dependencies:
   config:
     - field.storage.node.field_articles
+    - node.type.article
     - node.type.magazine
-    - node.type.topic
   module:
     - dynamic_entity_reference
 id: node.magazine.field_articles
@@ -23,7 +23,7 @@ settings:
     handler: 'default:node'
     handler_settings:
       target_bundles:
-        topic: topic
+        article: article
       sort:
         field: _none
       auto_create: false

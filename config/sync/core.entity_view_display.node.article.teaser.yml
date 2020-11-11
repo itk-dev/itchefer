@@ -1,49 +1,32 @@
-uuid: ec3b1c38-a6ef-4bd2-9508-84a993aaab99
+uuid: 1279edf6-89fc-43f7-b224-0896dc81146d
 langcode: da
-status: true
+status: false
 dependencies:
   config:
-    - field.field.node.magazine.body
-    - field.field.node.magazine.field_articles
-    - field.field.node.magazine.field_highlighted_articles
-    - node.type.magazine
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - node.type.article
   module:
-    - dynamic_entity_reference
     - text
     - user
-id: node.magazine.default
+id: node.article.teaser
 targetEntityType: node
-bundle: magazine
-mode: default
+bundle: article
+mode: teaser
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_articles:
-    weight: 103
-    label: above
     settings:
-      link: true
+      trim_length: 600
     third_party_settings: {  }
-    type: dynamic_entity_reference_label
-    region: content
-  field_highlighted_articles:
-    weight: 102
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: dynamic_entity_reference_label
     region: content
   flag_follow_content:
     weight: 10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   groups:
     label: above
     weight: -5
@@ -86,9 +69,9 @@ content:
     type: entity_reference_label
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

@@ -66,5 +66,8 @@
             ]
         },
         "enable-patching": true
+    },
+    "require-dev": {
+        "drupal/twig_field_value": "^2.0"
     }
 }

@@ -1,1 +1,11 @@
 <?php
+
+
+/**
+ * Implements hook_preprocess_node().
+ *
+ * Add links to hightlighted articles.
+ */
+function itchefer_preprocess_node(array &$variables) {
+    Drupal::service('itchefer.magazine_helper')->preprocess($variables);
+}
