@@ -106,7 +106,7 @@ body {
 
 .teaser__highlighted-articles {
     .field--label {
-        font-weight: bold;
+
         margin-top: 10px;
     }
 
@@ -116,6 +116,10 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+}
+
+.field--label {
+    font-weight: bold;
 }
 
 .teaser-magazine {
