@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Magazine
+name: Magasin
 type: magazine
 description: ''
 help: ''
