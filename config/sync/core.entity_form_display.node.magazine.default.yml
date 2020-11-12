@@ -58,7 +58,7 @@ third_party_settings:
         required_fields: true
         id: ''
         classes: ''
-      label: 'Magasinets titel'
+      label: Magasinet
 id: node.magazine.default
 targetEntityType: node
 bundle: magazine
