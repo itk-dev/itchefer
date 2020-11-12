@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.magazine.body
     - field.field.node.magazine.field_articles
     - field.field.node.magazine.field_highlighted_articles
+    - field.field.node.magazine.field_magazine_file
     - node.type.magazine
   module:
     - dynamic_entity_reference
     - field_group
+    - file
     - path
 third_party_settings:
   field_group:
@@ -46,6 +48,7 @@ third_party_settings:
     group_magazine_tt:
       children:
         - title
+        - field_magazine_file
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -68,7 +71,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_articles:
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 40
@@ -86,6 +89,13 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: dynamic_entity_reference_default
+    region: content
+  field_magazine_file:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   path:
     type: path

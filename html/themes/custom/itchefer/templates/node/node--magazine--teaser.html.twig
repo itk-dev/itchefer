@@ -1,17 +1,25 @@
+{# {{dump(content.field_magazine_file)}} #}
 {% extends "node--teaser.html.twig" %}
 
 {% block card_body %}
 
   {% embed "node--teaser__field.html.twig" %}
-    {%- block field_icon -%} account_circle {%- endblock -%}
+    {%- block field_icon -%}  {%- endblock -%}
     {%- block field_value %}
       <div class="teaser__published">
         <div class="teaser__published-date"> {{ date }} &bullet; </div>
         <div class="teaser__published-author"> {{ author_name }} </div>
       </div>
-        {% for article in articles %}
-            <div>{{ article }}</div>
-        {% endfor %}
+      <div class="teaser__highlighted-articles">
+        {% if content.field_highlighted_articles %}
+          {{ content.field_highlighted_articles }}
+        {% endif %}
+      </div>
+      <div>
+        {% if content.field_magazine_file %}
+          {{ content.field_magazine_file }}
+        {% endif %}
+      </div>
     {%- endblock -%}
   {% endembed %}
   

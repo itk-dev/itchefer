@@ -103,3 +103,29 @@ body {
 .views-field-label {
     font-weight: bold;
 }
+
+.teaser__highlighted-articles {
+    .field--label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.teaser-magazine {
+    height: 100%;
+
+    .teaser__image {
+        display: none;
+    }
+
+    .teaser__content-type-icon {
+        display: none;
+    }
+}
