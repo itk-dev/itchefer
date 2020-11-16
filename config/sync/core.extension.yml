@@ -70,6 +70,7 @@ module:
   path_alias: 0
   profile: 0
   r4032login: 0
+  redirect: 0
   rest: 0
   role_delegation: 0
   search_api: 0
