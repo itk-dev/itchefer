@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_articles
+    - node.type.article
     - node.type.magazine
-    - node.type.topic
   module:
     - dynamic_entity_reference
 id: node.magazine.field_articles
@@ -23,7 +23,7 @@ settings:
     handler: 'default:node'
     handler_settings:
       target_bundles:
-        topic: topic
+        article: article
       sort:
         field: _none
       auto_create: false

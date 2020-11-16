@@ -1,56 +1,35 @@
-uuid: 8db70bd0-1310-4890-9bb7-a027f8386e7f
+uuid: 1279edf6-89fc-43f7-b224-0896dc81146d
 langcode: da
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.magazine.body
-    - field.field.node.magazine.field_articles
-    - field.field.node.magazine.field_highlighted_articles
-    - field.field.node.magazine.field_magazine_file
-    - node.type.magazine
+    - field.field.node.article.body
+    - node.type.article
   module:
-    - dynamic_entity_reference
-    - file
     - text
     - user
-id: node.magazine.teaser
+id: node.article.teaser
 targetEntityType: node
-bundle: magazine
+bundle: article
 mode: teaser
 content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 8
+    weight: 101
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  field_highlighted_articles:
-    type: dynamic_entity_reference_label
-    weight: 7
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_magazine_file:
-    type: file_default
-    weight: 9
-    region: content
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
   flag_follow_content:
-    weight: 5
-    region: content
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
   groups:
     label: above
-    weight: 0
+    weight: -5
     region: content
     settings:
       link: true
@@ -58,7 +37,7 @@ content:
     type: entity_reference_label
   groups_type_closed_group:
     label: above
-    weight: 1
+    weight: -5
     region: content
     settings:
       link: true
@@ -66,7 +45,7 @@ content:
     type: entity_reference_label
   groups_type_flexible_group:
     label: above
-    weight: 2
+    weight: -5
     region: content
     settings:
       link: true
@@ -74,7 +53,7 @@ content:
     type: entity_reference_label
   groups_type_open_group:
     label: above
-    weight: 3
+    weight: -5
     region: content
     settings:
       link: true
@@ -82,18 +61,17 @@ content:
     type: entity_reference_label
   groups_type_public_group:
     label: above
-    weight: 4
+    weight: -5
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   links:
-    weight: 6
-    region: content
+    weight: 100
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
-  field_articles: true
   langcode: true
   search_api_excerpt: true

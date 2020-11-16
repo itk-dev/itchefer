@@ -1,4 +1,4 @@
-uuid: bdb07a40-943a-4f44-85ff-c35a45423b82
+uuid: 37ef648d-a4cf-4779-9548-c85eb0c68fd3
 langcode: da
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Magasin
-type: magazine
+name: Article
+type: article
 description: ''
 help: ''
 new_revision: true

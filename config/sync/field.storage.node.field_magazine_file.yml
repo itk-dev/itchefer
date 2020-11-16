@@ -1,25 +1,26 @@
-uuid: 7620cca4-9e6b-4ad0-91b5-eb17141453a4
+uuid: 984fe17d-c90a-4e38-9a4f-9dfdeb99f5a2
 langcode: da
 status: true
 dependencies:
   module:
-    - dynamic_entity_reference
     - field_permissions
+    - file
     - node
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_articles
-field_name: field_articles
+id: node.field_magazine_file
+field_name: field_magazine_file
 entity_type: node
-type: dynamic_entity_reference
+type: file
 settings:
-  exclude_entity_types: false
-  entity_type_ids:
-    node: node
-module: dynamic_entity_reference
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
