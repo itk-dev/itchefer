@@ -6,6 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "php": "^7.4.0",
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.6.1",
         "cweagans/composer-patches": "^1.0",
