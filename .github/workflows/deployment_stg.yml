@@ -1,0 +1,28 @@
+---
+on:
+  push:
+    branches:
+      - develop
+
+name: Deployment (dev)
+
+jobs:
+  remote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run remote commands
+        uses: itk-dev/actions-remote-ssh@master
+        with:
+          command: |
+            cd ${{ secrets.APP_PATH_STG }}
+            git clean -d --force
+            git checkout develop
+            git fetch
+            git reset origin/develop --hard
+            composer install --no-dev
+            vendor/bin/drush updb -y
+            vendor/bin/drush config-import -y
+            vendor/bin/drush cr --cache-clear
+          host: ${{ secrets.HOST_STG }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          cert: ${{ secrets.PUBLIC_KEY_CERT }}

@@ -1,5 +1,5 @@
 # IT Chefer
-- Open social distribution
+Based on [Open social distribution](https://github.com/goalgorilla/open_social)
 
 ## Installation instructions
 Setup Docker environment (Optional):
