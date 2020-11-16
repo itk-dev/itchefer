@@ -4,10 +4,10 @@ on:
     branches:
       - develop
 
-name: Deployment (dev)
+name: Deployment (stg)
 
 jobs:
-  remote:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Run remote commands
