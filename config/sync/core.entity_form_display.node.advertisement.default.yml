@@ -1,20 +1,25 @@
-uuid: 6436ab19-dc4b-4476-a468-5bf7bab42464
+uuid: 6207606c-3de3-42eb-b6cb-b06c12440320
 langcode: da
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - node.type.article
+    - field.field.node.advertisement.body
+    - field.field.node.advertisement.field_advertisement
+    - field.field.node.advertisement.field_redirect_link
+    - image.style.thumbnail
+    - node.type.advertisement
   module:
     - field_group
+    - image
+    - link
     - path
-    - text
 third_party_settings:
   field_group:
-    group_indhold:
+    group_advertisement:
       children:
         - title
-        - body
+        - field_advertisement
+        - field_redirect_link
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -24,51 +29,55 @@ third_party_settings:
         classes: ''
         description: ''
         required_fields: true
-      label: Indhold
-    group_meta_information:
-      children:
-        - uid
-        - created
-        - path
-        - status
-      parent_name: ''
-      weight: 1
-      format_type: fieldset
-      region: content
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: 'Meta information'
-id: node.article.default
+      label: Advertisement
+id: node.advertisement.default
 targetEntityType: node
-bundle: article
+bundle: advertisement
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 2
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_advertisement:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_redirect_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   path:
     type: path
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
   status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
     type: boolean_checkbox
     settings:
       display_label: true
@@ -94,12 +103,11 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 8
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  body: true
   groups: true
   langcode: true
-  promote: true
-  sticky: true
