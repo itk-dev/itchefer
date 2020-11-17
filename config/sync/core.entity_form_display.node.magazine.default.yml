@@ -5,13 +5,16 @@ dependencies:
   config:
     - field.field.node.magazine.body
     - field.field.node.magazine.field_articles
+    - field.field.node.magazine.field_cover_image
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
+    - image.style.thumbnail
     - node.type.magazine
   module:
     - dynamic_entity_reference
     - field_group
     - file
+    - image
     - path
 third_party_settings:
   field_group:
@@ -48,6 +51,7 @@ third_party_settings:
     group_magazine_tt:
       children:
         - title
+        - field_cover_image
         - field_magazine_file
       parent_name: ''
       weight: 0
@@ -71,7 +75,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_articles:
-    weight: 8
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 40
@@ -80,8 +84,16 @@ content:
     third_party_settings: {  }
     type: dynamic_entity_reference_default
     region: content
+  field_cover_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_highlighted_articles:
-    weight: 6
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 40
@@ -91,7 +103,7 @@ content:
     type: dynamic_entity_reference_default
     region: content
   field_magazine_file:
-    weight: 2
+    weight: 3
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -99,7 +111,7 @@ content:
     region: content
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -120,13 +132,18 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       match_limit: 10
     region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   body: true

@@ -124,9 +124,14 @@ body {
 
 .teaser-magazine {
     height: 100%;
-
+    
     .teaser__image {
-        display: none;
+        height: auto;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 
     .teaser__content-type-icon {

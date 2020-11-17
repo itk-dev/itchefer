@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_article
     - node.type.article
   module:
+    - image
     - text
     - user
 id: node.article.default
@@ -19,6 +21,15 @@ content:
     weight: 8
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_article:
+    weight: 9
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   flag_follow_content:
     weight: 6
