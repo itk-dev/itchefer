@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.field_article
     - node.type.article
   module:
     - text
@@ -74,6 +73,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_article: true
   langcode: true
   search_api_excerpt: true

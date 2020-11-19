@@ -4,12 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.field_article
-    - image.style.thumbnail
     - node.type.article
   module:
     - field_group
-    - image
     - path
     - text
 third_party_settings:
@@ -17,8 +14,8 @@ third_party_settings:
     group_indhold:
       children:
         - title
-        - field_article
         - body
+        - field_article_image
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -52,7 +49,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -66,14 +63,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_article:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   path:
     type: path
     weight: 54
@@ -107,9 +96,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   groups: true
   langcode: true
