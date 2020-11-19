@@ -15,7 +15,6 @@ third_party_settings:
       children:
         - title
         - body
-        - field_article_image
       parent_name: ''
       weight: 0
       format_type: fieldset
