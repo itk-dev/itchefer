@@ -14,23 +14,32 @@
  *   - node: The node object.
  *   - view_mode: View mode; e.g., 'full', 'teaser', etc.
  */
+
 function itchefer_event_enrollment_preprocess_node(array &$variables) {
   $view_mode = $variables['view_mode'];
-  // $node = $variables['node'];
-  // if ($node->getType() === 'event') {
-  //   $variables['event_date'] = _social_event_format_date($node, $view_mode);
-  //   $variables['#cache']['contexts'][] = 'timezone';
+  $node = $variables['node'];
+  if ($node->getType() === 'event') {
+    $variables['event_date'] = _social_event_format_date($node, $view_mode);
+    $variables['#cache']['contexts'][] = 'timezone';
 
-  //   if ($view_mode === 'hero') {
-  //     // Add Enroll button.
-  //     if (empty($variables['event_enrollment'])) {
-  //       $form = \Drupal::formBuilder()
-  //         ->getForm('Drupal\social_event\Form\EnrollActionForm');
-  //       $render_array = [
-  //         'enroll_action_form' => $form,
-  //       ];
-  //       $variables['event_enrollment'] = $render_array;
-  //     }
-  //   }
-  // }
+    if ($view_mode === 'hero') {
+      $sdf = $variables['content']['field_event_with_products'];
+      // Add Enroll button.
+      if (empty($variables['event_enrollment'])) {
+        if ($node->get('field_event_with_products')->value === '1') {
+          $form = \Drupal::formBuilder()
+          // ->getForm('Drupal\social_event\Form\EnrollActionForm');
+          ->getForm('Drupal\itchefer_event_enrollment\Form\ProductModalForm');
+        } else {
+          $form = \Drupal::formBuilder()
+          ->getForm('Drupal\social_event\Form\EnrollActionForm');
+        }
+
+        $render_array = [
+          'product_modal_form' => $form,
+        ];
+        $variables['event_enrollment'] = $render_array;
+      }
+    }
+  }
 }

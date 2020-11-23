@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_with_products
     - field.field.node.event.field_files
     - node.type.event
   module:
@@ -61,6 +62,16 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
+  field_event_with_products:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_files:
     weight: 4
