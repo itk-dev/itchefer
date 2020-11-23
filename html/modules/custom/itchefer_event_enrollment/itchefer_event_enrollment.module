@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * The Social event module.
+ */
+
+ /**
+ * Prepares variables for node templates.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An array of elements to display in view mode.
+ *   - node: The node object.
+ *   - view_mode: View mode; e.g., 'full', 'teaser', etc.
+ */
+function itchefer_event_enrollment_preprocess_node(array &$variables) {
+  $view_mode = $variables['view_mode'];
+  // $node = $variables['node'];
+  // if ($node->getType() === 'event') {
+  //   $variables['event_date'] = _social_event_format_date($node, $view_mode);
+  //   $variables['#cache']['contexts'][] = 'timezone';
+
+  //   if ($view_mode === 'hero') {
+  //     // Add Enroll button.
+  //     if (empty($variables['event_enrollment'])) {
+  //       $form = \Drupal::formBuilder()
+  //         ->getForm('Drupal\social_event\Form\EnrollActionForm');
+  //       $render_array = [
+  //         'enroll_action_form' => $form,
+  //       ];
+  //       $variables['event_enrollment'] = $render_array;
+  //     }
+  //   }
+  // }
+}

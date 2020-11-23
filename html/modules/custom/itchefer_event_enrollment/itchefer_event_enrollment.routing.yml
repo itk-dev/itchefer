@@ -1,0 +1,7 @@
+itchefer_event_enrollment.content:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\itchefer_event_enrollment\Controller\EventEnrollmentController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
