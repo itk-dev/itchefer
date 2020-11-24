@@ -23,13 +23,11 @@ function itchefer_event_enrollment_preprocess_node(array &$variables) {
     $variables['#cache']['contexts'][] = 'timezone';
 
     if ($view_mode === 'hero') {
-      $sdf = $variables['content']['field_event_with_products'];
       // Add Enroll button.
       if (empty($variables['event_enrollment'])) {
         if ($node->get('field_event_with_products')->value === '1') {
           $form = \Drupal::formBuilder()
-          // ->getForm('Drupal\social_event\Form\EnrollActionForm');
-          ->getForm('Drupal\itchefer_event_enrollment\Form\ProductModalForm');
+          ->getForm('Drupal\itchefer_event_enrollment\Form\EnrollButton');
         } else {
           $form = \Drupal::formBuilder()
           ->getForm('Drupal\social_event\Form\EnrollActionForm');

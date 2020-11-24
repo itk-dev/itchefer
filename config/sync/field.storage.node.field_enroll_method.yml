@@ -17,6 +17,9 @@ settings:
       value: 1
       label: 'Open to enroll - users can enroll for this event without approval'
     -
+      value: 4
+      label: 'Open to enroll - users can enroll for this event without approval WITH PRODUCT'
+    -
       value: 3
       label: 'Invite-only - users can only enroll for this event if they are added/invited by event organisers'
     -
