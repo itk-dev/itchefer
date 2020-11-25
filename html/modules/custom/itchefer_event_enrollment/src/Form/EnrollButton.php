@@ -187,7 +187,8 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       '#value' => $nid,
     ];
 
-    $submit_text = $this->t('Enroll');
+    $submit_text = $this->t('Join event');
+
     $to_enroll_status = '1';
     $enrollment_open = TRUE;
     $request_to_join = FALSE;
@@ -196,41 +197,7 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     // Initialise the default attributes for the "Enroll" button
     // if the event enroll method is request to enroll, this will
     // be overwritten because of the modal.
-    $attributes = [
-      'class' => [
-        'btn',
-        'btn-accent brand-bg-accent',
-        'btn-lg btn-raised',
-        'dropdown-toggle',
-        'waves-effect',
-      ],
-    ];
-    $attributes = [
-      'class' => [
-        'use-ajax',
-        'js-form-submit',
-        'form-submit',
-        'btn',
-        'btn-accent',
-        'btn-lg',
-      ],
-      'data-dialog-type' => 'modal',
-      'data-dialog-options' => json_encode([
-        'title' => 'prut',
-        'width' => 'auto',
-      ]),
-    ];
-    $submit_text = $this->t('Request to enroll');
-    $to_enroll_status = '2';
-    $request_to_join = TRUE;
-
-    // Add request to join event.
-    if ((int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST && !$isNodeOwner) {
-      $submit_text = $this->t('Request to enroll');
-      $to_enroll_status = '2';
-
-      if ($current_user->isAnonymous()) {
-        $attributes = [
+           $attributes = [
           'class' => [
             'use-ajax',
             'js-form-submit',
@@ -246,11 +213,38 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
           ]),
         ];
 
-        $request_to_join = TRUE;
-      }
-    }
+    // // Add request to join event.
+    // if ((int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST && !$isNodeOwner) {
+    //   $submit_text = $this->t('Request to enroll');
+    //   $to_enroll_status = '2';
+
+    //   if ($current_user->isAnonymous()) {
+    //     $attributes = [
+    //       'class' => [
+    //         'use-ajax',
+    //         'js-form-submit',
+    //         'form-submit',
+    //         'btn',
+    //         'btn-accent',
+    //         'btn-lg',
+    //       ],
+    //       'data-dialog-type' => 'modal',
+    //       'data-dialog-options' => json_encode([
+    //         'title' => t('Request to enroll'),
+    //         'width' => 'auto',
+    //       ]),
+    //     ];
+
+    //     $request_to_join = TRUE;
+    //   }
+    // }
 
     // Add the enrollment closed label.
+    if ($current_user->isAnonymous()) {
+      $submit_text = $this->t('Must be logged in to enroll');
+      $enrollment_open = FALSE;
+    }
+    
     if ($this->eventHasBeenFinished($node)) {
       $submit_text = $this->t('Event has passed');
       $enrollment_open = FALSE;
@@ -284,41 +278,41 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       if ($enrollment_open === TRUE) {
         if (!$isNodeOwner && (empty($enrollment) && $node->field_enroll_method->value && (int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST)
           || (isset($event_request_ajax) && $event_request_ajax === TRUE)) {
-          $attributes = [
-            'class' => [
-              'use-ajax',
-              'js-form-submit',
-              'form-submit',
-              'btn',
-              'btn-accent',
-              'btn-lg',
-            ],
-            'data-dialog-type' => 'modal',
-            'data-dialog-options' => json_encode([
-              'title' => t('Request to enroll'),
-              'width' => 'auto',
-            ]),
-          ];
+          // $attributes = [
+          //   'class' => [
+          //     'use-ajax',
+          //     'js-form-submit',
+          //     'form-submit',
+          //     'btn',
+          //     'btn-accent',
+          //     'btn-lg',
+          //   ],
+          //   'data-dialog-type' => 'modal',
+          //   'data-dialog-options' => json_encode([
+          //     'title' => t('Request to enroll'),
+          //     'width' => 'auto',
+          //   ]),
+          // ];
           $request_to_join = TRUE;
         }
       }
     }
 
-    $form['to_enroll_status'] = [
-      '#type' => 'hidden',
-      '#value' => $to_enroll_status,
-    ];
+    // $form['to_enroll_status'] = [
+    //   '#type' => 'hidden',
+    //   '#value' => $to_enroll_status,
+    // ];
 
-    $form['enroll_for_this_event'] = [
-      '#type' => 'submit',
-      '#value' => $submit_text,
-      '#disabled' => !$enrollment_open,
-      '#attributes' => $attributes,
-    ];
+    // $form['enroll_for_this_event'] = [
+    //   '#type' => 'submit',
+    //   '#value' => $submit_text,
+    //   '#disabled' => !$enrollment_open,
+    //   '#attributes' => $attributes,
+    // ];
 
    
 
-    $form['#attributes']['name'] = 'product_modal_form';
+    // $form['#attributes']['name'] = 'product_modal_form';
 
     if ((isset($enrollment->field_enrollment_status->value) && $enrollment->field_enrollment_status->value === '1')
       || (isset($enrollment->field_request_or_invite_status->value)
@@ -350,14 +344,15 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       $form['#attached']['library'][] = 'social_event/form_submit';
     }
 
-    if ($request_to_join === TRUE) {
-      $form['enroll_for_this_event'] = [
-        '#type' => 'link',
-        '#title' => $submit_text,
-        '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', ['node' => $nid]),
-        '#attributes' => $attributes,
-      ];
-    }
+    $form['enroll_for_this_event'] = [
+      '#type' => 'link',
+      '#title' => $submit_text,
+      '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', [
+          'node' => $nid, 
+          'request_to_join' => ($request_to_join ? 1 : 0)
+          ]),
+      '#attributes' => $attributes,
+    ];
 
     return $form;
   }

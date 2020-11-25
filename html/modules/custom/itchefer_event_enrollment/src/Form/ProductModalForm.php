@@ -9,11 +9,48 @@ use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\social_event\Entity\EventEnrollment;
 use Drupal\social_event\EventEnrollmentInterface;
-
+use Drupal\Core\Session\AccountProxyInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * ProductModalForm class.
  */
 class ProductModalForm extends FormBase {
+  /**
+   * The current user.
+   *
+   * @var \Drupal\Core\Session\AccountProxyInterface
+   */
+  protected $currentUser;
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('current_user')
+    );
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function __construct(
+    AccountProxyInterface $currentUser
+  ) {
+    $this->currentUser = $currentUser;
+  }
+
+  /**
+   * A STOLEN HACK!
+   *
+   * @see https://www.drupal.org/project/drupal/issues/2742859
+   */
+  private function initialize() {
+    $container = \Drupal::getContainer();
+    if (NULL === $this->currentUser) {
+      $this->currentUser = $container->get('current_user');
+    }
+  }
 
   /**
    * {@inheritdoc}
@@ -28,8 +65,82 @@ class ProductModalForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state, $options = NULL) {
     $node = \Drupal::routeMatch()->getParameter('node');
     $nid = $node->id();
+    $uid = $this->currentUser->id();
+    $field_products = \Drupal::entityTypeManager()->getStorage('node')->load($nid)->get('field_product')->referencedEntities();
+    $to_enroll_status = '1';
+    $submit_text = $this->t('Enroll');
+    $enrollment_open = TRUE;
+    $request_to_join = FALSE;
+    $isNodeOwner = ($node->getOwnerId() === $uid);
 
-    $form['#prefix'] = '<div id="request_enrollment">';
+    // Add request to join event.
+    if ((int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST && !$isNodeOwner) {
+      $submit_text = $this->t('Send request');
+      $to_enroll_status = '2';
+
+      if ($current_user->isAnonymous()) {
+        $attributes = [
+          'class' => [
+            'use-ajax',
+            'js-form-submit',
+            'form-submit',
+            'btn',
+            'btn-accent',
+            'btn-lg',
+          ],
+          'data-dialog-type' => 'modal',
+          'data-dialog-options' => json_encode([
+            'title' => t('Request to enroll'),
+            'width' => 'auto',
+          ]),
+        ];
+
+        $request_to_join = TRUE;
+      }
+    }
+    $form['description'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'p',
+      '#value' => $this->t('Add the products you wish for the event.'),
+    ];
+
+    if ($request_to_join === '1') {
+    $form['description'] = [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => $this->t('You can leave a message in your request. Only when your request is approved, you will receive a notification via email and notification center. You also need to pick a product to request the event with.'),
+      ];
+
+      $form['message'] = [
+        '#type' => 'textarea',
+        '#title' => $this->t('Message'),
+        '#maxlength' => 250,
+      ];
+    }
+    $form['to_enroll_status'] = [
+      '#type' => 'hidden',
+      '#value' => $to_enroll_status,
+    ];
+
+
+
+    $form['#attributes']['name'] = 'product_modal_form';
+    // Radio buttons without options.
+    $form['radios'] = [
+      '#type' => 'radios',
+      '#title' => 'Tilvalg',
+      '#options' => [
+      ],
+    ];
+
+    // Options being added from referenced entities.
+    foreach ($field_products as $key => $value) {
+      $form['radios']['#options'] += [
+        $value->id() => $value->label(),
+      ];
+    }
+
+    $form['#prefix'] = '<div id="product_selection">';
     $form['#suffix'] = '</div>';
 
     // The status messages that will contain any form errors.
@@ -43,24 +154,18 @@ class ProductModalForm extends FormBase {
       '#value' => $nid,
     ];
 
-    $form['description'] = [
-      '#type' => 'html_tag',
-      '#tag' => 'p',
-      '#value' => $this->t(''),
-    ];
-    $form['radios'] = [
-      '#type' => 'radios',
-      '#title' => 'Tilvalg',
-      '#options' => [
-        0 => 'Dagsseminar med frokost',
-        1 => 'Dagsseminar uden frokost',
-        2 => 'Overnatning',
-      ],
+    $form['enroll_for_this_event'] = [
+      '#type' => 'submit',
+      '#value' => $submit_text,
+      '#disabled' => !$enrollment_open,
+      '#attributes' => $attributes,
     ];
      
     $form['actions']['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Send request'),
+      '#value' => $submit_text,
+      '#disabled' => !$enrollment_open,
+      '#attributes' => $attributes,
       '#button_type' => 'primary',
       '#ajax' => [
         'callback' => [$this, 'submitModalFormAjax'],
@@ -72,7 +177,7 @@ class ProductModalForm extends FormBase {
       'core/drupal.dialog.ajax',
       'social_event/modal',
     ];
-    $form['#attached']['drupalSettings']['eventEnrollmentRequest'] = [
+    $form['#attached']['drupalSettings']['eventProductSelection'] = [
       'closeDialog' => TRUE,
     ];
 
@@ -94,7 +199,7 @@ class ProductModalForm extends FormBase {
       ];
       $form_state->setRebuild();
 
-      return $response->addCommand(new OpenModalDialogCommand($this->t('Request to enroll'), $form, static::getDataDialogOptions()));
+      return $response->addCommand(new OpenModalDialogCommand($this->t('Pick a product'), $form, static::getDataDialogOptions()));
     }
 
     // Refactor this into a service or helper.
