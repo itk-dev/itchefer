@@ -197,28 +197,27 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     // Initialise the default attributes for the "Enroll" button
     // if the event enroll method is request to enroll, this will
     // be overwritten because of the modal.
-           $attributes = [
-          'class' => [
-            'use-ajax',
-            'js-form-submit',
-            'form-submit',
-            'btn',
-            'btn-accent',
-            'btn-lg',
-          ],
-          'data-dialog-type' => 'modal',
-          'data-dialog-options' => json_encode([
-            'title' => t('Request to enroll'),
-            'width' => 'auto',
-          ]),
-        ];
+    $attributes = [
+      'class' => [
+        'use-ajax',
+        'js-form-submit',
+        'form-submit',
+        'btn',
+        'btn-accent',
+        'btn-lg',
+      ],
+      'data-dialog-type' => 'modal',
+      'data-dialog-options' => json_encode([
+        'title' => t('Request to enroll'),
+        'width' => 'auto',
+      ]),
+    ];
 
     // // Add request to join event.
     // if ((int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST && !$isNodeOwner) {
     //   $submit_text = $this->t('Request to enroll');
     //   $to_enroll_status = '2';
-
-    //   if ($current_user->isAnonymous()) {
+    // if ($current_user->isAnonymous()) {
     //     $attributes = [
     //       'class' => [
     //         'use-ajax',
@@ -233,18 +232,16 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     //         'title' => t('Request to enroll'),
     //         'width' => 'auto',
     //       ]),
-    //     ];
-
-    //     $request_to_join = TRUE;
+    //     ];.
+    // $request_to_join = TRUE;
     //   }
     // }
-
     // Add the enrollment closed label.
     if ($current_user->isAnonymous()) {
       $submit_text = $this->t('Must be logged in to enroll');
       $enrollment_open = FALSE;
     }
-    
+
     if ($this->eventHasBeenFinished($node)) {
       $submit_text = $this->t('Event has passed');
       $enrollment_open = FALSE;
@@ -302,18 +299,13 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     //   '#type' => 'hidden',
     //   '#value' => $to_enroll_status,
     // ];
-
     // $form['enroll_for_this_event'] = [
     //   '#type' => 'submit',
     //   '#value' => $submit_text,
     //   '#disabled' => !$enrollment_open,
     //   '#attributes' => $attributes,
     // ];
-
-   
-
     // $form['#attributes']['name'] = 'product_modal_form';
-
     if ((isset($enrollment->field_enrollment_status->value) && $enrollment->field_enrollment_status->value === '1')
       || (isset($enrollment->field_request_or_invite_status->value)
       && (int) $enrollment->field_request_or_invite_status->value === EventEnrollmentInterface::REQUEST_PENDING)) {
@@ -348,9 +340,9 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       '#type' => 'link',
       '#title' => $submit_text,
       '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', [
-          'node' => $nid, 
-          'request_to_join' => ($request_to_join ? 1 : 0)
-          ]),
+        'node' => $nid,
+        'request_to_join' => ($request_to_join ? 1 : 0),
+      ]),
       '#attributes' => $attributes,
     ];
 
@@ -511,9 +503,9 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     // Only react if it is actually posted inside a group.
     if (!empty($groupcontents)) {
       foreach ($groupcontents as $groupcontent) {
-        /* @var \Drupal\group\Entity\GroupContent $groupcontent */
+        /** @var \Drupal\group\Entity\GroupContent $groupcontent */
         $group = $groupcontent->getGroup();
-        /* @var \Drupal\group\Entity\Group $group */
+        /** @var \Drupal\group\Entity\Group $group */
         $groups[] = $group;
       }
     }

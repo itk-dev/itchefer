@@ -3,11 +3,12 @@
   <description>The coding standard.</description>
 
   <file>html/themes/custom/itchefer</file>
+  <file>html/modules/custom/itchefer_event_enrollment/</file>
 
   <!-- Exclude generated files -->
   <exclude-pattern>README</exclude-pattern>
   <exclude-pattern>node_modules</exclude-pattern>
-  <exclude-pattern>html/modules/*/</exclude-pattern>
+  <exclude-pattern>html/modules/contrib/*/</exclude-pattern>
   <exclude-pattern>html/themes/custom/*/build/</exclude-pattern>
 
   <arg value="p"/>

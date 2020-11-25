@@ -11,6 +11,7 @@ use Drupal\social_event\Entity\EventEnrollment;
 use Drupal\social_event\EventEnrollmentInterface;
 use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+
 /**
  * ProductModalForm class.
  */
@@ -105,7 +106,7 @@ class ProductModalForm extends FormBase {
     ];
 
     if ($request_to_join === '1') {
-    $form['description'] = [
+      $form['description'] = [
         '#type' => 'html_tag',
         '#tag' => 'p',
         '#value' => $this->t('You can leave a message in your request. Only when your request is approved, you will receive a notification via email and notification center. You also need to pick a product to request the event with.'),
@@ -122,15 +123,12 @@ class ProductModalForm extends FormBase {
       '#value' => $to_enroll_status,
     ];
 
-
-
     $form['#attributes']['name'] = 'product_modal_form';
     // Radio buttons without options.
     $form['radios'] = [
       '#type' => 'radios',
       '#title' => 'Tilvalg',
-      '#options' => [
-      ],
+      '#options' => [],
     ];
 
     // Options being added from referenced entities.
@@ -160,7 +158,7 @@ class ProductModalForm extends FormBase {
       '#disabled' => !$enrollment_open,
       '#attributes' => $attributes,
     ];
-     
+
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $submit_text,

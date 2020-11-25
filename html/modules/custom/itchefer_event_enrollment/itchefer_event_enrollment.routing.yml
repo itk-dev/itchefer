@@ -9,5 +9,3 @@ itchefer_event_enrollment.product_modal_form:
         type: entity:node
   requirements:
     _custom_access: '\Drupal\social_event\Controller\EnrollRequestDialogController::enrollAccess'
-
-      
