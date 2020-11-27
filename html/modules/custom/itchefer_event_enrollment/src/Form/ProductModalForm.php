@@ -1,7 +1,7 @@
 <?php
 
 namespace Drupal\itchefer_event_enrollment\Form;
-
+use Drupal\Core\Cache\Cache;
 use Drupal\Core\Ajax\CloseDialogCommand;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -67,6 +67,7 @@ class ProductModalForm extends FormBase {
     $node = \Drupal::routeMatch()->getParameter('node');
     $nid = $node->id();
     $uid = $this->currentUser->id();
+
     $field_products = \Drupal::entityTypeManager()->getStorage('node')->load($nid)->get('field_product')->referencedEntities();
     $to_enroll_status = '1';
     $submit_text = $this->t('Enroll');
@@ -99,6 +100,7 @@ class ProductModalForm extends FormBase {
         $request_to_join = TRUE;
       }
     }
+
     $form['description'] = [
       '#type' => 'html_tag',
       '#tag' => 'p',
@@ -118,12 +120,14 @@ class ProductModalForm extends FormBase {
         '#maxlength' => 250,
       ];
     }
+
     $form['to_enroll_status'] = [
       '#type' => 'hidden',
       '#value' => $to_enroll_status,
     ];
 
     $form['#attributes']['name'] = 'product_modal_form';
+
     // Radio buttons without options.
     $form['radios'] = [
       '#type' => 'radios',
@@ -152,13 +156,6 @@ class ProductModalForm extends FormBase {
       '#value' => $nid,
     ];
 
-    $form['enroll_for_this_event'] = [
-      '#type' => 'submit',
-      '#value' => $submit_text,
-      '#disabled' => !$enrollment_open,
-      '#attributes' => $attributes,
-    ];
-
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $submit_text,
@@ -175,7 +172,8 @@ class ProductModalForm extends FormBase {
       'core/drupal.dialog.ajax',
       'social_event/modal',
     ];
-    $form['#attached']['drupalSettings']['eventProductSelection'] = [
+
+    $form['#attached']['drupalSettings']['eventEnrollmentRequest'] = [
       'closeDialog' => TRUE,
     ];
 
@@ -187,7 +185,11 @@ class ProductModalForm extends FormBase {
    */
   public function submitModalFormAjax(array $form, FormStateInterface $form_state) {
     $response = new AjaxResponse();
-
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $nid = $node->id();
+    $uid = $this->currentUser->id();
+    $to_enroll_status = $form_state->getValue('to_enroll_status');
+    
     if ($form_state->getErrors()) {
       // If there are errors, we can show the form again with the errors in
       // the status_messages section.
@@ -197,26 +199,38 @@ class ProductModalForm extends FormBase {
       ];
       $form_state->setRebuild();
 
-      return $response->addCommand(new OpenModalDialogCommand($this->t('Pick a product'), $form, static::getDataDialogOptions()));
+      return $response->addCommand(new OpenModalDialogCommand($this->t('Pick a product and enroll'), $form, static::getDataDialogOptions()));
     }
 
-    // Refactor this into a service or helper.
-    $message = $form_state->getValue('message');
+    // Invalidate cache for our enrollment cache tag in
+    // social_event_node_view_alter().
+    $cache_tag = 'enrollment:' . $nid . '-' . $uid;
+    Cache::invalidateTags([$cache_tag]);
 
-    $current_user = \Drupal::currentUser();
-    $uid = $current_user->id();
-
-    $nid = $form_state->getValue('event');
+    $conditions = [ // A lot of this code is copied from EnrolLActionForm.php in 
+      // social_event, modified a bit because anonymous users cannot
+      // request access when a product should be chosen.
+      'field_account' => $uid,
+      'field_event' => $nid,
+    ];
 
     // Default event enrollment field set.
     $fields = [
       'user_id' => $uid,
       'field_event' => $nid,
-      'field_enrollment_status' => '0',
+      'field_enrollment_status' => '1',
       'field_account' => $uid,
-      'field_request_or_invite_status' => EventEnrollmentInterface::REQUEST_PENDING,
-      'field_request_message' => $message,
     ];
+
+    // Refactor this into a service or helper.
+    $message = $form_state->getValue('message');
+
+    // If request to join is on, alter fields.
+    if ($to_enroll_status === '2') {
+      $fields['field_enrollment_status'] = '0';
+      $fields['field_request_or_invite_status'] = EventEnrollmentInterface::REQUEST_PENDING;
+      $fields['field_request_message'] = $message;
+    }
 
     // Create a new enrollment for the event.
     $enrollment = EventEnrollment::create($fields);
@@ -230,7 +244,11 @@ class ProductModalForm extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state) {}
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    if (!$form_state->getValue('radios')) {
+      $form_state->setErrorByName('radios', $this->t('You need to pick a product.'));
+    }
+  }
 
   /**
    * {@inheritdoc}

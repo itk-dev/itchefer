@@ -132,6 +132,9 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+     // A lot of this code is copied from EnrolLActionForm.php in 
+    // social_event, modified a bit because anonymous users cannot
+    // request access when a product should be chosen.
     $nid = $this->routeMatch->getRawParameter('node');
     $current_user = $this->currentUser;
     $uid = $current_user->id();
@@ -208,34 +211,11 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       ],
       'data-dialog-type' => 'modal',
       'data-dialog-options' => json_encode([
-        'title' => t('Request to enroll'),
+        'title' => t('Pick a product and enroll'),
         'width' => 'auto',
       ]),
     ];
 
-    // // Add request to join event.
-    // if ((int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST && !$isNodeOwner) {
-    //   $submit_text = $this->t('Request to enroll');
-    //   $to_enroll_status = '2';
-    // if ($current_user->isAnonymous()) {
-    //     $attributes = [
-    //       'class' => [
-    //         'use-ajax',
-    //         'js-form-submit',
-    //         'form-submit',
-    //         'btn',
-    //         'btn-accent',
-    //         'btn-lg',
-    //       ],
-    //       'data-dialog-type' => 'modal',
-    //       'data-dialog-options' => json_encode([
-    //         'title' => t('Request to enroll'),
-    //         'width' => 'auto',
-    //       ]),
-    //     ];.
-    // $request_to_join = TRUE;
-    //   }
-    // }
     // Add the enrollment closed label.
     if ($current_user->isAnonymous()) {
       $submit_text = $this->t('Must be logged in to enroll');
@@ -275,55 +255,48 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       if ($enrollment_open === TRUE) {
         if (!$isNodeOwner && (empty($enrollment) && $node->field_enroll_method->value && (int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST)
           || (isset($event_request_ajax) && $event_request_ajax === TRUE)) {
-          // $attributes = [
-          //   'class' => [
-          //     'use-ajax',
-          //     'js-form-submit',
-          //     'form-submit',
-          //     'btn',
-          //     'btn-accent',
-          //     'btn-lg',
-          //   ],
-          //   'data-dialog-type' => 'modal',
-          //   'data-dialog-options' => json_encode([
-          //     'title' => t('Request to enroll'),
-          //     'width' => 'auto',
-          //   ]),
-          // ];
           $request_to_join = TRUE;
+          $submit_text = $this->t('Request to enroll');
+          $to_enroll_status = '2';
         }
       }
     }
 
-    // $form['to_enroll_status'] = [
-    //   '#type' => 'hidden',
-    //   '#value' => $to_enroll_status,
-    // ];
-    // $form['enroll_for_this_event'] = [
-    //   '#type' => 'submit',
-    //   '#value' => $submit_text,
-    //   '#disabled' => !$enrollment_open,
-    //   '#attributes' => $attributes,
-    // ];
-    // $form['#attributes']['name'] = 'product_modal_form';
+    $form['to_enroll_status'] = [
+      '#type' => 'hidden',
+      '#value' => $to_enroll_status,
+    ];
+
+    $form['enroll_for_this_event'] = [
+      '#type' => 'link',
+      '#title' => $submit_text,
+      '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', [ 'node' => $nid ]),
+      '#attributes' => $attributes,
+    ];
+
     if ((isset($enrollment->field_enrollment_status->value) && $enrollment->field_enrollment_status->value === '1')
       || (isset($enrollment->field_request_or_invite_status->value)
       && (int) $enrollment->field_request_or_invite_status->value === EventEnrollmentInterface::REQUEST_PENDING)) {
       // Extra attributes needed for when a user is logged in. This will make
       // sure the button acts like a dropwdown.
-      $form['enroll_for_this_event']['#attributes'] = [
-        'class' => [
-          'btn',
-          'btn-accent brand-bg-accent',
-          'btn-lg btn-raised',
-          'dropdown-toggle',
-          'waves-effect',
-        ],
-        'autocomplete' => 'off',
-        'data-toggle' => 'dropdown',
-        'aria-haspopup' => 'true',
-        'aria-expanded' => 'false',
-        'data-caret' => 'true',
+      $form['enroll_for_this_event'] = [
+        '#type' => 'submit',
+        '#value' => $submit_text,
+        '#disabled' => !$enrollment_open,
+        '#attributes' => [
+          'class' => [
+            'btn',
+            'btn-accent brand-bg-accent',
+            'btn-lg btn-raised',
+            'dropdown-toggle',
+            'waves-effect',
+          ],
+          'autocomplete' => 'off',
+          'data-toggle' => 'dropdown',
+          'aria-haspopup' => 'true',
+          'aria-expanded' => 'false',
+          'data-caret' => 'true',
+        ]
       ];
 
       $cancel_text = $this->t('Cancel enrollment');
@@ -335,16 +308,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
 
       $form['#attached']['library'][] = 'social_event/form_submit';
     }
-
-    $form['enroll_for_this_event'] = [
-      '#type' => 'link',
-      '#title' => $submit_text,
-      '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', [
-        'node' => $nid,
-        'request_to_join' => ($request_to_join ? 1 : 0),
-      ]),
-      '#attributes' => $attributes,
-    ];
 
     return $form;
   }
@@ -385,40 +348,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     $uid = $current_user->id();
     $nid = $form_state->getValue('event') ?? $this->routeMatch->getRawParameter('node');
     $node = $this->entityTypeManager->getStorage('node')->load($nid);
-
-    // Redirect anonymous use to login page before enrolling to an event.
-    if ($current_user->isAnonymous()) {
-      $node_url = Url::fromRoute('entity.node.canonical', ['node' => $nid])->toString();
-      $destination = $node_url;
-      // If the request enroll method is set, alter the destination for AN.
-      if ((int) $node->get('field_enroll_method')->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST) {
-        $destination = $node_url . '?requested-enrollment=TRUE';
-      }
-      $form_state->setRedirect('user.login', [], ['query' => ['destination' => $destination]]);
-
-      // Check if user can register accounts.
-      if ($this->configFactory->get('user.settings')->get('register') != USER_REGISTER_ADMINISTRATORS_ONLY) {
-        $log_in_url = Url::fromUserInput('/user/login');
-        $log_in_link = Link::fromTextAndUrl($this->t('log in'), $log_in_url)->toString();
-        $create_account_url = Url::fromUserInput('/user/register');
-        $create_account_link = Link::fromTextAndUrl($this->t('create a new account'), $create_account_url)->toString();
-        $message = $this->t('Please @log_in or @create_account_link so that you can enroll to the event.', [
-          '@log_in' => $log_in_link,
-          '@create_account_link' => $create_account_link,
-        ]);
-      }
-      else {
-        $log_in_url = Url::fromUserInput('/user/login');
-        $log_in_link = Link::fromTextAndUrl($this->t('log in'), $log_in_url)->toString();
-        $message = $this->t('Please @log_in so that you can enroll to the event.', [
-          '@log_in' => $log_in_link,
-        ]);
-      }
-
-      drupal_set_message($message);
-      return;
-    }
-
     $to_enroll_status = $form_state->getValue('to_enroll_status');
 
     $conditions = [
@@ -465,26 +394,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
           $enrollment->delete();
         }
       }
-
-    }
-    else {
-      // Default event enrollment field set.
-      $fields = [
-        'user_id' => $uid,
-        'field_event' => $nid,
-        'field_enrollment_status' => '1',
-        'field_account' => $uid,
-      ];
-
-      // If request to join is on, alter fields.
-      if ($to_enroll_status === '2') {
-        $fields['field_enrollment_status'] = '0';
-        $fields['field_request_or_invite_status'] = EventEnrollmentInterface::REQUEST_PENDING;
-      }
-
-      // Create a new enrollment for the event.
-      $enrollment = EventEnrollment::create($fields);
-      $enrollment->save();
     }
   }
 

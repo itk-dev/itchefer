@@ -82,40 +82,8 @@ class EventEnrollmentController extends ControllerBase {
 
     // Get the modal form using the form builder.
     $form = $this->formBuilder->getForm('Drupal\itchefer_event_enrollment\Form\ProductModalForm');
-
-    if ($this->currentUser()->isAnonymous()) {
-      $form = $this->formBuilder->getForm('Drupal\social_event\Form\EnrollRequestAnonymousForm');
-      $response->addCommand(new OpenModalDialogCommand($this->t('Request to enroll'), $form, [
-        'width' => '337px',
-        'closeOnEscape' => TRUE,
-        'dialogClass' => 'social_event-popup social_event-popup--anonymous',
-      ]));
-    }
-    else {
-      $response->addCommand(new OpenModalDialogCommand($this->t('Request to enroll'), $form, static::getDataDialogOptions()));
-    }
+    $response->addCommand(new OpenModalDialogCommand($this->t('Pick a product and enroll'), $form, static::getDataDialogOptions()));
 
     return $response;
   }
-
-  /**
-   * The _title_callback for the event enroll dialog route.
-   *
-   * @param \Drupal\node\NodeInterface $node
-   *   Node.
-   *
-   * @return string
-   *   The page title.
-   */
-  public function enrollTitle(NodeInterface $node) {
-    return $this->t('Request enrollment in @label Event', ['@label' => $node->label()]);
-  }
-
-  /**
-   * Determines if user has access to enroll form.
-   */
-  public function enrollAccess(NodeInterface $node) {
-    return AccessResult::allowed();
-  }
-
 }

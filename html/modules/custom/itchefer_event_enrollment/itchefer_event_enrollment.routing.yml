@@ -2,7 +2,7 @@ itchefer_event_enrollment.product_modal_form:
   path: '/node/{node}/product-modal-form'
   defaults:
     _controller: '\Drupal\itchefer_event_enrollment\Controller\EventEnrollmentController::productModalDialog'
-    _title_callback: '\Drupal\social_event\Controller\EnrollRequestDialogController::enrollTitle'
+    _title_callback: '\Drupal\itchefer_event_enrollment\Controller\EventEnrollmentController::enrollTitle'
   options:
     parameters:
       node:
