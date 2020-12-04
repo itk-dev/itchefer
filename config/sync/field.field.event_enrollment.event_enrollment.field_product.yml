@@ -46,9 +46,6 @@ settings:
   menu_link_content:
     handler: 'default:menu_link_content'
     handler_settings: {  }
-  event_enrollment_with_product:
-    handler: 'default:event_enrollment_with_product'
-    handler_settings: {  }
   event_enrollment:
     handler: 'default:event_enrollment'
     handler_settings: {  }
@@ -102,5 +99,8 @@ settings:
     handler_settings: {  }
   vote_result:
     handler: 'default:vote_result'
+    handler_settings: {  }
+  event_enrollment_with_product:
+    handler: 'default:event_enrollment_with_product'
     handler_settings: {  }
 field_type: dynamic_entity_reference

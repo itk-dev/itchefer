@@ -81,26 +81,7 @@ class ProductModalForm extends FormBase {
     if ((int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST && !$isNodeOwner) {
       $submit_text = $this->t('Send request');
       $to_enroll_status = '2';
-
-      if ($current_user->isAnonymous()) {
-        $attributes = [
-          'class' => [
-            'use-ajax',
-            'js-form-submit',
-            'form-submit',
-            'btn',
-            'btn-accent',
-            'btn-lg',
-          ],
-          'data-dialog-type' => 'modal',
-          'data-dialog-options' => json_encode([
-            'title' => t('Request to enroll'),
-            'width' => 'auto',
-          ]),
-        ];
-
-        $request_to_join = TRUE;
-      }
+      $request_to_join = TRUE;
     }
 
     $form['description'] = [
@@ -109,7 +90,7 @@ class ProductModalForm extends FormBase {
       '#value' => $this->t('Add the products you wish for the event.'),
     ];
 
-    if ($request_to_join === '1') {
+    if ($request_to_join) {
       $form['description'] = [
         '#type' => 'html_tag',
         '#tag' => 'p',
