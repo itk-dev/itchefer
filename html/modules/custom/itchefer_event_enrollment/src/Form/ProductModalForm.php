@@ -10,12 +10,11 @@ use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\social_event\Entity\EventEnrollment;
 use Drupal\social_event\EventEnrollmentInterface;
-// Use Drupal\itchefer_event_enrollment\Entity\EventEnrollment;.
 use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * ProductModalForm class.
+ * Product modal form for picking a product to link to enrollment.
  */
 class ProductModalForm extends FormBase {
   /**

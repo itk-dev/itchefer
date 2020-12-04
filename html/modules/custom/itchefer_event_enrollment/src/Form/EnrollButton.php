@@ -21,9 +21,9 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 
 /**
- * Class EnrollButton.
+ * Enrollbutton with product modal.
  *
- * @package Drupal\social_event\Form
+ * @package Drupal\itchefer_event_enrollment\Form
  */
 class EnrollButton extends FormBase implements ContainerInjectionInterface {
 

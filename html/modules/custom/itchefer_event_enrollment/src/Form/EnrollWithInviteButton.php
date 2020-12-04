@@ -10,7 +10,7 @@ use Drupal\Core\Cache\Cache;
 use Drupal\Core\Url;
 
 /**
- * Class EnrollWithInviteButton.
+ * Enroll button to open a product modal, for invited users.
  *
  * @package Drupal\social_event_invite\Form
  */
