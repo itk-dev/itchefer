@@ -3,13 +3,11 @@
 namespace Drupal\itchefer_event_enrollment\Controller;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Form\FormBuilder;
-use Drupal\node\NodeInterface;
 
 /**
  * Contains methods for the modal form when requesting to enroll in an event.
@@ -86,4 +84,5 @@ class EventEnrollmentController extends ControllerBase {
 
     return $response;
   }
+
 }
