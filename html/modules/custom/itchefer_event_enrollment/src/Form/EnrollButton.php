@@ -136,6 +136,11 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     $nid = $this->routeMatch->getRawParameter('node');
     $current_user = $this->currentUser;
     $uid = $current_user->id();
+    $submit_text = $this->t('Join event');
+    $to_enroll_status = '1';
+    $enrollment_open = TRUE;
+    $request_to_join = FALSE;
+    $isNodeOwner = ($node->getOwnerId() === $uid);
 
     // We check if the node is placed in a Group I am a member of. If not,
     // we are not going to build anything.
@@ -188,12 +193,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       '#value' => $nid,
     ];
 
-    $submit_text = $this->t('Join event');
-    $to_enroll_status = '1';
-    $enrollment_open = TRUE;
-    $request_to_join = FALSE;
-    $isNodeOwner = ($node->getOwnerId() === $uid);
-
     // Initialise the default attributes for the "Enroll" button
     // if the event enroll method is request to enroll, this will
     // be overwritten because of the modal.
@@ -212,12 +211,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
         'width' => 'auto',
       ]),
     ];
-
-    // Add the enrollment closed label.
-    if ($current_user->isAnonymous()) {
-      $submit_text = $this->t('Must be logged in to enroll');
-      $enrollment_open = FALSE;
-    }
 
     if ($this->eventHasBeenFinished($node)) {
       $submit_text = $this->t('Event has passed');
@@ -248,7 +241,7 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       }
 
       // Use the ajax submit if the enrollments are empty, or if the
-      // user cancelled his enrollment and tries again.
+      // user cancelled their enrollment and tries again.
       if ($enrollment_open === TRUE) {
         if (!$isNodeOwner && (empty($enrollment) && $node->field_enroll_method->value && (int) $node->field_enroll_method->value === EventEnrollmentInterface::ENROLL_METHOD_REQUEST)
           || (isset($event_request_ajax) && $event_request_ajax === TRUE)) {
@@ -306,6 +299,15 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       $form['#attached']['library'][] = 'social_event/form_submit';
     }
 
+    // For AN users it can be rendered on a Public event with
+    // invite only as option. Let's make it similar to a Group experience
+    // where there is no button rendered.
+    // We unset it here because in the parent form and this form
+    // a lot of times this button get's overridden.
+    if ($current_user->isAnonymous()) {
+      unset($form['enroll_for_this_event']);
+    }
+
     return $form;
   }
 
@@ -361,13 +363,13 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
 
     if ($enrollment = array_pop($enrollments)) {
       $current_enrollment_status = $enrollment->field_enrollment_status->value;
-      // The user is enrolled, but cancels his enrollment.
+      // The user is enrolled, but cancels the enrollment.
       if ($to_enroll_status === '0' && $current_enrollment_status === '1') {
         // The user is enrolled by invited or request, but either the user or
         // event manager is declining or invalidating the enrollment.
         if ($enrollment->field_request_or_invite_status
           && (int) $enrollment->field_request_or_invite_status->value === EventEnrollmentInterface::INVITE_ACCEPTED_AND_JOINED) {
-          // Mark this user his enrollment as declined.
+          // Mark the enrollment as declined.
           $enrollment->field_request_or_invite_status->value = EventEnrollmentInterface::REQUEST_OR_INVITE_DECLINED;
           // If the user is cancelling, un-enroll.
           $current_enrollment_status = $enrollment->field_enrollment_status->value;
@@ -376,7 +378,7 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
           }
           $enrollment->save();
         }
-        // Else, the user simply wants to cancel his enrollment, so at
+        // Else, the user simply wants to cancel their enrollment, so at
         // this point we can safely delete the enrollment record as well.
         else {
           $enrollment->delete();

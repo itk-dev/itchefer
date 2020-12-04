@@ -52,17 +52,7 @@ class EnrollWithInviteButton extends EnrollActionForm {
 
         // If user got invited perform actions.
         if ($enroll_request_status == '4') {
-
           $submit_text = $this->t('Accept');
-
-          // $form['enroll_for_this_event'] = [
-          //   '#type' => 'submit',
-          //   '#value' => $submit_text,
-          //   '#name' => 'accept_invite',
-          // ];
-          // Initialise the default attributes for the "Enroll" button
-          // if the event enroll method is request to enroll, this will
-          // be overwritten because of the modal.
           $attributes = [
             'class' => [
               'use-ajax',
@@ -86,17 +76,6 @@ class EnrollWithInviteButton extends EnrollActionForm {
             '#attributes' => $attributes,
           ];
 
-          // Extra attributes needed for when a user is logged in.
-          // This will make sure the button acts like a dropdown.
-          // $form['enroll_for_this_event']['#attributes'] = [
-          //   'class' => [
-          //     'btn',
-          //     'btn-accent brand-bg-accent',
-          //     'btn-lg btn-raised',
-          //     'dropdown-toggle',
-          //     'waves-effect',
-          //   ],
-          // ];.
           // We need a hidden element for later usage.
           $form['event_id'] = [
             '#type' => 'hidden',
@@ -189,9 +168,6 @@ class EnrollWithInviteButton extends EnrollActionForm {
         && (int) $enrollment->field_request_or_invite_status->value === EventEnrollmentInterface::INVITE_PENDING_REPLY) {
         // Delete any messages since it would show a 'successful enrollment'.
         $this->messenger()->deleteAll();
-        // Accept the invite.
-        $enrollment->field_enrollment_status->value = '1';
-        $enrollment->field_request_or_invite_status->value = EventEnrollmentInterface::INVITE_ACCEPTED_AND_JOINED;
 
         // If decline is chosen, set invite to declined.
         if ($operation === 'decline') {
