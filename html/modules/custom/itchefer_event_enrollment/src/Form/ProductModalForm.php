@@ -70,7 +70,7 @@ class ProductModalForm extends FormBase {
     $nid = $node->id();
     $uid = $this->currentUser->id();
 
-    $field_products = $node->get('field_product')->referencedEntities();
+    $field_products = \Drupal::entityTypeManager()->getStorage('node')->load($nid)->get('field_product')->referencedEntities();
     $to_enroll_status = '1';
     $submit_text = $this->t('Enroll');
     $enrollment_open = TRUE;

@@ -168,7 +168,9 @@ class EnrollWithInviteButton extends EnrollActionForm {
         && (int) $enrollment->field_request_or_invite_status->value === EventEnrollmentInterface::INVITE_PENDING_REPLY) {
         // Delete any messages since it would show a 'successful enrollment'.
         $this->messenger()->deleteAll();
-
+        // Accept the invite.
+        $enrollment->field_enrollment_status->value = '1';
+        $enrollment->field_request_or_invite_status->value = EventEnrollmentInterface::INVITE_ACCEPTED_AND_JOINED;
         // If decline is chosen, set invite to declined.
         if ($operation === 'decline') {
           // Delete any messages since it would show a 'successful enrollment'.

@@ -136,11 +136,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     $nid = $this->routeMatch->getRawParameter('node');
     $current_user = $this->currentUser;
     $uid = $current_user->id();
-    $submit_text = $this->t('Join event');
-    $to_enroll_status = '1';
-    $enrollment_open = TRUE;
-    $request_to_join = FALSE;
-    $isNodeOwner = ($node->getOwnerId() === $uid);
 
     // We check if the node is placed in a Group I am a member of. If not,
     // we are not going to build anything.
@@ -192,6 +187,12 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
       '#type' => 'hidden',
       '#value' => $nid,
     ];
+
+    $submit_text = $this->t('Join event');
+    $to_enroll_status = '1';
+    $enrollment_open = TRUE;
+    $request_to_join = FALSE;
+    $isNodeOwner = ($node->getOwnerId() === $uid);
 
     // Initialise the default attributes for the "Enroll" button
     // if the event enroll method is request to enroll, this will
