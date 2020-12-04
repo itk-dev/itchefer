@@ -48,7 +48,6 @@ third_party_settings:
       region: hidden
     group_products:
       children:
-        - field_event_with_products
         - field_product
       parent_name: ''
       weight: 12
