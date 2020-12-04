@@ -82,37 +82,6 @@ class EnrollWithInviteButton extends EnrollActionForm {
             '#value' => $this->routeMatch->getRawParameter('node'),
           ];
 
-          $form['decline_invite'] = [
-            '#type' => 'submit',
-            '#value' => '',
-            '#name' => 'decline_invite',
-          ];
-
-          // Extra attributes needed for when a user is logged in.
-          // This will make sure the button acts like a dropdown.
-          $form['decline_invite']['#attributes'] = [
-            'class' => [
-              'btn',
-              'btn-accent brand-bg-accent',
-              'btn-lg btn-raised',
-              'dropdown-toggle',
-              'waves-effect',
-              'margin-left-s',
-            ],
-            'autocomplete' => 'off',
-            'data-toggle' => 'dropdown',
-            'aria-haspopup' => 'true',
-            'aria-expanded' => 'false',
-            'data-caret' => 'true',
-          ];
-
-          $decline_text = $this->t('Decline');
-
-          // Add markup for the button so it will be a dropdown.
-          $form['decline_invite_dropdown'] = [
-            '#markup' => '<ul class="dropdown-menu dropdown-menu-right"><li><a href="#" class="enroll-form-submit"> ' . $decline_text . ' </a></li></ul>',
-          ];
-
           // Add a hidden operation we can fill with jquery when declining.
           $form['operation'] = [
             '#type' => 'hidden',
@@ -140,47 +109,6 @@ class EnrollWithInviteButton extends EnrollActionForm {
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state) {
-    parent::submitForm($form, $form_state);
-    $operation = $form_state->getValue('operation');
-    $current_user = $this->currentUser;
-    $uid = $current_user->id();
-    $nid = $form_state->getValue('event') ?? $this->routeMatch->getRawParameter('node');
-
-    $conditions = [
-      'field_account' => $uid,
-      'field_event' => $nid,
-    ];
-
-    $enrollments = $this->entityStorage->loadByProperties($conditions);
-
-    // @todo also clear the breadcrumb cachetags.
-    // Invalidate cache for our enrollment cache tag in
-    // social_event_node_view_alter().
-    $tags = [];
-    $tags[] = 'enrollment:' . $nid . '-' . $uid;
-    $tags[] = 'event_content_list:entity:' . $uid;
-    Cache::invalidateTags($tags);
-
-    if ($enrollment = array_pop($enrollments)) {
-      // Only trigger when the user is invited.
-      if ($enrollment->field_request_or_invite_status
-        && (int) $enrollment->field_request_or_invite_status->value === EventEnrollmentInterface::INVITE_PENDING_REPLY) {
-        // Delete any messages since it would show a 'successful enrollment'.
-        $this->messenger()->deleteAll();
-        // Accept the invite.
-        $enrollment->field_enrollment_status->value = '1';
-        $enrollment->field_request_or_invite_status->value = EventEnrollmentInterface::INVITE_ACCEPTED_AND_JOINED;
-        // If decline is chosen, set invite to declined.
-        if ($operation === 'decline') {
-          // Delete any messages since it would show a 'successful enrollment'.
-          $this->messenger()->deleteAll();
-          $enrollment->field_enrollment_status->value = '0';
-          $enrollment->field_request_or_invite_status->value = EventEnrollmentInterface::REQUEST_OR_INVITE_DECLINED;
-        }
-        $enrollment->save();
-      }
-    }
-  }
+  public function submitForm(array &$form, FormStateInterface $form_state) {}
 
 }
