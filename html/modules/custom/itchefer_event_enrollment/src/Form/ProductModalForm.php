@@ -1,6 +1,7 @@
 <?php
 
 namespace Drupal\itchefer_event_enrollment\Form;
+
 use Drupal\Core\Cache\Cache;
 use Drupal\Core\Ajax\CloseDialogCommand;
 use Drupal\Core\Form\FormBase;
@@ -9,6 +10,7 @@ use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\OpenModalDialogCommand;
 use Drupal\social_event\Entity\EventEnrollment;
 use Drupal\social_event\EventEnrollmentInterface;
+// Use Drupal\itchefer_event_enrollment\Entity\EventEnrollment;.
 use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -189,7 +191,7 @@ class ProductModalForm extends FormBase {
     $nid = $node->id();
     $uid = $this->currentUser->id();
     $to_enroll_status = $form_state->getValue('to_enroll_status');
-    
+
     if ($form_state->getErrors()) {
       // If there are errors, we can show the form again with the errors in
       // the status_messages section.
@@ -207,12 +209,16 @@ class ProductModalForm extends FormBase {
     $cache_tag = 'enrollment:' . $nid . '-' . $uid;
     Cache::invalidateTags([$cache_tag]);
 
-    $conditions = [ // A lot of this code is copied from EnrolLActionForm.php in 
+    // A lot of this code is copied from EnrolLActionForm.php in.
+    $conditions = [
       // social_event, modified a bit because anonymous users cannot
       // request access when a product should be chosen.
       'field_account' => $uid,
       'field_event' => $nid,
     ];
+
+    $pid = $form_state->getValue('radios');
+    $products = $node->get('field_product')->referencedEntities();
 
     // Default event enrollment field set.
     $fields = [
@@ -221,7 +227,12 @@ class ProductModalForm extends FormBase {
       'field_enrollment_status' => '1',
       'field_account' => $uid,
     ];
-
+    // Find the chosen product.
+    foreach ($products as $key => $value) {
+      if ($value->id() === $pid) {
+        $fields['field_product'] = $value;
+      }
+    }
     // Refactor this into a service or helper.
     $message = $form_state->getValue('message');
 
@@ -231,7 +242,6 @@ class ProductModalForm extends FormBase {
       $fields['field_request_or_invite_status'] = EventEnrollmentInterface::REQUEST_PENDING;
       $fields['field_request_message'] = $message;
     }
-
     // Create a new enrollment for the event.
     $enrollment = EventEnrollment::create($fields);
     $enrollment->save();

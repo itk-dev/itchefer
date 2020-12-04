@@ -13,9 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\Core\Url;
-use Drupal\Core\Link;
 use Drupal\node\Entity\Node;
-use Drupal\social_event\Entity\EventEnrollment;
 use Drupal\social_event\EventEnrollmentInterface;
 use Drupal\user\UserStorageInterface;
 use Drupal\group\Entity\GroupContent;
@@ -132,7 +130,7 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-     // A lot of this code is copied from EnrolLActionForm.php in 
+    // A lot of this code is copied from EnrolLActionForm.php in
     // social_event, modified a bit because anonymous users cannot
     // request access when a product should be chosen.
     $nid = $this->routeMatch->getRawParameter('node');
@@ -191,7 +189,6 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     ];
 
     $submit_text = $this->t('Join event');
-
     $to_enroll_status = '1';
     $enrollment_open = TRUE;
     $request_to_join = FALSE;
@@ -270,7 +267,7 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
     $form['enroll_for_this_event'] = [
       '#type' => 'link',
       '#title' => $submit_text,
-      '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', [ 'node' => $nid ]),
+      '#url' => Url::fromRoute('itchefer_event_enrollment.product_modal_form', ['node' => $nid]),
       '#attributes' => $attributes,
     ];
 
@@ -296,7 +293,7 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
           'aria-haspopup' => 'true',
           'aria-expanded' => 'false',
           'data-caret' => 'true',
-        ]
+        ],
       ];
 
       $cancel_text = $this->t('Cancel enrollment');

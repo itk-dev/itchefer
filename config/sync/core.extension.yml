@@ -53,7 +53,7 @@ module:
   image_effects: 0
   image_widget_crop: 0
   inline_form_errors: 0
-  itchefer_event_enrollment: 0
+  itchefer_event_enrollment: 1
   language: 0
   lazy: 0
   like_and_dislike: 0
