@@ -10,17 +10,9 @@ third_party_settings:
       label: Description
     group_event_visibility:
       label: Visibility
-      format_settings:
-        label: Visibility
     group_attachments:
       label: Attachments
-      format_settings:
-        label: Attachments
     group_enrollment:
       label: 'Enrollment options'
-      format_settings:
-        label: 'Enrollment options'
     group_enrollment_methods:
-      format_settings:
-        label: 'Enrollment options fieldset'
       label: 'Enrollment options fieldset'

@@ -6,9 +6,5 @@ third_party_settings:
       label: Beskrivelse
     group_event_visibility:
       label: Synlighed
-      format_settings:
-        label: Synlighed
     group_attachments:
       label: Bilag
-      format_settings:
-        label: Bilag

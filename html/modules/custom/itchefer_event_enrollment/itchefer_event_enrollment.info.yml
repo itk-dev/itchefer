@@ -1,0 +1,11 @@
+name: Enroll in event module
+description: Creates a custom enrollment in event
+package: Custom
+
+type: module
+version: 1.0
+core: 8.x
+
+dependencies:
+    - drupal:social_event
+    - drupal:social_event_invite
