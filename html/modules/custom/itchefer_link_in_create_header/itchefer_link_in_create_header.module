@@ -5,7 +5,6 @@
  * The module for itchefer_event_enrollment.
  */
 
-use Drupal\social_event\EventEnrollmentInterface;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\Url;
 
