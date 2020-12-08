@@ -95,15 +95,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
-<<<<<<< HEAD
     settings: {  }
     third_party_settings: {  }
     region: content
-=======
-    region: content
-    settings: {  }
-    third_party_settings: {  }
->>>>>>> develop
 hidden:
   groups: true
   langcode: true
