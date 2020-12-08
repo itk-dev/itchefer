@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
+    - field.field.node.event.field_product
     - node.type.event
   module:
     - comment
@@ -76,6 +77,7 @@ hidden:
   field_event_location: true
   field_event_managers: true
   field_files: true
+  field_product: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

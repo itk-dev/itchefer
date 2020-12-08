@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.magazine.body
     - field.field.node.magazine.field_articles
+    - field.field.node.magazine.field_cover_image
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
     - node.type.magazine
@@ -100,5 +101,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_cover_image: true
   langcode: true
   search_api_excerpt: true
