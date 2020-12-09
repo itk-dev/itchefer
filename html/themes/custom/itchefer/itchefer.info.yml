@@ -27,4 +27,6 @@ libraries-extend:
     - itchefer/app_theme
 
 libraries:
+  - core/drupal
+  - core/drupalSettings
   - itchefer/base
