@@ -5,6 +5,8 @@
  * The primary PHP file for the Itchefer theme.
  */
 
+use Drupal\user\Entity\User;
+
 /**
  * Implements hook_preprocess_input().
  *
@@ -12,7 +14,8 @@
  */
 function itchefer_preprocess_input(&$variables) {
   if ($variables['element']['#type'] === 'radio' && $variables['element']['#id'] === 'edit-field-topic-type-3') {
-    if (!str_contains(implode($variables[user]->getRoles()), 'administrator')) {
+    $user = User::load(\Drupal::currentUser()->id());
+    if (!$user->hasRole('administrator')) {
       $variables['attributes']['disabled'] = TRUE;
     }
   }
