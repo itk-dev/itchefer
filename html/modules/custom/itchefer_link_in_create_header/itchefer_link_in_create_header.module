@@ -2,7 +2,7 @@
 
 /**
  * @file
- * The module for itchefer_event_enrollment.
+ * The module for itchefer_link_in_create_header.
  */
 
 use Drupal\Core\StringTranslation\TranslatableMarkup;
@@ -10,7 +10,7 @@ use Drupal\Core\Url;
 
 /**
  * @file
- * The Social event module.
+ * The module for creating links in header.
  */
 
 /**
