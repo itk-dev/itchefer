@@ -1,0 +1,51 @@
+uuid: 30475309-2d1f-4f10-a7f5-d98fbc5ed2d7
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.advertisement.body
+    - field.field.node.advertisement.field_advertisement
+    - field.field.node.advertisement.field_redirect_link
+    - node.type.advertisement
+  module:
+    - image
+    - link
+    - user
+id: node.advertisement.teaser
+targetEntityType: node
+bundle: advertisement
+mode: teaser
+content:
+  field_advertisement:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_redirect_link:
+    type: link
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  flag_follow_content: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_flexible_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
