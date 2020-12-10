@@ -32,9 +32,8 @@ third_party_settings:
         - field_profile_first_name
         - field_profile_last_name
         - field_profile_image
-        - field_profile_banner_image
       parent_name: ''
-      weight: 0
+      weight: 3
       label: 'Names and profile image'
       format_type: fieldset
       format_settings:
@@ -49,8 +48,9 @@ third_party_settings:
         - field_municipality
         - field_region
         - field_representative_of_municipa
+        - field_profile_banner_image
       parent_name: ''
-      weight: 1
+      weight: 4
       label: 'Function and organization'
       format_type: fieldset
       format_settings:
@@ -65,7 +65,7 @@ third_party_settings:
         - field_profile_interests
         - field_profile_profile_tag
       parent_name: ''
-      weight: 3
+      weight: 6
       label: 'Self introduction, expertise and interests'
       format_type: fieldset
       format_settings:
@@ -77,7 +77,7 @@ third_party_settings:
       children:
         - field_profile_phone_number
       parent_name: ''
-      weight: 2
+      weight: 5
       label: 'Phone number and location'
       format_type: fieldset
       format_settings:
@@ -97,21 +97,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_profile_banner_image:
-    weight: 4
-    settings:
-      show_crop_area: true
-      show_default_crop: true
-      warn_multiple_usages: true
-      preview_image_style: social_x_large
-      crop_preview_image_style: crop_thumbnail
-      progress_indicator: throbber
-      crop_list:
-        - hero
-      crop_types_required: {  }
-    third_party_settings: {  }
-    type: image_widget_crop
     region: content
   field_profile_expertise:
     weight: 11
@@ -218,5 +203,6 @@ content:
     type: boolean_checkbox
     region: content
 hidden:
+  field_profile_banner_image: true
   field_profile_show_email: true
   is_default: true
