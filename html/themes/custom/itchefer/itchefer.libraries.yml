@@ -3,4 +3,4 @@ app_theme:
     theme:
       build/app.css: {}
   js:
-    build/app.js: {}
+    build/app.js: { preprocess: false }
