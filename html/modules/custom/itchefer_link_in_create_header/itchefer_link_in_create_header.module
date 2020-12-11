@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * The module for itchefer_link_in_create_header.
+ */
+
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\Url;
+
+/**
+ * @file
+ * The module for creating links in header.
+ */
+
+/**
+ * Implements hook_social_user_account_header_create_links().
+ *
+ * Add the "Create Magazine", "create article", and
+ * "Create product" link to the content creation menu.
+ */
+function itchefer_link_in_create_header_social_user_account_header_create_links($context) {
+  return [
+    'add_magazine' => [
+      '#type' => 'link',
+      '#attributes' => [
+        'title' => new TranslatableMarkup('Create New Magazine'),
+      ],
+      '#title' => new TranslatableMarkup('New Magazine'),
+      '#weight' => 200,
+    ] + Url::fromRoute('node.add', ['node_type' => 'magazine'])->toRenderArray(),
+    'add_article' => [
+      '#type' => 'link',
+      '#attributes' => [
+        'title' => new TranslatableMarkup('Create New Article'),
+      ],
+      '#title' => new TranslatableMarkup('New Article'),
+      '#weight' => 200,
+    ] + Url::fromRoute('node.add', ['node_type' => 'article'])->toRenderArray(),
+  ];
+}

@@ -54,6 +54,7 @@ module:
   image_widget_crop: 0
   inline_form_errors: 0
   itchefer_event_enrollment: 1
+  itchefer_link_in_create_header: 0
   language: 0
   lazy: 0
   like_and_dislike: 0
