@@ -46,9 +46,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -70,7 +70,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -359,7 +359,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roles
+          label: Roller
           exclude: false
           alter:
             alter_text: false
@@ -1419,7 +1419,7 @@ display:
       show_admin_links: false
       menu:
         type: 'default tab'
-        title: List
+        title: 'Liste af grupper'
         description: 'Find and manage people interacting with your site.'
         menu_name: admin
         weight: -10
