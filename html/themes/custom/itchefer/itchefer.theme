@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * The primary PHP file for the Itchefer theme.
+ */
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_preprocess_input().
+ *
+ * Remove news-topic for everyone but administrators.
+ */
+function itchefer_preprocess_input(&$variables) {
+  if ($variables['element']['#type'] === 'radio' && $variables['element']['#id'] === 'edit-field-topic-type-3') {
+    $user = User::load(\Drupal::currentUser()->id());
+    if (!$user->hasRole('administrator')) {
+      $variables['attributes']['disabled'] = TRUE;
+    }
+  }
+}
