@@ -92,7 +92,7 @@ third_party_settings:
         - body
       parent_name: ''
       weight: 17
-      label: Description
+      label: Beskrivelse
       format_type: fieldset
       format_settings:
         description: ''
@@ -106,7 +106,7 @@ third_party_settings:
         - groups
       parent_name: ''
       weight: 13
-      label: Visibility
+      label: Synlighed
       format_type: fieldset
       format_settings:
         required_fields: true
@@ -118,7 +118,7 @@ third_party_settings:
         - field_files
       parent_name: ''
       weight: 18
-      label: Attachments
+      label: Bilag
       format_type: fieldset
       format_settings:
         required_fields: true

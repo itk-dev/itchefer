@@ -1,0 +1,94 @@
+uuid: 4df335a1-2db2-40ca-b486-1d78e78e77ce
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.document.body
+    - field.field.node.document.field_directory
+    - field.field.node.document.field_file
+    - node.type.document
+  module:
+    - file
+    - text
+    - user
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_directory:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_file:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  flag_follow_content:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  groups:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_closed_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_open_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_public_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

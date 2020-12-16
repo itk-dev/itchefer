@@ -40,10 +40,10 @@ third_party_settings:
         - body
       parent_name: ''
       weight: 2
-      label: Description
+      label: Beskrivelse
       format_type: fieldset
       format_settings:
-        label: Description
+        label: Beskrivelse
         required_fields: true
         id: description
         classes: 'card '
@@ -53,10 +53,10 @@ third_party_settings:
         - field_content_visibility
       parent_name: ''
       weight: 1
-      label: Visibility
+      label: Synlighed
       format_type: fieldset
       format_settings:
-        label: Visibility
+        label: Synlighed
         required_fields: true
         id: visibility
         classes: 'card '
@@ -65,10 +65,10 @@ third_party_settings:
         - field_files
       parent_name: ''
       weight: 5
-      label: Attachments
+      label: Bilag
       format_type: fieldset
       format_settings:
-        label: Attachments
+        label: Bilag
         required_fields: true
         id: attachments
         classes: 'card '
