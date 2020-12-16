@@ -13,7 +13,7 @@ id: post.photo.field_visibility
 field_name: field_visibility
 entity_type: post
 bundle: photo
-label: Synlighed
+label: Visibility
 description: ''
 required: true
 translatable: false

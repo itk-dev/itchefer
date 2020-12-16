@@ -13,7 +13,7 @@ id: node.event.field_content_visibility
 field_name: field_content_visibility
 entity_type: node
 bundle: event
-label: Synlighed
+label: Visibility
 description: ''
 required: true
 translatable: true
