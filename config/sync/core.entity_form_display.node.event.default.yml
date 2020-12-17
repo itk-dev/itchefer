@@ -38,7 +38,7 @@ third_party_settings:
         - field_event_image
       parent_name: ''
       weight: 12
-      label: 'Title & image'
+      label: 'Titel og billede'
       format_type: fieldset
       format_settings:
         description: ''

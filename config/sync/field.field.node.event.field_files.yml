@@ -13,7 +13,7 @@ id: node.event.field_files
 field_name: field_files
 entity_type: node
 bundle: event
-label: Files
+label: Filer
 description: ''
 required: false
 translatable: false

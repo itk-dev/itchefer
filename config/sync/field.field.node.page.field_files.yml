@@ -13,7 +13,7 @@ id: node.page.field_files
 field_name: field_files
 entity_type: node
 bundle: page
-label: Files
+label: Filer
 description: ''
 required: false
 translatable: true
