@@ -1,0 +1,59 @@
+social_search.all:
+  route_name: view.search_all.page
+  base_route: view.search_all.page
+  title: Alle
+  weight: 10
+
+social_search.all_no_value:
+  route_name: view.search_all.page_no_value
+  base_route: view.search_all.page_no_value
+  title: Alle
+  weight: 10
+
+social_search.content:
+  route_name: view.search_content.page
+  base_route: view.search_all.page
+  title: Indhold
+  weight: 20
+
+social_search.content_no_value:
+  route_name: view.search_content.page_no_value
+  base_route: view.search_all.page_no_value
+  title: Indhold
+  weight: 20
+
+social_search.topics:
+  route_name: view.search_topics.page
+  base_route: view.search_all.page
+  title: Emner
+  weight: 30
+
+social_search.topics_no_value:
+  route_name: view.search_topics.page_no_value
+  base_route: view.search_all.page_no_value
+  title: Emner
+  weight: 30
+
+social_search.users:
+  route_name: view.search_users.page
+  base_route: view.search_all.page
+  title: Brugere
+  weight: 40
+
+social_search.users_no_value:
+  route_name: view.search_users.page_no_value
+  base_route: view.search_all.page_no_value
+  title: Brugere
+  weight: 40
+
+social_search.groups:
+  route_name: view.search_groups.page
+  base_route: view.search_all.page
+  title: Grupper
+  weight: 50
+
+social_search.groups_no_value:
+  route_name: view.search_groups.page_no_value
+  base_route: view.search_all.page_no_value
+  title: Grupper
+  weight: 50
