@@ -43,6 +43,7 @@ permissions:
   - 'edit own post entities'
   - 'edit own topic content'
   - 'flag follow_content'
+  - 'opt-in or out of google analytics tracking'
   - 'override event published option'
   - 'override topic published option'
   - 'post comments'
