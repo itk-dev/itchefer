@@ -76,6 +76,7 @@ module:
   role_delegation: 0
   search_api: 0
   search_api_db: 0
+  search_links: 0
   select2: 0
   serialization: 0
   social_activity: 0
