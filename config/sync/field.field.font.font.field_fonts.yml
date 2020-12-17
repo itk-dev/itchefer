@@ -13,7 +13,7 @@ id: font.font.field_fonts
 field_name: field_fonts
 entity_type: font
 bundle: font
-label: Fonts
+label: Skrifttyper
 description: ''
 required: false
 translatable: false

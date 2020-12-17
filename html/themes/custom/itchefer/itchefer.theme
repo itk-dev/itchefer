@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * The primary PHP file for the Itchefer theme.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_input().
+ *
+ * Remove news-topic for everyone but administrators.
+ */
+function itchefer_preprocess_input(&$variables) {
+  if ($variables['element']['#type'] === 'radio' && $variables['element']['#id'] === 'edit-field-topic-type-3') {
+    $user = User::load(\Drupal::currentUser()->id());
+    if (!$user->hasRole('administrator')) {
+      $variables['attributes']['disabled'] = TRUE;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function itchefer_preprocess_menu(&$variables) {
+  if ($variables['menu_name'] === 'directories-menu') {
+    $items = [];
+    $variables['items'] = create_menu_directories($variables['items'], $items, 0);
+    // Finally adding the "all documents"
+    array_unshift($variables['items'], [
+      'title' => t('Alle dokumenter'),
+      'url' => Url::fromUri('base://documents/'),
+    ]);
+  }
+}
+
+/**
+ * Recursive menu creation.
+ */
+function create_menu_directories($items, $returnItems, $level) {
+  foreach ($items as $name => $item) {
+    $route_parameters = $item['url']->getRouteParameters();
+    $item['url'] = Url::fromUri('base://documents/' . array_values($route_parameters)[0]);
+    $item['level'] = $level;
+    $returnItems[$name] = $item;
+
+    if ($item['below']) {
+      $returnItems = create_menu_directories($item['below'], $returnItems, $level + 1);
+    }
+  }
+  return $returnItems;
+}

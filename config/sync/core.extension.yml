@@ -53,7 +53,7 @@ module:
   image_effects: 0
   image_widget_crop: 0
   inline_form_errors: 0
-  itchefer_event_enrollment: 1
+  itchefer_link_in_create_header: 0
   language: 0
   lazy: 0
   like_and_dislike: 0
@@ -114,6 +114,7 @@ module:
   swiftmailer: 0
   system: 0
   taxonomy: 0
+  taxonomy_menu: 0
   telephone: 0
   template_suggestions_extra: 0
   text: 0
@@ -128,6 +129,7 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0
+  itchefer_event_enrollment: 1
   menu_link_content: 1
   social_group: 2
   social_group_flexible_group: 5

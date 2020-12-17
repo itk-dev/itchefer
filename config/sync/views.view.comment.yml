@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: fsBo_zgUeLyYZdghaw4PkOHA-HqFxu7wmQLilF35XYg
 id: comment
-label: Comments
+label: Kommentarer
 module: comment
 description: 'Find and manage comments.'
 tag: default
@@ -41,7 +41,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -63,7 +63,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -813,7 +813,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: date
-      title: Comments
+      title: Kommentarer
       header: {  }
       footer: {  }
       empty:
@@ -867,14 +867,14 @@ display:
   page_published:
     display_plugin: page
     id: page_published
-    display_title: 'Published comments'
+    display_title: 'Publicerede kommentarer'
     position: 1
     display_options:
       path: admin/content/comment
       menu:
         type: tab
-        title: Comments
-        description: 'Comments published'
+        title: Kommentarer
+        description: 'Kommentarer er publiceret'
         parent: ''
         weight: 0
         context: '0'
@@ -903,7 +903,7 @@ display:
       menu:
         type: tab
         title: 'Unapproved comments'
-        description: 'Comments unapproved'
+        description: 'Kommentarer er ikke godkendt'
         parent: ''
         weight: 1
         context: '0'

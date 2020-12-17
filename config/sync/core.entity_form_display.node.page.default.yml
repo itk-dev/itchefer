@@ -37,10 +37,10 @@ third_party_settings:
         - body
       parent_name: ''
       weight: 2
-      label: 'Page description'
+      label: 'Beskrivelse af siden'
       format_type: fieldset
       format_settings:
-        label: 'Page description'
+        label: 'Beskrivelse af siden'
         required_fields: true
         id: description
         classes: 'card '
@@ -159,6 +159,11 @@ content:
       size: 60
       placeholder: ''
       match_limit: 10
+    third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 50
+    settings: {  }
     third_party_settings: {  }
     region: content
 hidden:

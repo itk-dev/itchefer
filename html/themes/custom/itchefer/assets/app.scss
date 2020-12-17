@@ -137,3 +137,11 @@ body {
         display: none;
     }
 }
+
+.directories-menu {
+    display: block;
+ 
+    li:hover {
+        background-color: $theme-blue;
+    }
+}

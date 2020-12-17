@@ -1,0 +1,29 @@
+uuid: 932f4004-a241-43d2-82f6-1c1668e5dc48
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_directory
+    - node.type.document
+    - taxonomy.vocabulary.directories
+id: node.document.field_directory
+field_name: field_directory
+entity_type: node
+bundle: document
+label: Directory
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      directories: directories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
