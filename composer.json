@@ -16,7 +16,8 @@
         "drupal/field_permissions": "^1.1",
         "drupal/contact_block": "^1.5",
         "drupal/views_data_export": "^1.0",
-        "drupal/twig_field_value": "^2.0"
+        "drupal/twig_field_value": "^2.0",
+        "drupal/taxonomy_menu": "^3.4"
     },
     "repositories": [
         {

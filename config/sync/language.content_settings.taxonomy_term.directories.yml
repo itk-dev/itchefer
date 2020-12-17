@@ -1,0 +1,11 @@
+uuid: 48549d3e-28b2-48aa-94aa-89ca87bbc271
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.directories
+id: taxonomy_term.directories
+target_entity_type_id: taxonomy_term
+target_bundle: directories
+default_langcode: site_default
+language_alterable: false
