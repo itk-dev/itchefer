@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - block.block.postblock
+    - user.role.administrator
+    - user.role.authenticated
+    - user.role.contentmanager
+    - user.role.sitemanager
   module:
     - activity_creator
     - activity_viewer
     - options
     - social_post
+    - user
 _core:
   default_config_hash: _JmlmKiydMMSHiHwKxrIgz1TclzTRi13Gz2Px8Upqv0
 id: activity_stream
@@ -26,8 +31,13 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
+            administrator: administrator
+            contentmanager: contentmanager
+            sitemanager: sitemanager
       cache:
         type: tag
         options: {  }
@@ -250,8 +260,10 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage:
@@ -356,8 +368,10 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
+        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage_without_post:
@@ -464,8 +478,10 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
+        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_activity_stream:
@@ -489,6 +505,7 @@ display:
         - url.query_args
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_explore:
@@ -610,7 +627,9 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
