@@ -45,6 +45,7 @@ module:
   gin_toolbar: 0
   ginvite: 0
   gnode: 0
+  google_analytics: 0
   grequest: 0
   group: 0
   group_core_comments: 0
