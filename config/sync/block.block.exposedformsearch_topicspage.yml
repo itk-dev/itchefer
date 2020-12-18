@@ -9,7 +9,7 @@ dependencies:
     - views
   theme:
     - itchefer
-id: blotlagtformularsearch_topicspage
+id: exposedformsearch_topicspage
 theme: itchefer
 region: complementary_top
 weight: 0
