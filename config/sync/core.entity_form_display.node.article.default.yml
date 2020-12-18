@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_author
     - node.type.article
   module:
     - field_group
@@ -27,7 +28,7 @@ third_party_settings:
       label: Indhold
     group_meta_information:
       children:
-        - uid
+        - field_author
         - created
         - path
         - status
@@ -58,13 +59,21 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 53
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_author:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
-    weight: 54
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -72,7 +81,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 55
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -83,23 +92,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 52
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    region: content
-    third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   groups: true
   langcode: true
   promote: true
   sticky: true
+  uid: true
