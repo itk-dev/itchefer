@@ -1,0 +1,12 @@
+uuid: be29b074-87c7-4f21-8d1a-62aa3772312d
+langcode: da
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Kontakt os'
+recipients:
+  - support@example.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''
