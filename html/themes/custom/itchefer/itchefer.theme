@@ -29,7 +29,7 @@ function itchefer_preprocess_menu(&$variables) {
   if ($variables['menu_name'] === 'directories-menu') {
     $items = [];
     $variables['items'] = create_menu_directories($variables['items'], $items, 0);
-    // Finally adding the "all documents"
+    // Finally adding the "all documents".
     array_unshift($variables['items'], [
       'title' => t('Alle dokumenter'),
       'url' => Url::fromUri('base://documents/'),
