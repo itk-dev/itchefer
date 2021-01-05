@@ -113,7 +113,7 @@ class ProductModalForm extends FormBase {
     // Checkboxes without options.
     $form['product_ids'] = [
       '#type' => 'checkboxes',
-      '#title' => 'Tilvalg',
+      '#title' => $this->t('Add-ons'),
       '#options' => [],
     ];
 
