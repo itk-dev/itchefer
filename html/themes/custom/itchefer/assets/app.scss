@@ -153,3 +153,29 @@ body {
 .cover-wrap {
     min-height: 0px;
 }
+
+.overflow-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical
+}
+
+
+
+.view-frontpage-news {
+    .teaser__title {
+        padding: 15px;
+        background-color: $black;
+    }
+    .news-badge {
+        font-size: 14pt;
+            color: $theme-blue;
+            text-transform: uppercase;
+
+    }
+    h4 {
+        color: white;
+        font-size: 14pt;
+    }
+}

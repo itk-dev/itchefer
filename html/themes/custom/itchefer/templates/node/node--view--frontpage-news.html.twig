@@ -1,0 +1,58 @@
+{# {% extends "node--teaser.html.twig" %}
+
+{% block card_body %}
+
+
+
+
+  {% if content.group_name %}
+    {% embed "node--teaser__field.html.twig" %}
+      {%- block field_icon -%} group {%- endblock -%}
+      {%- block field_value -%} {{ content.group_name }} {%- endblock -%}
+    {% endembed %}
+  {% endif %}
+
+  {% if content.body %}
+    {% embed "node--teaser__body.html.twig" %}
+      {% block field_body %} {{ content.body }} {% endblock %}
+    {% endembed %}
+  {% endif %}
+
+{% endblock %} #}
+<div class="card teaser">
+
+
+
+  <div class="teaser__body">
+      <h4 class="teaser__title">
+        <span class="news-badge">{{ 'NYHED'|t }}</span>
+        <a href="#">
+            {{ label }}
+        </a>
+      </h4>
+    <div class="teaser__content">
+
+
+
+    <div class="teaser__content-line">
+        <div class="teaser__content-text">
+            {% block field_body %} {% endblock %}
+        </div>
+    </div>
+
+    <div class="overflow-ellipsis">
+      {{ content.body }}
+    </div>
+
+    </div>
+
+    <div class="card__actionbar">
+      <a href="{{ url }}" class="card__link" title="{{ label }}">
+        {% trans %}Read more{% endtrans %}
+      </a>
+    </div>
+
+  </div>
+
+
+</div>
