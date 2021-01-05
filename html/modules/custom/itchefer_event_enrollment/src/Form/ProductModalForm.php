@@ -110,16 +110,16 @@ class ProductModalForm extends FormBase {
 
     $form['#attributes']['name'] = 'product_modal_form';
 
-    // Radio buttons without options.
-    $form['radios'] = [
-      '#type' => 'radios',
-      '#title' => 'Tilvalg',
+    // Checkboxes without options.
+    $form['product_ids'] = [
+      '#type' => 'checkboxes',
+      '#title' => $this->t('Add-ons'),
       '#options' => [],
     ];
 
     // Options being added from referenced entities.
     foreach ($field_products as $key => $value) {
-      $form['radios']['#options'] += [
+      $form['product_ids']['#options'] += [
         $value->id() => $value->label(),
       ];
     }
@@ -197,7 +197,7 @@ class ProductModalForm extends FormBase {
       'field_event' => $nid,
     ];
 
-    $pid = $form_state->getValue('radios');
+    $pid = $form_state->getValue('product_ids');
     $products = $node->get('field_product')->referencedEntities();
 
     // Default event enrollment field set.
@@ -207,12 +207,16 @@ class ProductModalForm extends FormBase {
       'field_enrollment_status' => '1',
       'field_account' => $uid,
     ];
+
+    $fields['field_product'] = [];
+
     // Find the chosen product.
     foreach ($products as $key => $value) {
-      if ($value->id() === $pid) {
-        $fields['field_product'] = $value;
+      if (in_array($value->id(), $pid)) {
+        $fields['field_product'] += [$value->id() => $value];
       }
     }
+
     // Refactor this into a service or helper.
     $message = $form_state->getValue('message');
 
@@ -222,6 +226,7 @@ class ProductModalForm extends FormBase {
       $fields['field_request_or_invite_status'] = EventEnrollmentInterface::REQUEST_PENDING;
       $fields['field_request_message'] = $message;
     }
+
     // Create a new enrollment for the event.
     $enrollment = EventEnrollment::create($fields);
     $enrollment->save();
@@ -235,8 +240,8 @@ class ProductModalForm extends FormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
-    if (!$form_state->getValue('radios')) {
-      $form_state->setErrorByName('radios', $this->t('You need to pick a product.'));
+    if (!$form_state->getValue('product_ids')) {
+      $form_state->setErrorByName('product_ids', $this->t('You need to pick a product.'));
     }
   }
 
