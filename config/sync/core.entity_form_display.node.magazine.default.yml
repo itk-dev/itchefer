@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.magazine.field_cover_image
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
+    - field.field.node.magazine.field_magazine_image
     - image.style.thumbnail
     - node.type.magazine
   module:
@@ -23,7 +24,7 @@ third_party_settings:
         - field_highlighted_articles
         - field_articles
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: fieldset
       region: content
       format_settings:
@@ -39,7 +40,7 @@ third_party_settings:
         - path
         - status
       parent_name: ''
-      weight: 2
+      weight: 3
       format_type: fieldset
       region: content
       format_settings:
@@ -51,7 +52,6 @@ third_party_settings:
     group_magazine_tt:
       children:
         - title
-        - field_cover_image
         - field_magazine_file
       parent_name: ''
       weight: 0
@@ -63,6 +63,20 @@ third_party_settings:
         id: ''
         classes: ''
       label: Magasinet
+    group_images:
+      children:
+        - field_cover_image
+        - field_magazine_image
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Billeder
 id: node.magazine.default
 targetEntityType: node
 bundle: magazine
@@ -85,7 +99,7 @@ content:
     type: dynamic_entity_reference_default
     region: content
   field_cover_image:
-    weight: 2
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -108,6 +122,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_magazine_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   path:
     type: path
@@ -141,10 +163,10 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   body: true
   groups: true
