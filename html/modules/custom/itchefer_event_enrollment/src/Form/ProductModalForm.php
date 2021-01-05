@@ -111,7 +111,7 @@ class ProductModalForm extends FormBase {
     $form['#attributes']['name'] = 'product_modal_form';
 
     // Checkboxes without options.
-    $form['checkboxes'] = [
+    $form['product_ids'] = [
       '#type' => 'checkboxes',
       '#title' => 'Tilvalg',
       '#options' => [],
@@ -119,7 +119,7 @@ class ProductModalForm extends FormBase {
 
     // Options being added from referenced entities.
     foreach ($field_products as $key => $value) {
-      $form['checkboxes']['#options'] += [
+      $form['product_ids']['#options'] += [
         $value->id() => $value->label(),
       ];
     }
@@ -197,7 +197,7 @@ class ProductModalForm extends FormBase {
       'field_event' => $nid,
     ];
 
-    $pid = $form_state->getValue('checkboxes');
+    $pid = $form_state->getValue('product_ids');
     $products = $node->get('field_product')->referencedEntities();
 
     // Default event enrollment field set.
@@ -240,8 +240,8 @@ class ProductModalForm extends FormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
-    if (!$form_state->getValue('checkboxes')) {
-      $form_state->setErrorByName('checkboxes', $this->t('You need to pick a product.'));
+    if (!$form_state->getValue('product_ids')) {
+      $form_state->setErrorByName('product_ids', $this->t('You need to pick a product.'));
     }
   }
 
