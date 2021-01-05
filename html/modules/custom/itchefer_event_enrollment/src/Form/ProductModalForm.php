@@ -110,7 +110,7 @@ class ProductModalForm extends FormBase {
 
     $form['#attributes']['name'] = 'product_modal_form';
 
-    // Radio buttons without options.
+    // Checkboxes without options.
     $form['checkboxes'] = [
       '#type' => 'checkboxes',
       '#title' => 'Tilvalg',
