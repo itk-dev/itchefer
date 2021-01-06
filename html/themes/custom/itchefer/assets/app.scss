@@ -169,6 +169,13 @@ body {
     }
     .teaser__resume {
         display: flex;
+        p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
     }
 
     .teaser__content-type-icon {
@@ -191,3 +198,5 @@ body {
         padding-left: 0px;
     }
 }
+
+
