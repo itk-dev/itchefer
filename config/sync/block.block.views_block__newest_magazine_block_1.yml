@@ -1,0 +1,31 @@
+uuid: 7cc5cf66-a01b-49af-b034-d8fd7c290512
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.newest_magazine
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+id: views_block__newest_magazine_block_1
+theme: itchefer
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_block:newest_magazine-block_1'
+settings:
+  id: 'views_block:newest_magazine-block_1'
+  label: 'Nyeste magasin'
+  provider: views
+  label_display: visible
+  views_label: 'Nyeste magasin'
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

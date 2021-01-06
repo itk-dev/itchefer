@@ -15,7 +15,12 @@
           {{ content.field_highlighted_articles }}
         {% endif %}
       </div>
-      <div>
+      <div class="teaser__resume">
+        {% if content.field_resume_of_magazine %}
+          {{ content.field_resume_of_magazine }}
+        {% endif %}
+      </div>
+      <div class="teaser__file">
         {% if content.field_magazine_file %}
           {{ content.field_magazine_file }}
         {% endif %}

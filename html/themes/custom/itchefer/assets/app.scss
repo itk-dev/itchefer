@@ -157,3 +157,37 @@ body {
 .navbar-secondary .navbar-nav a {
     color:$black !important;
 }
+
+.teaser__resume {
+    display: none;
+}
+    
+.newest-magazine {
+    img {
+        background-color: white;
+        padding: 10px;
+    }
+    .teaser__resume {
+        display: flex;
+    }
+
+    .teaser__content-type-icon {
+        display: none;
+    }
+
+    .teaser__highlighted-articles {
+        display: none;
+    }
+    
+    .teaser__published {
+        display: none;
+    }
+
+    .teaser__file {
+        display: none;
+    }
+
+    .teaser__content {
+        padding-left: 0px;
+    }
+}

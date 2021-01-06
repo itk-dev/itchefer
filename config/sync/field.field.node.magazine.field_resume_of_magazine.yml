@@ -1,0 +1,21 @@
+uuid: 8bc47172-2ee1-4b39-88d5-4c9a3b1f6748
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume_of_magazine
+    - node.type.magazine
+  module:
+    - text
+id: node.magazine.field_resume_of_magazine
+field_name: field_resume_of_magazine
+entity_type: node
+bundle: magazine
+label: 'Hvad dette magasin handler om'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
