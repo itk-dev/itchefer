@@ -177,3 +177,45 @@ body {
         height: 90px;
     }
 }
+.teaser__summary {
+    display: none;
+}
+    
+.newest-magazine {
+    img {
+        background-color: white;
+        padding: 10px;
+    }
+    .teaser__summary {
+        display: flex;
+        p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    }
+
+    .teaser__content-type-icon {
+        display: none;
+    }
+
+    .teaser__highlighted-articles {
+        display: none;
+    }
+    
+    .teaser__published {
+        display: none;
+    }
+
+    .teaser__file {
+        display: none;
+    }
+
+    .teaser__content {
+        padding-left: 0px;
+    }
+}
+
+
