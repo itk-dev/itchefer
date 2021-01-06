@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.newest_magazine
   module:
+    - block_class
     - system
     - views
   theme:
     - itchefer
+third_party_settings:
+  block_class:
+    classes: black-beige-design
 id: views_block__newest_magazine_block_1
 theme: itchefer
 region: complementary_top
