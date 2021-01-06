@@ -151,7 +151,7 @@ body {
 }
 
 .cover-wrap {
-    min-height: 0px;
+    min-height: 260px;
 }
 
 .overflow-ellipsis {
@@ -160,8 +160,6 @@ body {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical
 }
-
-
 
 .view-frontpage-news {
     .teaser__title {
@@ -179,3 +177,49 @@ body {
         font-size: 14pt;
     }
 }
+.navbar-secondary .navbar-nav a {
+    color:$black !important;
+}
+
+.teaser__summary {
+    display: none;
+}
+    
+.newest-magazine {
+    img {
+        background-color: white;
+        padding: 10px;
+    }
+    .teaser__summary {
+        display: flex;
+        p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    }
+
+    .teaser__content-type-icon {
+        display: none;
+    }
+
+    .teaser__highlighted-articles {
+        display: none;
+    }
+
+    .teaser__published {
+        display: none;
+    }
+
+    .teaser__file {
+        display: none;
+    }
+
+    .teaser__content {
+        padding-left: 0px;
+    }
+}
+
+

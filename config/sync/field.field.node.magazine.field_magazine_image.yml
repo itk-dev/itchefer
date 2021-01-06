@@ -1,17 +1,17 @@
-uuid: b0350168-a717-4828-b13d-51ab93930231
+uuid: 5e539dd2-615c-430d-9d12-b479253ad8a8
 langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.node.field_cover_image
+    - field.storage.node.field_magazine_image
     - node.type.magazine
   module:
     - image
-id: node.magazine.field_cover_image
-field_name: field_cover_image
+id: node.magazine.field_magazine_image
+field_name: field_magazine_image
 entity_type: node
 bundle: magazine
-label: 'Magasinets forsidebillede'
+label: 'Coverbillede (fuld visning af materiale)'
 description: ''
 required: false
 translatable: false

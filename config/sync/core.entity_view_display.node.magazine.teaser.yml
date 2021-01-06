@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.magazine.field_cover_image
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
+    - field.field.node.magazine.field_magazine_image
+    - field.field.node.magazine.field_summary
     - node.type.magazine
   module:
     - dynamic_entity_reference
@@ -53,6 +55,13 @@ content:
     label: above
     settings:
       use_description_as_link_text: true
+    third_party_settings: {  }
+  field_summary:
+    type: text_default
+    weight: 11
+    region: content
+    label: visually_hidden
+    settings: {  }
     third_party_settings: {  }
   flag_follow_content:
     weight: 5
@@ -106,5 +115,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_articles: true
+  field_magazine_image: true
   langcode: true
   search_api_excerpt: true

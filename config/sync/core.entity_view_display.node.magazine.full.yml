@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.magazine.field_cover_image
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
+    - field.field.node.magazine.field_magazine_image
+    - field.field.node.magazine.field_summary
     - node.type.magazine
   module:
     - dynamic_entity_reference
@@ -95,5 +97,7 @@ content:
 hidden:
   field_cover_image: true
   field_magazine_file: true
+  field_magazine_image: true
+  field_summary: true
   langcode: true
   search_api_excerpt: true
