@@ -12,7 +12,7 @@ dependencies:
     - itchefer
 third_party_settings:
   block_class:
-    classes: .black-orange-design 
+    classes: black-orange-design 
 _core:
   default_config_hash: L0GbzYBp0tvEdRSIZ6uozmaIHK2-g1XxryF-kxttjTQ
 id: itchefer_views_block__latest_topics_default
