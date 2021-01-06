@@ -3,12 +3,12 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.node.field_resume_of_magazine
+    - field.storage.node.field_summary
     - node.type.magazine
   module:
     - text
-id: node.magazine.field_resume_of_magazine
-field_name: field_resume_of_magazine
+id: node.magazine.field_summary
+field_name: field_summary
 entity_type: node
 bundle: magazine
 label: 'Hvad dette magasin handler om'
