@@ -6,6 +6,7 @@ dependencies:
     - contact.form.contact_form
   module:
     - contact_block
+    - system
   theme:
     - itchefer
 id: contactblock
@@ -20,4 +21,9 @@ settings:
   provider: contact_block
   label_display: visible
   contact_form: contact_form
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }
