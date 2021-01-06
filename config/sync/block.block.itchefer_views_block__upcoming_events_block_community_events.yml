@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.upcoming_events
   module:
+    - block_class
     - system
     - views
   theme:
     - itchefer
+third_party_settings:
+  block_class:
+    classes: blue-beige-design
 _core:
   default_config_hash: DbkRKjd999M0Fung9e12mhQ00nRqNUFIvvgqwlKHRhA
 id: itchefer_views_block__upcoming_events_block_community_events
