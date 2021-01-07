@@ -11,8 +11,8 @@ _core:
   default_config_hash: f6Ksf9342jZNofFmN2HRAElWXSHUQ_80JIBipOam4rM
 id: itchefer_groupheroblock
 theme: itchefer
-region: hero
-weight: null
+region: content
+weight: -31
 provider: null
 plugin: group_hero_block
 settings:

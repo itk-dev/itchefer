@@ -1,5 +1,5 @@
-uuid: dedbf9bb-edfb-48a0-a39a-4ddba7be9b40
-langcode: en
+uuid: 75104879-6a72-4c59-9754-66aff486d850
+langcode: da
 status: true
 dependencies:
   module:
@@ -7,22 +7,20 @@ dependencies:
     - system
   theme:
     - itchefer
-_core:
-  default_config_hash: L-yGDnhJpWTUZo0pkCchj5d8szzjH7OR8itCWuf4NPQ
-id: itchefer_pagetitleblock_2
+id: pagetitleblock
 theme: itchefer
-region: content
-weight: -32
+region: hero
+weight: -31
 provider: null
 plugin: social_page_title_block
 settings:
   id: social_page_title_block
-  label: 'Page title for enrollments'
+  label: 'Page title block'
   provider: social_core
   label_display: '0'
 visibility:
   request_path:
     id: request_path
-    pages: "*/enrollments\r\n*/organisers\r\n*/manage-enrollments\r\n*/all-enrollments"
+    pages: '<front>'
     negate: false
     context_mapping: {  }

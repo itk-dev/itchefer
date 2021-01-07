@@ -15,7 +15,7 @@ _core:
 id: itchefer_anhomepageheroblock
 theme: itchefer
 region: hero
-weight: -15
+weight: -34
 provider: null
 plugin: 'block_content:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
 settings:

@@ -12,7 +12,7 @@ _core:
 id: itchefer_profile_hero_block
 theme: itchefer
 region: hero
-weight: -15
+weight: -33
 provider: null
 plugin: profile_hero_block
 settings:
