@@ -8,8 +8,12 @@ dependencies:
     - system
     - user
     - views
+    - block_class
   theme:
     - itchefer
+third_party_settings:
+  block_class:
+    classes: black-blue-design
 _core:
   default_config_hash: Q1Mm3jEdn0vzdytLroTsHc0Cg1iQtNPWiLfFJtk3MEs
 id: itchefer_views_block__upcoming_events_block_my_upcoming_events
