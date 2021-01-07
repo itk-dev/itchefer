@@ -23,6 +23,7 @@ module:
   contact_block: 0
   crop: 0
   csv_serialization: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dropdown: 0
@@ -134,6 +135,7 @@ module:
   votingapi: 0
   itchefer_event_enrollment: 1
   menu_link_content: 1
+  pathauto: 1
   social_group: 2
   social_group_flexible_group: 5
   social_group_request: 6

@@ -12,7 +12,7 @@ dependencies:
 id: contactblock
 theme: itchefer
 region: content
-weight: -22
+weight: -26
 provider: null
 plugin: contact_block
 settings:
