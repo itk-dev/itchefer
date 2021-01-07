@@ -5,10 +5,10 @@ dependencies:
   config:
     - views.view.upcoming_events
   module:
+    - block_class
     - system
     - user
     - views
-    - block_class
   theme:
     - itchefer
 third_party_settings:

@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/magazines\r\n/magazine/*"
+    pages: "/magazines\r\n/magazine/*\r\n/magasin/*"
     negate: false
     context_mapping: {  }

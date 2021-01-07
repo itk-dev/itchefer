@@ -11,7 +11,7 @@ _core:
 id: itchefer_content
 theme: itchefer
 region: content
-weight: -13
+weight: -23
 provider: null
 plugin: system_main_block
 settings:
