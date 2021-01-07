@@ -162,6 +162,10 @@ body {
 }
 
 .view-frontpage-news {
+    teaser__body {
+        background-color: $theme-beige;
+    }
+
     .teaser__title {
         padding: 15px;
         background-color: $black;
