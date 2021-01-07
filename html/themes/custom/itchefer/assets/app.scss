@@ -253,6 +253,26 @@ body {
         fill: $black;
     }
 }
+
+.main-navigation-itchefer {
+    flex-direction: column;
+    align-items: flex-end;
+    
+    .navbar-user {
+        display: flex;
+        align-items: flex-end;
+        order: 1;
+    }
+    
+    .navbar-brand {
+        height: 100px;
+        max-width: 400px;
+    }
+
+    .navbar-brand > img {
+        height: 90px;
+    }
+}
 .teaser__summary {
     display: none;
 }
@@ -295,5 +315,4 @@ body {
         padding-left: 0px;
     }
 }
-
 
