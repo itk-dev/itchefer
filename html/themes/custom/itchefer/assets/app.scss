@@ -4,6 +4,7 @@ $theme-red: #cd1719;
 $theme-blue: #39a8e0;
 $theme-orange: #f9b13c;
 $theme-beige: #fceccc;
+
 body {
     color: $black;
 }
@@ -158,12 +159,12 @@ body {
 .overflow-ellipsis {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical
 }
 
 .view-frontpage-news {
-    teaser__body {
+    .teaser__body {
         background-color: $theme-beige;
     }
 
@@ -171,17 +172,20 @@ body {
         padding: 15px;
         background-color: $black;
     }
+
     .news-badge {
         font-size: 14pt;
-            color: $theme-blue;
-            text-transform: uppercase;
-
+        color: $theme-blue;
+        text-transform: uppercase;
+        font-weight: 900;
     }
+
     h4 {
         color: white;
         font-size: 14pt;
     }
 }
+
 .navbar-secondary .navbar-nav a {
     color: $black !important;
 }
@@ -309,6 +313,7 @@ body {
         background-color: transparent;
         padding: 10px;
     }
+
     .teaser__summary {
         display: flex;
         p {
@@ -332,7 +337,7 @@ body {
     .teaser__published {
         display: none;
     }
-    
+
     .teaser__image {
         background-color: transparent;
     }
