@@ -235,9 +235,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            municipality: municipality
-            region: region
-            discussion: discussion
+            all: all
           group: 1
           exposed: true
           expose:
