@@ -188,7 +188,7 @@ display:
       path: magazines
       menu:
         type: normal
-        title: 'Kita magasinet'
+        title: 'Kit magasinet'
         description: ''
         expanded: false
         parent: ''
