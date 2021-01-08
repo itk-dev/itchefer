@@ -1,0 +1,31 @@
+uuid: 46d439ea-3913-4c30-996a-184c5f304f91
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_news
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+id: views_block__frontpage_news_block_1
+theme: itchefer
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:frontpage_news-block_1'
+settings:
+  id: 'views_block:frontpage_news-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

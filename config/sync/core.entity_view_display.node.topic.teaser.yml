@@ -15,6 +15,7 @@ dependencies:
   module:
     - image
     - options
+    - text
     - user
 _core:
   default_config_hash: 04NtMjR4-qurYxwI_s6nPsYd-Itjk0nTzjcA0ykdtfI
@@ -23,16 +24,23 @@ targetEntityType: node
 bundle: topic
 mode: teaser
 content:
+  body:
+    type: text_default
+    weight: 7
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_content_visibility:
     type: list_default
-    weight: 4
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     region: content
   field_topic_image:
     type: image
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: social_x_large
@@ -41,35 +49,36 @@ content:
     region: content
   field_topic_type:
     type: entity_reference_label
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
     region: content
   flag_follow_content:
-    weight: 10
+    weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
   groups_type_flexible_group:
     label: above
-    weight: -5
+    weight: 0
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   like_and_dislike:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
+  links:
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  body: true
   field_files: true
   field_topic_comments: true
   groups: true

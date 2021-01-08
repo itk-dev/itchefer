@@ -1,0 +1,25 @@
+<div class="card teaser">
+    <div class="teaser__body">
+      <h4 class="teaser__title">
+        <span class="news-badge">{{ 'NYHED'|t }}</span>
+        <a href="#">
+            {{ label }}
+        </a>
+      </h4>
+      <div class="teaser__content">
+      <div class="teaser__content-line">
+          <div class="teaser__content-text">
+              {% block field_body %} {% endblock %}
+          </div>
+      </div>
+      <div class="overflow-ellipsis">
+        {{ content.body }}
+      </div>
+    </div>
+    <div class="card__actionbar">
+      <a href="{{ url }}" class="card__link" title="{{ label }}">
+        {% trans %}Read more{% endtrans %}
+      </a>
+    </div>
+  </div>
+</div>
