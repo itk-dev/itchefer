@@ -368,8 +368,7 @@ body {
     padding-top: 100px;
 }
 
-@media (min-width: 600px) {
-    .cover-wrap > .hero-footer {
-        bottom: 20px;
-    }
+.block-social-profile header {
+    padding-bottom: 0em;
+    height: 260px;
 }
