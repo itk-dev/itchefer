@@ -9,11 +9,12 @@ palette:
   navbar-active-text: '#000'
   navbar-sec-bg: '#39a8e0'
   navbar-sec-text: '#ffffff'
-logo: 'public://color/socialblue-a9c3beff/logo.svg'
+logo: 'public://color/socialblue-5fef1fcb/logo.svg'
 stylesheets:
-  - 'public://color/socialblue-a9c3beff/brand.css'
-  - 'public://color/socialblue-a9c3beff/brand--sky.css'
+  - 'public://color/socialblue-5fef1fcb/brand.css'
+  - 'public://color/socialblue-5fef1fcb/brand--sky.css'
 files:
-  - 'public://color/socialblue-a9c3beff/logo.svg'
-  - 'public://color/socialblue-a9c3beff/brand.css'
-  - 'public://color/socialblue-a9c3beff/brand--sky.css'
+  - 'public://color/socialblue-5fef1fcb/logo.svg'
+  - 'public://color/socialblue-5fef1fcb/brand.css'
+  - 'public://color/socialblue-5fef1fcb/brand--sky.css'
+
