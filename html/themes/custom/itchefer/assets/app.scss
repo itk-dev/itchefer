@@ -2,6 +2,7 @@
 $black: #000;
 $theme-red: #cd1719;
 $theme-blue: #39a8e0;
+$theme-blue-light: #5fceff;
 $theme-orange: #f9b13c;
 $theme-beige: #fceccc;
 
@@ -247,40 +248,41 @@ body {
     }
 }
 
-.beige-orange-design {
-    background-color: $theme-beige;
+
+.black-light-blue-design {
+    background-color: $theme-blue-light;
 
     .card__title {
-        background-color: $theme-orange;
-        color: $black !important;
-        padding-bottom: 10px;
-        font-size: 1.5rem;
-    }
-
-    .card__subtitle{
-        font-size: 1.0rem;
-    }
-    .teaser--small .teaser--small__media .teaser--small__type-icon {
-        background-color: $theme-beige;
-        fill: $black;
-    }
-}
-
-.blue-beige-design {
-    background-color: $theme-beige;
-
-    .card__title {
-        background-color: $theme-blue;
+        background-color: $black;
         font-size: 1.5rem;
         padding-bottom: 10px;
-        color: $black !important;
+        color: white !important;
     }
 
     .card__subtitle {
         font-size: 1.0rem;
     }
     .teaser--small .teaser--small__media .teaser--small__type-icon {
-        background-color: $theme-beige;
+        background-color: $theme-blue-light;
+        fill: $black;
+    }
+}
+
+.black-white-design {
+    background-color: white;
+
+    .card__title {
+        background-color: $black;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        color: white !important;
+    }
+
+    .card__subtitle {
+        font-size: 1.0rem;
+    }
+    .teaser--small .teaser--small__media .teaser--small__type-icon {
+        background-color: white;
         fill: $black;
     }
 }
