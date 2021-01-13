@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
     - field.field.node.magazine.field_magazine_image
-    - field.field.node.magazine.field_summary
     - image.style.thumbnail
     - node.type.magazine
   module:
@@ -18,7 +17,6 @@ dependencies:
     - file
     - image
     - path
-    - text
 third_party_settings:
   field_group:
     group_articles:
@@ -133,14 +131,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_summary:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
     region: content
   path:
     type: path

@@ -9,6 +9,10 @@ body {
     color: $black;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .form-control {
     color: $black !important;
     fill: $black !important;
@@ -380,3 +384,4 @@ body {
         padding-top: 40px;
     }
 }
+
