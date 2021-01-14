@@ -284,7 +284,7 @@ body {
 .main-navigation-itchefer {
     flex-direction: column;
     align-items: flex-end;
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
         .navbar-user {
             display: flex;
             order: 3;
