@@ -22,6 +22,7 @@ jobs:
             composer install --no-dev
             vendor/bin/drush updb -y
             vendor/bin/drush config-import -y
+            (cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po)
             vendor/bin/drush cr --cache-clear
           host: ${{ secrets.HOST_STG }}
           key: ${{ secrets.PRIVATE_KEY }}

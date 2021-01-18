@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.magazine.field_highlighted_articles
     - field.field.node.magazine.field_magazine_file
     - field.field.node.magazine.field_magazine_image
-    - field.field.node.magazine.field_summary
     - node.type.magazine
   module:
     - dynamic_entity_reference
@@ -43,13 +42,6 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    region: content
-  field_summary:
-    weight: 8
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   flag_follow_content:
     weight: 5

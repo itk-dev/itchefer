@@ -19,7 +19,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: pdf
+  file_extensions: 'txt pdf doc docx jpg png jpeg gif dotx xls xlsx ppt pptx'
   max_filesize: ''
   description_field: false
   handler: 'default:file'
