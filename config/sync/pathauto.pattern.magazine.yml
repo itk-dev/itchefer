@@ -4,7 +4,7 @@ status: true
 dependencies:
   module:
     - node
-id: magasin
+id: magazine
 label: Magasin
 type: 'canonical_entities:node'
 pattern: '/magasin/[node:title]'
