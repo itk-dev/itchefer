@@ -12,7 +12,7 @@ dependencies:
     - itchefer
 third_party_settings:
   block_class:
-    classes: beige-orange-design
+    classes: black-light-blue-design
 _core:
   default_config_hash: OxzubQJRE2Y9ihgsgasPmuMwHXR42T5ipZi8mAObDGE
 id: itchefer_views_block__newest_users_block_newest_users
@@ -32,6 +32,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore\r\n<front>"
+    pages: "/stream\r\n/om\r\n/explore\r\n<front>"
     negate: false
     context_mapping: {  }

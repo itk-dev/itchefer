@@ -33,16 +33,7 @@
  * @ingroup templates
  */
 #}
-
-<button href="#" data-toggle="collapse" data-target="#main-navigation" type="button" aria-expanded="false" class="navbar-toggle collapsed">
-  <span>{% trans %} Menu {% endtrans %}</span>
-  <span class="sr-only">
-    {% trans %} Toggle navigation {% endtrans %}
-  </span>
-</button>
-
-<div id="main-navigation" class="collapse navbar-collapse main-navigation-itchefer ">
-  <div class="navbar-search">{{ content.links.search_block }}</div>
+ <div class="navbar-search">{{ content.links.search_block }}</div>
   {% if content.links.search_block is defined %}
     <div class="navbar__open-search-control">
       <a href="{{ '/search/all' }}" class="navbar__open-search-block" rel="search" title="{{ 'Click to open search box'|t }}">
@@ -53,6 +44,13 @@
       </a>
     </div>
   {% endif %}
+<button href="#" data-toggle="collapse" data-target="#main-navigation" type="button" aria-expanded="false" class="navbar-toggle collapsed">
+  <span>{% trans %} Menu {% endtrans %}</span>
+  <span class="sr-only">
+    {% trans %} Toggle navigation {% endtrans %}
+  </span>
+</button>
+<div id="main-navigation" class="collapse navbar-collapse main-navigation-itchefer ">
   {% block content %}
     {{ content }}
   {% endblock %}
