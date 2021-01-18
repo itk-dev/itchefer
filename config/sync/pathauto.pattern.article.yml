@@ -1,22 +1,22 @@
-uuid: cee25954-85eb-4020-a192-698a2c2967cd
+uuid: 3d20c1fa-d379-4d80-b40b-fad69336b45a
 langcode: da
 status: true
 dependencies:
   module:
     - node
-id: magasin
-label: Magasin
+id: article
+label: Artikel
 type: 'canonical_entities:node'
-pattern: '/magasin/[node:title]'
+pattern: '/article/[node:title]'
 selection_criteria:
-  02312e00-b8b3-43b9-8cd8-57ab997b577b:
+  25b9d671-9797-4df4-b794-f6b0cda110bb:
     id: node_type
     bundles:
-      magazine: magazine
+      article: article
     negate: false
     context_mapping:
       node: node
-    uuid: 02312e00-b8b3-43b9-8cd8-57ab997b577b
+    uuid: 25b9d671-9797-4df4-b794-f6b0cda110bb
 selection_logic: and
 weight: -5
 relationships: {  }
