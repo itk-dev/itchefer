@@ -72,6 +72,28 @@ Other stuff
 itkdev-docker-compose vendor/bin/drush
 ```
 
+## Translations
+
+Import translations by running
+
+```sh
+(cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po)
+```
+
+Export translations by running
+
+```sh
+(cd html && ../vendor/bin/drush locale:export da --types=customized > ../translations/custom-translations.da.po)
+```
+
+Open `translations/custom-translations.da.po` with the latest version of
+[Poedit](https://poedit.net/) to clean up and then save the file.
+
+See
+https://medium.com/limoengroen/how-to-deploy-drupal-interface-translations-5653294c4af6
+for further details.
+
+
 ## Developing with symfony binary
 
 Install `symfony`: [https://symfony.com/download](https://symfony.com/download)
