@@ -187,7 +187,7 @@ display:
         page_1: page_1
         default: '0'
       path: export
-      filename: itchefer-brugere
+      filename: itchefer-brugere.csv
       automatic_download: false
       store_in_public_file_directory: false
       redirect_to_display: none
