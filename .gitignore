@@ -3,7 +3,8 @@
 /html/modules/contrib
 /html/profiles/contrib
 /html/themes/contrib
-/html/sites/default/files
+/html/sites/default/files/*
+!/html/sites/default/files/color
 /html/libraries
 vendor/
 .idea
