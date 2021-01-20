@@ -2,29 +2,30 @@
 on:
   push:
     branches:
-      - develop
+      - master
 
-name: Deployment (stg)
+name: Deployment (prod)
 
 jobs:
   deploy:
-    name: Deployment (stg)
+    name: Deployment (prod)
     runs-on: ubuntu-latest
     steps:
       - name: Run remote commands
         uses: itk-dev/actions-remote-ssh@master
         with:
           command: |
-            cd ${{ secrets.APP_PATH_STG }}
+            cd ${{ secrets.APP_PATH_PROD }}
             git clean -d --force
-            git checkout develop
+            git checkout master
             git fetch
-            git reset origin/develop --hard
+            git reset origin/master --hard
             composer install --no-dev
+            vendor/bin/drush cr --cache-clear
             vendor/bin/drush updb -y
             vendor/bin/drush config-import -y
             (cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po)
             vendor/bin/drush cr --cache-clear
-          host: ${{ secrets.HOST_STG }}
+          host: ${{ secrets.HOST_PROD }}
           key: ${{ secrets.PRIVATE_KEY }}
           cert: ${{ secrets.PUBLIC_KEY_CERT }}
