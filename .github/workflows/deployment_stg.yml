@@ -21,6 +21,7 @@ jobs:
             git fetch
             git reset origin/develop --hard
             composer1 install --no-dev
+            vendor/bin/drush cr --cache-clear
             vendor/bin/drush updb -y
             vendor/bin/drush config-import -y
             (cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po)
