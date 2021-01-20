@@ -8,6 +8,7 @@ name: Deployment (prod)
 
 jobs:
   deploy:
+    name: Deployment (prod)
     runs-on: ubuntu-latest
     steps:
       - name: Run remote commands

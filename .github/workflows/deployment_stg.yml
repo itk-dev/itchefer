@@ -8,6 +8,7 @@ name: Deployment (stg)
 
 jobs:
   deploy:
+    name: Deployment (stg)
     runs-on: ubuntu-latest
     steps:
       - name: Run remote commands
