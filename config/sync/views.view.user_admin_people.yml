@@ -1,12 +1,15 @@
 uuid: 0b66b63f-c132-4d3c-866a-fe09601eff1b
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
+    - field.storage.profile.field_municipality
     - field.storage.profile.field_profile_first_name
     - field.storage.profile.field_profile_last_name
+    - field.storage.profile.field_representative_of_municipa
   module:
     - group
+    - options
     - profile
     - social_user
     - user
@@ -43,9 +46,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -67,7 +70,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -356,7 +359,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roles
+          label: Roller
           exclude: false
           alter:
             alter_text: false
@@ -742,6 +745,133 @@ display:
           type: string
           settings:
             link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_representative_of_municipa:
+          id: field_representative_of_municipa
+          table: profile__field_representative_of_municipa
+          field: field_representative_of_municipa
+          relationship: profile
+          group_type: group
+          admin_label: ''
+          label: 'Ansvarlig for kommunen'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: default
+            format_custom_true: ''
+            format_custom_false: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_municipality:
+          id: field_municipality
+          table: profile__field_municipality
+          field: field_municipality
+          relationship: profile
+          group_type: group
+          admin_label: ''
+          label: Kommune
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1275,8 +1405,10 @@ display:
         - url.query_args
       max-age: 0
       tags:
+        - 'config:field.storage.profile.field_municipality'
         - 'config:field.storage.profile.field_profile_first_name'
         - 'config:field.storage.profile.field_profile_last_name'
+        - 'config:field.storage.profile.field_representative_of_municipa'
   page_1:
     display_plugin: page
     id: page_1
@@ -1287,7 +1419,7 @@ display:
       show_admin_links: false
       menu:
         type: 'default tab'
-        title: List
+        title: 'Liste af grupper'
         description: 'Find and manage people interacting with your site.'
         menu_name: admin
         weight: -10
@@ -1309,5 +1441,7 @@ display:
         - url.query_args
       max-age: 0
       tags:
+        - 'config:field.storage.profile.field_municipality'
         - 'config:field.storage.profile.field_profile_first_name'
         - 'config:field.storage.profile.field_profile_last_name'
+        - 'config:field.storage.profile.field_representative_of_municipa'

@@ -1,0 +1,11 @@
+name: Link in create header
+description: Creates custom itchefer links in the header
+package: Custom
+
+type: module
+version: 1.0
+core: 8.x
+
+dependencies:
+    - drupal:social_event
+    - drupal:social_event_invite

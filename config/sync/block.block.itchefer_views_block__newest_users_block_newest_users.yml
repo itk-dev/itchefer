@@ -1,0 +1,37 @@
+uuid: 89cdf6cb-8249-4dd9-87bd-47fcd8df968e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newest_users
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - itchefer
+third_party_settings:
+  block_class:
+    classes: black-light-blue-design
+_core:
+  default_config_hash: OxzubQJRE2Y9ihgsgasPmuMwHXR42T5ipZi8mAObDGE
+id: itchefer_views_block__newest_users_block_newest_users
+theme: itchefer
+region: complementary_bottom
+weight: 5
+provider: null
+plugin: 'views_block:newest_users-block_newest_users'
+settings:
+  id: 'views_block:newest_users-block_newest_users'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/stream\r\n/om\r\n/explore\r\n<front>"
+    negate: false
+    context_mapping: {  }

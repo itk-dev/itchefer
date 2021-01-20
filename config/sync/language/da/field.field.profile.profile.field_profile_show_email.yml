@@ -1,0 +1,4 @@
+settings:
+  on_label: Vises
+  off_label: Skjules
+label: 'Vis email'

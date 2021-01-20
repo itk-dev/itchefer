@@ -1,5 +1,5 @@
 uuid: 969c69b0-d91b-406f-b39b-7380c479c609
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -42,7 +42,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -64,7 +64,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -178,7 +178,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Titel
           exclude: false
           alter:
             alter_text: false
@@ -353,7 +353,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
+            format_custom_true: Publiceret
             format_custom_false: Unpublished
           group_column: value
           group_columns: {  }
@@ -766,7 +766,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Published status'
+            label: Publiceringsstatus
             description: ''
             use_operator: false
             operator: status_op
@@ -783,7 +783,7 @@ display:
             operator_list: {  }
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: Publiceringsstatus
             description: ''
             identifier: status
             optional: true
@@ -794,7 +794,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publiceret
                 operator: '='
                 value: '1'
               2:
@@ -887,7 +887,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: true
           title: '{{ arguments.gid|placeholder }} nodes'
           default_argument_type: fixed

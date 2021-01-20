@@ -1,5 +1,5 @@
 uuid: af790468-5618-4fa0-992a-ae242048ed49
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: group.closed_group.field_group_address
 field_name: field_group_address
 entity_type: group
 bundle: closed_group
-label: Address
+label: Adresse
 description: ''
 required: false
 translatable: false

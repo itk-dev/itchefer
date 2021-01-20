@@ -1,0 +1,46 @@
+label: 'Seneste emner'
+description: 'Vis seneste emner'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+      fields:
+        title:
+          separator: ', '
+      title: 'Alle emner'
+      empty:
+        area_text_custom:
+          content: 'Ingen emner fundet'
+  block_latest_topics:
+    display_options:
+      title: 'Seneste emner'
+      use_more_text: 'Alle emner'
+  group_topics_block:
+    display_options:
+      empty:
+        area_text_custom:
+          content: 'Ingen emner i denne gruppe'
+      arguments:
+        gid:
+          exception:
+            title: Alle
+      title: 'Seneste emner'
+      use_more_text: 'Alle emner'
+  page_latest_topics:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning

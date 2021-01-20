@@ -1,5 +1,5 @@
 uuid: 628f8f85-acd9-488f-90b7-ef0ffa7d6cad
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: xjAOhbmA54PhIG8aR2cg72fkgU4JZADDg69UrQUA5uo
 id: content
-label: Content
+label: Indhold
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -28,9 +28,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -160,7 +160,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          label: Title
+          label: Titel
           exclude: false
           alter:
             alter_text: false
@@ -277,7 +277,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
+            format_custom_true: Publiceret
             format_custom_false: Unpublished
           plugin_id: field
           entity_type: node
@@ -394,7 +394,7 @@ display:
             operator_list: {  }
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: Publiceringsstatus
             description: ''
             identifier: status
             optional: true
@@ -405,7 +405,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publiceret
                 operator: '='
                 value: '1'
               2:
@@ -471,7 +471,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Titel
             description: ''
             use_operator: false
             operator: title_op
@@ -544,7 +544,7 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Content
+      title: Indhold
       empty:
         area_text_custom:
           id: area_text_custom
@@ -588,14 +588,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Indhold
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Indhold
         description: 'Find and manage content'
         menu_name: admin
         weight: -10

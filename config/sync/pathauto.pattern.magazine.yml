@@ -1,0 +1,22 @@
+uuid: cee25954-85eb-4020-a192-698a2c2967cd
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: magazine
+label: Magasin
+type: 'canonical_entities:node'
+pattern: '/magasin/[node:title]'
+selection_criteria:
+  02312e00-b8b3-43b9-8cd8-57ab997b577b:
+    id: node_type
+    bundles:
+      magazine: magazine
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 02312e00-b8b3-43b9-8cd8-57ab997b577b
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,32 @@
+core: 8.x
+type: theme
+base theme: socialblue
+screenshot: kita-logo.png
+name: 'ITChefer'
+description: 'A social blue sub-theme.'
+package: 'ITK'
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer
+
+libraries-extend:
+  bootstrap/framework:
+    - itchefer/app_theme
+
+libraries:
+  - core/drupal
+  - core/drupalSettings
+  - itchefer/base

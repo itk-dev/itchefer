@@ -1,5 +1,5 @@
 uuid: 4ca49f59-a822-4732-8545-e62be112b040
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -45,7 +45,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -67,7 +67,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -228,7 +228,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roles
+          label: Roller
           exclude: false
           alter:
             alter_text: false
@@ -722,7 +722,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: fixed

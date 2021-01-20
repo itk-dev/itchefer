@@ -1,5 +1,5 @@
 uuid: e6b91041-7fe9-4cdf-8dfc-51e9dce8cbe5
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.event.field_files
 field_name: field_files
 entity_type: node
 bundle: event
-label: Files
+label: Filer
 description: ''
 required: false
 translatable: false
@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx csv'
+  file_extensions: 'txt pdf doc docx jpg png jpeg gif dotx xls xlsx ppt pptx'
   max_filesize: ''
   description_field: true
   handler: 'default:file'

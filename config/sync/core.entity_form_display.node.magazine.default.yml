@@ -1,0 +1,176 @@
+uuid: 92fe2505-7088-4a3d-9cd7-466d1b0ee0ca
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.magazine.body
+    - field.field.node.magazine.field_articles
+    - field.field.node.magazine.field_cover_image
+    - field.field.node.magazine.field_highlighted_articles
+    - field.field.node.magazine.field_magazine_file
+    - field.field.node.magazine.field_magazine_image
+    - image.style.thumbnail
+    - node.type.magazine
+  module:
+    - dynamic_entity_reference
+    - field_group
+    - file
+    - image
+    - path
+third_party_settings:
+  field_group:
+    group_articles:
+      children:
+        - field_highlighted_articles
+        - field_articles
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Artikler
+    group_meta_information:
+      children:
+        - created
+        - uid
+        - path
+        - status
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Metainformation
+    group_magazine_tt:
+      children:
+        - title
+        - field_summary
+        - field_magazine_file
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Magasinet
+    group_images:
+      children:
+        - field_cover_image
+        - field_magazine_image
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Billeder
+id: node.magazine.default
+targetEntityType: node
+bundle: magazine
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_articles:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 40
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: dynamic_entity_reference_default
+    region: content
+  field_cover_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_highlighted_articles:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 40
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: dynamic_entity_reference_default
+    region: content
+  field_magazine_file:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_magazine_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  groups: true
+  langcode: true
+  promote: true
+  sticky: true

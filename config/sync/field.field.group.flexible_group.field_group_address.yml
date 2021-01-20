@@ -1,5 +1,5 @@
 uuid: 16ce3667-2029-4f93-8b8b-1aef80ed7f16
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: group.flexible_group.field_group_address
 field_name: field_group_address
 entity_type: group
 bundle: flexible_group
-label: Address
+label: Adresse
 description: ''
 required: false
 translatable: false

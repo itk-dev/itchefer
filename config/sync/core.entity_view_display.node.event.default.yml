@@ -1,5 +1,5 @@
 uuid: 594215d8-ac24-4184-9b07-2bab1c6ce62b
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -17,9 +17,11 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
+    - field.field.node.event.field_product
     - node.type.event
   module:
     - address
+    - dynamic_entity_reference
     - file
     - group_core_comments
     - text
@@ -69,11 +71,27 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
+  field_product:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: dynamic_entity_reference_label
+    region: content
   flag_follow_content:
     weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   groups_type_public_group:
     label: above
     weight: -5
@@ -104,5 +122,6 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true

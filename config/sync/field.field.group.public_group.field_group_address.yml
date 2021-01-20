@@ -1,5 +1,5 @@
 uuid: 70cc1dbc-a5b8-40c7-8f1a-b1624b9a4d31
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: group.public_group.field_group_address
 field_name: field_group_address
 entity_type: group
 bundle: public_group
-label: Address
+label: Adresse
 description: ''
 required: false
 translatable: false

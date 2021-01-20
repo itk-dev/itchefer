@@ -1,0 +1,415 @@
+// Accesibility contrast fixes
+$black: #000;
+$theme-red: #cd1719;
+$theme-blue: #39a8e0;
+$theme-blue-light: #5fceff;
+$theme-orange: #f9b13c;
+$theme-beige: #fceccc;
+
+body {
+    color: $black;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.form-control {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.card__title {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.card__link {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.post-date {
+    color: $black !important;
+    fill: $black !important;
+
+}
+
+.btn-primary {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.vote-widget {
+     a.voted-like .icon-vote {
+        fill: $theme-red !important;
+        stroke: $theme-red !important;
+    }
+    a:hover {
+        .icon-vote {
+            stroke: $theme-red !important;
+        }
+    }
+}
+
+.comment__metadata {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.dropdown-menu li > a, .dropdown-menu li > span {
+    color: $black !important;
+}
+
+[type="checkbox"]:checked:not(:disabled) + label, [type="radio"]:checked:not(:disabled) + label {
+    color: $black !important;
+
+}
+
+.offcanvas-head .complementary-title {
+    color: $black !important;
+}
+
+[type="radio"]:checked + label::before {
+    border-color: $black !important;
+}
+
+[type="checkbox"]:checked + label::after, [type="radio"]:checked + label::after {
+    border-color: $theme-blue !important;
+    background-color: $theme-blue !important;
+}
+
+.btn-flat {
+    color: $black !important;
+    fill: $black !important;
+}
+
+.csv-feed .feed-icon {
+    background-color: $theme-blue;
+    color: $black;
+    width: 100px;
+    background-image: none;
+    margin-top: 10px;
+}
+
+.views-data-export-feed .feed-icon {
+    display: flex;
+    text-indent: 0px;
+    border-radius: 2px !important;
+    border-color: $theme-blue;
+    width: 130px;
+    justify-content: center;
+    padding: 5px 0;
+
+    &:hover {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+}
+
+.views-field-label {
+    font-weight: bold;
+}
+
+.teaser__highlighted-articles {
+    .field--label {
+
+        margin-top: 10px;
+    }
+
+    a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.field--label {
+    font-weight: bold;
+}
+
+.teaser-magazine {
+    height: 100%;
+    .teaser__image {
+        height: auto;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .teaser__content-type-icon {
+        display: none;
+    }
+}
+
+.directories-menu {
+    display: block;
+ 
+    li:hover {
+        background-color: $theme-blue;
+    }
+}
+
+.cover {
+    height: 260px;
+}
+
+.cover-wrap {
+    min-height: 260px;
+}
+
+.overflow-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+
+.view-frontpage-news {
+    .teaser__title {
+        padding: 15px;
+        background-color: $black;
+    }
+
+    .news-badge {
+        font-size: 14pt;
+        color: $theme-blue;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    h4 {
+        color: white;
+        font-size: 14pt;
+    }
+}
+
+.navbar-secondary .navbar-nav a {
+    color: $black !important;
+}
+
+.black-blue-design {
+    background-color: $theme-blue;
+
+    .card__title {
+        background-color: $black;
+        color: white !important;
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .card__subtitle {
+        font-size: 1.0rem;
+    }
+    .teaser--small .teaser--small__media .teaser--small__type-icon {
+        background-color: $theme-blue;
+        fill: $black;
+    }
+}
+
+.black-beige-design {
+    background-color: $theme-beige;
+
+    .card__title {
+        background-color: $black;
+        color: white !important;
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .card__subtitle{
+        font-size: 1.0rem;
+    }
+    .teaser--small .teaser--small__media .teaser--small__type-icon {
+        background-color: $theme-beige;
+        fill: $theme-orange;
+    }
+}
+
+.black-orange-design {
+    background-color: $theme-orange;
+
+    .card__title {
+        background-color: $black;
+        color: white !important;
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .card__subtitle{
+        font-size: 1.0rem;
+    }
+    .teaser--small .teaser--small__media .teaser--small__type-icon {
+        background-color: $theme-orange;
+        fill: $black;
+    }
+}
+
+
+.black-light-blue-design {
+    background-color: $theme-blue-light;
+
+    .card__title {
+        background-color: $black;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        color: white !important;
+    }
+
+    .card__subtitle {
+        font-size: 1.0rem;
+    }
+    .teaser--small .teaser--small__media .teaser--small__type-icon {
+        background-color: $theme-blue-light;
+        fill: $black;
+    }
+}
+
+.black-white-design {
+    background-color: white;
+
+    .card__title {
+        background-color: $black;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        color: white !important;
+    }
+
+    .card__subtitle {
+        font-size: 1.0rem;
+    }
+    .teaser--small .teaser--small__media .teaser--small__type-icon {
+        background-color: white;
+        fill: $black;
+    }
+}
+
+.main-navigation-itchefer {
+    flex-direction: column;
+    align-items: flex-end;
+
+    .navbar-header {
+        height: 120px;
+    }
+
+    @media (min-width: 899px) {
+        .navbar-user {
+            display: flex;
+            order: 3;
+            min-width: 190px;
+            height: 50px;
+            justify-content: flex-end;
+        }
+
+        .navbar__open-search-control {
+            order: 10;
+        }
+        
+        .menu-main {
+            height: 50px;
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+        }
+    }
+    .navbar-brand {
+        height: 100px;
+        max-width: 400px;
+    }
+
+    .navbar-brand > img {
+        height: 90px;
+    }
+}
+
+.teaser__summary {
+    display: none;
+}
+    
+.newest-magazine {
+    img {
+        background-color: transparent;
+        padding: 10px;
+    }
+
+    .teaser__summary {
+        display: flex;
+        p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .teaser-magazine {
+        margin-bottom: 0px;
+        background-color: transparent;
+    }
+
+    .teaser__published {
+        display: none;
+    }
+
+    .teaser__image {
+        background-color: transparent;
+    }
+
+    .teaser__summary {
+        display: flex;
+
+        p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    }
+
+    .teaser__content-type-icon, .teaser__highlighted-articles, .teaser__published, .teaser__file {
+        display: none;
+    }
+
+    .teaser__content {
+        padding-left: 0px;
+    }
+}
+
+.main-container {
+    padding-top: 100px;
+}
+
+.block-social-profile header {
+    padding-bottom: 0em;
+    height: 260px;
+}
+
+.container-post-image {
+    height: 90px;
+
+    .messages--error {
+        padding-top: 40px;
+    }
+}
+
+.itchefer-ad-card {
+    margin-bottom: 0px;
+    box-shadow: none;
+
+    .card__body {
+        padding: 1rem 1rem 0 1rem;
+    }
+    
+    &:last-of-type {
+        padding-bottom: 1rem; 
+    }
+}

@@ -26,6 +26,13 @@ content:
       size: 60
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden:
   entity_id: true
   invitation_status: true

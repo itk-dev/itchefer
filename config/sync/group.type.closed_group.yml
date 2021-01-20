@@ -1,11 +1,11 @@
 uuid: 596fa9f1-f417-4ce2-a0dd-4a76b8008c3b
-langcode: en
+langcode: da
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 4WFYwmcnzOEXNkvgunZkvjXnjR6_JxH7iuvQB0horNs
 id: closed_group
-label: 'Closed group'
+label: 'Lukket gruppe'
 description: 'This is a closed group. Users can only join by invitation and the content in the group is hidden from non members.'
 creator_membership: true
 creator_wizard: false

@@ -1,5 +1,5 @@
 uuid: b9ac743b-8b27-4934-bf9d-26e54de23232
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -10,12 +10,21 @@ id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
-content: {  }
+content:
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
 hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
+  langcode: true
   member_for: true
   profile_main: true
   profile_profile: true

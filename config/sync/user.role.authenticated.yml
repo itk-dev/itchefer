@@ -1,11 +1,11 @@
 uuid: 2b34ace9-399d-4906-9b88-ffb04b86fe8e
-langcode: en
+langcode: da
 status: true
 dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Authenticated user'
+label: 'Godkendt bruger'
 weight: 1
 is_admin: false
 permissions:
@@ -43,6 +43,7 @@ permissions:
   - 'edit own post entities'
   - 'edit own topic content'
   - 'flag follow_content'
+  - 'opt-in or out of google analytics tracking'
   - 'override event published option'
   - 'override topic published option'
   - 'post comments'
@@ -57,6 +58,8 @@ permissions:
   - 'view community posts'
   - 'view events on my profile'
   - 'view events on other profiles'
+  - 'view field_files'
+  - 'view field_representative_of_municipa'
   - 'view group stream page'
   - 'view groups on my profile'
   - 'view groups on other profiles'
@@ -67,6 +70,8 @@ permissions:
   - 'view node.page.field_content_visibility:public content'
   - 'view node.topic.field_content_visibility:community content'
   - 'view node.topic.field_content_visibility:public content'
+  - 'view own field_files'
+  - 'view own field_representative_of_municipa'
   - 'view own profile profile'
   - 'view own unpublished content'
   - 'view own unpublished post entities'

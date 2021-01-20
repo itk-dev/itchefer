@@ -1,5 +1,5 @@
 uuid: eda02428-879e-481d-8be1-91be2e88f89d
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
+    - field.field.node.event.field_product
     - image.style.social_x_large
     - node.type.event
   module:
@@ -86,6 +87,14 @@ content:
   flag_follow_content:
     weight: 10
     region: content
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   groups_type_public_group:
     label: above
     weight: -5
@@ -107,8 +116,10 @@ hidden:
   field_event_enroll_outside_group: true
   field_event_managers: true
   field_files: true
+  field_product: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  langcode: true
   like_and_dislike: true
   search_api_excerpt: true

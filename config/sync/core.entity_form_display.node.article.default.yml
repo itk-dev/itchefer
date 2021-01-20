@@ -1,0 +1,117 @@
+uuid: 6436ab19-dc4b-4476-a468-5bf7bab42464
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.field_article_image
+    - field.field.node.article.field_author
+    - image.style.thumbnail
+    - node.type.article
+  module:
+    - field_group
+    - image
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_indhold:
+      children:
+        - title
+        - field_article_image
+        - body
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Indhold
+    group_meta_information:
+      children:
+        - field_author
+        - created
+        - path
+        - status
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Meta information'
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_author:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  groups: true
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

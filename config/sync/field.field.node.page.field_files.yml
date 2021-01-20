@@ -1,5 +1,5 @@
 uuid: e6474d68-e702-4791-8b84-7ef89adcf410
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.page.field_files
 field_name: field_files
 entity_type: node
 bundle: page
-label: Files
+label: Filer
 description: ''
 required: false
 translatable: true

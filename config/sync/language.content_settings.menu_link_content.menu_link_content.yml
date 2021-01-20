@@ -1,0 +1,17 @@
+uuid: cb3a655b-3dfa-4648-bd51-8843bdd5cb2e
+langcode: da
+status: true
+dependencies:
+  module:
+    - content_translation
+    - menu_link_content
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: rRbEQMHpi7HIujshXF5lqdbPkxbpXJKs__P-k_vRvoo
+id: menu_link_content.menu_link_content
+target_entity_type_id: menu_link_content
+target_bundle: menu_link_content
+default_langcode: site_default
+language_alterable: true

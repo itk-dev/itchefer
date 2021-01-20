@@ -31,3 +31,4 @@ _core:
 schemas:
   bootstrap: 8000
   socialbase: 8000
+langcode: da

@@ -1,0 +1,21 @@
+uuid: c45ca50f-c3cf-49d8-9199-63cb5c0f41f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_municipality
+    - profile.type.profile
+  module:
+    - options
+id: profile.profile.field_municipality
+field_name: field_municipality
+entity_type: profile
+bundle: profile
+label: Municipality
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

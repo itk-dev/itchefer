@@ -1,0 +1,4 @@
+label: 'Profile image'
+settings:
+  default_image:
+    alt: 'Default profile image'

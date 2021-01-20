@@ -1,5 +1,5 @@
 uuid: 74e839b0-4cb9-4a64-893f-a6178c16f0b8
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -8,6 +8,7 @@ dependencies:
     - field.field.group.closed_group.field_group_description
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
+    - field.field.group.closed_group.field_group_purpose
     - group.type.closed_group
     - image.style.social_xx_large
   module:
@@ -56,5 +57,7 @@ hidden:
   changed: true
   created: true
   field_group_description: true
+  field_group_purpose: true
+  langcode: true
   search_api_excerpt: true
   uid: true

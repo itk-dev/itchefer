@@ -1,5 +1,5 @@
 uuid: f535fefe-20a3-4ba9-814c-1447ada6dbdb
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -37,5 +37,6 @@ content:
 hidden:
   entity_id: true
   field_grequest_message: true
+  langcode: true
   search_api_excerpt: true
   uid: true

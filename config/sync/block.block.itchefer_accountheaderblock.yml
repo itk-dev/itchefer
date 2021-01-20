@@ -1,0 +1,33 @@
+uuid: 317a5c8b-96af-423c-a388-9263d7fba1c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_user
+    - user
+  theme:
+    - itchefer
+_core:
+  default_config_hash: '-IhZcKt9IHKiTwXC8sVC0jZ-1XWUKn5g0IsJAfs6O60'
+id: itchefer_accountheaderblock
+theme: itchefer
+region: header
+weight: 2
+provider: null
+plugin: account_header_block
+settings:
+  id: account_header_block
+  label: 'Account header block'
+  provider: social_user
+  label_display: '0'
+  context_mapping:
+    user: '@user.current_user_context:current_user'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

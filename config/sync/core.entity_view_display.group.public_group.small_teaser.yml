@@ -1,5 +1,5 @@
 uuid: 49b9f37d-57e1-41e7-a688-76a5ce538ca9
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -8,6 +8,7 @@ dependencies:
     - field.field.group.public_group.field_group_description
     - field.field.group.public_group.field_group_image
     - field.field.group.public_group.field_group_location
+    - field.field.group.public_group.field_group_purpose
     - group.type.public_group
     - image.style.social_medium
   module:
@@ -42,6 +43,8 @@ hidden:
   field_group_address: true
   field_group_description: true
   field_group_location: true
+  field_group_purpose: true
+  langcode: true
   search_api_excerpt: true
   social_tagging: true
   uid: true

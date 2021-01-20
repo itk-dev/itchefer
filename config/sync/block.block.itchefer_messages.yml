@@ -1,0 +1,22 @@
+uuid: 606dfc7c-cdfd-4f2d-b8df-8d2ff2e9da5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - itchefer
+_core:
+  default_config_hash: eVKhOL_cct67bmqEqLvJdxLYRhBDWp02t-UrdcJgIrQ
+id: itchefer_messages
+theme: itchefer
+region: content
+weight: -25
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 97cc5080-1469-424f-8edd-9ef0d297b508
+langcode: da
+status: true
+dependencies:
+  config:
+    - contact.form.contact_form
+  module:
+    - contact_block
+    - system
+  theme:
+    - itchefer
+id: contactblock
+theme: itchefer
+region: content
+weight: -26
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Kontakt os'
+  provider: contact_block
+  label_display: visible
+  contact_form: contact_form
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

@@ -1,5 +1,5 @@
 uuid: 9b312729-8b5e-4acf-8582-1711dcac3780
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ field_name: field_event_image
 entity_type: node
 bundle: event
 label: Image
-description: 'Crop your image to select which part of your image to show on display.'
+description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
 required: false
 translatable: false
 default_value: {  }

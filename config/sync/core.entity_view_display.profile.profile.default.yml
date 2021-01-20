@@ -1,9 +1,9 @@
 uuid: 9f827ed5-aef3-425a-ade8-9100a90df67c
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
-    - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_municipality
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_first_name
@@ -16,9 +16,11 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_region
+    - field.field.profile.profile.field_representative_of_municipa
     - profile.type.profile
   module:
-    - address
+    - options
     - text
 _core:
   default_config_hash: dnjwto7vi1Xhb0sx5KL_Oexy3UD6Q3LbxkPfS5uvZNw
@@ -27,12 +29,12 @@ targetEntityType: profile
 bundle: profile
 mode: default
 content:
-  field_profile_address:
-    weight: 2
-    label: visually_hidden
+  field_municipality:
+    weight: 6
+    label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    type: list_default
     region: content
   field_profile_expertise:
     weight: 5
@@ -72,6 +74,23 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_region:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_representative_of_municipa:
+    weight: 7
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
 hidden:
   field_profile_banner_image: true

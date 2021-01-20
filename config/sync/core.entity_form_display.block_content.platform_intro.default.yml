@@ -1,5 +1,5 @@
 uuid: 8b4fe528-a4f5-4546-96e6-fd9e07611345
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -45,4 +45,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden: {  }

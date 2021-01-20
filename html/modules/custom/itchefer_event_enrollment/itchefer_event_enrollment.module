@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * The module for itchefer_event_enrollment.
+ */
+
+use Drupal\social_event\EventEnrollmentInterface;
+
+/**
+ * @file
+ * The Social event module.
+ */
+
+/**
+ * Prepares variables for node templates.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An array of elements to display in view mode.
+ *   - node: The node object.
+ *   - view_mode: View mode; e.g., 'full', 'teaser', etc.
+ */
+function itchefer_event_enrollment_preprocess_node(array &$variables) {
+  $view_mode = $variables['view_mode'];
+  $node = $variables['node'];
+  if ($node->getType() === 'event') {
+    $variables['event_date'] = _social_event_format_date($node, $view_mode);
+    $variables['#cache']['contexts'][] = 'timezone';
+
+    if ($view_mode === 'hero') {
+
+      // Since the Enroll action form for EventInviteEnrollActionForm doesn't
+      // support AN enrollments, don't add this. This will add the Enroll
+      // button to the Hero for AN on Public events with Invite enabled.
+      if (count($node->get('field_product')->referencedEntities()) > 0) {
+        if ($node->hasField('field_enroll_method') && (int) $node->getFieldValue('field_enroll_method', 'value') === EventEnrollmentInterface::ENROLL_METHOD_INVITE) {
+          $form = \Drupal::formBuilder()
+            ->getForm('Drupal\itchefer_event_enrollment\Form\EnrollWithInviteButton', $node);
+
+          // Vary per user, because one user can be enrolled or have more rights.
+          // @todo create a better cache context custom. Based on the enrollment
+          // method OR the fact if a user is enrolled or not.
+          $variables['#cache']['contexts'][] = 'user';
+        }
+        // Add Enroll button.
+        else {
+          $form = \Drupal::formBuilder()
+            ->getForm('Drupal\itchefer_event_enrollment\Form\EnrollButton');
+        }
+        $render_array = [
+          'product_modal_form' => $form,
+        ];
+        $variables['event_enrollment'] = $render_array;
+      }
+    }
+  }
+}

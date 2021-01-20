@@ -1,0 +1,26 @@
+uuid: 75104879-6a72-4c59-9754-66aff486d850
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_core
+    - system
+  theme:
+    - itchefer
+id: pagetitleblock
+theme: itchefer
+region: hero
+weight: -31
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title block'
+  provider: social_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

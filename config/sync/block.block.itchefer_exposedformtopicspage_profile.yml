@@ -1,0 +1,39 @@
+uuid: d6d512e4-652c-4edb-95e7-73b57b602844
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: 0MO8kRMzukuFcnRLLugyr7OwKplACfFPLV7582vt5Uc
+id: itchefer_exposedformtopicspage_profile
+theme: itchefer
+region: complementary_top
+weight: 3
+provider: null
+plugin: 'views_exposed_filter_block:topics-page_profile'
+settings:
+  id: 'views_exposed_filter_block:topics-page_profile'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '/user/*/topics'
+    negate: false
+    context_mapping: {  }

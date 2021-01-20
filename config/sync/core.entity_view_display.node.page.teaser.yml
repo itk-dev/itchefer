@@ -1,5 +1,5 @@
 uuid: 71f10720-f5fd-423c-a2c8-a04beae758f6
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -41,6 +41,14 @@ content:
   flag_follow_content:
     weight: 10
     region: content
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   links:
     weight: 1
     settings: {  }
@@ -54,4 +62,5 @@ hidden:
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
+  langcode: true
   search_api_excerpt: true

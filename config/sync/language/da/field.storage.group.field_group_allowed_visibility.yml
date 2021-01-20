@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    0:
+      label: Offentlig
+    2:
+      label: Gruppemedlemmer

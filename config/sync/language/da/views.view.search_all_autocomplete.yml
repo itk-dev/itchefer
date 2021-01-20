@@ -1,0 +1,43 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      fields:
+        type:
+          admin_label: Gruppetype
+          separator: ', '
+        type_1:
+          admin_label: Indholdstype
+          separator: ', '
+        uid_1:
+          alter:
+            text: Bruger
+          separator: ', '
+        title:
+          admin_label: Titel
+          separator: ', '
+        label:
+          admin_label: Gruppetitel
+          separator: ', '
+        name:
+          admin_label: Brugernavn
+          separator: ', '
+        nid:
+          separator: ', '
+        uid:
+          separator: ', '
+        id:
+          separator: ', '
+      arguments:
+        search_api_fulltext:
+          exception:
+            title: Alle
+  rest_export_1:
+    display_title: 'REST eksport'

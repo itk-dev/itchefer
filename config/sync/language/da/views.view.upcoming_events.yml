@@ -1,0 +1,47 @@
+label: '(Kommende) begivenheder i gruppen'
+description: 'Vis kommende begivenheder (mine, gruppens og oversigt)'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        title:
+          separator: ', '
+      title: 'Kommende begivenheder'
+  block_my_upcoming_events:
+    display_options:
+      arguments:
+        field_account_target_id:
+          exception:
+            title: Alle
+  page_community_events:
+    display_options:
+      filters:
+        event_date:
+          expose:
+            label: Løbsdato
+  upcoming_events_group:
+    display_options:
+      arguments:
+        gid:
+          exception:
+            title: Alle
+      title: 'Kommende begivenheder'

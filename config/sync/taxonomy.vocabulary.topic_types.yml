@@ -1,10 +1,10 @@
 uuid: 0badd662-079e-4ca5-86a5-025e8646e8b9
-langcode: en
+langcode: da
 status: true
 dependencies: {  }
 _core:
   default_config_hash: G6npA3Wl7zD7HUB-Sh_bqlPGQraWf2a0g1iGenzgAQU
-name: 'Topic types'
+name: Emnetyper
 vid: topic_types
-description: 'Topic types'
+description: Emnetyper
 weight: 0

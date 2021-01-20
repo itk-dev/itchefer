@@ -1,5 +1,5 @@
 uuid: 6d945fe3-fe6d-4e6e-82c9-94070df9d700
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -21,5 +21,6 @@ content:
     region: content
 hidden:
   group_roles: true
+  langcode: true
   search_api_excerpt: true
   uid: true

@@ -1,0 +1,6 @@
+app_theme:
+  css:
+    theme:
+      build/app.css: {}
+  js:
+    build/app.js: { preprocess: false }

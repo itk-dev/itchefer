@@ -1,0 +1,2 @@
+label: 'Normal stemme'
+description: 'Standard-tag for stemmer på indhold. Hvis der afgives flere stemmer med forskellige tags på et stykke indhold bør du overveje også at afgive en resumé-stemme med dette tag.'

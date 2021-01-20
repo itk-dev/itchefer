@@ -1,5 +1,5 @@
 uuid: c509253b-cc1c-46d9-b262-f78427121a63
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -67,7 +67,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -180,7 +180,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           tags:

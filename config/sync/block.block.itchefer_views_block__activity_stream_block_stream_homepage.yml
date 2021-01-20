@@ -1,0 +1,33 @@
+uuid: fc17660e-e16d-402e-8e67-d3cae62ff2d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+_core:
+  default_config_hash: RymhcPR3B-3uuTJ92k7c0gWRYQVr6wZCa5q4AFJ0C5E
+id: itchefer_views_block__activity_stream_block_stream_homepage
+theme: itchefer
+region: content
+weight: -20
+provider: null
+plugin: 'views_block:activity_stream-block_stream_homepage'
+settings:
+  id: 'views_block:activity_stream-block_stream_homepage'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /stream
+    negate: false
+    context_mapping: {  }

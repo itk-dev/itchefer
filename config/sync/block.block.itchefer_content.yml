@@ -1,0 +1,22 @@
+uuid: 95b73afb-e26d-4726-8516-53438aa72d1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - itchefer
+_core:
+  default_config_hash: WQavb4yx5tp3JXnHNNH_B1-tp7ADTvyM3LDxGEuWbMw
+id: itchefer_content
+theme: itchefer
+region: content
+weight: -23
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

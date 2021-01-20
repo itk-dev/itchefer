@@ -1,0 +1,21 @@
+uuid: f42cce90-f701-4661-9983-0624ec55fb63
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_purpose
+    - group.type.closed_group
+  module:
+    - options
+id: group.closed_group.field_group_purpose
+field_name: field_group_purpose
+entity_type: group
+bundle: closed_group
+label: 'Group purpose'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

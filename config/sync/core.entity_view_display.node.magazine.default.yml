@@ -1,0 +1,101 @@
+uuid: ec3b1c38-a6ef-4bd2-9508-84a993aaab99
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.magazine.body
+    - field.field.node.magazine.field_articles
+    - field.field.node.magazine.field_cover_image
+    - field.field.node.magazine.field_highlighted_articles
+    - field.field.node.magazine.field_magazine_file
+    - field.field.node.magazine.field_magazine_image
+    - node.type.magazine
+  module:
+    - dynamic_entity_reference
+    - file
+    - text
+    - user
+id: node.magazine.default
+targetEntityType: node
+bundle: magazine
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_articles:
+    type: dynamic_entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_magazine_file:
+    weight: 9
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  flag_follow_content:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  groups:
+    label: above
+    weight: 0
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_closed_group:
+    label: above
+    weight: 1
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_flexible_group:
+    label: above
+    weight: 2
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_open_group:
+    label: above
+    weight: 3
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_public_group:
+    label: above
+    weight: 4
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cover_image: true
+  field_highlighted_articles: true
+  field_magazine_image: true
+  langcode: true
+  search_api_excerpt: true

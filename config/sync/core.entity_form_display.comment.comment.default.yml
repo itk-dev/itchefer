@@ -1,5 +1,5 @@
 uuid: 5016e810-6fa6-4210-9f76-8f4212055118
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -25,5 +25,12 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden:
   subject: true

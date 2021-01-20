@@ -1,0 +1,26 @@
+uuid: 7620cca4-9e6b-4ad0-91b5-eb17141453a4
+langcode: da
+status: true
+dependencies:
+  module:
+    - dynamic_entity_reference
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_articles
+field_name: field_articles
+entity_type: node
+type: dynamic_entity_reference
+settings:
+  exclude_entity_types: false
+  entity_type_ids:
+    node: node
+module: dynamic_entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

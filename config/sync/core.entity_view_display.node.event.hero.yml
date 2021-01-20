@@ -1,5 +1,5 @@
 uuid: fe88efbe-38f4-46e3-9f54-428ad4549110
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
+    - field.field.node.event.field_product
     - image.style.social_xx_large
     - node.type.event
   module:
@@ -78,6 +79,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   like_and_dislike:
     weight: 9
     region: content
@@ -102,9 +111,11 @@ hidden:
   field_event_enroll_outside_group: true
   field_event_managers: true
   field_files: true
+  field_product: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
+  langcode: true
   links: true
   search_api_excerpt: true
