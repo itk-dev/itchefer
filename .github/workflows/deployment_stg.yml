@@ -16,6 +16,7 @@ jobs:
         with:
           command: |
             cd ${{ secrets.APP_PATH_STG }}
+            chmod 755 html/sites/default
             git clean -d --force
             git checkout develop
             git fetch
