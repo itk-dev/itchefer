@@ -150,7 +150,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
+                "url": "https://github.com/twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -207,7 +207,7 @@
             "version": "9.15.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highlightjs/highlight.js.git",
+                "url": "git@github.com:isagalaev/highlight.js.git",
                 "reference": "3026925b1c57c9a9feb0713e663f8d1ef8ff08e9"
             },
             "dist": {
