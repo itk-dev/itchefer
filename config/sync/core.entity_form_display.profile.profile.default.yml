@@ -98,6 +98,9 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_profile_banner_image:
+    weight: 10
+    region: content
   field_profile_expertise:
     weight: 13
     settings:
@@ -202,8 +205,6 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_profile_banner_image:
-    weight: 10
 hidden:
   field_profile_banner_image: true
   field_profile_show_email: true
