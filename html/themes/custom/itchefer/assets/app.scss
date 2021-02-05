@@ -202,7 +202,7 @@ h1 {
     }
 
     .card__subtitle {
-        font-size: 1.0rem;
+        display: none;
     }
     .teaser--small .teaser--small__media .teaser--small__type-icon {
         background-color: $theme-blue;
@@ -220,8 +220,8 @@ h1 {
         font-size: 1.5rem;
     }
 
-    .card__subtitle{
-        font-size: 1.0rem;
+    .card__subtitle {
+        display: none;
     }
     .teaser--small .teaser--small__media .teaser--small__type-icon {
         background-color: $theme-beige;
@@ -239,8 +239,8 @@ h1 {
         font-size: 1.5rem;
     }
 
-    .card__subtitle{
-        font-size: 1.0rem;
+    .card__subtitle {
+        display: none;
     }
     .teaser--small .teaser--small__media .teaser--small__type-icon {
         background-color: $theme-orange;
@@ -260,7 +260,7 @@ h1 {
     }
 
     .card__subtitle {
-        font-size: 1.0rem;
+        display: none;
     }
     .teaser--small .teaser--small__media .teaser--small__type-icon {
         background-color: $theme-blue-light;
@@ -279,7 +279,7 @@ h1 {
     }
 
     .card__subtitle {
-        font-size: 1.0rem;
+        display: none;
     }
     .teaser--small .teaser--small__media .teaser--small__type-icon {
         background-color: white;
