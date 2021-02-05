@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2021-01-08 08:29+0100\n"
-"PO-Revision-Date: 2021-01-08 09:49+0100\n"
+"POT-Creation-Date: 2021-02-05 09:43+0100\n"
+"PO-Revision-Date: 2021-02-05 09:45+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -15,13 +15,13 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 msgid "User account menu"
-msgstr "User account menu"
+msgstr "Brugermenu"
 
 msgid "Site branding"
 msgstr "Site branding"
 
 msgid "Breadcrumbs"
-msgstr "Breadcrumbs"
+msgstr "Brødkrummer"
 
 msgid "Main page content"
 msgstr "Main page content"
@@ -39,10 +39,10 @@ msgid "Main navigation"
 msgstr "Main navigation"
 
 msgid "Status messages"
-msgstr "Status messages"
+msgstr "Statusbeskeder"
 
 msgid "Page title"
-msgstr "Page title"
+msgstr "Sidens titel"
 
 msgid "Powered by Drupal"
 msgstr "Powered by Drupal"
@@ -63,37 +63,37 @@ msgid "Footer"
 msgstr "Footer"
 
 msgid "Search"
-msgstr "Search"
+msgstr "Søg"
 
 msgid "Language switcher block"
-msgstr "Language switcher block"
+msgstr "Sprogskifter blok"
 
 msgid "Basic block"
-msgstr "Basic block"
+msgstr "Basisblok"
 
 msgid "A basic block contains a title and a body."
-msgstr "A basic block contains a title and a body."
+msgstr "En basisblok indeholder en titel og en brødtekst."
 
 msgid "Comment"
-msgstr "Comment"
+msgstr "Kommentar"
 
 msgid "Default comment type."
-msgstr ""
+msgstr "Standard kommentartype"
 
 msgid "Post comment"
-msgstr "Post comment"
+msgstr "Indsend kommentar"
 
 msgid "Comment on a post in the activity streams"
-msgstr ""
+msgstr "Kommentar på en besked i aktivitetsstrømmen"
 
 msgid "Promoted to front page"
-msgstr "Promoted to front page"
+msgstr "Fremhævet på forsiden"
 
 msgid "On"
-msgstr "On"
+msgstr "Til"
 
 msgid "Off"
-msgstr "Off"
+msgstr "Fra"
 
 msgid "Fallback date format"
 msgstr "Fallback date format"
@@ -153,19 +153,19 @@ msgid "Title & image"
 msgstr "Titel og billede"
 
 msgid "Date & time"
-msgstr ""
+msgstr "Dato og tid"
 
 msgid "Description"
-msgstr "Description"
+msgstr "Beskrivelse"
 
 msgid "Visibility"
-msgstr "Visibility"
+msgstr "Synlighed"
 
 msgid "Attachments"
-msgstr "Attachments"
+msgstr "Vedhæftede filer"
 
 msgid "Enrollment options"
-msgstr ""
+msgstr "Tilmeldingsmuligheder"
 
 msgid "Enrollment options fieldset"
 msgstr ""
@@ -183,7 +183,7 @@ msgid "Locale settings"
 msgstr "Locale settings"
 
 msgid "Group"
-msgstr "Group"
+msgstr "Gruppe"
 
 msgid "Register"
 msgstr "Register"
@@ -192,13 +192,13 @@ msgid "Featured"
 msgstr "Featured"
 
 msgid "Notification"
-msgstr "Notification"
+msgstr "Notifikation"
 
 msgid "Full"
 msgstr "Full"
 
 msgid "Activity"
-msgstr "Activity"
+msgstr "Aktivitet"
 
 msgid "Full comment"
 msgstr "Full comment"
@@ -246,28 +246,28 @@ msgid "Teaser image in overviews"
 msgstr ""
 
 msgid "Destinations"
-msgstr "Destinations"
+msgstr "Destinationer"
 
 msgid "Entity"
 msgstr "Entity"
 
 msgid "Message"
-msgstr "Message"
+msgstr "Besked"
 
 msgid "Status"
 msgstr "Status"
 
 msgid "Account"
-msgstr "Account"
+msgstr "Konto"
 
 msgid "Email address"
-msgstr "Email address"
+msgstr "E-mailadresse"
 
 msgid "Enter your email, so we can send you event updates."
-msgstr ""
+msgstr "Skriv din e-mailadresse, så kan vi sende dig opdateringer om begivenheden"
 
 msgid "Event"
-msgstr "Event"
+msgstr "Begivenhed"
 
 msgid "Fonts"
 msgstr "Skrifttyper"
@@ -282,7 +282,7 @@ msgid "Roles"
 msgstr "Roller"
 
 msgid "Context"
-msgstr "Context"
+msgstr "Kontext"
 
 msgid "Body"
 msgstr "Body"
@@ -291,16 +291,16 @@ msgid "Comments"
 msgstr "Kommentarer"
 
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 msgid "End"
-msgstr "End"
+msgstr "Slut"
 
 msgid "Allow users to enroll in event"
-msgstr ""
+msgstr "Tillad brugere at tilmelde sig dette event"
 
 msgid "Allow non-group members to enroll or request to enroll"
-msgstr ""
+msgstr "Tillad brugere som ikke er medlem af gruppen at tilmelde sig eller anmode om at tilmelde sig dette event"
 
 msgid ""
 "To allow users who have not join the group of this event to enroll or send "
@@ -308,7 +308,7 @@ msgid ""
 msgstr ""
 
 msgid "Image"
-msgstr "Image"
+msgstr "Billede"
 
 msgid "Crop your image to select which part of your image to show on display."
 msgstr "Beskær dit billede for at vælge hvilken del af billedet du vil vise."
@@ -329,79 +329,79 @@ msgid "Expertise"
 msgstr "Expertise"
 
 msgid "Separate multiple values by a comma."
-msgstr ""
+msgstr "Adskil flere værdier med et komma"
 
 msgid "First name"
-msgstr "First name"
+msgstr "Fornavn"
 
 msgid "Function"
-msgstr "Function"
+msgstr "Funktion"
 
 msgid "Profile image"
-msgstr "Profile image"
+msgstr "Profilbillede"
 
 msgid "Default profile image"
-msgstr "Default profile image"
+msgstr "Standard profilbillede"
 
 msgid "Interests"
-msgstr "Interests"
+msgstr "Interesser"
 
 msgid "Last name"
-msgstr "Last name"
+msgstr "Efternavn"
 
 msgid "Organization"
-msgstr "Organization"
+msgstr "Organisation"
 
 msgid "Phone number"
-msgstr "Phone number"
+msgstr "Telefonnummer"
 
 msgid "Self introduction"
-msgstr "Self introduction"
+msgstr "Præsentation af dig"
 
 msgid "Show email"
-msgstr "Show email"
+msgstr "Vis e-mailadresse"
 
 msgid "message"
-msgstr "message"
+msgstr "besked"
 
 msgid "Pending"
-msgstr "Pending"
+msgstr "Afventer"
 
 msgid "Approved"
-msgstr "Approved"
+msgstr "Godkendt"
 
 msgid "Declined"
-msgstr ""
+msgstr "Afvist"
 
 msgid "Invited"
-msgstr ""
+msgstr "Inviteret"
 
 msgid "Pending reply"
-msgstr ""
+msgstr "Afventer svar"
 
 msgid "Accepted and joined"
-msgstr ""
+msgstr "Accepteret og tilmeldt"
 
 msgid "Invalid or expired"
-msgstr ""
+msgstr "Ugyldig eller udløbet"
 
 msgid "Public"
-msgstr "Public"
+msgstr "Offentlig"
 
 msgid "Community"
-msgstr ""
+msgstr "Fællesskab"
 
 msgid "Group members"
-msgstr "Group members"
+msgstr "Gruppemedlemmer"
 
 msgid "Visible only to members who are logged in"
-msgstr ""
+msgstr "Kun synlig for brugere som er logget ind"
 
 msgid "Visible to all visitors of the site"
-msgstr ""
+msgstr "Synlig for alle besøgende af siden"
 
 msgid "Visible only to group members"
-msgstr ""
+msgstr "Synlig for medlemmer af gruppen"
 
 msgid "Basic HTML"
 msgstr "Basic HTML"
@@ -419,7 +419,7 @@ msgid "Simple text"
 msgstr "Simple text"
 
 msgid "event"
-msgstr "event"
+msgstr "begivenhed"
 
 msgid ""
 "Adds <em class=\"placeholder\">Event</em> content to groups both publicly "
@@ -427,7 +427,7 @@ msgid ""
 msgstr ""
 
 msgid "topic"
-msgstr "topic"
+msgstr "emne"
 
 msgid ""
 "Adds <em class=\"placeholder\">Topic</em> content to groups both publicly "
@@ -448,13 +448,13 @@ msgid "Administrator"
 msgstr "Administrator"
 
 msgid "Anonymous"
-msgstr "Anonymous"
+msgstr "Anonym"
 
 msgid "Member"
-msgstr "Member"
+msgstr "Medlem"
 
 msgid "Large (480×480)"
-msgstr "Large (480×480)"
+msgstr "Stor (480×480)"
 
 msgid "Medium (220×220)"
 msgstr "Medium (220×220)"
@@ -463,68 +463,72 @@ msgid "Thumbnail (100×100)"
 msgstr "Thumbnail (100×100)"
 
 msgid "English"
-msgstr "English"
+msgstr "Engelsk"
 
 msgid "Not specified"
-msgstr "Not specified"
+msgstr "Ikke specificeret"
 
 msgid "Not applicable"
-msgstr "Not applicable"
+msgstr "Ikke anvendelig"
 
 msgid "Create topic"
-msgstr "Create topic"
+msgstr "Opret et emne"
 
 msgid "A user created a topic in the community"
-msgstr ""
+msgstr "En bruger har oprettet et emne i fællesskabet"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> created a topic</p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> oprettede et emne</p>"
 
 msgid "Create topic in group"
-msgstr ""
+msgstr "Opret et emne i gruppen"
 
 msgid "A user created a topic in a group"
-msgstr "A user created a topic in a group"
+msgstr "En bruger oprettede et emne i en gruppe"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> created a topic in <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> oprettede et emne i <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 
 msgid "Basic page"
-msgstr "Basic page"
+msgstr "Basisside"
 
 msgid "Use basic pages for your static content, such as an 'About us' page."
-msgstr ""
+msgstr "Brug basissider til statistik indhold, eksempelvis en 'om os' side"
 
 msgid "Topic"
-msgstr "Topic"
+msgstr "Emne"
 
 msgid "Profile"
-msgstr "Profile"
+msgstr "Profil"
 
 msgid "Photo"
-msgstr "Photo"
+msgstr "Billede"
 
 msgid "Email"
 msgstr "Email"
 
 msgid "Delete comment"
-msgstr "Delete comment"
+msgstr "Slet kommentar"
 
 msgid "Publish comment"
-msgstr "Publish comment"
+msgstr "Offentliggør kommentar"
 
 msgid "Save comment"
-msgstr "Save comment"
+msgstr "Gem kommentar"
 
 msgid "Unpublish comment"
-msgstr "Unpublish comment"
+msgstr "Fjern offentliggørelse af kommentar"
 
 msgid "Delete content"
-msgstr "Delete content"
+msgstr "Slet indhold"
 
 msgid "Make content sticky"
 msgstr "Make content sticky"
@@ -533,38 +537,38 @@ msgid "Make content unsticky"
 msgstr "Make content unsticky"
 
 msgid "Promote content to front page"
-msgstr "Promote content to front page"
+msgstr "Fremhæv indhold på forsiden"
 
 msgid "Publish content"
-msgstr "Publish content"
+msgstr "Offentliggør indhold"
 
 msgid "Save content"
-msgstr "Save content"
+msgstr "Gem indhold"
 
 msgid "Remove content from front page"
-msgstr "Remove content from front page"
+msgstr "Fjern indhold fra forsiden"
 
 msgid "Unpublish content"
-msgstr "Unpublish content"
+msgstr "Fjern offentliggørelse af indhold"
 
 msgid "Block the selected user(s)"
-msgstr "Block the selected user(s)"
+msgstr "Bloker de/den valgte bruger(e)"
 
 msgid "Cancel the selected user account(s)"
-msgstr "Cancel the selected user account(s)"
+msgstr "Annuller de/den valgte bruger(e)"
 
 msgid "Unblock the selected user(s)"
-msgstr "Unblock the selected user(s)"
+msgstr "Fjern blokering af de/den valgte bruger(e)"
 
 msgid ""
 "@site is currently under maintenance. We should be back shortly. Thank you "
 "for your patience."
 msgstr ""
-"@site is currently under maintenance. We should be back shortly. Thank you "
-"for your patience."
+"@site vedligeholdes for øjeblikket. Vi er snart tilbage. Tak "
+"for din tålmodighed."
 
 msgid "Links related to the active user account"
-msgstr ""
+msgstr "Links relateret til den aktive brugerkonto"
 
 msgid "Administration"
 msgstr "Administration"
@@ -694,7 +698,7 @@ msgstr ""
 "--  [site:name] team"
 
 msgid "An administrator created an account for you at [site:name]"
-msgstr "An administrator created an account for you at [site:name]"
+msgstr "En administrator har oprettet en konto til dig på [site:name]"
 
 msgid ""
 "[user:display-name],\n"
@@ -734,7 +738,7 @@ msgstr ""
 "--  [site:name] team"
 
 msgid "Account details for [user:display-name] at [site:name]"
-msgstr "Account details for [user:display-name] at [site:name]"
+msgstr "Kontodetaljer for [user:display-name] på [site:name]"
 
 msgid ""
 "[user:display-name],\n"
@@ -860,7 +864,7 @@ msgid "Master"
 msgstr "Master"
 
 msgid "Apply"
-msgstr "Apply"
+msgstr "Anvend"
 
 msgid "Reset"
 msgstr "Nulstil"
@@ -869,10 +873,10 @@ msgid "Sort by"
 msgstr "Sort by"
 
 msgid "Asc"
-msgstr "Asc"
+msgstr "Stigende"
 
 msgid "Desc"
-msgstr "Desc"
+msgstr "Faldende"
 
 msgid "‹‹"
 msgstr "‹‹"
@@ -881,7 +885,7 @@ msgid "››"
 msgstr "››"
 
 msgid "Items per page"
-msgstr "Items per page"
+msgstr "Elementer per side"
 
 msgid "- All -"
 msgstr "- Alle -"
@@ -896,7 +900,7 @@ msgid "Homepage stream block"
 msgstr ""
 
 msgid "Page"
-msgstr "Page"
+msgstr "Side"
 
 msgid "Explore"
 msgstr "Udforsk"
@@ -935,16 +939,16 @@ msgid "Activity stream notifications on a profile"
 msgstr ""
 
 msgid "Notifications"
-msgstr "Notifications"
+msgstr "Notifikationer"
 
 msgid "You do not have any notifications."
-msgstr ""
+msgstr "Du har ikke nogle notifikationer"
 
 msgid "All notifications"
-msgstr ""
+msgstr "Alle notifikationer"
 
 msgid "Block"
-msgstr "Block"
+msgstr "Blok"
 
 msgid "activity_stream_profile"
 msgstr ""
@@ -956,10 +960,10 @@ msgid "ActivityStreamProfile"
 msgstr ""
 
 msgid "Archive"
-msgstr "Archive"
+msgstr "Arkiv"
 
 msgid "All content, by month."
-msgstr "All content, by month."
+msgstr "Alt indhold, per måned"
 
 msgid "Monthly archive"
 msgstr "Monthly archive"
@@ -980,19 +984,19 @@ msgid "Next ›"
 msgstr "Next ›"
 
 msgid "Block description"
-msgstr "Block description"
+msgstr "Blokbeskrivelse"
 
 msgid ", "
 msgstr ", "
 
 msgid "Block type"
-msgstr "Block type"
+msgstr "Bloktype"
 
 msgid "Updated"
-msgstr "Updated"
+msgstr "Opdateret"
 
 msgid "Operations"
-msgstr "Operations"
+msgstr "Operationer"
 
 msgid "There are no custom blocks available."
 msgstr "There are no custom blocks available."
@@ -1001,40 +1005,40 @@ msgid "Find and manage comments."
 msgstr "Find and manage comments."
 
 msgid "‹ previous"
-msgstr "‹ previous"
+msgstr "‹ forrige"
 
 msgid "next ›"
-msgstr "next ›"
+msgstr "næste ›"
 
 msgid "« first"
-msgstr "« first"
+msgstr "« første"
 
 msgid "last »"
-msgstr "last »"
+msgstr "sidste »"
 
 msgid "Action"
 msgstr "Action"
 
 msgid "Subject"
-msgstr "Subject"
+msgstr "Emne"
 
 msgid "Author"
-msgstr "Author"
+msgstr "Forfatter"
 
 msgid "Posted in"
 msgstr "Posted in"
 
 msgid "Author name"
-msgstr "Author name"
+msgstr "Forfatternavn"
 
 msgid "Language"
-msgstr "Language"
+msgstr "Sprog"
 
 msgid "No comments available."
-msgstr "No comments available."
+msgstr "Der er ingen tilgængelige kommentarer."
 
 msgid "more"
-msgstr "more"
+msgstr "mere"
 
 msgid "Published comments"
 msgstr "Publicerede kommentarer"
@@ -1046,7 +1050,7 @@ msgid "The approved comments listing."
 msgstr "The approved comments listing."
 
 msgid "Unapproved comments"
-msgstr "Unapproved comments"
+msgstr "Kommentarer der ikke er godkendte"
 
 msgid "Comments unapproved"
 msgstr "Kommentarer er ikke godkendt"
@@ -1055,109 +1059,109 @@ msgid "The unapproved comments listing."
 msgstr ""
 
 msgid "Author Name"
-msgstr "Author Name"
+msgstr "Forfatternavn"
 
 msgid "Recent comments"
-msgstr "Recent comments"
+msgstr "Nylige kommentarer"
 
 msgid "Recent comments."
-msgstr "Recent comments."
+msgstr "Nylige kommentarer."
 
 msgid "Lists (Views)"
-msgstr "Lists (Views)"
+msgstr "Lister (Views)"
 
 msgid "Find and manage content."
 msgstr "Find and manage content."
 
 msgid "« First"
-msgstr "« First"
+msgstr "« Første"
 
 msgid "Last »"
-msgstr "Last »"
+msgstr "Sidste »"
 
 msgid "Title"
 msgstr "Titel"
 
 msgid "Content Type"
-msgstr "Content Type"
+msgstr "Indholdstype"
 
 msgid "Published"
 msgstr "Publiceret"
 
 msgid "Unpublished"
-msgstr "Unpublished"
+msgstr "Ikke publiceret"
 
 msgid "Published status"
 msgstr "Publiceringsstatus"
 
 msgid "No content available."
-msgstr "No content available."
+msgstr "Intet tilgængeligt indhold"
 
 msgid "Find and manage content"
 msgstr "Find and manage content"
 
 msgid "Recent content"
-msgstr "Recent content"
+msgstr "Nyligt indhold"
 
 msgid "Recent content."
-msgstr "Recent content."
+msgstr "Nyligt indhold."
 
 msgid "More"
-msgstr "More"
+msgstr "Mere"
 
 msgid "Events Profile"
 msgstr ""
 
 msgid "ascending"
-msgstr ""
+msgstr "stigende"
 
 msgid "descending"
-msgstr ""
+msgstr "falende"
 
 msgid "Publish status"
-msgstr "Publish status"
+msgstr "Status for publisering"
 
 msgid "Events for this user"
-msgstr ""
+msgstr "Denne brugers begivenheder"
 
 msgid "No events found for this user"
-msgstr ""
+msgstr "Der er ikke fundet begivenheder for denne bruger"
 
 msgid "Events on profile block"
 msgstr ""
 
 msgid "Event time"
-msgstr "Event time"
+msgstr "Begivenhedens tid"
 
 msgid "Upcoming events"
-msgstr "Upcoming events"
+msgstr "Kommende begivenheder"
 
 msgid "Events profile overview"
 msgstr ""
 
 msgid "Events"
-msgstr "Events"
+msgstr "Begivenheder"
 
 msgid "Topics"
-msgstr "Topics"
+msgstr "Emner"
 
 msgid "Event date"
-msgstr "Event date"
+msgstr "Begivenhed dato"
 
 msgid "Ongoing and upcoming events"
-msgstr ""
+msgstr "Igangværende og kommende begivenheder"
 
 msgid "Past events"
-msgstr ""
+msgstr "Tidligere begivenheder"
 
 msgid "Enrollments"
-msgstr ""
+msgstr "Tilmeldinger"
 
 msgid "@total people have enrolled"
-msgstr ""
+msgstr "@total brugere har tilmeldt sig"
 
 msgid "No one has enrolled for this event"
-msgstr ""
+msgstr "Der er ikke nogle tilmeldinger for denne begivenhed"
 
 msgid "Enrollments Block"
 msgstr ""
@@ -1167,16 +1171,16 @@ msgid ""
 msgstr ""
 
 msgid "All enrollments"
-msgstr ""
+msgstr "Alle tilmeldinger"
 
 msgid "Manage All Enrollments"
 msgstr ""
 
 msgid "Enrollee"
-msgstr ""
+msgstr "Tilmeldte"
 
 msgid "Enroll date"
-msgstr ""
+msgstr "Tilmeldingsdato"
 
 msgid "Operation"
 msgstr "Operation"
@@ -1185,13 +1189,13 @@ msgid "Manage enrollments"
 msgstr ""
 
 msgid "@total Enrollees"
-msgstr ""
+msgstr "@total Tilmeldte"
 
 msgid "Manage event enrollment invites"
 msgstr ""
 
 msgid "Recipient"
-msgstr "Recipient"
+msgstr "Modtager"
 
 msgid "Invited on"
 msgstr ""
@@ -1205,7 +1209,7 @@ msgid ""
 msgstr ""
 
 msgid "No one has been invited for this event yet."
-msgstr ""
+msgstr "Der er ikke inviteret nogle til denne begivenhed endnu."
 
 msgid "Manage requests"
 msgstr ""
@@ -1237,39 +1241,39 @@ msgid "Fid"
 msgstr "Fid"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Navn"
 
 msgid "MIME type"
 msgstr "MIME type"
 
 msgid "Size"
-msgstr "Size"
+msgstr "Størrelse"
 
 msgid "Temporary"
-msgstr "Temporary"
+msgstr "Midlertidig"
 
 msgid "Permanent"
 msgstr "Permanent"
 
 msgid "Upload date"
-msgstr "Upload date"
+msgstr "Upload dato"
 
 msgid "Changed date"
-msgstr "Changed date"
+msgstr "Ændrede dato"
 
 msgid "Used in"
-msgstr "Used in"
+msgstr "Brugt i"
 
 msgid "1 place"
 msgid_plural "@count places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 sted"
+msgstr[1] "@count steder"
 
 msgid "Filename"
-msgstr "Filename"
+msgstr "Filnavn"
 
 msgid "No files available."
-msgstr "No files available."
+msgstr "Der er ikke nogle tilgængelige filer."
 
 msgid "Files overview"
 msgstr "Filoversigt"
@@ -1288,8 +1292,8 @@ msgstr "Use count"
 
 msgid "1"
 msgid_plural "@count"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1"
+msgstr[1] "@count"
 
 msgid "File usage information for {{ arguments.fid }}"
 msgstr "File usage information for {{ arguments.fid }}"
@@ -1358,7 +1362,7 @@ msgid "Recently joined groups"
 msgstr ""
 
 msgid "All groups"
-msgstr "All groups"
+msgstr "Alle grupper"
 
 msgid "User Groups Page"
 msgstr ""
@@ -1451,7 +1455,7 @@ msgid "Newest Members"
 msgstr ""
 
 msgid "All members"
-msgstr "All members"
+msgstr "Alle medlemmer"
 
 msgid "sort_title"
 msgstr ""
@@ -1569,7 +1573,7 @@ msgid "Displays the newest topics in the community"
 msgstr "Displays the newest topics in the community"
 
 msgid "All topics"
-msgstr "All topics"
+msgstr "Alle emner"
 
 msgid "No topics found"
 msgstr "No topics found"
@@ -1702,10 +1706,10 @@ msgid "Entity Reference"
 msgstr "Entity Reference"
 
 msgid "Search All"
-msgstr ""
+msgstr "Søg i alt"
 
 msgid "<h4>All results</h4>"
-msgstr ""
+msgstr "<h4>Alle resultater</h4>"
 
 msgid "No results found."
 msgstr "No results found."
@@ -1936,7 +1940,7 @@ msgid "Enroll Method"
 msgstr ""
 
 msgid "All events"
-msgstr ""
+msgstr "Alle begivenheder"
 
 msgid "Upcoming events group block"
 msgstr ""
@@ -4875,7 +4879,7 @@ msgid "Mon"
 msgstr "man"
 
 msgid "All @label"
-msgstr ""
+msgstr "Alle @label"
 
 msgid "Total amount of comments"
 msgstr ""
@@ -4883,30 +4887,30 @@ msgstr ""
 msgid "comment"
 msgid_plural "comments"
 msgstr[0] "kommentar"
-msgstr[1] ""
+msgstr[1] "kommentarer"
 
 msgid "Total amount of likes"
 msgstr ""
 
 msgid "like"
 msgid_plural "likes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "like"
+msgstr[1] "likes"
 
 msgid "Open or download file"
-msgstr ""
+msgstr "Åben eller download filen"
 
 msgid "@size KB"
 msgstr "@size KB"
 
 msgid "Be the first one to comment"
-msgstr ""
+msgstr "Vær den første til at kommentere"
 
 msgid "Wed"
 msgstr "ons"
 
 msgid "Event has passed"
-msgstr ""
+msgstr "Event er blevet afholdt"
 
 msgid "Details"
 msgstr "Detaljer"
@@ -4934,7 +4938,7 @@ msgid "Sign up"
 msgstr "Tilmeld"
 
 msgid "User menu"
-msgstr ""
+msgstr "Brugermenu"
 
 msgid "Informative message"
 msgstr ""
@@ -5013,19 +5017,19 @@ msgid "Width"
 msgstr "Bredde"
 
 msgid "X coordinate"
-msgstr ""
+msgstr "X koordinat"
 
 msgid "Y coordinate"
-msgstr ""
+msgstr "Y koordinat"
 
 msgid "Revision timestamp"
 msgstr "Version timestamp"
 
 msgid "Revision author ID"
-msgstr ""
+msgstr "Revisionens forfatterid"
 
 msgid "Revision Log"
-msgstr ""
+msgstr "Revisionens log"
 
 msgid "Mention ID"
 msgstr ""
@@ -5058,10 +5062,10 @@ msgid "Task type"
 msgstr ""
 
 msgid "Server ID"
-msgstr ""
+msgstr "Server ID"
 
 msgid "Index ID"
-msgstr ""
+msgstr "Index ID"
 
 msgid "Task data"
 msgstr ""
@@ -36640,684 +36644,6 @@ msgstr ""
 msgid "This is used as the value for max-age in Cache-Control headers."
 msgstr ""
 
-msgid "Edit storage settings."
-msgstr ""
-
-msgid "Dynamic Reference"
-msgstr ""
-
-msgid ""
-"To configure translation for this field, <a href=\":language-settings-url"
-"\">enable language support</a> for this type."
-msgstr ""
-
-msgid "Field inherits content permissions."
-msgstr ""
-
-msgid "Only author and administrators can edit and view."
-msgstr ""
-
-msgid "Custom permissions"
-msgstr ""
-
-msgid "Define custom permissions for this field."
-msgstr ""
-
-msgid "Field visibility and permissions"
-msgstr ""
-
-msgid ""
-"<strong>These permissions apply to all instances of this field.</strong>"
-msgstr ""
-
-msgid "Term language"
-msgstr ""
-
-msgid "Update form"
-msgstr ""
-
-msgid "Index @name"
-msgstr ""
-
-msgid "Event enrolled or created"
-msgstr ""
-
-msgid "Date Filter by Open Social"
-msgstr ""
-
-msgid "Is Latest Translation Affected Revision"
-msgstr ""
-
-msgid "Is Latest Revision"
-msgstr ""
-
-msgid ""
-"Filter nodes, with visibility group, placed in group you are not a member of."
-msgstr ""
-
-msgid "Region for @title"
-msgstr ""
-
-msgid "Categorized check boxes/radio buttons"
-msgstr ""
-
-msgid "Add field group"
-msgstr ""
-
-msgid "Social group select list"
-msgstr ""
-
-msgid "Select2"
-msgstr ""
-
-msgid "Autocomplete suggestion list size: @size"
-msgstr ""
-
-msgid "Id: @id"
-msgstr ""
-
-msgid "Extra CSS classes: @classes"
-msgstr ""
-
-msgid "Mark as required"
-msgstr ""
-
-msgid "ImageWidget crop"
-msgstr ""
-
-msgid "Always expand crop area: @bool"
-msgstr ""
-
-msgid "Show default crop area: @bool"
-msgstr ""
-
-msgid "Warn the user if the crop is used more than once: @bool"
-msgstr ""
-
-msgid "Preview crop zone image style: @style"
-msgstr ""
-
-msgid "Crop Type used: @list"
-msgstr ""
-
-msgid "Details Sidebar"
-msgstr ""
-
-msgid "Accordion"
-msgstr ""
-
-msgid "Accordion Item"
-msgstr ""
-
-msgid "Field width: @width"
-msgstr ""
-
-msgid "Autocomplete: @autocomplete"
-msgstr ""
-
-msgid "- Select a field group type -"
-msgstr ""
-
-msgid "Add a new group"
-msgstr ""
-
-msgid "Create group"
-msgstr ""
-
-msgid "Mark group as required if it contains required fields."
-msgstr ""
-
-msgid "Social Views bulk operations for Group Management"
-msgstr ""
-
-msgid "Social Views bulk operations for Enrollments"
-msgstr ""
-
-msgid "Group bulk operations for Group Content"
-msgstr ""
-
-msgid "The recipient of an event invite."
-msgstr ""
-
-msgid ""
-"Process Group Content returned by the view with Views Bulk Operations' "
-"actions."
-msgstr ""
-
-msgid ""
-"Process enrollments returned by the view with Views Bulk Operations' actions."
-msgstr ""
-
-msgid ""
-"Process enrollments returned by the view with Views Bulk Operations actions."
-msgstr ""
-
-msgid ""
-"Process entities returned by the view with Views Bulk Operations' actions."
-msgstr ""
-
-msgid ""
-"A boolean indicating whether the node should sort to the top of content "
-"lists."
-msgstr ""
-
-msgid ""
-"Indicates if the last edit of a translation belongs to current revision."
-msgstr ""
-
-msgid "A boolean indicating whether the node is visible on the front page."
-msgstr ""
-
-msgid "The user who created the revision."
-msgstr ""
-
-msgid ""
-"A flag indicating whether this was a default revision when it was saved."
-msgstr ""
-
-msgid ""
-"The following replacement tokens are available for this field. Note that due "
-"to rendering order, you cannot use fields that come after this field; if you "
-"need a field not listed here, rearrange your fields."
-msgstr ""
-
-msgid "Create a label"
-msgstr ""
-
-msgid "Use description as link text"
-msgstr ""
-
-msgid "Replace the file name by its description when available"
-msgstr ""
-
-msgid ""
-"The text to display for this field. You may enter data from this view as per "
-"the \"Replacement patterns\" below. You may include <a href=\"@twig_docs"
-"\">Twig</a> or the following allowed HTML tags: <code>@tags</code>"
-msgstr ""
-
-msgid "Upper case"
-msgstr ""
-
-msgid ""
-"Provide text to display if this field contains an empty result. You may "
-"include HTML. You may enter data from this view as per the \"Replacement "
-"patterns\" in the \"Rewrite Results\" section above."
-msgstr ""
-
-msgid "Filters for date used in Open Social"
-msgstr ""
-
-msgid "Enable events for on the user profiles."
-msgstr ""
-
-msgid ""
-"Restrict the view to only revisions that are the latest revision of their "
-"entity."
-msgstr ""
-
-msgid ""
-"Restrict the view to only revisions that are the latest translation affected "
-"revision of their entity."
-msgstr ""
-
-msgid "Filter events by start date and end date"
-msgstr ""
-
-msgid "Group Managers Only"
-msgstr ""
-
-msgid "Manage by organizers only"
-msgstr ""
-
-msgid "Infinite Scroll"
-msgstr ""
-
-msgid "Documents"
-msgstr ""
-
-msgid ""
-"Add the default row classes like @classes to the output. You can use this to "
-"quickly reduce the amount of markup the view provides by default, at the "
-"cost of making it more difficult to apply CSS."
-msgstr ""
-
-msgctxt "View entity type"
-msgid "view"
-msgstr ""
-
-msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
-msgstr ""
-
-msgid "Vote Result \"@result_function\" for @plural_label"
-msgstr ""
-
-msgid "@entity_label flag"
-msgstr ""
-
-msgid "Group content for @entity_type"
-msgstr ""
-
-msgid ""
-"Limit results to only those entity flagged by a certain flag; Or display "
-"information about the flag set on a entity."
-msgstr ""
-
-msgid "Relates to the group content entities that represent the @entity_type."
-msgstr ""
-
-msgid "This includes vote result \"@result_function\" for the @plural_label"
-msgstr ""
-
-msgid ""
-"This includes vote result \"@result_function\" for the @plural_label voted "
-"with @vote_type"
-msgstr ""
-
-msgid ""
-"Enabling the appropriate module may solve this issue. Otherwise, check to "
-"see if there is a module update available."
-msgstr ""
-
-msgid ""
-"Leave blank for all. Otherwise, the first selected term will be the default "
-"instead of \"Any\"."
-msgstr ""
-
-msgid "Event sorting (passed and upcoming)"
-msgstr ""
-
-msgid ""
-"For upcoming events sort ASC by start date and for passed events change "
-"order to DESC."
-msgstr ""
-
-msgid "@label@column (@argument)"
-msgstr ""
-
-msgid "Add directory structure to Media entities."
-msgstr ""
-
-msgid "Integrate media browser UI with CKEditor."
-msgstr ""
-
-msgid "Provides alternative UI for media management."
-msgstr ""
-
-msgid "Allows entities to be embedded using a text editor."
-msgstr ""
-
-msgid "Provide a generic entity browser/picker/selector."
-msgstr ""
-
-msgid "Entity browser example module."
-msgstr ""
-
-msgid "Entity browser inline entity form integration."
-msgstr ""
-
-msgid "Creates a custom enrollment in event"
-msgstr ""
-
-msgid "Embed a taxonomy tree into a menu"
-msgstr ""
-
-msgid "Search result excerpt"
-msgstr ""
-
-msgid "Use custom display settings for the following @display_context modes"
-msgstr ""
-
-msgid "Manage view modes"
-msgstr ""
-
-msgid "Taxonomy menu"
-msgstr "Taxonomy Menu"
-
-msgid "Taxonomy Menu"
-msgstr "Taxonomy Menu"
-
-msgid "List Taxonomy Menus"
-msgstr ""
-
-msgid "Are you sure you want to remove the @entity-type %label?"
-msgstr ""
-
-msgid "The @entity-type %label has been removed."
-msgstr ""
-
-msgid "@datasource datasource"
-msgstr ""
-
-msgid "Fulltext search"
-msgstr ""
-
-msgid "Date of Event"
-msgstr ""
-
-msgid "Add fields"
-msgstr ""
-
-msgid ""
-"<p>The data type of a field determines how it can be used for searching and "
-"filtering. The boost is used to give additional weight to certain fields, "
-"for example titles or tags.</p> <p>For information about the data types "
-"available for indexing, see the <a href=\":url\">data types table</a> at the "
-"bottom of the page.</p>"
-msgstr ""
-
-msgid "Data needed to apply node access."
-msgstr ""
-
-msgid "Fulltext"
-msgstr ""
-
-msgid "The complete HTML which would be displayed when viewing the item"
-msgstr ""
-
-msgid "Property path"
-msgstr ""
-
-msgid "Boolean fields can only have one of two values: true or false."
-msgstr ""
-
-msgid "Contains integer values."
-msgstr ""
-
-msgid "Contains numeric, typically non-integer values."
-msgstr ""
-
-msgid ""
-"Fulltext fields are analyzed fields which are made available for fulltext "
-"search. This data type should be used for any fields (usually with free text "
-"input by users) which you want to search for individual words."
-msgstr ""
-
-msgid ""
-"String fields are used for short, keyword-like character strings where you "
-"only want to find complete field values, not individual words."
-msgstr ""
-
-msgid "Represents points in time."
-msgstr ""
-
-msgid "Data types"
-msgstr ""
-
-msgid ""
-"The data types which can be used for indexing fields in this index. Whether "
-"a type is supported depends on the backend of the index's server. If a type "
-"is not supported, the fallback type that will be used instead is shown, too."
-msgstr ""
-
-msgid "Manage fields for search index %label"
-msgstr ""
-
-msgid "Flag: %title"
-msgstr ""
-
-msgid ""
-"Images must be larger than <strong>@min</strong> pixels. Images larger than "
-"<strong>@max</strong> pixels will be resized."
-msgstr ""
-
-msgid "Datasource"
-msgstr ""
-
-msgid "Item language"
-msgstr ""
-
-msgid "The datasource ID"
-msgstr ""
-
-msgid "The item's internal (Search API-specific) ID"
-msgstr ""
-
-msgid "The item's language"
-msgstr ""
-
-msgid "(No description available)"
-msgstr ""
-
-msgid "The relevance of this search result with respect to the query"
-msgstr ""
-
-msgid "Min placeholder"
-msgstr ""
-
-msgid "Hint text that appears inside the Min field when empty."
-msgstr ""
-
-msgid "Max placeholder"
-msgstr ""
-
-msgid "Hint text that appears inside the Max field when empty."
-msgstr ""
-
-msgid "Hint text that appears inside the field when empty."
-msgstr ""
-
-msgid "Taxonomy menu Configuration"
-msgstr ""
-
-msgid "Add Taxonomy menu"
-msgstr ""
-
-msgid "Label for the Taxonomy Menu."
-msgstr ""
-
-msgid "All menus entries expanded"
-msgstr ""
-
-msgid "Parent menu link"
-msgstr ""
-
-msgid "Use term weight order"
-msgstr ""
-
-msgid "Saved the %label Taxonomy Menu."
-msgstr ""
-
-msgid "Select the field to be used for the menu item description."
-msgstr ""
-
-msgid "Edit Taxonomy menu"
-msgstr ""
-
-msgid "Initial visibility level"
-msgstr ""
-
-msgid ""
-"The menu is only visible if the menu item for the current page is at this "
-"level or below it. Use level 1 to always display this menu."
-msgstr ""
-
-msgid "Number of levels to display"
-msgstr ""
-
-msgid "This maximum number includes the initial level."
-msgstr ""
-
-msgid "Expand all menu items"
-msgstr ""
-
-msgid ""
-"Override the option found on each menu link used for expanding children and "
-"instead display the whole menu tree as expanded."
-msgstr ""
-
-msgid ""
-"Changing the group may have impact on the <strong>visibility settings</"
-"strong>."
-msgstr ""
-
-msgid "Sitewide Post form"
-msgstr ""
-
-msgid "Link to display"
-msgstr ""
-
-msgid ""
-"Displays a link to a path-based display of this view while keeping the "
-"filter criteria, sort criteria, pager settings and contextual filters."
-msgstr ""
-
-msgid "Adds a sitewide post form."
-msgstr ""
-
-msgid "Dokumenter"
-msgstr ""
-
-msgid "Vote type"
-msgstr ""
-
-msgid "Group ID from URL"
-msgstr ""
-
-msgid "User ID from profile route match"
-msgstr ""
-
-msgid ""
-"Override the view and other argument titles. You may use Twig syntax in this "
-"field as well as the \"arguments\" and \"raw_arguments\" arrays."
-msgstr ""
-
-msgid ""
-"Override the view and other argument titles. You may use Twig syntax in this "
-"field."
-msgstr ""
-
-msgid "Group Invitation"
-msgstr ""
-
-msgid "Group membership request"
-msgstr ""
-
-msgid "Access all entities overview"
-msgstr ""
-
-msgid "Administer comments"
-msgstr ""
-
-msgid "Administer group members"
-msgstr ""
-
-msgid "Edit own membership"
-msgstr ""
-
-msgid "View individual group members"
-msgstr ""
-
-msgid "Entity: View unpublished %entity_type entities"
-msgstr ""
-
-msgid "Relationship: View entity relations"
-msgstr ""
-
-msgid "Entity: Delete any %entity_type entities"
-msgstr ""
-
-msgid "Entity: Delete own %entity_type entities"
-msgstr ""
-
-msgid "Entity: Edit any %entity_type entities"
-msgstr ""
-
-msgid "Relationship: Add entity relation"
-msgstr ""
-
-msgid "Relationship: Edit own entity relations"
-msgstr ""
-
-msgid "Relationship: Edit any entity relation"
-msgstr ""
-
-msgid "Relationship: Delete own entity relations"
-msgstr ""
-
-msgid "Relationship: Delete any entity relation"
-msgstr ""
-
-msgid "Entity: View %entity_type entities"
-msgstr ""
-
-msgid "Entity: Add %entity_type entities"
-msgstr ""
-
-msgid "Entity: Edit own %entity_type entities"
-msgstr ""
-
-msgid "View group invitations"
-msgstr ""
-
-msgid "Invite users to group"
-msgstr ""
-
-msgid "Delete own invitations"
-msgstr ""
-
-msgid "Delete any invitation"
-msgstr ""
-
-msgid "Create new posts in group"
-msgstr ""
-
-msgid "Access posts in group"
-msgstr ""
-
-msgid "Alle dokumenter"
-msgstr ""
-
-msgid "Only display results after the user has selected a filter option."
-msgstr ""
-
-msgid "Enable secondary exposed form options"
-msgstr ""
-
-msgid ""
-"Allows you to specify some exposed form elements as being secondary options "
-"and places those elements in a collapsible \"details\" element. Use this "
-"option to place some exposed filters in an \"Advanced Search\" area of the "
-"form, for example."
-msgstr ""
-
-msgid "Secondary options label"
-msgstr ""
-
-msgid ""
-"The name of the details element to hold secondary options. This cannot be "
-"left blank or there will be no way to show/hide these options."
-msgstr ""
-
-msgid "Exclude Textfield"
-msgstr ""
-
-msgid ""
-"Exclude Textfield from autosubmit. User will have to press enter key or "
-"click submit."
-msgstr ""
-
-msgid "Social comment list(Lazy build)"
-msgstr ""
-
-msgid "Comment on node list"
-msgstr ""
-
-msgid "Last two comments on post"
-msgstr ""
-
-msgid "Comment on post list"
-msgstr ""
-
-msgid "Comment on group content"
-msgstr ""
-
-msgid "Comment view mode: @mode"
-msgstr ""
-
-msgid "Like and dislike"
-msgstr ""
-
 msgid "Create New Magazine"
 msgstr ""
 
@@ -37330,109 +36656,584 @@ msgstr ""
 msgid "New Article"
 msgstr ""
 
+msgid "Taxonomy menu"
+msgstr "Taxonomy Menu"
+
+msgid "Taxonomy Menu"
+msgstr "Taxonomy Menu"
+
+msgid "List Taxonomy Menus"
+msgstr ""
+
 msgid "No valid search keys were present in the query."
 msgstr ""
 
-msgid "- No server -"
+msgid "Date of Event"
 msgstr ""
 
-msgid "Enter the displayed name for the index."
-msgstr ""
-
-msgid "Provides %entity_type entities for indexing and searching."
-msgstr ""
-
-msgid "Datasources"
+msgid "Dokumenter"
 msgstr ""
 
 msgid ""
-"Select one or more datasources of items that will be stored in this index."
+"Changing the group may have impact on the <strong>visibility settings</"
+"strong>."
 msgstr ""
 
-msgid "Index items in the same order in which they were saved"
+msgid "Alle dokumenter"
 msgstr ""
 
-msgid "Index the most recent items first"
+msgid "Pick a product and enroll"
 msgstr ""
 
-msgid "Indexing order"
+msgid "Join event"
 msgstr ""
 
-msgid "The order in which items will be indexed."
+msgid "Add the products you wish for the event."
 msgstr ""
 
-msgid "Configure the %plugin tracker"
+msgid "Your request has been sent successfully"
 msgstr ""
 
-msgid ""
-"Default index tracker which uses a simple database table for tracking items."
+msgid "Event export"
 msgstr ""
 
-msgid ""
-"Select the server this index should use. Indexes cannot be enabled without a "
-"connection to a valid, enabled server."
-msgstr ""
-
-msgid ""
-"Only enabled indexes can be used for indexing and searching. This setting "
-"will only take effect if the selected server is also enabled."
-msgstr ""
-
-msgid "Enter a description for the index."
-msgstr ""
-
-msgid "Do not write to this index or track the status of items in this index."
-msgstr ""
-
-msgid "Index items immediately"
+msgid "Term language"
 msgstr ""
 
 msgid ""
-"Immediately index new or updated items instead of waiting for the next cron "
-"run. This might have serious performance drawbacks and is generally not "
-"advised for larger sites."
+"Configuration %name depends on the %owner module that will not be installed "
+"after import."
 msgstr ""
 
-msgid "Cron batch size"
+msgid "Module %module granted %permission permission to authenticated users."
+msgstr ""
+
+msgid "Opt-in or out of tracking"
+msgstr ""
+
+msgid "Google Analytics"
 msgstr ""
 
 msgid ""
-"Set how many items will be indexed at once when indexing items during a cron "
-"run. \"0\" means that no items will be indexed by cron for this index, "
-"\"-1\" means that cron should index all items at once."
+"Configure tracking behavior to get insights into your website traffic and "
+"marketing effectiveness."
 msgstr ""
 
-msgid "Index options"
+msgid "Have an account already? @link"
 msgstr ""
 
-msgid "Add search index"
+msgid ""
+"A welcome message with further instructions will be sent to your email "
+"address after you successfully enter your email address and a username."
 msgstr ""
 
-msgid "Please configure the used datasources."
+msgid "Reset password with <b>username</b> or <b>email</b>"
 msgstr ""
 
-msgid "Only those selected"
+msgid "Nulstil din adgangskode"
 msgstr ""
 
-msgid "All except those selected"
+msgid "Enable user tracking"
 msgstr ""
 
-msgid "Which bundles should be indexed?"
+msgid "Users are tracked by default, but you are able to opt out."
 msgstr ""
 
-msgid "Which languages should be indexed?"
+msgid "Google Analytics settings"
 msgstr ""
 
-msgid "Configure the %datasource datasource"
+msgid "Add JavaScript snippets"
 msgstr ""
 
-msgid "The index was successfully saved."
+msgid "Administer Google Analytics"
 msgstr ""
 
-msgid "Successfully executed @count pending task."
-msgid_plural "Successfully executed @count pending tasks."
+msgid "Use PHP for tracking visibility"
+msgstr ""
+
+msgid ""
+"Due to privacy concerns, we can't disclose the existence of registered email "
+"addresses. Please make sure the email address is entered correctly and try "
+"again."
+msgstr ""
+
+msgid ""
+"Due to privacy concerns, the identity of registered email addresses will not "
+"be disclosed. Therefore, a password reset link has been sent to you only if "
+"you have entered a valid email address or username.\n"
+"<br>If the email address or username you entered does not exist, you will "
+"not get a reset link or a confirmation/warning about that here. Please "
+"contact the @admin_link if there are any problems."
+msgstr ""
+
+msgid "site administrator"
+msgstr ""
+
+msgid "Hi <strong>@display_name</strong>"
+msgstr ""
+
+msgid "Intro"
+msgstr ""
+
+msgid "The crop \"@cropType\" was successfully added for image \"@filename\"."
+msgstr ""
+
+msgid "Meddelelser"
+msgstr ""
+
+msgid "Unfollow this content"
+msgstr ""
+
+msgid "You are now automatically following this @type. @unfollow_link."
+msgstr ""
+
+msgid "User role names"
+msgstr ""
+
+msgid "User role ids"
+msgstr ""
+
+msgid "Add a reply"
+msgstr ""
+
+msgid "Tilføj kommentar"
+msgstr ""
+
+msgid "Reply to Comment"
+msgstr ""
+
+msgid "Submitted"
+msgstr ""
+
+msgid "Edit Comment"
+msgstr ""
+
+msgid "<b>@action</b> selected enrollees"
+msgstr ""
+
+msgid "Clear all selected enrollees"
+msgstr ""
+
+msgid "<b><em class=\"placeholder\">@count</em> enrollee</b> is selected"
+msgid_plural ""
+"<b><em class=\"placeholder\">@count</em> enrollees</b> are selected"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Show all :num_comments comments"
+msgstr ""
+
+msgid ""
+"In order to change the group type, \n"
+"        please contact the content or site managers."
+msgstr ""
+
+msgid ""
+"In order to change the group type, \n"
+"          please contact the content or site managers."
+msgstr ""
+
+msgid "Open to join - users can join this group without approval"
+msgstr ""
+
+msgid ""
+"Invite-only - users can only join this group if they are added/invited by "
+"group managers"
+msgstr ""
+
+msgid ""
+"Moving content after creation function has been disabled. In order to move "
+"this content, please contact a site manager."
+msgstr ""
+
+msgid ""
+"Altering the visibility options could result in changes in access for "
+"content within this group."
+msgstr ""
+
+msgid "posted"
+msgstr ""
+
+msgid "Leave a comment"
+msgstr ""
+
+msgid "Your post %label has been posted."
+msgstr ""
+
+msgid "Join"
+msgstr ""
+
+msgid ""
+"By submitting this form you will become a member of the group. Please fill "
+"out any available fields to complete your membership information."
+msgstr ""
+"Hvis du tilmelder dig gruppen bliver du medlem. Hvis der er en formular, så "
+"venligst udfyld denne, ellers så bare tryk på knappen \"Tilmeld gruppe\"."
+
+msgid "Join group %label"
+msgstr "Tilmeld dig gruppen %label "
+
+msgid "Remove image"
+msgstr ""
+
+msgid "Add enrollees"
+msgstr ""
+
+msgid "Add-ons"
+msgstr ""
+
+msgid "Opens in new window"
+msgstr ""
+
+msgid "Search topics"
+msgstr ""
+
+msgid "Administer block classes"
+msgstr ""
+
+msgid "Emner for gruppe"
+msgstr ""
+
+msgid "All statuses"
+msgstr ""
+
+msgid "Gruppe Arrangement"
+msgstr ""
+
+msgid "Older items"
+msgstr ""
+
+msgid ""
+"Manually entered paths should start with one of the following "
+"characters: / ? #"
+msgstr ""
+
+msgid "Google Analytics module"
+msgstr ""
+
+msgid "Supported entity types"
+msgstr ""
+
+msgid "Mentions entity will be created only for selected entity types."
+msgstr ""
+
+msgid "Number of suggestions"
+msgstr ""
+
+msgid "How many suggestions do you want to show when mentioning."
+msgstr ""
+
+msgid "Only username"
+msgstr ""
+
+msgid "Only full name (first and last)"
+msgstr ""
+
+msgid "Both (username and full name)"
+msgstr ""
+
+msgid "Suggestions format"
+msgstr ""
+
+msgid "Afrikaans"
+msgstr ""
+
+msgid "Kannada"
+msgstr ""
+
+msgid "Chinese, Traditional"
+msgstr ""
+
+msgid "Arabic"
+msgstr ""
+
+msgid "Asturian"
+msgstr ""
+
+msgid "Azerbaijani"
+msgstr ""
+
+msgid "Belarusian"
+msgstr ""
+
+msgid "Bulgarian"
+msgstr ""
+
+msgid "Bengali"
+msgstr ""
+
+msgid "Tibetan"
+msgstr ""
+
+msgid "Chinese, Simplified"
+msgstr ""
+
+msgid "Bosnian"
+msgstr ""
+
+msgid "Catalan"
+msgstr ""
+
+msgid "Czech"
+msgstr ""
+
+msgid "Lolspeak"
+msgstr ""
+
+msgid "Vietnamese"
+msgstr ""
+
+msgid "Urdu"
+msgstr ""
+
+msgid "Ukrainian"
+msgstr ""
+
+msgid "Uyghur"
+msgstr ""
+
+msgid "Tuvan"
+msgstr ""
+
+msgid "Turkish"
+msgstr ""
+
+msgid "Thai"
+msgstr ""
+
+msgid "Telugu"
+msgstr ""
+
+msgid "Tamil, Sri Lanka"
+msgstr ""
+
+msgid "Tamil"
+msgstr ""
+
+msgid "Swahili"
+msgstr ""
+
+msgid "Swedish"
+msgstr ""
+
+msgid "Serbian"
+msgstr ""
+
+msgid "Albanian"
+msgstr ""
+
+msgid "Welsh"
+msgstr ""
+
+msgid "Slovenian"
+msgstr ""
+
+msgid "Slovak"
+msgstr ""
+
+msgid "Sinhala"
+msgstr ""
+
+msgid "Northern Sami"
+msgstr ""
+
+msgid "Scots"
+msgstr ""
+
+msgid "Russian"
+msgstr ""
+
+msgid "Romanian"
+msgstr ""
+
+msgid "Portuguese, Brazil"
+msgstr ""
+
+msgid "Portuguese, Portugal"
+msgstr ""
+
+msgid "Polish"
+msgstr ""
+
+msgid "Punjabi"
+msgstr ""
+
+msgid "Occitan"
+msgstr ""
+
+msgid "Norwegian Nynorsk"
+msgstr ""
+
+msgid "Norwegian Bokmål"
+msgstr ""
+
+msgid "Dutch"
+msgstr ""
+
+msgid "Nepali"
+msgstr ""
+
+msgid "Burmese"
+msgstr ""
+
+msgid "Bahasa Malaysia"
+msgstr ""
+
+msgid "Dzongkha"
+msgstr ""
+
+msgid "Marathi"
+msgstr ""
+
+msgid "Mongolian"
+msgstr ""
+
+msgid "Malayalam"
+msgstr ""
+
+msgid "Macedonian"
+msgstr ""
+
+msgid "Malagasy"
+msgstr ""
+
+msgid "Latvian"
+msgstr ""
+
+msgid "Lithuanian"
+msgstr ""
+
+msgid "Lao"
+msgstr ""
+
+msgid "Kyrgyz"
+msgstr ""
+
+msgid "Kurdish"
+msgstr ""
+
+msgid "Korean"
+msgstr ""
+
+msgid "Amharic"
+msgstr ""
+
+msgid "Greek"
+msgstr ""
+
+msgid "Khmer"
+msgstr ""
+
+msgid "Kazakh"
+msgstr ""
+
+msgid "Georgian"
+msgstr ""
+
+msgid "Javanese"
+msgstr ""
+
+msgid "Japanese"
+msgstr ""
+
+msgid "Italian"
+msgstr ""
+
+msgid "Icelandic"
+msgstr ""
+
+msgid "Indonesian"
+msgstr ""
+
+msgid "Armenian"
+msgstr ""
+
+msgid "Simple English"
+msgstr ""
+
+msgid "Hungarian"
+msgstr ""
+
+msgid "Haitian Creole"
+msgstr ""
+
+msgid "Croatian"
+msgstr ""
+
+msgid "Hindi"
+msgstr ""
+
+msgid "Hebrew"
+msgstr ""
+
+msgid "Gujarati"
+msgstr ""
+
+msgid "Swiss German"
+msgstr ""
+
+msgid "Galician"
+msgstr ""
+
+msgid "Scots Gaelic"
+msgstr ""
+
+msgid "Irish"
+msgstr ""
+
+msgid "Frisian, Western"
+msgstr ""
+
+msgid "French"
+msgstr ""
+
+msgid "Faeroese"
+msgstr ""
+
+msgid "Filipino"
+msgstr ""
+
+msgid "Finnish"
+msgstr ""
+
+msgid "Persian, Farsi"
+msgstr ""
+
+msgid "Basque"
+msgstr ""
+
+msgid "Esperanto"
+msgstr ""
+
+msgid "Estonian"
+msgstr ""
+
+msgid "Interface translation import"
+msgstr ""
+
+msgid "Pathauto pattern"
+msgstr "Pathauto mønster"
+
+msgid "Vote type"
+msgstr ""
+
+msgid "Update URL alias"
+msgstr "Update URL alias"
+
+msgid "NYHED"
+msgstr ""
+
+msgid "Joined path"
+msgstr "Samlet sti"
+
+msgid "Choose a default landing page"
+msgstr ""
+
+msgid "When visiting a profile the user will end up at this page first"
+msgstr ""
+
+msgid "Alle"
+msgstr ""
 
 msgid "Index @limit items in batches of @batch_size items"
 msgstr ""
@@ -37441,6 +37242,9 @@ msgid "Index status"
 msgstr ""
 
 msgid "@indexed/@total indexed"
+msgstr ""
+
+msgid "Datasource"
 msgstr ""
 
 msgid "Server index status"
@@ -37454,6 +37258,9 @@ msgid_plural ""
 "\">More information</a>)"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Cron batch size"
+msgstr ""
 
 msgid "During cron runs, 1 item will be indexed per batch."
 msgid_plural "During cron runs, @count items will be indexed per batch."
@@ -37484,127 +37291,176 @@ msgid_plural "Successfully indexed @count items."
 msgstr[0] ""
 msgstr[1] ""
 
-msgid "Provide role based access to menu items."
+msgid "CSS class(es)"
+msgstr "CSS klasse(r)"
+
+msgid ""
+"Customize the styling of this block by adding CSS classes. Separate multiple "
+"classes by spaces."
+msgstr ""
+"Tilpas blokkens udseende ved at tilføje CSS-klasser. Adskil flere klasser "
+"med mellemrum."
+
+msgid "Patterns"
+msgstr "Mønstre"
+
+msgid "Bulk generate"
+msgstr "Masseopret"
+
+msgid "Delete aliases"
+msgstr "Slet aliaser"
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "Vælg hvilke sti-typer du vil oprette URL aliaser for."
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "Opret kun et URL alias for stier uden alias"
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "Opdatér URL aliaset for stier med et gammelt URL alias"
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "Genopret URL aliaser for alle stier"
+
+msgid "Select which URL aliases to generate"
+msgstr "Vælg hvilke URL aliaser der skal oprettes"
+
+msgid "Bulk updating URL aliases"
+msgstr "Masseopdatering af alternative URLer"
+
+msgid "Updated alias for %label @id."
+msgstr "Opdaterede alias for %label @id."
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "1 alternativ URL oprettet."
+msgstr[1] "@count alternative URLer oprettet."
+
+msgid "Administer pathauto"
+msgstr "Administrér pathauto"
+
+msgid "Notify of Path Changes"
+msgstr "Giv besked når stier ændres"
+
+msgid "Mark as required"
 msgstr ""
 
-msgid "Creates custom itchefer links in the header"
+msgid "Region for @title"
 msgstr ""
 
-msgid "Activity post visibility access"
+msgid "Social group select list"
 msgstr ""
 
-msgid "@field (indexed field)"
+msgid "Categorized check boxes/radio buttons"
 msgstr ""
 
-msgid "Search several or all fulltext fields at once."
+msgid "Select2"
 msgstr ""
 
-msgid "Search topics"
+msgid "Profile form"
 msgstr ""
 
-msgid "Multiple words"
+msgid "Accordion Item"
 msgstr ""
 
-msgid "Single phrase"
+msgid "Accordion"
 msgstr ""
 
-msgid "Direct query"
+msgid "Details Sidebar"
 msgstr ""
 
-msgid "Parse mode"
+msgid "Use custom display settings for the following @display_context modes"
 msgstr ""
 
-msgid "Choose how the search keys will be parsed."
+msgid "Manage form modes"
+msgstr ""
+
+msgid "Add field group"
+msgstr ""
+
+msgid "Flood settings"
+msgstr ""
+
+msgid "Search result excerpt"
+msgstr ""
+
+msgid "Manage view modes"
+msgstr ""
+
+msgid "The admin-facing name."
 msgstr ""
 
 msgid ""
-"The query is interpreted as multiple keywords separated by spaces. Keywords "
-"containing spaces may be \"quoted\". Quoted keywords must still be separated "
-"by spaces."
+"The user-facing name. If provided, shown on user pages instead of the admin-"
+"facing name."
+msgstr ""
+
+msgid "Allow multiple profiles per user"
+msgstr ""
+
+msgid "Include in user registration form"
 msgstr ""
 
 msgid ""
-"The query is interpreted as a single phrase, possibly containing spaces or "
-"special characters, that should appear exactly like this in the results."
+"Limit the users that can have this profile by role.</br><em>None will "
+"indicate that all users can have this profile type.</em>"
 msgstr ""
 
-msgid ""
-"Don't parse the query, just hand it to the search server unaltered. Might "
-"fail if the query contains syntax errors in regard to the specific server's "
-"query syntax."
+msgid "Allow profiles of this type to be revisioned"
 msgstr ""
 
-msgid "Searched fields"
+msgid "Create a new revision when a profile is modified"
 msgstr ""
 
-msgid ""
-"Select the fields that will be searched. If no fields are selected, all "
-"available fulltext fields will be searched."
+msgid "Id: @id"
 msgstr ""
 
-msgid "Contains any of these words"
+msgid "Extra CSS classes: @classes"
 msgstr ""
 
-msgid ""
-"Determines how multiple keywords entered for the search will be combined."
+msgid "Autocomplete suggestion list size: @size"
 msgstr ""
 
-msgid ""
-"If selected, the values entered for the filter will be excluded rather than "
-"limiting the view to those values."
+msgid "ImageWidget crop"
 msgstr ""
 
-msgid ""
-"Configuration %name depends on the %owner extension that will not be "
-"installed after import."
+msgid "Always expand crop area: @bool"
 msgstr ""
 
-msgid ""
-"Configuration %name depends on the %owner module that will not be installed "
-"after import."
+msgid "Show default crop area: @bool"
 msgstr ""
 
-msgid "Custom dynamic entity reference formatter for activities"
+msgid "Warn the user if the crop is used more than once: @bool"
 msgstr ""
 
-msgid "Module %module granted %permission permission to authenticated users."
+msgid "Preview crop zone image style: @style"
 msgstr ""
 
-msgid "Opt-in or out of tracking"
+msgid "Crop Type used: @list"
 msgstr ""
 
-msgid "Google Analytics"
+msgid "profile type"
 msgstr ""
 
-msgid ""
-"Configure tracking behavior to get insights into your website traffic and "
-"marketing effectiveness."
+msgid "- Select a field group type -"
 msgstr ""
 
-msgid "User role names"
+msgid "Add a new group"
 msgstr ""
 
-msgid "User role ids"
+msgid "Create group"
 msgstr ""
 
-msgid ""
-"The maximum allowed image size expressed as WIDTH×HEIGHT (e.g. 640×480). "
-"Leave blank for no restriction. If a larger image is uploaded, it will be "
-"resized to reflect the given width and height. Resizing images on upload "
-"will cause the loss of <a href=\"http://wikipedia.org/wiki/"
-"Exchangeable_image_file_format\">EXIF data</a> in the image."
+msgid "Direction: @direction"
 msgstr ""
 
-msgid ""
-"Short description of the image used by screen readers and displayed when the "
-"image is not loaded. Enabling this field is recommended."
+msgid "Configuration Ignore settings"
 msgstr ""
 
-msgid ""
-"The title attribute is used as a tooltip when the mouse hovers over the "
-"image. Enabling this field is not recommended as it can cause problems with "
-"screen readers."
-msgstr ""
+msgid "Successfully executed @count pending task."
+msgid_plural "Successfully executed @count pending tasks."
+msgstr[0] ""
+msgstr[1] ""
 
 msgid ""
 "Configuration %name depends on the %config configuration that will not exist "
@@ -37614,108 +37470,6 @@ msgid_plural ""
 "after import."
 msgstr[0] ""
 msgstr[1] ""
-
-msgid "Use field label instead of the \"On\" label as the label."
-msgstr ""
-
-msgid "Add JavaScript snippets"
-msgstr ""
-
-msgid "Administer Google Analytics"
-msgstr ""
-
-msgid "Use PHP for tracking visibility"
-msgstr ""
-
-msgid "The %field_name field needs to be updated."
-msgstr ""
-
-msgid "Google Analytics module"
-msgstr ""
-
-msgid "Groups that were created by you will still list you as the owner."
-msgstr ""
-
-msgid "Does not affect groups."
-msgstr ""
-
-msgid "Groups that were created by you will remain visible."
-msgstr ""
-
-msgid "Reassign its groups to the super administrator."
-msgstr ""
-
-msgid "All of your groups will be assigned to the super administrator."
-msgstr ""
-
-msgid ""
-"This includes groups that were created by you, including all of their "
-"content relationships!"
-msgstr ""
-
-msgid "Reassign your groups to the super administrator."
-msgstr ""
-
-msgid "Delete your account and anonymize all other content."
-msgstr ""
-
-msgid ""
-"The email address to be used as the 'from' address for all account "
-"notifications listed below. If <em>'Visitors, but administrator approval is "
-"required'</em> is selected above, a notification email will also be sent to "
-"this address for any new registrations. Leave empty to use the default "
-"system email address <em>(%site-email).</em>"
-msgstr ""
-
-msgid "Disable the account and keep its content and groups."
-msgstr ""
-
-msgid "Sign Up"
-msgstr ""
-
-msgid "Displayed in the user sign-up card."
-msgstr ""
-
-msgid "Log In"
-msgstr ""
-
-msgid "Displayed in the user log in card."
-msgstr ""
-
-msgid "Login and Registration help texts"
-msgstr ""
-
-msgid ""
-"These fields allow you to configure various help texts that are shown to "
-"users during signup and login"
-msgstr ""
-
-msgid "Flood settings"
-msgstr ""
-
-msgid ""
-"Enter JavaScript code snippets for advanced Google Analytics functionality."
-msgstr ""
-
-msgid "Perform maintenance tasks for Google Analytics."
-msgstr ""
-
-msgid "Allow users to decide if tracking code will be added to pages or not."
-msgstr ""
-
-msgid "Enter PHP code in the field for tracking visibility settings."
-msgstr ""
-
-msgid ""
-"Allows your site to be tracked by Google Analytics by adding a Javascript "
-"tracking code to every page."
-msgstr ""
-
-msgid "Pathauto pattern"
-msgstr "Pathauto mønster"
-
-msgid "Update URL alias"
-msgstr "Update URL alias"
 
 msgid "Order"
 msgstr "Rækkefølge"
@@ -37881,9 +37635,6 @@ msgstr ""
 "Det automatisk genererede alias %original er i konflikt med et eksisterende "
 "alias. Alias ændret til %alias."
 
-msgid "Delete aliases"
-msgstr "Slet aliaser"
-
 msgid "Automatic alias"
 msgstr "Automatisk alias"
 
@@ -37932,9 +37683,6 @@ msgstr "Slet aliaser nu!"
 
 msgid "All of your path aliases have been deleted."
 msgstr "Alle aliaser slettet."
-
-msgid "Patterns"
-msgstr "Mønstre"
 
 msgid "Colon"
 msgstr "Kolon"
@@ -37986,9 +37734,6 @@ msgstr "Nyt alias %alias for %source oprettet til erstatning for %old_alias."
 msgid "Created new alias %alias for %source."
 msgstr "Nyt alias %alias oprettet for %source."
 
-msgid "Administer pathauto"
-msgstr "Administrér pathauto"
-
 msgid ""
 "Allows a user to configure patterns for automated aliases and bulk delete "
 "URL-aliases."
@@ -37996,19 +37741,8 @@ msgstr ""
 "Gør det muligt at tilpasse makroer for automatiske alternative URLer og "
 "slette mange alternative URLer på én gang."
 
-msgid "Notify of Path Changes"
-msgstr "Giv besked når stier ændres"
-
 msgid "Determines whether or not users are notified."
 msgstr "Bestemmer om brugere får besked eller ej."
-
-msgid "Bulk updating URL aliases"
-msgstr "Masseopdatering af alternative URLer"
-
-msgid "Generated 1 URL alias."
-msgid_plural "Generated @count URL aliases."
-msgstr[0] "1 alternativ URL oprettet."
-msgstr[1] "@count alternative URLer oprettet."
 
 msgid "Underscore"
 msgstr "Understregning"
@@ -38094,9 +37828,6 @@ msgstr "Opret automatisk URL alias"
 msgid "Uncheck this to create a custom alias below."
 msgstr "Fjern afkrydsningen for at oprette et brugerdefineret alias nedenfor."
 
-msgid "Joined path"
-msgstr "Samlet sti"
-
 msgid ""
 "The array values each cleaned by Pathauto and then joined with the slash "
 "into a string that resembles an URL."
@@ -38106,9 +37837,6 @@ msgstr ""
 
 msgid "Selection criteria"
 msgstr "Udvalgs kriterier"
-
-msgid "Bulk generate"
-msgstr "Masseopret"
 
 msgid "Selection logic"
 msgstr "Udvalgs logik"
@@ -38149,9 +37877,6 @@ msgstr "Om at et alias automatisk skal oprettes eller ej."
 
 msgid "@label being aliased"
 msgstr "@label bliver tildelt alias"
-
-msgid "Updated alias for %label @id."
-msgstr "Opdaterede alias for %label @id."
 
 msgid "Updated 1 %label URL alias."
 msgid_plural "Updated @count %label URL aliases."
@@ -38198,21 +37923,6 @@ msgstr "Brudt type"
 msgid "The %element-title doesn't allow the patterns ending with whitespace."
 msgstr "%element-title tillader ikke at mønsteret ender med mellemrum."
 
-msgid "Select the types of paths for which to generate URL aliases"
-msgstr "Vælg hvilke sti-typer du vil oprette URL aliaser for."
-
-msgid "Select which URL aliases to generate"
-msgstr "Vælg hvilke URL aliaser der skal oprettes"
-
-msgid "Generate a URL alias for un-aliased paths only"
-msgstr "Opret kun et URL alias for stier uden alias"
-
-msgid "Update the URL alias for paths having an old URL alias"
-msgstr "Opdatér URL aliaset for stier med et gammelt URL alias"
-
-msgid "Regenerate URL aliases for all paths"
-msgstr "Genopret URL aliaser for alle stier"
-
 msgid "A short name to help you identify this pattern in the patterns list."
 msgstr ""
 "Et kort navn, som hjælper dig med at identificere dette mønster i listen "
@@ -38237,292 +37947,13 @@ msgstr "Sikre tokens"
 msgid "Pattern %label saved."
 msgstr "Mønstret %label er blevet gemt."
 
-msgid "Path pattern"
-msgstr ""
-
-msgid ""
-"Check to which types this pattern should be applied. Leave empty to allow "
-"any."
-msgstr ""
-
-msgid ""
-"Check to which languages this pattern should be applied. Leave empty to "
-"allow any."
-msgstr ""
-
-msgid "Profile of the type \"@type\" associate with a user."
-msgstr ""
-
-msgid "The role ids the user account is a member of as comma separated list."
-msgstr ""
-
-msgid "The role names the user account is a member of as comma separated list."
-msgstr ""
-
-msgid "Flag/unflag link for @flag"
-msgstr ""
-
-msgid "The parent group."
-msgstr ""
-
-msgid "The date the group was most recently updated."
-msgstr ""
-
-msgid "The machine name of the group type."
-msgstr ""
-
-msgid "The human-readable name of the group type."
-msgstr ""
-
-msgid "The universally unique ID of the group."
-msgstr ""
-
-msgid "The unique ID of the group."
-msgstr ""
-
-msgid "The URL of the group's edit page."
-msgstr ""
-
-msgid "The language code of the language the group is in."
-msgstr ""
-
-msgid "The URL of the group."
-msgstr ""
-
-msgid "An array of all the node parent groups."
-msgstr ""
-
-msgid "Tokens from the social comment module."
-msgstr ""
-
-msgid "The link (button) to reply to the comment, will include raw HTML."
-msgstr ""
-
-msgid "The author of the content type that was commented on."
-msgstr ""
-
-msgid "The type of the content that was commented on."
-msgstr ""
-
-msgid "The partial text of the comment."
-msgstr ""
-
-msgid "The partial text of the parent comment."
-msgstr ""
-
-msgid "Tokens from the Social Event module."
-msgstr ""
-
-msgid "Username of user enrolled to the Event. Can be an anonymous user."
-msgstr ""
-
-msgid "Tokens from the Social Event Invite module."
-msgstr ""
-
-msgid "Url to the login page with event as destination."
-msgstr ""
-
-msgid "Url to register page with prefilled email address."
-msgstr ""
-
-msgid "Tokens from the social group module."
-msgstr ""
-
-msgid ""
-"The link to the created entity, can be post or node, will include raw HTML."
-msgstr ""
-
-msgid "The type of the content that is created in the group."
-msgstr ""
-
-msgid "The url to the content that is created in the group."
-msgstr ""
-
-msgid "Tokens from the social group request module."
-msgstr ""
-
-msgid "Request page link."
-msgstr ""
-
-msgid "The link to the request page of the group."
-msgstr ""
-
-msgid "Tokens from the social like module."
-msgstr ""
-
-msgid "The link to the entity, can be post or node, will include raw HTML."
-msgstr ""
-
-msgid "The type of the content that was liked"
-msgstr ""
-
-msgid "URL of the entity the like was created for"
-msgstr ""
-
-msgid "Tokens from the Social Queue Entity module."
-msgstr ""
-
-msgid "The subject of the email task that ran in the background."
-msgstr ""
-
-msgid "Preview sender message"
-msgstr ""
-
-msgid "Older items"
-msgstr ""
-
-msgid "sdf"
-msgstr ""
-
-msgid "- No override -"
-msgstr ""
-
-msgid "Language override"
-msgstr ""
-
-msgid "Ensures entered addresses are always formatted in the same language."
-msgstr ""
-
-msgid "Field overrides"
-msgstr ""
-
-msgid ""
-"Use field overrides to override the country-specific address format, forcing "
-"specific properties to always be hidden, optional, or required."
-msgstr ""
-
-msgctxt "Address label"
-msgid "First name"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Middle name"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Last name"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Company"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Address line 1"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Address line 2"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Sorting code"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Dependent locality (e.g. Neighbourhood)"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Locality (e.g. City)"
-msgstr ""
-
-msgctxt "Address label"
-msgid "Administrative area (e.g. State or Province)"
-msgstr ""
-
-msgid "Exclude the selected items"
-msgstr ""
-
-msgid "Select items"
-msgstr ""
-
-msgid "Reference type for @target_type"
-msgstr ""
-
-msgid "Pick a product and enroll"
-msgstr ""
-
-msgid "Join event"
-msgstr ""
-
-msgid "Add the products you wish for the event."
-msgstr ""
-
-msgid "Test checkbox"
-msgstr ""
-
-msgid "You need to pick a product."
-msgstr ""
-
-msgid "Your request has been sent successfully"
-msgstr ""
-
-msgid "Event export"
-msgstr ""
-
-msgid "Enable user tracking"
-msgstr ""
-
-msgid "Users are tracked by default, but you are able to opt out."
-msgstr ""
-
-msgid "Google Analytics settings"
-msgstr ""
-
-msgid ""
-"You can leave a message in your request. Only when your request is approved, "
-"you will receive a notification via email and notification center. You also "
-"need to pick a product to request the event with."
-msgstr ""
-
-msgid "Send request"
-msgstr ""
-
 msgid "is (1) new request"
 msgid_plural "are (@count) new requests"
 msgstr[0] ""
 msgstr[1] ""
 
-msgid "There @link to enroll in this event."
-msgstr ""
-
-msgid "Add enrollees"
-msgstr ""
-
-msgid "Back to event"
-msgstr ""
-
-msgid "The event enrollment request has been approved."
-msgstr ""
-
-msgid "Comment Permalink"
-msgstr ""
-
-msgid ""
-"The width of each column will be calculated automatically based on the "
-"number of columns provided. If additional classes are entered or a theme "
-"injects classes based on a grid system, disabling this option may prove "
-"beneficial."
-msgstr ""
-
-msgid "Nyhed"
-msgstr ""
-
-msgid "NYHED"
-msgstr ""
-
-msgid "Add-ons"
-msgstr ""
-
-msgid "Opens in new window"
-msgstr ""
-
 msgid "User Interface"
 msgstr "Brugergrænseflade"
-
-msgid "CSS class(es)"
-msgstr "CSS klasse(r)"
 
 msgid "Block Class"
 msgstr "Block Class"
@@ -38531,18 +37962,107 @@ msgid "Usage"
 msgstr "Brug"
 
 msgid ""
-"Customize the styling of this block by adding CSS classes. Separate multiple "
-"classes by spaces."
+"The filename that will be suggested to the browser for downloading purposes. "
+"You may include replacement patterns from the list below."
 msgstr ""
-"Tilpas blokkens udseende ved at tilføje CSS-klasser. Adskil flere klasser "
-"med mellemrum."
 
-msgid "Group from URL"
+msgid "Store file in public files directory"
 msgstr ""
 
 msgid ""
-"<br><br><b>To exclude specific pages</b>, prefix the path with a '!'. "
-"Example excluded path <em class='placeholder'>!/user/jc</em>"
+"Check this if you want to store the export files in the public:// files "
+"directory instead of the private:// files directory."
+msgstr ""
+
+msgid "Download immediately"
+msgstr ""
+
+msgid ""
+"Check this if you want to download the file immediately after it is created. "
+"Does <strong>NOT</strong> work for JSON data exports."
+msgstr ""
+
+msgid "File Storage/Download Settings"
+msgstr ""
+
+msgid "Custom redirect path"
+msgstr ""
+
+msgid "Check this if you want to configure a custom redirect path."
+msgstr ""
+
+msgid "Redirect to this display"
+msgstr ""
+
+msgid ""
+"Select the display to redirect to after batch finishes. If None is selected "
+"the user will be redirected to the front page."
+msgstr ""
+
+msgid "Enter custom path to redirect user after batch finishes."
+msgstr ""
+
+msgid "Include query string parameters on redirect"
+msgstr ""
+
+msgid "Check this if you want to include query string parameters on redirect."
+msgstr ""
+
+msgid ""
+"Indicates the character used to delimit fields. Defaults to a comma (<code>,"
+"</code>). For tab-separation use <code>\\t</code> characters."
+msgstr ""
+
+msgid "Enclosure"
+msgstr ""
+
+msgid ""
+"Indicates the character used for field enclosure. Defaults to a double quote "
+"(<code>\"</code>)."
+msgstr ""
+
+msgid "Escape character"
+msgstr ""
+
+msgid ""
+"Indicates the character used for escaping. Defaults to a backslash (<code>"
+"\\</code>)."
+msgstr ""
+
+msgid "Strip HTML"
+msgstr ""
+
+msgid "Strips HTML tags from CSV cell values."
+msgstr ""
+
+msgid "Trim whitespace"
+msgstr ""
+
+msgid "Trims whitespace from beginning and end of CSV cell values."
+msgstr ""
+
+msgid "UTF-8"
+msgstr ""
+
+msgid "Encoding"
+msgstr ""
+
+msgid "Determines the encoding used for CSV cell values."
+msgstr ""
+
+msgid "Include unicode signature (<a href=\"@bom\" target=\"_blank\">BOM</a>)."
+msgstr ""
+
+msgid "Only use Symfony serializer->encode method"
+msgstr ""
+
+msgid ""
+"Skips the symfony data normalize method when rendering data export to "
+"increase performance on large datasets. <strong>(Only use when not exporting "
+"nested data)</strong>"
+msgstr ""
+
+msgid "CSV settings"
 msgstr ""
 
 msgid ""
@@ -38576,196 +38096,43 @@ msgid ""
 "cleaned. For example urls, aliases, machine names. Separated with a comma."
 msgstr ""
 
-msgid "Your post %label has been posted."
+msgid ""
+"To run cron from outside the site, go to <a href=\":cron\" class=\"system-"
+"cron-settings__link\">@cron</a>"
 msgstr ""
 
-msgid "Show all :num_comments comments"
+msgid "Detailed cron logging"
 msgstr ""
 
-msgid "Intro"
+msgid "Run times of individual cron jobs will be written to watchdog"
 msgstr ""
 
-msgid "Are you sure you want to leave %group?"
-msgstr ""
-
-msgid "Join"
+msgid "email notification settings"
 msgstr ""
 
 msgid ""
-"By submitting this form you will become a member of the group. Please fill "
-"out any available fields to complete your membership information."
-msgstr ""
-"Hvis du tilmelder dig gruppen bliver du medlem. Hvis der er en formular, så "
-"venligst udfyld denne, ellers så bare tryk på knappen \"Tilmeld gruppe\"."
-
-msgid "Join group %label"
-msgstr "Tilmeld dig gruppen %label "
-
-msgid "Group types use three special roles:"
+"Based on your @settings, the notification above is sent to you <strong>:"
+"frequency</strong>"
 msgstr ""
 
-msgid ""
-"Cells with a @red_dash indicate that the permission is not available for "
-"that role."
+msgid "Notification from %site_name"
 msgstr ""
 
-msgid "Access group node overview"
+msgid "Email notification settings"
 msgstr ""
 
-msgid "Enroll to events posted inside this group"
+msgid "The %field_name field needs to be updated."
 msgstr ""
 
-msgid "Request group membership"
+msgid "Social User"
 msgstr ""
 
-msgid ""
-"<strong>Anonymous:</strong> This is the same as the global Anonymous role, "
-"meaning the user has no account."
-msgstr ""
-
-msgid ""
-"<strong>Outsider:</strong> This means the user has an account on the site, "
-"but is not a member of the group."
-msgstr ""
-
-msgid ""
-"<strong>Member:</strong> The default role for anyone in the group. Behaves "
-"like the \"Authenticated user\" role does globally."
-msgstr ""
-
-msgid ""
-"Warning: This can be rather technical and should only be granted to power "
-"users."
-msgstr ""
-
-msgid "View all of the entity relations for the group"
-msgstr ""
-
-msgid "Administer the group, its content and members"
-msgstr ""
-
-msgid "Access the overview of all group nodes, regardless of node type"
-msgstr ""
-
-msgid "Allows you to add a new %entity_type entity and add it to the group."
-msgstr ""
-
-msgid "Allows you to add an existing %entity_type entity to the group."
-msgstr ""
-
-msgid "Allows users with permissions to delete any invitation to group."
-msgstr ""
-
-msgid "Allows users with permissions to delete own invitations to group."
-msgstr ""
-
-msgid "Allows users with permissions to invite new users to group."
-msgstr ""
-
-msgid "Allows users with permissions view created invitations."
-msgstr ""
-
-msgid "Access the posts in this group"
-msgstr ""
-
-msgid "Create new posts in this group"
-msgstr ""
-
-msgid "Edit group type permissions"
-msgstr ""
-
-msgid "Basic permissions"
-msgstr ""
-
-msgid "Advanced outsider permissions"
-msgstr ""
-
-msgid ""
-"The human-readable name of this group type. This text will be displayed as "
-"part of the list on the %group-add page. This name must be unique."
-msgstr ""
-
-msgid ""
-"A unique machine-readable name for this group type. It must only contain "
-"lowercase letters, numbers, and underscores. This name will be used for "
-"constructing the URL of the %group-add page, in which underscores will be "
-"converted into hyphens."
-msgstr ""
-
-msgid "This text will be displayed on the <em>Add group</em> page."
-msgstr ""
-
-msgid "Sets the label of the field that will be used for group titles."
-msgstr ""
-
-msgid "The group creator automatically becomes a member"
-msgstr ""
-
-msgid ""
-"This will make sure that anyone who creates a group of this type will "
-"automatically become a member of it."
-msgstr ""
-
-msgid "Group creator must complete their membership"
-msgstr ""
-
-msgid ""
-"This will first show you the form to create the group and then a form to "
-"fill out your membership details.<br />You can choose to disable this wizard "
-"if you did not or will not add any fields to the membership.<br /"
-"><strong>Warning:</strong> If you do have fields on the membership and do "
-"not use the wizard, you may end up with required fields not being filled out."
-msgstr ""
-
-msgid "Group creator roles"
-msgstr ""
-
-msgid "Please select which custom group roles a group creator will receive."
-msgstr ""
-
-msgid "Save group type"
-msgstr ""
-
-msgid "Automatically configure an administrative role"
-msgstr ""
-
-msgid ""
-"This will create an 'Admin' role by default which will have all currently "
-"defined permissions."
-msgstr ""
-
-msgid "Automatically assign this administrative role to group creators"
-msgstr ""
-
-msgid "This will assign the 'Admin' role to the group creator membership."
-msgstr ""
-
-msgid "group type"
-msgstr ""
-
-msgid "Unfollow this content"
-msgstr ""
-
-msgid "You are now automatically following this @type. @unfollow_link."
-msgstr ""
-
-msgid "Add a reply"
-msgstr ""
-
-msgid "Tilføj kommentar"
-msgstr ""
-
-msgid "Reply to Comment"
+msgid "PHP APCu caching"
 msgstr ""
 
 msgid ""
 "The following changes were detected in the entity type and field "
 "definitions. @updates"
-msgstr ""
-
-msgid ""
-"The rebuild_access setting is enabled in settings.php. It is recommended to "
-"have this setting disabled unless you are performing a rebuild."
 msgstr ""
 
 msgid "Not configured"
@@ -38776,70 +38143,383 @@ msgid ""
 "settings from the <a href=\":url\">Google Analytics settings page</a>."
 msgstr ""
 
-msgid "Protection disabled"
+msgid "Enabled (@size)"
+msgstr ""
+
+msgid "Memory available: @available."
+msgstr ""
+
+msgid "Edit storage settings."
+msgstr ""
+
+msgid "Missing or invalid module"
+msgid_plural "Missing or invalid modules"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid ""
+"The following module is marked as installed in the core.extension "
+"configuration, but it is missing:"
+msgid_plural ""
+"The following modules are marked as installed in the core.extension "
+"configuration, but they are missing:"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid ""
+"Review the <a href=\":url\"> suggestions for resolving this incompatibility</"
+"a> to repair your installation, and then re-run update.php."
+msgstr ""
+
+msgid "Social Swift Mailer"
 msgstr ""
 
 msgid ""
-"The trusted_host_patterns setting is set to allow %trusted_host_patterns"
+"Select the standard plugin for formatting an email before sending it. This "
+"plugin implements <a href=\":interface\">@interface</a> and in special the "
+"<a href=\":format\">@format</a> function."
 msgstr ""
 
-msgid "Supported entity types"
+msgid ""
+"Select the standard plugin for sending an email after formatting it. This "
+"plugin implements <a href=\":interface\">@interface</a> and in special the "
+"<a href=\":mail\">@mail</a> function."
 msgstr ""
 
-msgid "Mentions entity will be created only for selected entity types."
+msgid "Theme to render the emails"
 msgstr ""
 
-msgid "Number of suggestions"
+msgid ""
+"Select the theme that will be used to render emails which are configured for "
+"this. This can be either the current theme, the default theme, the domain "
+"theme or any active theme."
 msgstr ""
 
-msgid "How many suggestions do you want to show when mentioning."
+msgid "Default Mail System"
 msgstr ""
 
-msgid "Only username"
+msgid ""
+"The key is used to identify specific mails if the module sends more than "
+"one. Leave empty to use the configuration for all mails sent by the selected "
+"module."
 msgstr ""
 
-msgid "Only full name (first and last)"
+msgid "Formatter plugin"
 msgstr ""
 
-msgid "Both (username and full name)"
+msgid "Sender plugin"
 msgstr ""
 
-msgid "Suggestions format"
+msgid "Module-specific configuration"
+msgstr ""
+
+msgid "Configure the Mail System"
+msgstr ""
+
+msgid ""
+"This page allows you to configure settings which determines how e-mail "
+"messages are sent."
+msgstr ""
+
+msgid "Swift Mailer documentation"
+msgstr ""
+
+msgid "SMTP transport options"
+msgstr ""
+
+msgid ""
+"This transport type will send all e-mails using a SMTP\n"
+"      server of your choice. You need to specify which SMTP server\n"
+"      to use. Please refer to the @documentation for more details\n"
+"      about this transport type."
+msgstr ""
+
+msgid "Sendmail transport options"
+msgstr ""
+
+msgid ""
+"This transport type will send all e-mails using a locally\n"
+"      installed MTA such as Sendmail. You need to specify which\n"
+"      locally installed MTA to use by providing a path to the\n"
+"      MTA. If you do not provide any path then Swift Mailer\n"
+"      defaults to /usr/sbin/sendmail. You can read more about\n"
+"      this transport type in the @documentation."
+msgstr ""
+
+msgid "PHP transport options"
+msgstr ""
+
+msgid "PHP documentation"
+msgstr ""
+
+msgid ""
+"This transport type will send all e-mails using the built-in\n"
+"      mail functionality of PHP. This transport type can not be\n"
+"      configured here. Please refer to the @documentation if you\n"
+"      would like to read more about how the built-in mail functionality\n"
+"      in PHP can be configured."
+msgstr ""
+
+msgid "Spool transport options"
+msgstr ""
+
+msgid ""
+"This transport does not attempt to send the email\n"
+"    but instead saves the message to a spool file. Another process can then\n"
+"    read from the spool and take care of sending the emails."
+msgstr ""
+
+msgid "Sendmail"
+msgstr ""
+
+msgid "Spool"
+msgstr ""
+
+msgid ""
+"Not sure which transport type to choose? The @documentation gives you a good "
+"overview of the various transport types."
+msgstr ""
+
+msgid "Transport types"
+msgstr ""
+
+msgid "Which transport type should Drupal use to send e-mails?"
+msgstr ""
+
+msgid "Transport"
+msgstr ""
+
+msgid ""
+"This page allows you to send a test e-mail to a recipient of your choice."
+msgstr ""
+
+msgid ""
+"You can send a test e-mail to a recipient of your choice. The e-mail will be "
+"sent using the default values as provided by the Swift Mailer module or as "
+"configured by you."
+msgstr ""
+
+msgid "Dear @user,"
+msgstr ""
+
+msgid ""
+"This e-mail has been sent from @site by the Swift Mailer module. The module "
+"has been successfully configured."
+msgstr ""
+
+msgid "Kind regards"
+msgstr ""
+
+msgid "The Swift Mailer module"
+msgstr ""
+
+msgid "Swift Mailer has been successfully configured!"
+msgstr ""
+
+msgid "An attempt has been made to send an e-mail to @email."
+msgstr ""
+
+msgid ""
+"This page allows you to configure settings which determines how e-mail "
+"messages are created."
+msgstr ""
+
+msgid ""
+"E-mails need to carry details about the character set which the\n"
+"        receiving client should use to understand the content of the e-"
+"mail.\n"
+"        The default character set is UTF-8."
+msgstr ""
+
+msgid "Respect provided e-mail format."
+msgstr ""
+
+msgid ""
+"The header \"Content-Type\", if available, will be respected if you enable "
+"this setting.\n"
+"        Settings such as e-mail format (\"text/plain\" or \"text/html\") and "
+"character set may be provided through this\n"
+"        header. Unless your site somehow alters e-mails, enabling this "
+"setting will result in all e-mails to be sent\n"
+"        as plain text as this is the content type Drupal by default will "
+"apply to all e-mails."
+msgstr ""
+
+msgid ""
+"You can set the default message format which should be applied to e-mail\n"
+"        messages."
+msgstr ""
+
+msgid "Generate alternative plain text version."
+msgstr ""
+
+msgid ""
+"Please refer to @link for more details about how the alternative plain text "
+"version will be generated."
+msgstr ""
+
+msgid "Plain Text Version"
+msgstr ""
+
+msgid ""
+"An alternative plain text version can be generated based on the HTML version "
+"if no plain text version\n"
+"        has been explicitly set. The plain text version will be used by e-"
+"mail clients not capable of displaying HTML content."
+msgstr ""
+
+msgid "Character Set"
+msgstr ""
+
+msgid "Accent text color"
+msgstr ""
+
+msgid ""
+"Users with sufficient access rights will be able to override these options."
+msgstr ""
+
+msgid "Flag: %title"
+msgstr ""
+
+msgid "Use description as link text"
+msgstr ""
+
+msgid "Custom dynamic entity reference formatter for activities"
+msgstr ""
+
+msgid "Group Managers Only"
+msgstr ""
+
+msgid "Manage by organizers only"
+msgstr ""
+
+msgid "Infinite Scroll"
+msgstr ""
+
+msgid ""
+"Enter JavaScript code snippets for advanced Google Analytics functionality."
+msgstr ""
+
+msgid "Perform maintenance tasks for Google Analytics."
+msgstr ""
+
+msgid "Allow users to decide if tracking code will be added to pages or not."
+msgstr ""
+
+msgid "Enter PHP code in the field for tracking visibility settings."
+msgstr ""
+
+msgid "Config"
+msgstr ""
+
+msgid "Allows configuration of tasks to be executed in response to events."
+msgstr ""
+
+msgid ""
+"Gathers and displays syndicated content (RSS, RDF, and Atom feeds) from "
+"external sources."
+msgstr ""
+
+msgid "Allows administrators to ban visits from specific IP addresses."
+msgstr ""
+
+msgid "Manages breakpoints and breakpoint groups for responsive designs."
+msgstr ""
+
+msgid "Allows users to change the color scheme of compatible themes."
+msgstr ""
+
+msgid "Allows users to comment on content."
+msgstr ""
+
+msgid "Allows administrators to import and export configuration changes."
+msgstr ""
+
+msgid "Provides site-wide contact forms and forms to contact individual users."
+msgstr ""
+
+msgid ""
+"Provides contextual links to directly access tasks related to page elements."
+msgstr ""
+
+msgid "Allows the creation of custom blocks and block types."
+msgstr ""
+
+msgid "Allows users to create menu links."
+msgstr ""
+
+msgid "Logs system events in the database."
+msgstr ""
+
+msgid "Provides a user interface for the Field module."
+msgstr ""
+
+msgid "Caches pages, including those with dynamic content, for all users."
+msgstr ""
+
+msgid ""
+"Caches pages for anonymous users and can be used when external page cache is "
+"not available."
+msgstr ""
+
+msgid ""
+"Allows users to create search pages based on plugins provided by other "
+"modules."
+msgstr ""
+
+msgid "Displays guided tours of the site interface."
+msgstr ""
+
+msgid "Provides a user interface for creating and managing views."
+msgstr ""
+
+msgid "@module_name (<span class=\"admin-missing\">missing</span>)"
 msgstr ""
 
 msgid "Allows assigning the classes to Blocks."
 msgstr ""
 
-msgid "Adds an exclude pages filter for blocks"
+msgid ""
+"Config Filter allows other modules to interact with a ConfigStorage through "
+"filter plugins."
 msgstr ""
 
-msgid "Choose a default landing page"
+msgid "Ignore certain configuration during import"
 msgstr ""
 
-msgid "When visiting a profile the user will end up at this page first"
-msgstr ""
-
-msgid "The admin-facing name."
+msgid "Defines a field type for files."
 msgstr ""
 
 msgid ""
-"The user-facing name. If provided, shown on user pages instead of the admin-"
-"facing name."
+"Defines a field type for image media and provides display configuration "
+"tools."
 msgstr ""
 
-msgid "Allow multiple profiles per user"
+msgid "Embed a taxonomy tree into a menu"
 msgstr ""
 
-msgid "Include in user registration form"
+msgid "Provides a Secret Group featured view mode for use on landing pages."
+msgstr ""
+
+msgid "Allows users to translate configuration text."
+msgstr ""
+
+msgid "Allows users to translate content."
+msgstr ""
+
+msgid "Allows users to configure available languages."
 msgstr ""
 
 msgid ""
-"Limit the users that can have this profile by role.</br><em>None will "
-"indicate that all users can have this profile type.</em>"
+"Allows your site to be tracked by Google Analytics by adding a Javascript "
+"tracking code to every page."
 msgstr ""
 
-msgid "Allow profiles of this type to be revisioned"
+msgid "Creates a custom enrollment in event"
 msgstr ""
 
-msgid "Create a new revision when a profile is modified"
+msgid "Creates custom itchefer links in the header"
+msgstr ""
+
+msgid "Supplies an HTTP Basic authentication provider."
 msgstr ""
