@@ -56,7 +56,7 @@ jobs:
           command: |
             cd ${{ secrets.APP_PATH_STG }} &&
             chmod 755 html/sites/default &&
-            (cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po)
+            (cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po) &&
             vendor/bin/drush cr --cache-clear
           host: ${{ secrets.HOST_STG }}
           key: ${{ secrets.PRIVATE_KEY }}
