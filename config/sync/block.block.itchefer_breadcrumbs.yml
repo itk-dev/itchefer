@@ -11,8 +11,8 @@ _core:
   default_config_hash: qx5J0OveCBX5suM2zODclnmzFJ_UUC2jWPAiu1VJYU0
 id: itchefer_breadcrumbs
 theme: itchefer
-region: breadcrumb
-weight: 0
+region: hidden
+weight: -29
 provider: null
 plugin: system_breadcrumb_block
 settings:
