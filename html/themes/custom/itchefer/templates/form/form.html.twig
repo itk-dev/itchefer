@@ -60,15 +60,10 @@
     </form>
 
   {% endif %}
-{% elseif attributes.id == 'user-register-form' %}
-  <form>
-    {{ children}}
-  </form>
-
 
 {% else %}
   <form{{ attributes }}>
     {{ children }}
-  </form> 
+  </form>
 
 {% endif %}
