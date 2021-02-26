@@ -1,0 +1,11 @@
+uuid: 409e0051-b79e-4955-8c9e-bc06082d9c48
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.create_post_profile
+id: message.create_post_profile
+target_entity_type_id: message
+target_bundle: create_post_profile
+default_langcode: site_default
+language_alterable: false

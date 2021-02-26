@@ -1,0 +1,20 @@
+uuid: 374e5032-7276-44f9-8129-c7fdaa3dbad1
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.uid
+field_name: uid
+entity_type: node
+bundle: magazine
+label: 'Skrevet af'
+description: 'Forfatterens brugernavn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\social_node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

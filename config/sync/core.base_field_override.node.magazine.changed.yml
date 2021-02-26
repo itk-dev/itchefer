@@ -1,0 +1,18 @@
+uuid: 80b0fed5-cd1a-4a58-851b-bac4d880e233
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.changed
+field_name: changed
+entity_type: node
+bundle: magazine
+label: Ændret
+description: 'Tidspunktet hvor indholdselementet sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

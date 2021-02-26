@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: 0mip4KRQuqxRT0I3N5OSsAGWyq4uBgVUvNgJR3mvWfw
 id: post.activity
-label: Activity
+label: Aktivitet
 targetEntityType: post
 cache: true

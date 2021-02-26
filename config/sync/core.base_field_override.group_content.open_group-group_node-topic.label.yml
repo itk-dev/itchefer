@@ -1,0 +1,18 @@
+uuid: 9837154b-6d74-44fb-85b7-50db22247d82
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.open_group-group_node-topic
+id: group_content.open_group-group_node-topic.label
+field_name: label
+entity_type: group_content
+bundle: open_group-group_node-topic
+label: Titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: b01dcc1b-1cd6-4e05-984a-4dee1a673ab6
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.flexible_group-group_invitation
+id: group_content.flexible_group-group_invitation.label
+field_name: label
+entity_type: group_content
+bundle: flexible_group-group_invitation
+label: Titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

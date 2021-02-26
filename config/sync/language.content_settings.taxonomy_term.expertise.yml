@@ -1,0 +1,18 @@
+uuid: e79e4ff4-8dc0-43d4-a975-5bd5f24fefd0
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.expertise
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.expertise
+target_entity_type_id: taxonomy_term
+target_bundle: expertise
+default_langcode: site_default
+language_alterable: false

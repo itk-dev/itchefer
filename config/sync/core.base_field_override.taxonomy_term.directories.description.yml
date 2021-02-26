@@ -1,0 +1,20 @@
+uuid: 3d48b491-4a3b-48d4-909b-8df99aa14b34
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.directories
+  module:
+    - text
+id: taxonomy_term.directories.description
+field_name: description
+entity_type: taxonomy_term
+bundle: directories
+label: Beskrivelse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

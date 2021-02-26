@@ -13,7 +13,7 @@ id: block_content.basic.field_basic_link
 field_name: field_basic_link
 entity_type: block_content
 bundle: basic
-label: 'Read more link'
+label: 'Læs mere'
 description: ''
 required: false
 translatable: false

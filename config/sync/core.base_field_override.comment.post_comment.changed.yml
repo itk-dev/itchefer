@@ -1,0 +1,18 @@
+uuid: 60e39f6a-75e2-4997-9b68-11bbf0079f95
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.post_comment
+id: comment.post_comment.changed
+field_name: changed
+entity_type: comment
+bundle: post_comment
+label: Ændret
+description: 'Tidspunktet hvor kommentaren sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

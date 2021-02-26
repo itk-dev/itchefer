@@ -1,0 +1,22 @@
+uuid: af59fb01-d219-4286-acc0-5d84cf7607a0
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.status
+field_name: status
+entity_type: node
+bundle: magazine
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

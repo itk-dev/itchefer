@@ -19,7 +19,7 @@ third_party_settings:
 _core:
   default_config_hash: jq2qo66PdjnEKwqI2Wd4FUTGcM2cDNg37P76dfyZI0M
 template: create_comment_post_profile
-label: 'Create comment on post on my profile'
+label: 'Opret kommentar'
 description: 'A person commented on a post on my profile'
 text:
   -

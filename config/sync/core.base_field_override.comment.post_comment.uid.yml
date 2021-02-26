@@ -1,0 +1,20 @@
+uuid: 846a6d28-2463-4033-8ae4-4d3f947db5c9
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.post_comment
+id: comment.post_comment.uid
+field_name: uid
+entity_type: comment
+bundle: post_comment
+label: 'Bruger ID'
+description: 'Kommentarforfatterens bruger ID.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\social_comment\Entity\Comment::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

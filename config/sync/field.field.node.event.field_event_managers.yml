@@ -11,8 +11,8 @@ id: node.event.field_event_managers
 field_name: field_event_managers
 entity_type: node
 bundle: event
-label: 'Event organisers'
-description: 'Assign event organisers to this event.'
+label: 'Event organisatør'
+description: 'Tildel event organisatører til dette event'
 required: false
 translatable: false
 default_value: {  }

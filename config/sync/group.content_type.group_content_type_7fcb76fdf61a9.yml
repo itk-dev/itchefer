@@ -14,8 +14,8 @@ dependencies:
 _core:
   default_config_hash: wJTG1SaBl7_62tb8mTrx2z_1S1gqgN-p4NFTeact6_A
 id: group_content_type_7fcb76fdf61a9
-label: 'Flexible group: Group membership request'
-description: 'Adds users as requesters for the group.'
+label: 'Fleksibel gruppe: gruppe medlemskab anmodning'
+description: 'Tilføj brugere som inviterede til gruppen'
 group_type: flexible_group
 content_plugin: group_membership_request
 plugin_config:

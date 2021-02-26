@@ -15,10 +15,10 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: 'Not enrolled'
+      label: 'Ikke tilmeldt'
     -
       value: '1'
-      label: Enrolled
+      label: Tilmeldt
   allowed_values_function: ''
 module: options
 locked: false

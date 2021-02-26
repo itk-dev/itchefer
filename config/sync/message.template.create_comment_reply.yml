@@ -19,7 +19,7 @@ third_party_settings:
 _core:
   default_config_hash: K0cI0i8tgWblToQufwk4fZJhe_VTfOGCasFfwiIymdU
 template: create_comment_reply
-label: 'Create reply on my comment'
+label: 'Opret svar til min kommentar'
 description: 'A person replied on my comments'
 text:
   -

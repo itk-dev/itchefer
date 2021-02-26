@@ -1,0 +1,20 @@
+uuid: 07a8863c-dec5-4068-8831-36c66436bedf
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.directories
+  module:
+    - path
+id: taxonomy_term.directories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: directories
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 43fb6582-9e8e-4837-b542-27a048c6c06c
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.public_group-group_node-event
+id: group_content.public_group-group_node-event.label
+field_name: label
+entity_type: group_content
+bundle: public_group-group_node-event
+label: Titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: w7vPf4jAjGJ_Kizd9D5JGeBIMvKpIqriCtOJqETS2SA
 id: group_pending_members
-label: 'Group pending members'
+label: 'Afventende medlemmer til gruppen'
 module: views
 description: ''
 tag: ''
@@ -39,13 +39,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -55,7 +55,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -97,7 +97,7 @@ display:
           relationship: gc__user
           group_type: group
           admin_label: ''
-          label: Name
+          label: Navn
           exclude: false
           alter:
             alter_text: false
@@ -408,7 +408,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Approve membership'
+          label: 'Godkend medlemsskab'
           exclude: true
           alter:
             alter_text: true
@@ -420,7 +420,7 @@ display:
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: 'Approve membership'
+            alt: 'Godkend medlemsskab'
             rel: ''
             link_class: ''
             prefix: ''
@@ -457,7 +457,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operationer
           exclude: false
           alter:
             alter_text: false
@@ -553,7 +553,7 @@ display:
             group_items: {  }
           plugin_id: numeric
       sorts: {  }
-      title: 'Group pending members'
+      title: 'Afventende medlemmer til gruppen'
       header: {  }
       footer: {  }
       empty:
@@ -566,7 +566,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No membership requests available.'
+          content: 'Ingen medlemsskabs invitationer tilgængelige'
           plugin_id: text_custom
       relationships:
         gc__user:
@@ -634,7 +634,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

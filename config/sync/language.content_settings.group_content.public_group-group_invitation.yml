@@ -1,0 +1,18 @@
+uuid: 366423f1-5cb7-4cbf-8eda-91a63148e462
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.public_group-group_invitation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_content.public_group-group_invitation
+target_entity_type_id: group_content
+target_bundle: public_group-group_invitation
+default_langcode: site_default
+language_alterable: false

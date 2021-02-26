@@ -1,0 +1,11 @@
+uuid: 027395d1-e8a6-402e-aa02-4e775270d252
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.create_post_profile_stream
+id: message.create_post_profile_stream
+target_entity_type_id: message
+target_bundle: create_post_profile_stream
+default_langcode: site_default
+language_alterable: false

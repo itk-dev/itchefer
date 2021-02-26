@@ -1,0 +1,18 @@
+uuid: ccc41435-fa4f-4b40-b36d-cc1baebc3537
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.changed
+field_name: changed
+entity_type: node
+bundle: event
+label: Ændret
+description: 'Tidspunktet hvor indholdselementet sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

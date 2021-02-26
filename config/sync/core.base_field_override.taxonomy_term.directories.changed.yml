@@ -1,0 +1,18 @@
+uuid: e119c840-b3a8-4f58-8b70-e4c469b06cbf
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.directories
+id: taxonomy_term.directories.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: directories
+label: Ændret
+description: 'Datoen hvor termen senest blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

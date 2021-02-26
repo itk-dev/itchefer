@@ -1,0 +1,20 @@
+uuid: 642fc08f-63e3-4ebd-b199-751e944d1888
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.topic
+  module:
+    - path
+id: node.topic.path
+field_name: path
+entity_type: node
+bundle: topic
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

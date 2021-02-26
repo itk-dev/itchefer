@@ -6,22 +6,29 @@ dependencies:
     - field.storage.node.field_article_image
     - node.type.article
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.article.field_article_image
 field_name: field_article_image
 entity_type: node
 bundle: article
 label: Billede
-description: ''
+description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
+  max_filesize: '60 MB'
+  max_resolution: 3408x780
   min_resolution: ''
   alt_field: true
   alt_field_required: true

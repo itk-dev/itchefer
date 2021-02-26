@@ -1,0 +1,18 @@
+uuid: 1b8bb7d0-f453-49e6-a207-bfd2ae3277f4
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment
+label: Hjemmeside
+description: 'Kommentarforfatterens hjemmesideadresse.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

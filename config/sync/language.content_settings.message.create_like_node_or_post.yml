@@ -1,0 +1,11 @@
+uuid: 91399dc6-9c8c-45c0-95c3-6f787f9d547c
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.create_like_node_or_post
+id: message.create_like_node_or_post
+target_entity_type_id: message
+target_bundle: create_like_node_or_post
+default_langcode: site_default
+language_alterable: false

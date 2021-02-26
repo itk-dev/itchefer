@@ -1,0 +1,22 @@
+uuid: 83f84c78-91cb-403f-bcad-5c6c0526f017
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.expertise
+id: taxonomy_term.expertise.status
+field_name: status
+entity_type: taxonomy_term
+bundle: expertise
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

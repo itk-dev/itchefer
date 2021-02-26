@@ -1,0 +1,18 @@
+uuid: d99e99b9-65be-43e6-9c85-a83d8e2c734b
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.flexible_group
+id: group.flexible_group.label
+field_name: label
+entity_type: group
+bundle: flexible_group
+label: Titel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

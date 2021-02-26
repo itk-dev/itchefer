@@ -1,0 +1,20 @@
+uuid: 27fc0b42-8726-4b62-bb2a-6e14c61cf521
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.public_group-group_node-topic
+id: group_content.public_group-group_node-topic.uid
+field_name: uid
+entity_type: group_content
+bundle: public_group-group_node-topic
+label: 'Group content creator'
+description: 'The username of the group content creator.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\group\Entity\GroupContent::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

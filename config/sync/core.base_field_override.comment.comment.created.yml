@@ -1,0 +1,18 @@
+uuid: 02f9b3e5-9139-445d-8d47-642b5d925e04
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.created
+field_name: created
+entity_type: comment
+bundle: comment
+label: Oprettet
+description: 'Tidspunktet hvor kommentaren blev oprettet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

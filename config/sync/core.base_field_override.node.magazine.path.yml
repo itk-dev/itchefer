@@ -1,0 +1,20 @@
+uuid: 84880660-a4e4-491b-94af-c3797390014e
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+  module:
+    - path
+id: node.magazine.path
+field_name: path
+entity_type: node
+bundle: magazine
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

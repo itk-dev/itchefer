@@ -1,0 +1,18 @@
+uuid: c894d4d1-ef42-40ce-b8f1-23a941e10210
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.title
+field_name: title
+entity_type: node
+bundle: document
+label: Titel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

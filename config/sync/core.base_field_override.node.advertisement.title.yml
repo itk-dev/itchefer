@@ -1,0 +1,18 @@
+uuid: 2595a4d7-c2b0-4d05-9991-5cdb29d00ee4
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement.title
+field_name: title
+entity_type: node
+bundle: advertisement
+label: Titel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -12,7 +12,7 @@ bundle: group_content_type_7fcb76fdf61a9
 label: Message
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

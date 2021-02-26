@@ -13,7 +13,7 @@ id: message.create_comment_author_node_post.field_message_context
 field_name: field_message_context
 entity_type: message
 bundle: create_comment_author_node_post
-label: Context
+label: Kontext
 description: ''
 required: false
 translatable: false

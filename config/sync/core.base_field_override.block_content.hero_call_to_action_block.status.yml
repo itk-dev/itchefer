@@ -1,0 +1,22 @@
+uuid: bdcb2097-51a3-44cd-86cd-e7129e094eb5
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_call_to_action_block
+id: block_content.hero_call_to_action_block.status
+field_name: status
+entity_type: block_content
+bundle: hero_call_to_action_block
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

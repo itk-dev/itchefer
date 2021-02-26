@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: H68x_1aJkYpFesLf_F8sNomP2DBNJekeQlIBSd2ANTE
 id: open_group-anonymous
-label: Anonymous
+label: Anonym
 weight: -102
 internal: true
 audience: anonymous

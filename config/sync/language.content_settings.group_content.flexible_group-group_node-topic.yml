@@ -1,0 +1,18 @@
+uuid: e5f65609-121a-46e3-bde5-342d2de92bf8
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.flexible_group-group_node-topic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_content.flexible_group-group_node-topic
+target_entity_type_id: group_content
+target_bundle: flexible_group-group_node-topic
+default_langcode: site_default
+language_alterable: false

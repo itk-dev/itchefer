@@ -1,0 +1,11 @@
+uuid: 799292c4-66d2-44c4-b6f2-78b41dc13aba
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.event_request_approved
+id: message.event_request_approved
+target_entity_type_id: message
+target_bundle: event_request_approved
+default_langcode: site_default
+language_alterable: false

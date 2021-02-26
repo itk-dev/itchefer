@@ -1,0 +1,18 @@
+uuid: 3defecba-6e50-4e9d-a022-5b34ad904c95
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.public_group-group_invitation
+id: group_content.public_group-group_invitation.label
+field_name: label
+entity_type: group_content
+bundle: public_group-group_invitation
+label: Titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

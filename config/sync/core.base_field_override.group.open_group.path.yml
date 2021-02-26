@@ -1,0 +1,20 @@
+uuid: 3588673e-d76f-4c12-b5f2-4018cba2e786
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+  module:
+    - path
+id: group.open_group.path
+field_name: path
+entity_type: group
+bundle: open_group
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

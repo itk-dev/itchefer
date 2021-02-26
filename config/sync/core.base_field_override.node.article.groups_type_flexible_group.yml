@@ -1,0 +1,20 @@
+uuid: 7fe9ebbb-a8d4-4815-9c51-ef60039a915d
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.groups_type_flexible_group
+field_name: groups_type_flexible_group
+entity_type: node
+bundle: article
+label: 'Get the related Fleksibel gruppe groups for this entity.'
+description: 'A list of all the groups referencing this entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

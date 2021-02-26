@@ -13,7 +13,7 @@ id: message.create_event_group.field_message_destination
 field_name: field_message_destination
 entity_type: message
 bundle: create_event_group
-label: Destinations
+label: Destinationer
 description: ''
 required: false
 translatable: false

@@ -18,7 +18,7 @@ third_party_settings:
 _core:
   default_config_hash: '-uWpQzoNQX4h_MuVNLJoB8qr6v1QVmRSZPk9d_d5AQk'
 template: create_post_profile
-label: 'Create post on profile'
+label: 'Opret post på profil'
 description: 'A person created a post on my profile'
 text:
   -

@@ -1,0 +1,20 @@
+uuid: 60128fd5-0212-48e8-9470-71fd18a47d23
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.product_type
+id: node.product_type.uid
+field_name: uid
+entity_type: node
+bundle: product_type
+label: 'Skrevet af'
+description: 'Forfatterens brugernavn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\social_node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

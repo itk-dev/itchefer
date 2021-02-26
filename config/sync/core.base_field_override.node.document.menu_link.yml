@@ -1,0 +1,20 @@
+uuid: 684e7ca5-690b-4f77-b03a-d5965edd0dca
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.menu_link
+field_name: menu_link
+entity_type: node
+bundle: document
+label: Menu-link
+description: 'Beregnet menulink for noden (kun tilgængeligt imens noden gemmes).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

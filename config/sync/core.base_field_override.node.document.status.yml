@@ -1,0 +1,22 @@
+uuid: f4a9faa8-39bc-4031-b15e-fafeb02c86c8
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.status
+field_name: status
+entity_type: node
+bundle: document
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

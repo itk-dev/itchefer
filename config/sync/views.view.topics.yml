@@ -50,8 +50,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: ascending
-          sort_desc_label: descending
+          sort_asc_label: stigende
+          sort_desc_label: falende
       pager:
         type: full
         options:
@@ -61,7 +61,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -70,8 +70,8 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           quantity: 9
       style:
         type: default
@@ -154,7 +154,7 @@ display:
           exposed: true
           expose:
             operator_id: field_topic_type_target_id_op
-            label: 'is the type of'
+            label: 'Er af typen'
             description: ''
             use_operator: false
             operator: field_topic_type_target_id_op
@@ -279,12 +279,12 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Sort by publish date'
+            label: 'Sorter efter publiserings dato'
           granularity: second
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Topics
+      title: Emner
       header: {  }
       footer: {  }
       empty:
@@ -362,7 +362,7 @@ display:
   block_user_topics:
     display_plugin: block
     id: block_user_topics
-    display_title: Block
+    display_title: Blok
     position: 2
     display_options:
       display_extenders: {  }
@@ -538,14 +538,14 @@ display:
           order: DESC
           exposed: false
           expose:
-            label: 'Sort by publish date'
+            label: 'Sorter efter publiserings dato'
           granularity: second
           entity_type: node
           entity_field: created
           plugin_id: date
       use_more: true
       use_more_always: true
-      use_more_text: 'All topics'
+      use_more_text: 'Alle emner'
     cache_metadata:
       max-age: -1
       contexts:
@@ -558,14 +558,14 @@ display:
   page_profile:
     display_plugin: page
     id: page_profile
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
       path: user/%user/topics
       menu:
         type: none
-        title: Topics
+        title: Emner
         description: ''
         expanded: false
         parent: ''
@@ -574,7 +574,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Topics
+        title: Emner
         description: ''
         weight: 0
       exposed_block: true

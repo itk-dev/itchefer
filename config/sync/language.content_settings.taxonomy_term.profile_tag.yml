@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: LDhJFZT4d6rysyhJviRxy8wZHAM0ko6pC1TRapN-mNo
 id: taxonomy_term.profile_tag

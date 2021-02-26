@@ -1,0 +1,20 @@
+uuid: 30c08ec4-e4d9-4fe6-b77c-18646a8636e4
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.groups_type_open_group
+field_name: groups_type_open_group
+entity_type: node
+bundle: article
+label: 'Get the related Åben gruppe groups for this entity.'
+description: 'A list of all the groups referencing this entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

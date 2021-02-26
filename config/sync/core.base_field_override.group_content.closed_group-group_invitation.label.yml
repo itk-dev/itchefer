@@ -1,0 +1,18 @@
+uuid: 14d3c877-8932-4aba-a470-51198549f72c
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.closed_group-group_invitation
+id: group_content.closed_group-group_invitation.label
+field_name: label
+entity_type: group_content
+bundle: closed_group-group_invitation
+label: Titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

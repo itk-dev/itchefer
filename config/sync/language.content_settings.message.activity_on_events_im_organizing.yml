@@ -1,0 +1,11 @@
+uuid: 204f5f35-c376-411c-9bfd-6c0eb60a4394
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.activity_on_events_im_organizing
+id: message.activity_on_events_im_organizing
+target_entity_type_id: message
+target_bundle: activity_on_events_im_organizing
+default_langcode: site_default
+language_alterable: false

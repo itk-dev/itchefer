@@ -18,7 +18,7 @@ third_party_settings:
 _core:
   default_config_hash: u1HJ3UrjWglhkdKMGqTUnZIFM_AkMu2L8Bq0tpUVI34
 template: create_post_community
-label: 'Create post in the community'
+label: 'Opret post i fællesskabet'
 description: 'A user created a post in the community'
 text:
   -

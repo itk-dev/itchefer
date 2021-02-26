@@ -1,0 +1,11 @@
+uuid: 4bd95435-a3b7-44aa-899f-2ea5080f8003
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.moved_content_between_groups
+id: message.moved_content_between_groups
+target_entity_type_id: message
+target_bundle: moved_content_between_groups
+default_langcode: site_default
+language_alterable: false

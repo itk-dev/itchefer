@@ -14,7 +14,7 @@ dependencies:
 _core:
   default_config_hash: hONGG3p7LBX2VUzBpzaJsuK3Ee2dgewJ-S7gExITZVQ
 id: event_enrollments
-label: Enrollments
+label: Tilmeldinger
 module: views
 description: ''
 tag: ''
@@ -45,13 +45,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -61,7 +61,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -173,7 +173,7 @@ display:
           reduce_duplicates: false
           plugin_id: list_field
       sorts: {  }
-      title: Enrollments
+      title: Tilmeldinger
       header:
         result:
           id: result
@@ -183,7 +183,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          content: '@total people have enrolled'
+          content: '@total brugere har tilmeldt sig'
           plugin_id: result
       footer:
         area:
@@ -211,7 +211,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No one has enrolled for this event'
+          content: 'Der er ikke nogle tilmeldinger for denne begivenhed'
           plugin_id: text_custom
       relationships:
         uid:
@@ -306,7 +306,7 @@ display:
   event_enrollments:
     display_plugin: block
     id: event_enrollments
-    display_title: Block
+    display_title: Blok
     position: 2
     display_options:
       display_extenders: {  }
@@ -322,7 +322,7 @@ display:
           empty: false
           tokenize: true
           content:
-            value: '<a href="/node/{{ raw_arguments.nid }}/enrollments">See all enrollments</a>'
+            value: '<a href="/node/{{ raw_arguments.nid }}/enrollments">Se alle tilmeldinger</a>'
             format: basic_html
           plugin_id: text
       defaults:
@@ -390,7 +390,7 @@ display:
       link_url: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'All enrollments'
+      use_more_text: 'Alle tilmeldinger'
     cache_metadata:
       max-age: -1
       contexts:
@@ -412,14 +412,14 @@ display:
   view_enrollments:
     display_plugin: page
     id: view_enrollments
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
       path: node/%node/enrollments
       menu:
         type: tab
-        title: Enrollments
+        title: Tilmeldinger
         description: ''
         expanded: false
         parent: ''
@@ -448,11 +448,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'

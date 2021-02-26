@@ -1,0 +1,20 @@
+uuid: 101b6e3e-c4e4-4fe7-afb4-ad518669ccac
+langcode: da
+status: true
+dependencies:
+  module:
+    - activity_creator
+id: activity.activity.user_id
+field_name: user_id
+entity_type: activity
+bundle: activity
+label: 'Skrevet af'
+description: 'The user ID of author of the Activity entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

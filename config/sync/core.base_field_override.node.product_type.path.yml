@@ -1,0 +1,20 @@
+uuid: c434dc28-b0b8-44ee-b73c-05a04a545a11
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.product_type
+  module:
+    - path
+id: node.product_type.path
+field_name: path
+entity_type: node
+bundle: product_type
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 3f2a19eb-f4e9-49f2-8094-06a84e610464
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.topic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.topic
+target_entity_type_id: node
+target_bundle: topic
+default_langcode: site_default
+language_alterable: false

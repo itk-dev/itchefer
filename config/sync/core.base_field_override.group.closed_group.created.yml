@@ -1,0 +1,18 @@
+uuid: 70b0d109-ccc9-4303-b140-45c85ba58c44
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.closed_group
+id: group.closed_group.created
+field_name: created
+entity_type: group
+bundle: closed_group
+label: 'Oprettet den'
+description: 'The time that the group was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

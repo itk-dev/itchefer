@@ -19,7 +19,7 @@ third_party_settings:
 _core:
   default_config_hash: NEM-Iz7UrCCQB5U1k1LIssJ8P7WLk2zXowcxbOFtXAM
 template: create_comment_community_post
-label: 'Create comment on post in the community'
+label: 'Opret kommentar'
 description: 'A user add a comment to post in the community'
 text:
   -

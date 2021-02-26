@@ -1,0 +1,18 @@
+uuid: 9a380b64-8aa6-4095-b7b0-7a53cc092946
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.topic
+id: node.topic.title
+field_name: title
+entity_type: node
+bundle: topic
+label: Titel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

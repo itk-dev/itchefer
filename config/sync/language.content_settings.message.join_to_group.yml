@@ -1,0 +1,11 @@
+uuid: 955783e9-5260-4a66-ba90-eb8e091ad441
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.join_to_group
+id: message.join_to_group
+target_entity_type_id: message
+target_bundle: join_to_group
+default_langcode: site_default
+language_alterable: false

@@ -13,7 +13,7 @@ id: group.public_group.field_group_image
 field_name: field_group_image
 entity_type: group
 bundle: public_group
-label: 'Group Image'
+label: 'Gruppe billede'
 description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
 required: false
 translatable: false

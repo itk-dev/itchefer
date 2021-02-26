@@ -1,0 +1,20 @@
+uuid: e6ed8408-562f-4095-be23-0a44a5d88871
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.closed_group-group_invitation
+  module:
+    - path
+id: group_content.closed_group-group_invitation.path
+field_name: path
+entity_type: group_content
+bundle: closed_group-group_invitation
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

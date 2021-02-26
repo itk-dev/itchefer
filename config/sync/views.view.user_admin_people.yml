@@ -51,8 +51,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -63,11 +63,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -522,7 +522,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operationer
           exclude: false
           alter:
             alter_text: false
@@ -637,7 +637,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: 'First name'
+          label: Fornavn
           exclude: true
           alter:
             alter_text: false
@@ -700,7 +700,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: 'Last name'
+          label: Efternavn
           exclude: true
           alter:
             alter_text: false
@@ -1122,7 +1122,7 @@ display:
           exposed: true
           expose:
             operator_id: id_op
-            label: Group
+            label: Gruppe
             description: ''
             use_operator: false
             operator: id_op
@@ -1349,7 +1349,7 @@ display:
           plugin_id: text_custom
       use_more: false
       use_more_always: false
-      use_more_text: more
+      use_more_text: mere
       display_comment: ''
       use_ajax: false
       hide_attachment_summary: false
@@ -1412,7 +1412,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       path: admin/people/list

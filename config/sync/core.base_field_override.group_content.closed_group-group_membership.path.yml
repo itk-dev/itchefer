@@ -1,0 +1,20 @@
+uuid: de4c21de-eaab-4171-8456-e88ae41f87c1
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.closed_group-group_membership
+  module:
+    - path
+id: group_content.closed_group-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: closed_group-group_membership
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

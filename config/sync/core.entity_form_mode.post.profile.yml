@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: ERBMKirHXtUqCETCrqcxliBrrgzytNmDUbDEzsfNP84
 id: post.profile
-label: 'Profile of others'
+label: 'Andres profile'
 targetEntityType: post
 cache: true

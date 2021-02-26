@@ -1,0 +1,11 @@
+uuid: a5885a40-317d-4c96-8516-85a31aae6122
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.member_added_by_event_organiser
+id: message.member_added_by_event_organiser
+target_entity_type_id: message
+target_bundle: member_added_by_event_organiser
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: d78ebcd1-61d8-4327-adf2-0caffe988bd8
+langcode: da
+status: true
+dependencies:
+  config:
+    - social_post.post_type.photo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: post.photo
+target_entity_type_id: post
+target_bundle: photo
+default_langcode: site_default
+language_alterable: false

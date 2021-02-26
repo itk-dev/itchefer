@@ -1,0 +1,20 @@
+uuid: 9ce1dedb-9382-4171-8f03-f3cda493d657
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interests
+  module:
+    - path
+id: taxonomy_term.interests.path
+field_name: path
+entity_type: taxonomy_term
+bundle: interests
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

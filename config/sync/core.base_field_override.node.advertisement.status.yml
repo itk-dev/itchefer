@@ -1,0 +1,22 @@
+uuid: d8f0e247-9a03-4bc0-b476-e919313e84b9
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement.status
+field_name: status
+entity_type: node
+bundle: advertisement
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -162,7 +162,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Magazines
+      title: Magasiner
       header: {  }
       footer: {  }
       empty: {  }

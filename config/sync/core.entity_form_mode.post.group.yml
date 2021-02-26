@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: 2NoScac6nHOsiMaFPCmVaGFzIj2aLQ-lWGFI7X3pKwM
 id: post.group
-label: Group
+label: Gruppe
 targetEntityType: post
 cache: true

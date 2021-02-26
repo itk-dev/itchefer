@@ -1,0 +1,20 @@
+uuid: 40a7bac6-d75c-4ebb-8381-c0612fcad0ef
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+  module:
+    - path
+id: node.advertisement.path
+field_name: path
+entity_type: node
+bundle: advertisement
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

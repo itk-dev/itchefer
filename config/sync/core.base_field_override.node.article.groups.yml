@@ -1,0 +1,20 @@
+uuid: 1b409427-d7dc-47bc-959e-8d436f9a997e
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.groups
+field_name: groups
+entity_type: node
+bundle: article
+label: Gruppe
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

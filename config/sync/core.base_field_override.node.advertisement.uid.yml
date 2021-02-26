@@ -1,0 +1,20 @@
+uuid: 9efd5089-c990-402e-817b-0d3e0f0f3c32
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement.uid
+field_name: uid
+entity_type: node
+bundle: advertisement
+label: 'Skrevet af'
+description: 'Forfatterens brugernavn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\social_node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

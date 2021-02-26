@@ -1,0 +1,11 @@
+uuid: 5a24196d-bf57-4d2b-9daa-63d167c7457d
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.create_event_community
+id: message.create_event_community
+target_entity_type_id: message
+target_bundle: create_event_community
+default_langcode: site_default
+language_alterable: false

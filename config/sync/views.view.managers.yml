@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: VF8_dCGefUOth0EGx8gq-2RkXbORBrEL0n-E55dsRD4
 id: managers
-label: 'Event organisers'
+label: 'Event organisatør'
 module: views
 description: ''
 tag: ''
@@ -44,13 +44,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -60,7 +60,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -144,7 +144,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'We could not find any event organisers for this event.'
+          content: 'Dette event har ikke nogen organisatør'
           plugin_id: text_custom
       relationships:
         uid:
@@ -229,7 +229,7 @@ display:
   event_managers:
     display_plugin: block
     id: event_managers
-    display_title: Block
+    display_title: Blok
     position: 2
     display_options:
       display_extenders: {  }
@@ -301,7 +301,7 @@ display:
       link_url: ''
       use_more: false
       use_more_always: false
-      use_more_text: 'See all organisers'
+      use_more_text: 'Se alle organisatør'
       block_hide_empty: true
       empty: {  }
     cache_metadata:
@@ -324,7 +324,7 @@ display:
   view_managers:
     display_plugin: page
     id: view_managers
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
@@ -360,11 +360,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'

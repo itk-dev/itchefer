@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: HzCReV5TyMtBS-2UVuqllHM_Xka8ynesoW29wWBuaR8
 id: open_group-member
-label: Member
+label: Medlem
 weight: -100
 internal: true
 audience: member

@@ -9,8 +9,8 @@ dependencies:
 _core:
   default_config_hash: z_RbZ_wcjmpDTz4BlksM2aKSpW0PjPtGMtsiph8A6q4
 id: open_group-group_membership
-label: 'Open group: Group membership'
-description: 'Adds users to groups as members.'
+label: 'Åbn gruppe: Gruppe medlemskab'
+description: 'Tilføj brugere til grupper som medlemmer'
 group_type: open_group
 content_plugin: group_membership
 plugin_config:

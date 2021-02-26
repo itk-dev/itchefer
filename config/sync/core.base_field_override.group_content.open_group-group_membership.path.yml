@@ -1,0 +1,20 @@
+uuid: d20aa353-d9c6-439b-bd18-b69c54ab2e97
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.open_group-group_membership
+  module:
+    - path
+id: group_content.open_group-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: open_group-group_membership
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
