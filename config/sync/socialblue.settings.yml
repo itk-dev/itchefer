@@ -7,9 +7,9 @@ _core:
   default_config_hash: l54LZjFzUJbKigOgdjoDuG7x3BvqigRPItc8PhaX1D0
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'http://itchefer.local.itkdev.dk/profiles/contrib/social/themes/socialblue/favicon.ico'
-  use_default: 1
+  path: profiles/contrib/social/themes/socialblue/favicon.ico
+  url: '/profiles/contrib/social/themes/socialblue/favicon.ico'
+  use_default: 0
 schemas:
   bootstrap: 8000
   socialbase: 8000

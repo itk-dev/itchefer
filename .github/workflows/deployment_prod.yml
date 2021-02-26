@@ -11,20 +11,52 @@ jobs:
     name: Deployment (prod)
     runs-on: ubuntu-latest
     steps:
-      - name: Run remote commands
+      - name: Git checkout
         uses: itk-dev/actions-remote-ssh@master
         with:
           command: |
-            cd ${{ secrets.APP_PATH_PROD }}
-            git clean -d --force
-            git checkout master
-            git fetch
+            cd ${{ secrets.APP_PATH_PROD }} &&
+            chmod 755 html/sites/default &&
+            git clean -d --force &&
+            git checkout master &&
+            git fetch &&
             git reset origin/master --hard
+          host: ${{ secrets.HOST_PROD }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          cert: ${{ secrets.PUBLIC_KEY_CERT }}
+
+      - name: Composer install
+        uses: itk-dev/actions-remote-ssh@master
+        with:
+          command: |
+            cd ${{ secrets.APP_PATH_PROD }} &&
+            chmod 755 html/sites/default &&
             composer1 install --no-dev
+          host: ${{ secrets.HOST_PROD }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          cert: ${{ secrets.PUBLIC_KEY_CERT }}
+
+      - name: Drush config import
+        uses: itk-dev/actions-remote-ssh@master
+        with:
+          command: |
+            cd ${{ secrets.APP_PATH_PROD }} &&
+            chmod 755 html/sites/default &&
+            vendor/bin/drush cr --cache-clear &&
+            vendor/bin/drush updb -y &&
+            vendor/bin/drush config-import -y &&
             vendor/bin/drush cr --cache-clear
-            vendor/bin/drush updb -y
-            vendor/bin/drush config-import -y
-            (cd html && ../vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po)
+          host: ${{ secrets.HOST_PROD }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          cert: ${{ secrets.PUBLIC_KEY_CERT }}
+
+      - name: Drush locale import
+        uses: itk-dev/actions-remote-ssh@master
+        with:
+          command: |
+            cd ${{ secrets.APP_PATH_PROD }} &&
+            chmod 755 html/sites/default &&
+            vendor/bin/drush locale:import --type=customized --override=all da ../translations/custom-translations.da.po &&
             vendor/bin/drush cr --cache-clear
           host: ${{ secrets.HOST_PROD }}
           key: ${{ secrets.PRIVATE_KEY }}

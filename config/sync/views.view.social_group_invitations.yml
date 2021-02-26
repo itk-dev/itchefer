@@ -1,18 +1,18 @@
 uuid: 089317e3-ebad-4e75-8c1b-f47ef68e7917
-langcode: da
+langcode: en
 status: true
 dependencies:
   config:
     - field.storage.group_content.invitation_status
     - field.storage.group_content.invitee_mail
-  enforced:
-    module:
-      - social_group_invite
   module:
     - group
     - user
-_core:
-  default_config_hash: wir9I59hxUAzGwb-PCfMCWo5VUGTwPgM9zgg7uAkjYQ
+    - social_group_invite
+    - ginvite
+  enforced:
+    module:
+      - social_group_invite
 id: social_group_invitations
 label: 'Social Group invitations'
 module: group
@@ -47,7 +47,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -60,16 +60,16 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: â€¹â€¹
-            next: â€ºâ€º
-            first: 'Â« First'
-            last: 'Last Â»'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -552,7 +552,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: '{{ arguments.gid|placeholder }} invitations'
           default_argument_type: fixed
