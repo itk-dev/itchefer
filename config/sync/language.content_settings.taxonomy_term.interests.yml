@@ -1,0 +1,18 @@
+uuid: 3c872a66-eb49-45ea-8af3-bffed6a69edf
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.interests
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.interests
+target_entity_type_id: taxonomy_term
+target_bundle: interests
+default_langcode: site_default
+language_alterable: false

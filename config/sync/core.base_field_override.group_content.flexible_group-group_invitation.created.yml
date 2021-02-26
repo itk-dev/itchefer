@@ -1,0 +1,18 @@
+uuid: 1856c524-3593-478f-8863-6ebfe17db934
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.flexible_group-group_invitation
+id: group_content.flexible_group-group_invitation.created
+field_name: created
+entity_type: group_content
+bundle: flexible_group-group_invitation
+label: 'Oprettet den'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

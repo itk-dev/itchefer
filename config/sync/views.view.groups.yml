@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: XZ5jL44H7S4GDh-xg78xn8X8KPviiBAbKAmXx6ZdLyM
 id: groups
-label: 'User Groups'
+label: 'Bruger grupper'
 module: views
 description: ''
 tag: ''
@@ -43,13 +43,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -59,7 +59,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -240,7 +240,7 @@ display:
         use_more: false
         use_more_always: false
         use_more_text: false
-      block_description: 'User Groups'
+      block_description: 'Bruger grupper'
       style:
         type: default
         options: {  }
@@ -252,7 +252,7 @@ display:
       title: 'Recently joined groups'
       use_more: true
       use_more_always: true
-      use_more_text: 'All groups'
+      use_more_text: 'Alle grupper'
     cache_metadata:
       max-age: -1
       contexts:

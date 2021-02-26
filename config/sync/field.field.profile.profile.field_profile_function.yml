@@ -11,7 +11,7 @@ id: profile.profile.field_profile_function
 field_name: field_profile_function
 entity_type: profile
 bundle: profile
-label: Function
+label: Funktion
 description: ''
 required: false
 translatable: false

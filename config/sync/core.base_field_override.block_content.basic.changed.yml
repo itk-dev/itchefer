@@ -1,0 +1,18 @@
+uuid: 1beec006-1a5d-4ada-87fd-b4a78e33d8b5
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Ændret
+description: 'Tidspunktet hvor den brugerdefinerede blok sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

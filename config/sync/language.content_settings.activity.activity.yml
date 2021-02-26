@@ -1,0 +1,17 @@
+uuid: 90ff0f17-ccd3-41a0-a3ae-c35d633c619f
+langcode: da
+status: true
+dependencies:
+  module:
+    - activity_creator
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: activity.activity
+target_entity_type_id: activity
+target_bundle: activity
+default_langcode: site_default
+language_alterable: false

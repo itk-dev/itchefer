@@ -1,0 +1,11 @@
+uuid: 9ac099c4-3255-48ec-b468-57092a12e7c5
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.background_process_finished
+id: message.background_process_finished
+target_entity_type_id: message
+target_bundle: background_process_finished
+default_langcode: site_default
+language_alterable: false

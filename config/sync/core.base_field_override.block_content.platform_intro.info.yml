@@ -1,0 +1,18 @@
+uuid: a75733fe-8a28-442b-95be-1e3cfb941e57
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.platform_intro
+id: block_content.platform_intro.info
+field_name: info
+entity_type: block_content
+bundle: platform_intro
+label: 'Block description'
+description: 'En kort beskrivelse af din blok.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

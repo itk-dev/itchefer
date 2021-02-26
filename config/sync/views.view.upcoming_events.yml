@@ -52,8 +52,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -64,11 +64,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -250,7 +250,7 @@ display:
             label: ''
           granularity: minute
           plugin_id: datetime
-      title: 'Upcoming events'
+      title: 'Kommende begivenheder'
       header: {  }
       footer: {  }
       empty:
@@ -263,7 +263,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No events found'
+          content: 'Ingen events fundet'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -557,7 +557,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No upcoming events you have enrolled for'
+          content: 'Du har ikke tilmeldt dig nogen kommende events'
           plugin_id: text_custom
       title: 'Mine kommende begivenheder'
       use_more: false
@@ -608,7 +608,7 @@ display:
           exposed: true
           expose:
             operator_id: event_date_op
-            label: 'Event date'
+            label: 'Begivenhed dato'
             description: null
             use_operator: false
             operator: event_date_op
@@ -634,11 +634,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Ongoing and upcoming events'
+                title: 'Igangværende og kommende begivenheder'
                 operator: in
                 value: '1'
               2:
-                title: 'Past events'
+                title: 'Tidligere begivenheder'
                 operator: in
                 value: '2'
               3:
@@ -697,7 +697,7 @@ display:
           exposed: true
           expose:
             operator_id: field_enroll_method_value_op
-            label: 'Enroll Method'
+            label: 'Tilmeldings metode'
             description: ''
             use_operator: false
             operator: field_enroll_method_value_op
@@ -738,7 +738,7 @@ display:
         groups:
           1: AND
       exposed_block: true
-      title: 'All events'
+      title: 'Alle begivenheder'
       sorts:
         event_date:
           id: event_date
@@ -970,9 +970,9 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No upcoming events in this group'
+          content: 'Ingen kommende events i denne gruppe'
           plugin_id: text_custom
-      title: 'Upcoming events'
+      title: 'Kommende begivenheder'
     cache_metadata:
       max-age: -1
       contexts:

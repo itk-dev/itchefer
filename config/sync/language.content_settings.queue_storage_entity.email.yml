@@ -1,0 +1,11 @@
+uuid: 7e3a2a51-2377-4e82-b342-80ae7612561d
+langcode: da
+status: true
+dependencies:
+  config:
+    - social_queue_storage.queue_storage_entity_type.email
+id: queue_storage_entity.email
+target_entity_type_id: queue_storage_entity
+target_bundle: email
+default_langcode: site_default
+language_alterable: false

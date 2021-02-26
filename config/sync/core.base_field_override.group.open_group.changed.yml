@@ -1,0 +1,18 @@
+uuid: d3719b95-80bb-4616-9161-6ca5489aaf25
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+id: group.open_group.changed
+field_name: changed
+entity_type: group
+bundle: open_group
+label: 'Changed on'
+description: 'The time that the group was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

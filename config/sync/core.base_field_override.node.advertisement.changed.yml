@@ -1,0 +1,18 @@
+uuid: a1ebe7b9-b89d-4049-82af-809defbe7090
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement.changed
+field_name: changed
+entity_type: node
+bundle: advertisement
+label: Ændret
+description: 'Tidspunktet hvor indholdselementet sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

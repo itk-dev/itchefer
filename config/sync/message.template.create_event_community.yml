@@ -20,7 +20,7 @@ third_party_settings:
 _core:
   default_config_hash: s1MpTn9zFkt9GaS5LPqEJfh9KjvdPzltKHLqk-1JmIQ
 template: create_event_community
-label: 'Create event'
+label: 'Opret event'
 description: 'A user created an event in the community'
 text:
   -

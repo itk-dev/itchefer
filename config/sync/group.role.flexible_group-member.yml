@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: GusHtAelE1q2uWC4UJVkE_zw8XQ8EDY1oIS4d9ff6AM
 id: flexible_group-member
-label: Member
+label: Medlem
 weight: -100
 internal: true
 audience: member

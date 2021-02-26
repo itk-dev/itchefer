@@ -1,0 +1,20 @@
+uuid: d24612a7-9974-4721-b0b7-2b5d590d86ca
+langcode: da
+status: true
+dependencies:
+  config:
+    - social_post.post_type.photo
+id: post.photo.user_id
+field_name: user_id
+entity_type: post
+bundle: photo
+label: 'Skrevet af'
+description: 'The user ID of author of the Post entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

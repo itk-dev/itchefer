@@ -1,0 +1,18 @@
+uuid: ace6a28b-f9a7-41df-aee2-8a9bf70c7e95
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.post_comment
+id: comment.post_comment.mail
+field_name: mail
+entity_type: comment
+bundle: post_comment
+label: Email
+description: 'Kommentarforfatterens e-mail-adresse.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

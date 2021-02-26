@@ -1,0 +1,22 @@
+uuid: 0bb14f6e-8583-4969-b9d9-fcbe233b479b
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+id: group.public_group.allow_request
+field_name: allow_request
+entity_type: group
+bundle: public_group
+label: 'Tillad brugere at bede om medlemsskab'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

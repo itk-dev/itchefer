@@ -1,0 +1,18 @@
+uuid: f1981aa2-a2d6-4087-ac27-f86eed2992f2
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.advertisement
+id: node.advertisement.created
+field_name: created
+entity_type: node
+bundle: advertisement
+label: 'Skrevet den'
+description: 'Tidspunktet hvor indholdselementet blev oprettet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

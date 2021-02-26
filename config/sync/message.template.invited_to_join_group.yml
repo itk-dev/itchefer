@@ -21,13 +21,13 @@ _core:
   default_config_hash: JHC8qDlq6DgXcvsUMVb0wm15WJlL-4R3ID5Qc3baBtc
 template: invited_to_join_group
 label: 'Invited to join a group'
-description: 'You have been invited to join a group'
+description: 'Du er blevet inviteret til at tilmelde dig en gruppe.'
 text:
   -
-    value: "<p>You have been invited to join the group <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+    value: '<p>Du er blevet inviteret til at tilmelde dig gruppen <a href="gurl]">[message:gtitle]</a></p>'
     format: basic_html
   -
-    value: "<p>You have been invited to join the group <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+    value: '<p>Du er blevet inviteret til at tilmelde dig gruppen <a href="gurl]">[message:gtitle]</a></p>'
     format: basic_html
   -
     value: "<p>Hi,</p>\r\n\r\n<p>I would like to invite you to my group [message:gtitle] on [site:name].</p>\r\n\r\n<p>Kind regards,<br />\r\n[message:author:display-name]</p>\r\n\r\n<table class=\"btn-wrap\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[message:gurl]\">View group</a></td>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[site:url]\">About [site:name]</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"

@@ -41,13 +41,13 @@ display:
       exposed_form:
         type: bef
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: true
           reset_button_label: Nulstil
           exposed_sorts_label: Sort
           expose_sort_order: true
-          sort_asc_label: (ascending)
-          sort_desc_label: (descending)
+          sort_asc_label: (stigende)
+          sort_desc_label: (faldende)
           input_required: false
           text_input_required: 'Select any filter and click on Apply to see results'
           bef:
@@ -89,7 +89,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -98,8 +98,8 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           quantity: 9
       style:
         type: default
@@ -404,7 +404,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

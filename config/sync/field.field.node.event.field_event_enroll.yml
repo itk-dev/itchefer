@@ -11,7 +11,7 @@ id: node.event.field_event_enroll
 field_name: field_event_enroll
 entity_type: node
 bundle: event
-label: 'Allow users to enroll in event'
+label: 'Tillad brugere at tilmelde sig dette event'
 description: ''
 required: false
 translatable: false
@@ -20,6 +20,6 @@ default_value:
     value: 1
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: Til
+  off_label: Fra
 field_type: boolean

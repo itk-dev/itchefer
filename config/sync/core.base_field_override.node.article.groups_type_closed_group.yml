@@ -1,0 +1,20 @@
+uuid: e77cd0c3-b045-4a7c-a01d-a8253087f56b
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.groups_type_closed_group
+field_name: groups_type_closed_group
+entity_type: node
+bundle: article
+label: 'Get the related Lukket gruppe groups for this entity.'
+description: 'A list of all the groups referencing this entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

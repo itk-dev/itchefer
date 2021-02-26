@@ -19,10 +19,10 @@ provider: null
 plugin: 'views_block:managers-event_managers'
 settings:
   id: 'views_block:managers-event_managers'
-  label: 'Event Organisers'
+  label: 'Event organisatør'
   provider: views
   label_display: visible
-  views_label: 'Event Organisers'
+  views_label: 'Event organisatør'
   items_per_page: none
   type: none
 visibility:

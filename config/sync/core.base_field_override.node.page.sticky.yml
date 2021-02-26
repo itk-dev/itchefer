@@ -1,0 +1,22 @@
+uuid: 7cbc9936-ac70-4b38-a31e-8acf328a5272
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.sticky
+field_name: sticky
+entity_type: node
+bundle: page
+label: Klæbrig
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

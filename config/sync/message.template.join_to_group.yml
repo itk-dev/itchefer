@@ -21,7 +21,7 @@ third_party_settings:
 _core:
   default_config_hash: OvXrZwb01RJEPwsy3e2YTu00zv4jLO7MdwBS5g7VuYI
 template: join_to_group
-label: 'Join to group'
+label: 'Tilmeld til gruppen'
 description: 'A person joins a group I am managing'
 text:
   -

@@ -1,0 +1,18 @@
+uuid: e7170b7f-6b79-456d-b155-27776cacc827
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.directories
+id: taxonomy_term.directories.name
+field_name: name
+entity_type: taxonomy_term
+bundle: directories
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: b6a04d64-75a5-4881-8633-42ffb6fbfa4b
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+  module:
+    - path
+id: group.public_group.path
+field_name: path
+entity_type: group
+bundle: public_group
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

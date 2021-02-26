@@ -1,0 +1,18 @@
+uuid: 3e10900e-1bd3-48a0-b1cf-a51631bc2bc9
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.topic
+id: node.topic.changed
+field_name: changed
+entity_type: node
+bundle: topic
+label: Ændret
+description: 'Tidspunktet hvor indholdselementet sidst blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -14,8 +14,8 @@ dependencies:
 _core:
   default_config_hash: B4vwiIJf3q5TPUbt13cNYLgUgGjRn2AONwqDmmyRSnw
 id: group_content_type_c8bae2527294c
-label: 'Closed group: Group membership request'
-description: 'Adds users as requesters for the group.'
+label: 'Lukket gruppe: gruppe medlemskab anmodning'
+description: 'Tilføj brugere som inviterede til gruppen'
 group_type: closed_group
 content_plugin: group_membership_request
 plugin_config:

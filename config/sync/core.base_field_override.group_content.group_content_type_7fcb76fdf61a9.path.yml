@@ -1,0 +1,20 @@
+uuid: 67875fc3-f07a-41c2-9510-eb79d64aa070
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_7fcb76fdf61a9
+  module:
+    - path
+id: group_content.group_content_type_7fcb76fdf61a9.path
+field_name: path
+entity_type: group_content
+bundle: group_content_type_7fcb76fdf61a9
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

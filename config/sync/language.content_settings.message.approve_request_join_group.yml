@@ -1,0 +1,11 @@
+uuid: 68ee78fb-c466-417a-b791-0b554730837c
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.approve_request_join_group
+id: message.approve_request_join_group
+target_entity_type_id: message
+target_bundle: approve_request_join_group
+default_langcode: site_default
+language_alterable: false

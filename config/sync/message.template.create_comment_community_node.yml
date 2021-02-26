@@ -19,7 +19,7 @@ third_party_settings:
 _core:
   default_config_hash: xmVhFYSa1bt6h0utu9X8hjNw0dyYAuurwoju_vGwEeg
 template: create_comment_community_node
-label: 'Create comment on node in the community'
+label: 'Opret kommentar'
 description: 'A user add a comment to content in the community'
 text:
   -

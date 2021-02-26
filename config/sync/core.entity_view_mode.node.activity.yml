@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: RjjbxCyoqg16WIMiFve6eY34_V27jmHQFKagSCl-zFA
 id: node.activity
-label: Activity
+label: Aktivitet
 targetEntityType: node
 cache: true

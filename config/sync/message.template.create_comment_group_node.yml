@@ -21,8 +21,8 @@ third_party_settings:
 _core:
   default_config_hash: dRWI6z7lDhhTLYUL0g5M2Y693S-yKzL_jl9AGd8Zba0
 template: create_comment_group_node
-label: 'Create comment on node in the group'
-description: 'A user add a comment to content in the group'
+label: 'Opret kommentar'
+description: 'En bruger tilføjede en kommentar til indhold i gruppen.'
 text:
   -
     value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type] in <a href=\"[message:gurl]\">[message:gtitle]</a></p>\n"

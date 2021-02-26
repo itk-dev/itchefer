@@ -15,7 +15,7 @@ field_name: field_article_image
 entity_type: node
 type: image
 settings:
-  uri_scheme: public
+  uri_scheme: private
   default_image:
     uuid: ''
     alt: ''

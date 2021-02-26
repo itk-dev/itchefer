@@ -1,0 +1,22 @@
+uuid: 5bf42328-3036-4b1b-966c-22b01aaf9b01
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.product_type
+id: node.product_type.status
+field_name: status
+entity_type: node
+bundle: product_type
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

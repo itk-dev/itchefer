@@ -1,0 +1,20 @@
+uuid: 93582957-9174-4c30-a705-bcf0ee7c622f
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.public_group-group_invitation
+  module:
+    - path
+id: group_content.public_group-group_invitation.path
+field_name: path
+entity_type: group_content
+bundle: public_group-group_invitation
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -13,10 +13,10 @@ id: node.topic.body
 field_name: body
 entity_type: node
 bundle: topic
-label: Description
+label: Beskrivelse
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

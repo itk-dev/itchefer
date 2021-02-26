@@ -1,0 +1,20 @@
+uuid: 699aecc9-1bf4-4a90-8531-406f66aa6d5c
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.open_group-group_node-topic
+  module:
+    - path
+id: group_content.open_group-group_node-topic.path
+field_name: path
+entity_type: group_content
+bundle: open_group-group_node-topic
+label: 'Alternativ URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

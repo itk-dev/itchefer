@@ -19,8 +19,8 @@ third_party_settings:
 _core:
   default_config_hash: on-RJ-ruWfmVRJ51LRpkvjmQawj8wIMh6LCkpFP7Ht8
 template: create_comment_group_post
-label: 'Create comment on post in the group'
-description: 'A user add a comment to post in the group'
+label: 'Opret kommentar til opslag i gruppen'
+description: 'En bruger har tilføjet en kommentar til opslag i gruppen'
 text:
   -
     format: full_html

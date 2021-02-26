@@ -6,7 +6,7 @@ _core:
   default_config_hash: zTX0b046Qkhpu_DAqU9ie1CocNfgA-0OnxP3Nt04jXs
 id: open_group
 label: 'Åben gruppe'
-description: 'This is an open group. Users may join without approval and all content added in this group will be visible to all community members.'
+description: 'Dette er en åbn gruppe. Brugere kan tilmelde sig uden godkendelse og alt indhold tilføjet i denne gruppe vil være synlig for alle medlemmer af fælleskabet.'
 creator_membership: true
 creator_wizard: false
 creator_roles:

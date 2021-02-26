@@ -1,0 +1,20 @@
+uuid: bf901c9c-1c9f-4e72-abb9-125f6102d568
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.magazine
+id: node.magazine.menu_link
+field_name: menu_link
+entity_type: node
+bundle: magazine
+label: Menu-link
+description: 'Beregnet menulink for noden (kun tilgængeligt imens noden gemmes).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

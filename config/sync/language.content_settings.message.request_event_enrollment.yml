@@ -1,0 +1,11 @@
+uuid: 2669a256-66a6-46be-9e63-8e924c59c9b0
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.request_event_enrollment
+id: message.request_event_enrollment
+target_entity_type_id: message
+target_bundle: request_event_enrollment
+default_langcode: site_default
+language_alterable: false

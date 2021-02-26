@@ -1,0 +1,18 @@
+uuid: 3fb7fc6c-5491-442b-9ebb-feaa12f44148
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.open_group-group_node-event
+id: group_content.open_group-group_node-event.created
+field_name: created
+entity_type: group_content
+bundle: open_group-group_node-event
+label: 'Oprettet den'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

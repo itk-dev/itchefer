@@ -1,0 +1,18 @@
+uuid: dbfd3e68-f587-4e89-b7db-33c95962e05c
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.expertise
+id: taxonomy_term.expertise.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: expertise
+label: Ændret
+description: 'Datoen hvor termen senest blev redigeret.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

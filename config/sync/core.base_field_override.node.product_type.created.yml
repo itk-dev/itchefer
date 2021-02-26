@@ -1,0 +1,18 @@
+uuid: b0291bc2-c0a5-4a0e-a281-84f9318cdcad
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.product_type
+id: node.product_type.created
+field_name: created
+entity_type: node
+bundle: product_type
+label: 'Skrevet den'
+description: 'Tidspunktet hvor indholdselementet blev oprettet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

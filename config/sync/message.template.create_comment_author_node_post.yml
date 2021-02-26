@@ -20,7 +20,7 @@ third_party_settings:
 _core:
   default_config_hash: kGqLiRgW8tCqftS0msiz8fcwLoQAjvl2C69ie_WcnPY
 template: create_comment_author_node_post
-label: 'Create comment on authors node or post'
+label: 'Opret kommentar'
 description: 'A person commented on content created or organised by me'
 text:
   -

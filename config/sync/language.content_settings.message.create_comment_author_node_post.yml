@@ -1,0 +1,11 @@
+uuid: 8c42cd03-f26f-4962-baa8-5418e2475409
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.create_comment_author_node_post
+id: message.create_comment_author_node_post
+target_entity_type_id: message
+target_bundle: create_comment_author_node_post
+default_langcode: site_default
+language_alterable: false

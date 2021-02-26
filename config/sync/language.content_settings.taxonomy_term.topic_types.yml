@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: CjXgwQNUECfBI3DZfpkr2-cWHhdQbAtX9CfqGUQV4BI
 id: taxonomy_term.topic_types

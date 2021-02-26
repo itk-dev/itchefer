@@ -1,0 +1,18 @@
+uuid: 026bf8cc-cb38-4201-9a7b-bdd96412a5f2
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.content_type.closed_group-group_invitation
+id: group_content.closed_group-group_invitation.created
+field_name: created
+entity_type: group_content
+bundle: closed_group-group_invitation
+label: 'Oprettet den'
+description: 'The time that the group content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

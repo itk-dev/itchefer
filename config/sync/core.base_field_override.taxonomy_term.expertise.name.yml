@@ -1,0 +1,18 @@
+uuid: c065c082-1509-435a-a557-a8e6bd4e5c8f
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.expertise
+id: taxonomy_term.expertise.name
+field_name: name
+entity_type: taxonomy_term
+bundle: expertise
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

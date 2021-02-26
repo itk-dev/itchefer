@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: qpboYfEsLuuwAnAqDB0o_vZJX33mUbr_tUjP-an6q2o
 id: activity.notification_archive
-label: 'Notification archive'
+label: 'Notifikations arkiv'
 targetEntityType: activity
 cache: true

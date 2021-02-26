@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: oUUjUMm1qmVwbQzMg-o18IxH0dDQl45_KEV6dvnOKs0
 id: search_all
-label: 'Search All'
+label: 'Søg i alt'
 module: views
 description: ''
 tag: ''
@@ -36,13 +36,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -53,11 +53,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -181,7 +181,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: Search
+      title: Søg
       header:
         area:
           id: area
@@ -193,7 +193,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4>All results</h4>'
+            value: '<h4>Alle resultater</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -259,7 +259,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

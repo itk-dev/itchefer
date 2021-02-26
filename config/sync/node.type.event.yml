@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 _core:
   default_config_hash: En2G0Gbr7c-x12dYJplDwM31A8vy4CdOboZeiVhN2jw
-name: Event
+name: Begivenhed
 type: event
 description: ''
 help: ''

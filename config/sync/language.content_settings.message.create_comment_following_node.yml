@@ -1,0 +1,11 @@
+uuid: e3748b92-b70a-477c-8878-a067837695bc
+langcode: da
+status: true
+dependencies:
+  config:
+    - message.template.create_comment_following_node
+id: message.create_comment_following_node
+target_entity_type_id: message
+target_bundle: create_comment_following_node
+default_langcode: site_default
+language_alterable: false

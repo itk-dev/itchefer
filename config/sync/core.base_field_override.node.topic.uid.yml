@@ -1,0 +1,20 @@
+uuid: 0d735f88-bd10-4867-b005-0315b1f5f401
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.topic
+id: node.topic.uid
+field_name: uid
+entity_type: node
+bundle: topic
+label: 'Skrevet af'
+description: 'Forfatterens brugernavn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\social_node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

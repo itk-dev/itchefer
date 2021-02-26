@@ -1,0 +1,22 @@
+uuid: c893b79b-3f9c-42b8-af1b-a7b32b2034d8
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.topic
+id: node.topic.status
+field_name: status
+entity_type: node
+bundle: topic
+label: Publiceret
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

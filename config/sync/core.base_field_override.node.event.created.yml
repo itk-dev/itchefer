@@ -1,0 +1,18 @@
+uuid: 86bdd431-a746-438a-adca-9b3081bee732
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.created
+field_name: created
+entity_type: node
+bundle: event
+label: 'Skrevet den'
+description: 'Tidspunktet hvor indholdselementet blev oprettet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

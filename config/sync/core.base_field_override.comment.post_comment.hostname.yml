@@ -1,0 +1,18 @@
+uuid: fd28482b-7f22-48a8-8ba0-92e1da63f7c8
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.post_comment
+id: comment.post_comment.hostname
+field_name: hostname
+entity_type: comment
+bundle: post_comment
+label: Værtsnavn
+description: 'Kommentarforfatterens værtsnavn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\social_comment\Entity\Comment::getDefaultHostname'
+settings: {  }
+field_type: string
