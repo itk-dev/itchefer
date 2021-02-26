@@ -1116,7 +1116,7 @@ msgid "ascending"
 msgstr "stigende"
 
 msgid "descending"
-msgstr "falende"
+msgstr "faldende"
 
 msgid "Publish status"
 msgstr "Status for publisering"
@@ -1561,7 +1561,7 @@ msgid "sort_created"
 msgstr ""
 
 msgid "Sort by publish date"
-msgstr ""
+msgstr "Sorter efter publiseringsdato"
 
 msgid "No topics in this group"
 msgstr "No topics in this group"
@@ -1639,7 +1639,7 @@ msgid "No messages created yet"
 msgstr "No messages created yet"
 
 msgid "My invitations"
-msgstr ""
+msgstr "Mine invitationer"
 
 msgid "Accept"
 msgstr ""
@@ -1648,13 +1648,13 @@ msgid "Decline"
 msgstr "Decline"
 
 msgid "My Invitations"
-msgstr ""
+msgstr "Mine invitationer"
 
 msgid "User invitations to Groups"
-msgstr ""
+msgstr "Invitationer til grupper"
 
 msgid "Newest groups"
-msgstr ""
+msgstr "Nyeste grupper"
 
 msgid "Newest groups block"
 msgstr ""
@@ -1677,7 +1677,7 @@ msgid "filter_no_admin"
 msgstr ""
 
 msgid "Newest members"
-msgstr ""
+msgstr "Nyeste medlemmer"
 
 msgid "Newest users block"
 msgstr ""
@@ -1689,7 +1689,7 @@ msgid "Profiles"
 msgstr "Profiler"
 
 msgid "There are no profiles yet."
-msgstr ""
+msgstr "Der er ingen profiler endnu"
 
 msgid "User page"
 msgstr "User page"
@@ -1746,7 +1746,7 @@ msgid "Group title"
 msgstr "Group title"
 
 msgid "User name"
-msgstr "User name"
+msgstr "Bruger navn"
 
 msgid "Entity Label"
 msgstr ""
@@ -1925,7 +1925,7 @@ msgid "My upcoming events block"
 msgstr "Mine kommende begivenheder blokken"
 
 msgid "No upcoming events you have enrolled for"
-msgstr ""
+msgstr "Du har ikke tilmeldt dig nogen kommende events"
 
 msgid "My upcoming events"
 msgstr "Mine kommende begivenheder"
@@ -2735,7 +2735,7 @@ msgid ""
 msgstr ""
 
 msgid "Add a comment"
-msgstr ""
+msgstr "Tilføj kommentar"
 
 msgid "Activity comment"
 msgstr ""
@@ -3359,7 +3359,7 @@ msgid "Approve request to join a group"
 msgstr ""
 
 msgid "My group membership request is approved"
-msgstr ""
+msgstr "Mit gruppe medlemsskabs anmodning er godkendt"
 
 msgid ""
 "<p>Your membership request for the <a href=\"gurl]\">[message:gtitle]</a> "
@@ -4344,88 +4344,88 @@ msgid "Toggle navigation"
 msgstr ""
 
 msgid "What are you looking for ?"
-msgstr ""
+msgstr "Hvad søger du efter?"
 
 msgid "Click to open search box"
-msgstr ""
+msgstr "Klik for at søge"
 
 msgid "New Content"
-msgstr ""
+msgstr "Nyt indhold"
 
 msgid "Create New Content"
-msgstr ""
+msgstr "Opret nyt indhold"
 
 msgid "Create New Event"
-msgstr ""
+msgstr "Opret nyt event"
 
 msgid "New Event"
-msgstr ""
+msgstr "Nyt event"
 
 msgid "Create New Topic"
-msgstr ""
+msgstr "Opret nyt emne"
 
 msgid "New Topic"
-msgstr ""
+msgstr "Nyt emne"
 
 msgid "Create New Page"
-msgstr ""
+msgstr "Opret ny side"
 
 msgid "New Page"
-msgstr ""
+msgstr "Ny side"
 
 msgid "Create New Group"
-msgstr ""
+msgstr "Opret ny gruppe"
 
 msgid "New Group"
-msgstr ""
+msgstr "Ny gruppe"
 
 msgid "My Groups"
-msgstr ""
+msgstr "Mine grupper"
 
 msgid "Notification Centre"
-msgstr ""
+msgstr "Notifikations Center"
 
 msgid "View all notifications"
-msgstr ""
+msgstr "Se alle notifikationer"
 
 msgid "Profile of @account"
-msgstr ""
+msgstr "@account"
 
 msgid "Signed in as"
-msgstr ""
+msgstr "Logget ind som"
 
 msgid "Invites"
-msgstr ""
+msgstr "Invitationer"
 
 msgid "View my profile"
-msgstr ""
+msgstr "Se min profil"
 
 msgid "My profile"
-msgstr ""
+msgstr "Min profil"
 
 msgid "View my events"
-msgstr ""
+msgstr "Se mine events"
 
 msgid "My events"
-msgstr ""
+msgstr "Mine events"
 
 msgid "View my topics"
-msgstr ""
+msgstr "Se mine emner"
 
 msgid "My topics"
-msgstr ""
+msgstr "Mine emner"
 
 msgid "View my groups"
-msgstr ""
+msgstr "Se mine grupper"
 
 msgid "My groups"
-msgstr ""
+msgstr "Mine grupper"
 
 msgid "View content I'm following"
-msgstr ""
+msgstr "Se indhold jeg følger"
 
 msgid "Following"
-msgstr ""
+msgstr "Følger"
 
 msgid "Edit profile"
 msgstr "Rediger profil"
@@ -4520,7 +4520,7 @@ msgid "Administer @type"
 msgstr ""
 
 msgid "profiles"
-msgstr ""
+msgstr "Profiler"
 
 msgid "Access the @type overview page"
 msgstr ""
@@ -4867,10 +4867,10 @@ msgid "Sep"
 msgstr "sep"
 
 msgid "You have enrolled"
-msgstr ""
+msgstr "Du er tilmeldt"
 
 msgid "in the community"
-msgstr ""
+msgstr "i fællesskabet"
 
 msgid "Dec"
 msgstr "dec"
@@ -4882,7 +4882,7 @@ msgid "All @label"
 msgstr "Alle @label"
 
 msgid "Total amount of comments"
-msgstr ""
+msgstr "Total mængde af kommentarer"
 
 msgid "comment"
 msgid_plural "comments"
@@ -4890,7 +4890,7 @@ msgstr[0] "kommentar"
 msgstr[1] "kommentarer"
 
 msgid "Total amount of likes"
-msgstr ""
+msgstr "Total mængde likes"
 
 msgid "like"
 msgid_plural "likes"
@@ -4923,7 +4923,7 @@ msgstr "Kommentarens sprogkode."
 
 msgctxt "Comment Button"
 msgid "Comment"
-msgstr ""
+msgstr "Kommenter"
 
 msgid "Like"
 msgstr ""
@@ -12102,7 +12102,7 @@ msgid "More options"
 msgstr ""
 
 msgid "Write a comment..."
-msgstr ""
+msgstr "Skriv en kommentar"
 
 msgid "The time that the node was created."
 msgstr "Tidspunktet hvor indholdselementet blev oprettet."
