@@ -29772,7 +29772,7 @@ msgid "Feed item limit"
 msgstr "Grænse for feed-element"
 
 msgid "Menu description"
-msgstr "Menubeskriv
+msgstr "Menubeskrivelse"
 
 msgid "System action"
 msgstr "Systemhandling"
@@ -38521,4 +38521,5 @@ msgstr ""
 msgid "Creates custom itchefer links in the header"
 msgstr ""
 
-msgid "Suppl
+msgid "Supplies an HTTP Basic authentication provider."
+msgstr ""
