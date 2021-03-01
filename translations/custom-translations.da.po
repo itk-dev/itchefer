@@ -1311,7 +1311,7 @@ msgid "sort_flag_created"
 msgstr ""
 
 msgid "Current User"
-msgstr ""
+msgstr "Nuværende bruger"
 
 msgid "Frontpage"
 msgstr "Frontpage"
@@ -1347,13 +1347,13 @@ msgid "Attachment"
 msgstr "Attachment"
 
 msgid "User Groups"
-msgstr ""
+msgstr "Bruger grupper"
 
 msgid "Groups"
 msgstr "Groups"
 
 msgid "No groups found for this user"
-msgstr ""
+msgstr "Ingen grupper fundet for denne bruger"
 
 msgid "User Groups Block"
 msgstr ""
@@ -1371,19 +1371,19 @@ msgid "Group Events"
 msgstr "Group Events"
 
 msgid "No events in this group"
-msgstr ""
+msgstr "Ingen events i denne gruppe"
 
 msgid "Group Information"
-msgstr ""
+msgstr "Gruppe information"
 
 msgid "About Group"
-msgstr ""
+msgstr "Om gruppe"
 
 msgid "About {{ arguments.id }}"
 msgstr ""
 
 msgid "Group invitations"
-msgstr ""
+msgstr "Gruppe invitationer"
 
 msgid "â€¹â€¹"
 msgstr ""
@@ -1446,13 +1446,13 @@ msgid "Members of {{ arguments.gid }}"
 msgstr ""
 
 msgid "Group Members"
-msgstr "Group Members"
+msgstr "Gruppe medlemmer"
 
 msgid "No members in this group"
-msgstr ""
+msgstr "Ingen medlemmer af denne gruppe"
 
 msgid "Newest Members"
-msgstr ""
+msgstr "Nyeste medlemmer"
 
 msgid "All members"
 msgstr "Alle medlemmer"
@@ -1527,7 +1527,7 @@ msgid "ID"
 msgstr "ID"
 
 msgid "Reject Membership"
-msgstr ""
+msgstr "Afslå medlemsskab"
 
 msgid ""
 "<a href=\"/group/{{ gid }}/content/{{ id }}/reject-membership?destination=/"
@@ -1535,7 +1535,7 @@ msgid ""
 msgstr ""
 
 msgid "Approve membership"
-msgstr ""
+msgstr "Godkend medlemsskab"
 
 msgid ""
 "<a href=\"/group/{{ gid }}/content/{{ id }}/approve-membership?destination=/"
@@ -1543,19 +1543,19 @@ msgid ""
 msgstr ""
 
 msgid "No membership requests available."
-msgstr ""
+msgstr "Ingen medlemsskabs anmodninger tilgængelige"
 
 msgid "{{ arguments.gid|placeholder }} pending members"
 msgstr ""
 
 msgid "Membership requests"
-msgstr "Membership requests"
+msgstr "Medlemsskabs anmodninger"
 
 msgid "Group Topics"
-msgstr "Group Topics"
+msgstr "Gruppe emner"
 
 msgid "is the type of"
-msgstr ""
+msgstr "er typen af"
 
 msgid "sort_created"
 msgstr ""
@@ -1564,10 +1564,10 @@ msgid "Sort by publish date"
 msgstr "Sorter efter publiseringsdato"
 
 msgid "No topics in this group"
-msgstr "No topics in this group"
+msgstr "Ingen emner i denne gruppe"
 
 msgid "Latest topics"
-msgstr "Latest topics"
+msgstr "Seneste emner"
 
 msgid "Displays the newest topics in the community"
 msgstr "Displays the newest topics in the community"
@@ -1576,16 +1576,16 @@ msgid "All topics"
 msgstr "Alle emner"
 
 msgid "No topics found"
-msgstr "No topics found"
+msgstr "Ingen emner fundet"
 
 msgid "Latest topics block"
-msgstr ""
+msgstr "Seneste emner"
 
 msgid "Latest topic block"
 msgstr ""
 
 msgid "Newest topics"
-msgstr "Newest topics"
+msgstr "Nyeste emner"
 
 msgid "Latest topics group"
 msgstr ""
@@ -1642,10 +1642,10 @@ msgid "My invitations"
 msgstr "Mine invitationer"
 
 msgid "Accept"
-msgstr ""
+msgstr "Accepter"
 
 msgid "Decline"
-msgstr "Decline"
+msgstr "Aflså"
 
 msgid "My Invitations"
 msgstr "Mine invitationer"
@@ -1663,10 +1663,10 @@ msgid "Newest groups page"
 msgstr ""
 
 msgid "Group type"
-msgstr "Group type"
+msgstr "Gruppe type"
 
 msgid "Newest users"
-msgstr ""
+msgstr "Nyeste medlemmer"
 
 msgid ""
 "Displays a block and page for the newest users on the platform based on "
@@ -1818,55 +1818,55 @@ msgid "Date exposed"
 msgstr ""
 
 msgid "Between"
-msgstr "Between"
+msgstr "Mellem"
 
 msgid "Before"
-msgstr "Before"
+msgstr "Før"
 
 msgid "After"
-msgstr "After"
+msgstr "Efter"
 
 msgid "Relevance"
 msgstr "Relevance"
 
 msgid "Created date"
-msgstr "Created date"
+msgstr "Oprettet dato"
 
 msgid "Search content"
-msgstr "Search content"
+msgstr "Søg indhold"
 
 msgid "<h4>Content results</h4>"
-msgstr ""
+msgstr "<h4>Indholds resultater</h4>"
 
 msgid "Search Groups"
-msgstr ""
+msgstr "Søg i grupper"
 
 msgid "<h4>Group results</h4>"
-msgstr ""
+msgstr "<h4>Gruppe resultater</h4>"
 
 msgid "Search Users"
-msgstr ""
+msgstr "Søg i grupper"
 
 msgid "Profile tag"
 msgstr ""
 
 msgid "Registration Date"
-msgstr ""
+msgstr "Registrerings dato"
 
 msgid "Search users"
 msgstr "Search users"
 
 msgid "<h4 class=\"section-title\">Member results</h4>"
-msgstr ""
+msgstr "<h4 class=\"section-title\">Medlems resultat</h4>"
 
 msgid "Users"
-msgstr "Users"
+msgstr "Brugere"
 
 msgid "Social Group invitations"
 msgstr ""
 
 msgid "Recipients"
-msgstr "Recipients"
+msgstr "Modtagere"
 
 msgid "Invitation status"
 msgstr ""
@@ -1877,13 +1877,13 @@ msgid ""
 msgstr ""
 
 msgid "Actions"
-msgstr "Actions"
+msgstr "Handlinger"
 
 msgid "Social Group User invitations"
 msgstr ""
 
 msgid "Number of members"
-msgstr ""
+msgstr "Antallet af medlemmer"
 
 msgid "Invites Overview"
 msgstr ""
@@ -1898,13 +1898,13 @@ msgid "{{ arguments.tid }}"
 msgstr "{{ arguments.tid }}"
 
 msgid "User Topics"
-msgstr ""
+msgstr "Bruger emner"
 
 msgid "has the publish status of"
 msgstr ""
 
 msgid "No topics found for this user"
-msgstr ""
+msgstr "Ingen emner fundet for denne bruger"
 
 msgid "Recently created topics"
 msgstr "Recently created topics"
@@ -1916,7 +1916,7 @@ msgid "Show upcoming events (my, community and overview)"
 msgstr "Show upcoming events (my, community and overview)"
 
 msgid "No events found"
-msgstr ""
+msgstr "Ingen arrangementer fundet"
 
 msgid "Community events block"
 msgstr ""
@@ -1937,7 +1937,7 @@ msgid "Community events page"
 msgstr ""
 
 msgid "Enroll Method"
-msgstr ""
+msgstr "Tilmeldingsmetode"
 
 msgid "All events"
 msgstr "Alle begivenheder"
@@ -1949,7 +1949,7 @@ msgid "group_contextual"
 msgstr ""
 
 msgid "No upcoming events in this group"
-msgstr ""
+msgstr "Ingen arrangementer i denne gruppe"
 
 msgid "People"
 msgstr "People"
@@ -1964,22 +1964,22 @@ msgid "Username"
 msgstr "Username"
 
 msgid "Active"
-msgstr "Active"
+msgstr "Aktiv"
 
 msgid "Blocked"
-msgstr "Blocked"
+msgstr "Blokeret"
 
 msgid "Member for"
-msgstr "Member for"
+msgstr "Medlen i"
 
 msgid "Last access"
 msgstr "Last access"
 
 msgid "Name or email contains"
-msgstr "Name or email contains"
+msgstr "Navn eller email indeholder"
 
 msgid "Permission"
-msgstr "Permission"
+msgstr "Tilleaderlse"
 
 msgid "Registration date"
 msgstr "Registration date"
@@ -1997,7 +1997,7 @@ msgid "Manage user accounts, roles, and permissions."
 msgstr "Manage user accounts, roles, and permissions."
 
 msgid "User Event Invites"
-msgstr ""
+msgstr "Arrangement invitationer"
 
 msgid "Shows invites to events for a user."
 msgstr ""
@@ -2009,13 +2009,13 @@ msgid "Invites overview"
 msgstr ""
 
 msgid "<h1 class=\"h4 section-title\">@total Event invites</h1>"
-msgstr ""
+msgstr "<h1 class=\"h4 section-title\">@total arrangement invitationer</h1>"
 
 msgid "You don't have any event invites yet."
-msgstr ""
+msgstr "Du har ingen invitationer til arrangementer"
 
 msgid "User information"
-msgstr "User information"
+msgstr "Bruger information"
 
 msgid "Information"
 msgstr "Information"
@@ -2032,7 +2032,7 @@ msgid "Recent log messages"
 msgstr "Recent log messages"
 
 msgid "Icon"
-msgstr "Icon"
+msgstr "Ikon"
 
 msgid "WID"
 msgstr "WID"
@@ -2041,7 +2041,7 @@ msgid "Severity"
 msgstr "Severity"
 
 msgid "Date"
-msgstr "Date"
+msgstr "Dato"
 
 msgid "{{ message }}"
 msgstr "{{ message }}"
@@ -2050,16 +2050,16 @@ msgid "No log messages available."
 msgstr "No log messages available."
 
 msgid "Who liked this entity"
-msgstr ""
+msgstr "Hvem har sagt synes godt om til dette"
 
 msgid "show some more"
-msgstr ""
+msgstr "vis noget mere"
 
 msgid "profile_compact"
 msgstr ""
 
 msgid "see profile"
-msgstr ""
+msgstr "se profil"
 
 msgid "No likes yet"
 msgstr ""
@@ -2122,7 +2122,7 @@ msgid "Request date"
 msgstr ""
 
 msgid "Approve Membership"
-msgstr ""
+msgstr "Godkend medlemsskab"
 
 msgid "Custom block type"
 msgstr "Brugerdefineret bloktype"
@@ -2906,7 +2906,7 @@ msgid "Mail HTML"
 msgstr ""
 
 msgid "Enrollment status"
-msgstr ""
+msgstr "Tilmeldings status"
 
 msgid "Request message"
 msgstr ""
@@ -2917,13 +2917,13 @@ msgid ""
 msgstr ""
 
 msgid "Request or invite status"
-msgstr ""
+msgstr "Anmodning eller invitations status"
 
 msgid "Not enrolled"
-msgstr ""
+msgstr "Ikke tilmeldt"
 
 msgid "Enrolled"
-msgstr ""
+msgstr "Tilmeldt"
 
 msgid "Public - visible to everyone including people who are not a member"
 msgstr "Offentlig - synlig for alle inklusiv folk som ikke er medlem."
@@ -2951,7 +2951,7 @@ msgid "Invite event enrollment"
 msgstr ""
 
 msgid "A user got an invite for an event"
-msgstr ""
+msgstr "En bruger har fået en invitations til et event"
 
 msgid ""
 "<p>You have been invited for the even [social_event:event_iam_organizing] by "
@@ -11739,16 +11739,16 @@ msgid "@toolkit settings"
 msgstr "Indstillinger for @toolkit"
 
 msgid "Open to enroll"
-msgstr ""
+msgstr "Åben for tilmeldinger"
 
 msgid "Invite-only"
-msgstr ""
+msgstr "Tilmelding kun via invitation"
 
 msgid "Request to enroll"
-msgstr ""
+msgstr "Anmod om at tilmelde"
 
 msgid "Total amount of enrollments"
-msgstr ""
+msgstr "Total antal tilmeldinger"
 
 msgid "public"
 msgstr "offentlig"
@@ -36901,7 +36901,7 @@ msgid "Gruppe Arrangement"
 msgstr ""
 
 msgid "Older items"
-msgstr ""
+msgstr "Forrige"
 
 msgid ""
 "Manually entered paths should start with one of the following "
