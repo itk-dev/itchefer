@@ -8,7 +8,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: profiles/contrib/social/themes/socialblue/favicon.ico
-  url: '/profiles/contrib/social/themes/socialblue/favicon.ico'
+  url: /profiles/contrib/social/themes/socialblue/favicon.ico
   use_default: 0
 schemas:
   bootstrap: 8000
