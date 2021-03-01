@@ -53,6 +53,8 @@
   {% for item in items %}
     {% if entity_type == "node" and field_name == "body" and part_of_teaser %}
       {{ item.content|render|striptags }}
+    {% elseif label == 'Artikler' %}
+       {{ item.content }} </br>           
     {% else %}
       {{ item.content }}
     {% endif %}
