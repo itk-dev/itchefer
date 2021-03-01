@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: ''
-    negate: true
+    pages: /kontakt
+    negate: false
     context_mapping: {  }
