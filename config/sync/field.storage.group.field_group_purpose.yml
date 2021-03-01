@@ -17,13 +17,13 @@ settings:
   allowed_values:
     -
       value: municipality
-      label: Municipality
+      label: Kommune
     -
       value: region
       label: Region
     -
       value: discussion
-      label: Discussion
+      label: Diskussion
   allowed_values_function: ''
 module: options
 locked: false
