@@ -1446,7 +1446,7 @@ msgid "Members of {{ arguments.gid }}"
 msgstr ""
 
 msgid "Group Members"
-msgstr "Group Members"
+msgstr "Gruppe medlemmer"
 
 msgid "No members in this group"
 msgstr "Ingen medlemmer af denne gruppe"
@@ -2906,7 +2906,7 @@ msgid "Mail HTML"
 msgstr ""
 
 msgid "Enrollment status"
-msgstr ""
+msgstr "Tilmeldings status"
 
 msgid "Request message"
 msgstr ""
@@ -2917,13 +2917,13 @@ msgid ""
 msgstr ""
 
 msgid "Request or invite status"
-msgstr ""
+msgstr "Anmodning eller invitations status"
 
 msgid "Not enrolled"
-msgstr ""
+msgstr "Ikke tilmeldt"
 
 msgid "Enrolled"
-msgstr ""
+msgstr "Tilmeldt"
 
 msgid "Public - visible to everyone including people who are not a member"
 msgstr "Offentlig - synlig for alle inklusiv folk som ikke er medlem."
@@ -2951,7 +2951,7 @@ msgid "Invite event enrollment"
 msgstr ""
 
 msgid "A user got an invite for an event"
-msgstr ""
+msgstr "En bruger har fået en invitations til et event"
 
 msgid ""
 "<p>You have been invited for the even [social_event:event_iam_organizing] by "
@@ -11739,16 +11739,16 @@ msgid "@toolkit settings"
 msgstr "Indstillinger for @toolkit"
 
 msgid "Open to enroll"
-msgstr ""
+msgstr "Åben for tilmeldinger"
 
 msgid "Invite-only"
-msgstr ""
+msgstr "Tilmelding kun via invitation"
 
 msgid "Request to enroll"
-msgstr ""
+msgstr "Anmod om at tilmelde"
 
 msgid "Total amount of enrollments"
-msgstr ""
+msgstr "Total antal tilmeldinger"
 
 msgid "public"
 msgstr "offentlig"
@@ -36901,7 +36901,7 @@ msgid "Gruppe Arrangement"
 msgstr ""
 
 msgid "Older items"
-msgstr ""
+msgstr "Forrige"
 
 msgid ""
 "Manually entered paths should start with one of the following "
