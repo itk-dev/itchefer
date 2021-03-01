@@ -7916,7 +7916,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "Read more"
-msgstr ""
+msgstr "Læse mere"
 
 msgid "Be added by group managers"
 msgstr ""
