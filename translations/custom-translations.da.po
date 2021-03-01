@@ -7916,7 +7916,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "Read more"
-msgstr ""
+msgstr "Læs mere"
 
 msgid "Be added by group managers"
 msgstr ""
@@ -11739,16 +11739,16 @@ msgid "@toolkit settings"
 msgstr "Indstillinger for @toolkit"
 
 msgid "Open to enroll"
-msgstr ""
+msgstr "Åben for tilmeldinger"
 
 msgid "Invite-only"
-msgstr ""
+msgstr "Kun via initation"
 
 msgid "Request to enroll"
-msgstr ""
+msgstr "Anmod om tilmelding"
 
 msgid "Total amount of enrollments"
-msgstr ""
+msgstr "Total antal tilmeldinger"
 
 msgid "public"
 msgstr "offentlig"
