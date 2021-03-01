@@ -279,6 +279,9 @@ settings:
       value: vejen_kommune
       label: 'Vejen Kommune'
     -
+      value: vejle_kommune
+      label: 'Vejle Kommune'
+    -
       value: vesthimmerlands_kommune
       label: 'Vesthimmerlands Kommune'
     -
@@ -299,6 +302,9 @@ settings:
     -
       value: århus_kommune
       label: 'Århus Kommune'
+    -
+      value: sekretariatet
+      label: Sekretariatet
   allowed_values_function: ''
 module: options
 locked: false
