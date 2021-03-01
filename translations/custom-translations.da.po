@@ -36627,7 +36627,7 @@ msgid "Group membership invite notification"
 msgstr ""
 
 msgid "Contact block"
-msgstr ""
+msgstr "Kontakt blok"
 
 msgid "Group operations"
 msgstr ""
