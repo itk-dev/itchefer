@@ -250,7 +250,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: News
+      title: Nyheder
       header: {  }
       footer: {  }
       empty: {  }
