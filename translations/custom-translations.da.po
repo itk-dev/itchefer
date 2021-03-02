@@ -1961,7 +1961,7 @@ msgid "Bulk action"
 msgstr ""
 
 msgid "Username"
-msgstr "Username"
+msgstr "Bruger navn (Fornavn(e) + Efternavn(e)"
 
 msgid "Active"
 msgstr "Aktiv"
@@ -11432,7 +11432,7 @@ msgstr ""
 msgid ""
 "Several special characters are allowed, including space, period (.), hyphen "
 "(-), apostrophe ('), underscore (_), and the @ sign."
-msgstr ""
+msgstr "Skriv dit fulde navn, dette vil være det brugernavn du senere skal brug til at logge ind med. Navnet må gerne indeholde mellemrum."
 
 msgid "Confirm password"
 msgstr "Bekræft adgangskode"
@@ -13079,7 +13079,7 @@ msgid "Notify user of new account"
 msgstr "Påmind bruger om ny konto"
 
 msgid "Sign up with <b>email</b>"
-msgstr "Tilmeld via <b>email</b>"
+msgstr "Anmod via <b>email</b>"
 
 msgid "Leave blank to use trimmed value of full text as the summary."
 msgstr ""
