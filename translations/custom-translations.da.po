@@ -12504,13 +12504,13 @@ msgid "About"
 msgstr "Om"
 
 msgid "Manage members"
-msgstr ""
+msgstr "Administrer medlemmer"
 
 msgid "in the group"
-msgstr ""
+msgstr "i gruppen"
 
 msgid "View Profile"
-msgstr ""
+msgstr "Se profil"
 
 msgid ""
 "Are you sure you want to delete your group \"@group\" along with all of the "
@@ -12534,7 +12534,7 @@ msgid "Please continue to <a href=\":error_url\">the error page</a>"
 msgstr "Fortsæt venligst til <a href=\":error_url\">fejlsiden</a>"
 
 msgid "Deleting the group and all the content within the group..."
-msgstr ""
+msgstr "Sletter gruppen og alt indhold i gruppen"
 
 msgid "@type %title has been deleted."
 msgstr "@type %title slettet."
@@ -12543,7 +12543,7 @@ msgid "Completed @current of @total."
 msgstr "@current af @total fuldført."
 
 msgid "Your group and all of its topics, events and posts have been deleted."
-msgstr ""
+msgstr "Din gruppe og alle emner, arrangementer og opslag er blevet slettet."
 
 msgid "Deleting @type's"
 msgstr ""
@@ -12564,20 +12564,20 @@ msgid "Recipient ID"
 msgstr "Modtager ID"
 
 msgid "log in"
-msgstr ""
+msgstr "log in"
 
 msgid "create a new account"
-msgstr ""
+msgstr "opret ny bruger"
 
 msgid ""
 "Please @log_in or @create_account_link so that you can enroll to the event."
-msgstr ""
+msgstr "Log venligst ind @log_in eller oprettet konto @create_account_line så du kan tilmelde dig arrangementet"
 
 msgid "Group manager"
-msgstr ""
+msgstr "Gruppe administrator"
 
 msgid "Members of @name"
-msgstr ""
+msgstr "Medlemmer i @name"
 
 msgid "Group content @entity_type"
 msgstr ""
@@ -12589,31 +12589,31 @@ msgid "Add members"
 msgstr "Tilføj medlemmer"
 
 msgid "Add directly"
-msgstr ""
+msgstr "Tilføj direkte"
 
 msgid "Invite users"
-msgstr ""
+msgstr "Inviter brugere"
 
 msgid "View invites"
-msgstr ""
+msgstr "Se invitationer"
 
 msgid "Select / unselect all @count members across all the pages"
-msgstr ""
+msgstr "Vælg / fravælg alle @count medlemmer"
 
 msgid "<b>@action</b> of selected members"
-msgstr ""
+msgstr "<b>@action</b> ved valgte medlemmer"
 
 msgid "<b>@action</b>"
 msgstr ""
 
 msgid "Send email to group members"
-msgstr ""
+msgstr "Send email til gruppe medlemmer"
 
 msgid "<b>@action</b> selected members"
-msgstr ""
+msgstr "<b>@action</b> ved valgte medlemmer"
 
 msgid "Clear selection on all pages"
-msgstr ""
+msgstr "Fjern valgte på alle sider"
 
 msgid "<b><em class=\"placeholder\">@count</em> Member</b> is selected"
 msgid_plural ""
@@ -12622,64 +12622,64 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "The user you want to make a member"
-msgstr ""
+msgstr "Brugeren du vil gøre til medlem"
 
 msgid "Jane Doe"
 msgstr ""
 
 msgid "Find people by name"
-msgstr ""
+msgstr "Find brugere via navn"
 
 msgid "You can enter or paste multiple entries separated by comma or semicolon"
-msgstr ""
+msgstr "Du kan skrive flere navne adskilt af komma eller semikolon"
 
 msgid "Add members to group: @group_name"
-msgstr ""
+msgstr "Tilføj medlemmer til gruppen: @group_name"
 
 msgid "All entities for @group"
 msgstr ""
 
 msgid "Add existing content"
-msgstr ""
+msgstr "Tilføj eksisterende indhold"
 
 msgid "Say something to the group"
-msgstr ""
+msgstr "Sig noget til gruppen"
 
 msgid "Jane Doe, johndoe@example.com"
 msgstr ""
 
 msgid "Find people by name or email address"
-msgstr ""
+msgstr "Find brugere med navn eller email adresse"
 
 msgid "Preview your email invite"
-msgstr ""
+msgstr "Preview din email invitation"
 
 msgid "Send your invite(s) by email"
-msgstr ""
+msgstr "Send dine invitationer med email"
 
 msgid "Back to group"
-msgstr ""
+msgstr "Tilbage til gruppen"
 
 msgid "Invite members to group: @group_title"
-msgstr ""
+msgstr "Inviter medlemmer til gruppen: @group_title"
 
 msgid "Create Event"
-msgstr ""
+msgstr "Opret arrangement"
 
 msgid "Grupper"
-msgstr ""
+msgstr "Grupper"
 
 msgid "Add a group"
-msgstr ""
+msgstr "Tilføj en gruppe"
 
 msgid "Emner"
-msgstr ""
+msgstr "Emner"
 
 msgid "Create Topic"
-msgstr ""
+msgstr "Opret Emne"
 
 msgid "All types"
-msgstr ""
+msgstr "Alle typer"
 
 msgid "Administer contact forms and contact form settings"
 msgstr "Administrér kontaktformularer og indstillinger for kontaktformularer"
@@ -12703,13 +12703,16 @@ msgid "Tasks"
 msgstr "Opgaver"
 
 msgid "Current password"
-msgstr ""
+msgstr "Nuværende password"
 
 msgid ""
 "Required if you want to change the %mail or %pass below. <a href=\":"
 "request_new_url\" title=\"Send password reset instructions via email."
 "\">Reset your password</a>."
 msgstr ""
+"Nødvendig hvis du vil ændre %mail eller %pass nedenfor. <a href=\":"
+"request_new_url\" title=\"Send password nulstillings instruktioner via email."
+"\">Nulstil dit password</a>."
 
 msgid ""
 "You can reorganize the terms in %capital_name using their drag-and-drop "
@@ -13061,7 +13064,7 @@ msgstr ""
 "node som din basistabel.</strong>"
 
 msgid "Magazines"
-msgstr ""
+msgstr "Magasiner"
 
 msgid "Administer global URL redirection settings"
 msgstr ""
@@ -13076,7 +13079,7 @@ msgid "Notify user of new account"
 msgstr "Påmind bruger om ny konto"
 
 msgid "Sign up with <b>email</b>"
-msgstr ""
+msgstr "Tilmeld via <b>email</b>"
 
 msgid "Leave blank to use trimmed value of full text as the summary."
 msgstr ""
@@ -36645,13 +36648,13 @@ msgid "This is used as the value for max-age in Cache-Control headers."
 msgstr ""
 
 msgid "Create New Magazine"
-msgstr ""
+msgstr "Opret nyt magasin"
 
 msgid "New Magazine"
 msgstr ""
 
 msgid "Create New Article"
-msgstr ""
+msgstr "Opret ny artikel"
 
 msgid "New Article"
 msgstr ""
@@ -36672,7 +36675,7 @@ msgid "Date of Event"
 msgstr ""
 
 msgid "Dokumenter"
-msgstr ""
+msgstr "Dokumenter"
 
 msgid ""
 "Changing the group may have impact on the <strong>visibility settings</"
@@ -36725,7 +36728,8 @@ msgstr ""
 msgid ""
 "A welcome message with further instructions will be sent to your email "
 "address after you successfully enter your email address and a username."
-msgstr ""
+msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
+En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
 
 msgid "Reset password with <b>username</b> or <b>email</b>"
 msgstr ""
