@@ -36723,7 +36723,7 @@ msgid ""
 msgstr ""
 
 msgid "Have an account already? @link"
-msgstr ""
+msgstr "Har du en bruger allerede? @link"
 
 msgid ""
 "A welcome message with further instructions will be sent to your email "
@@ -36732,10 +36732,10 @@ msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., ska
 En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
 
 msgid "Reset password with <b>username</b> or <b>email</b>"
-msgstr ""
+msgstr "Nulstil password med <b>brugernavn</b> eller <b>email</b>"
 
 msgid "Nulstil din adgangskode"
-msgstr ""
+msgstr "Nulstil din adgangskode"
 
 msgid "Enable user tracking"
 msgstr ""
