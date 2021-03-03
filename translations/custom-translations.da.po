@@ -1683,7 +1683,7 @@ msgid "Newest users block"
 msgstr ""
 
 msgid "Newest users page"
-msgstr ""
+msgstr "Nyeste brugere side"
 
 msgid "Profiles"
 msgstr "Profiler"
@@ -1712,7 +1712,7 @@ msgid "<h4>All results</h4>"
 msgstr "<h4>Alle resultater</h4>"
 
 msgid "No results found."
-msgstr "No results found."
+msgstr "Ingen resultater fundet"
 
 msgid "Page (no value)"
 msgstr ""
@@ -1785,7 +1785,7 @@ msgid "REST export"
 msgstr "REST export"
 
 msgid "Search Content"
-msgstr ""
+msgstr "Søg indhold"
 
 msgid "Sort"
 msgstr "Sort"
@@ -1907,13 +1907,13 @@ msgid "No topics found for this user"
 msgstr "Ingen emner fundet for denne bruger"
 
 msgid "Recently created topics"
-msgstr "Recently created topics"
+msgstr "Fornyligt oprettede emner"
 
 msgid "(Upcoming) Community events"
-msgstr "(Upcoming) Community events"
+msgstr "(Kommend) Fællesskabs arrangementer"
 
 msgid "Show upcoming events (my, community and overview)"
-msgstr "Show upcoming events (my, community and overview)"
+msgstr "Vis kommende arrangementer (mine, fælleskabet and overblik)"
 
 msgid "No events found"
 msgstr "Ingen arrangementer fundet"
@@ -1922,16 +1922,16 @@ msgid "Community events block"
 msgstr ""
 
 msgid "My upcoming events block"
-msgstr "Mine kommende begivenheder blokken"
+msgstr "Mine kommende arrangementer blokken"
 
 msgid "No upcoming events you have enrolled for"
-msgstr "Du har ikke tilmeldt dig nogen kommende events"
+msgstr "Du har ikke tilmeldt dig nogen kommende arrangementer"
 
 msgid "My upcoming events"
-msgstr "Mine kommende begivenheder"
+msgstr "Mine kommende arrangementer"
 
 msgid "All my upcoming events"
-msgstr "Alle mine kommende events"
+msgstr "Alle mine kommende arrangementer"
 
 msgid "Community events page"
 msgstr ""
@@ -1940,7 +1940,7 @@ msgid "Enroll Method"
 msgstr "Tilmeldingsmetode"
 
 msgid "All events"
-msgstr "Alle begivenheder"
+msgstr "Alle arrangementer"
 
 msgid "Upcoming events group block"
 msgstr ""
@@ -38527,3 +38527,9 @@ msgstr ""
 
 msgid "Supplies an HTTP Basic authentication provider."
 msgstr ""
+
+msgid "I wanted you to see this site"
+msgstr "Jeg vil gerne dele denne artikel med dig"
+
+msgid "Check out this site"
+msgstr "Prøv at læse denne artikel fra Kit@, jeg tror den kan interessere dig: "
