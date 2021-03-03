@@ -26,7 +26,12 @@
   <div class="card teaser">
     <a href="{{ profile_home }}" class="teaser__image">
       {% if content.field_profile_image %}
-          {{ content.field_profile_image }}
+        {% if 'default-profile-picture.png' in content.field_profile_image  %}
+         <img src="{{ base_path ~ directory }}/default-profile-picture.png" alt="{{ site_name }}" />
+        {% else %}
+        {{ content.field_profile_image }}
+       {% endif %}
+
       {% endif %}
     </a>
     <div class="teaser__body">
