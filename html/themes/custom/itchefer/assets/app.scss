@@ -422,4 +422,19 @@ h1 {
     &:last-of-type {
         padding-bottom: 1rem; 
     }
-}
+}   
+
+@media print {
+    .itchefer-ad-card {
+      display: none;
+    }
+    .cover .cover-img .cover-img-gradient{
+        display: none;
+    }
+    .share-buttons{
+        display: none;
+    }
+    div[role=article]{
+        display:none;
+    }
+  }
