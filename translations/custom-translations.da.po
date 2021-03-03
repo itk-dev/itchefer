@@ -7912,11 +7912,11 @@ msgstr ""
 
 msgid "1 member"
 msgid_plural "@count members"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 medlem"
+msgstr[1] "@count medlemmer"
 
 msgid "Read more"
-msgstr "Læse mere"
+msgstr "Læs mere"
 
 msgid "Be added by group managers"
 msgstr ""
