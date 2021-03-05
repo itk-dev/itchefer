@@ -1,4 +1,4 @@
-author_as_manager: false
+author_as_manager: 1
 _core:
   default_config_hash: '-m57UrdmJvnJfn-0pDz5ONyTWMYaKoqEOFHFEVmYOKA'
 langcode: da

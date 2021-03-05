@@ -1,5 +1,5 @@
 langcode: da
-signup_help: 'A welcome message with further instructions will be sent to your email address after you successfully enter your email address and a username.'
+signup_help: "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.\r\nEn medlemskommune kan have et ubegrænset antal brugere. \r\n\r\nEr din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
 login_help: ''
 social_user_profile_landingpage: social_user.stream
 _core:
