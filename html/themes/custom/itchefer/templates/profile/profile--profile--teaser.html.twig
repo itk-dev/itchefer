@@ -27,7 +27,7 @@
     <a href="{{ profile_home }}" class="teaser__image">
       {% if content.field_profile_image %}
         {% if 'default-profile-picture.png' in content.field_profile_image  %}
-         <img src="{{ base_path ~ directory }}/default-profile-picture.png" alt = "Standard profil billede"/>
+         <img src="{{ base_path ~ directory }}/default-profile-picture.png" alt = ""/>
         {% else %}
         {{ content.field_profile_image }}
        {% endif %}
