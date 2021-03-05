@@ -2,3 +2,6 @@ allow_group_selection_in_node: false
 _core:
   default_config_hash: NO2xkUEhq_WAhBUrdnuQ9yHbgq_AS0tM8wR5dI0tYoM
 langcode: da
+group_invite:
+  invite_subject: '[current-user:display-name] har inviteret dig til at være med i gruppen [site:name].'
+  invite_message: "Hej,<br /><br /> Jeg vil gerne invitere dig til at være med i min gruppe [group:title] på [site:name].<br /><br />Med venlig hilsen,<br />[current-user:display-name]<br /><br />\r\n<table class=\"btn-wrapp\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[group_content:register_link]\">Se gruppe</a></td>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[site:url]\">Om [site:name]</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>"
