@@ -8,6 +8,7 @@ dependencies:
     - field.field.post.post.field_post_comments
     - field.field.post.post.field_recipient_group
     - field.field.post.post.field_recipient_user
+    - field.field.post.post.field_vedhaeftning
     - field.field.post.post.field_visibility
     - social_post.post_type.post
   module:
@@ -43,5 +44,6 @@ hidden:
   field_post_comments: true
   field_recipient_group: true
   field_recipient_user: true
+  field_vedhaeftning: true
   field_visibility: true
   search_api_excerpt: true

@@ -5,6 +5,9 @@ dependencies:
   config:
     - comment.type.comment
     - field.field.comment.comment.field_comment_body
+    - field.field.comment.comment.field_vedhaeftet_fil
+  module:
+    - text
 _core:
   default_config_hash: 3tOK5PxzfojSpjhsO75OfLbAPAo87idRigAPn_ZW_wc
 id: comment.comment.default
@@ -14,16 +17,16 @@ mode: default
 content:
   author:
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_comment_body:
     weight: 0
     settings:
       rows: 5
       placeholder: 'Add a comment'
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
   langcode:
     type: language_select
@@ -33,4 +36,5 @@ content:
       include_locked: true
     third_party_settings: {  }
 hidden:
+  field_vedhaeftet_fil: true
   subject: true

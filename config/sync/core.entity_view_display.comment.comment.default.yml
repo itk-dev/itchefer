@@ -5,7 +5,9 @@ dependencies:
   config:
     - comment.type.comment
     - field.field.comment.comment.field_comment_body
+    - field.field.comment.comment.field_vedhaeftet_fil
   module:
+    - file
     - text
 _core:
   default_config_hash: TRiNIOLp1fn8y1PUIxc4Gp3igg4d-CuPU2a5nzHE9eo
@@ -20,6 +22,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_vedhaeftet_fil:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
     region: content
   like_and_dislike:
     weight: 3

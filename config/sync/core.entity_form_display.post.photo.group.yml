@@ -9,6 +9,7 @@ dependencies:
     - field.field.post.photo.field_post_image
     - field.field.post.photo.field_recipient_group
     - field.field.post.photo.field_recipient_user
+    - field.field.post.photo.field_vedhaeftning
     - field.field.post.photo.field_visibility
     - image.style.social_post_photo
     - social_post.post_type.photo
@@ -56,5 +57,6 @@ hidden:
   field_post_comments: true
   field_recipient_group: true
   field_recipient_user: true
+  field_vedhaeftning: true
   langcode: true
   user_id: true

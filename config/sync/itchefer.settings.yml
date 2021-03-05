@@ -9,7 +9,7 @@ features:
   favicon: 1
   node_user_picture: true
 logo:
-  path: 'public://KITA_logo_oneline_0.png'
+  path: 'public://KITA_logo.png'
   url: ''
   use_default: 0
 schemas:

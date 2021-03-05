@@ -1,0 +1,27 @@
+uuid: ba826a7c-474d-460f-8aea-5425ffde5ec7
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_vedhaeftning
+    - social_post.post_type.post
+  module:
+    - file
+id: post.post.field_vedhaeftning
+field_name: field_vedhaeftning
+entity_type: post
+bundle: post
+label: Vedhæftning
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
