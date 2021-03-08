@@ -36775,7 +36775,7 @@ msgid "site administrator"
 msgstr ""
 
 msgid "Hi <strong>@display_name</strong>"
-msgstr ""
+msgstr "Kære <strong>@display_name</strong>"
 
 msgid "Intro"
 msgstr ""
