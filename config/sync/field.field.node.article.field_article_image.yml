@@ -12,7 +12,7 @@ field_name: field_article_image
 entity_type: node
 bundle: article
 label: Billede
-description: ''
+description: 'Billede af dimensioner: 1136*260 px'
 required: false
 translatable: false
 default_value: {  }
