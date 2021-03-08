@@ -8,10 +8,13 @@ dependencies:
     - field.field.post.post.field_post_comments
     - field.field.post.post.field_recipient_group
     - field.field.post.post.field_recipient_user
+    - field.field.post.post.field_vedhaeftning
     - field.field.post.post.field_visibility
     - social_post.post_type.post
   module:
     - dropdown
+    - file
+    - text
 _core:
   default_config_hash: xUAASellzoAFb-FN2_bDBzYYyPEQ93N-cQ1B7F7AfYQ
 id: post.post.profile
@@ -20,16 +23,23 @@ bundle: post
 mode: profile
 content:
   field_post:
-    type: string_textarea
+    type: text_textarea
     weight: 0
     settings:
       rows: 5
-      placeholder: 'What''s on your mind?'
+      placeholder: 'Hvad tænker du på lige nu?'
     third_party_settings: {  }
     region: content
+  field_vedhaeftning:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   field_visibility:
     type: dropdown_widget_type
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -38,7 +48,7 @@ content:
     settings:
       display_label: true
     type: boolean_checkbox
-    weight: 20
+    weight: 3
     third_party_settings: {  }
 hidden:
   field_post_comments: true

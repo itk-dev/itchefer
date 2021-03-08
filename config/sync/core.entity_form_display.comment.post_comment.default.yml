@@ -5,6 +5,9 @@ dependencies:
   config:
     - comment.type.post_comment
     - field.field.comment.post_comment.field_comment_body
+    - field.field.comment.post_comment.field_vedhaeftet_fil
+  module:
+    - text
 _core:
   default_config_hash: 2UxokzR_phIGQRgAuNPHZtmipVpKcs20gTIjWmNx0QQ
 id: comment.post_comment.default
@@ -13,24 +16,25 @@ bundle: post_comment
 mode: default
 content:
   author:
-    weight: 5
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_comment_body:
-    weight: 3
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
 hidden:
+  field_vedhaeftet_fil: true
   subject: true

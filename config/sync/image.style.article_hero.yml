@@ -1,0 +1,15 @@
+uuid: 36b1b69f-f3c9-47f5-8a2e-4bd2dcda6deb
+langcode: da
+status: true
+dependencies: {  }
+name: article_hero
+label: article_hero
+effects:
+  6d3a3afb-c1f7-4ab5-9122-b8e874c87d18:
+    uuid: 6d3a3afb-c1f7-4ab5-9122-b8e874c87d18
+    id: image_crop
+    weight: 1
+    data:
+      width: 1136
+      height: 260
+      anchor: center-center
