@@ -42,7 +42,7 @@
     {%- elseif item.text_attributes -%}
       <span{{ item.text_attributes }}>{{ item.text }}</span>
       {%- else -%}
-      <span class="hide-in-magazines">{{ item.text }}</span>
+      <span class="hide-everywhere">{{ item.text }}</span>
     {%- endif -%}
 
   {%- endfor -%}
