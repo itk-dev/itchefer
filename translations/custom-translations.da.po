@@ -2592,83 +2592,102 @@ msgid ""
 msgstr ""
 
 msgid "Create a post, topic or event in a joined group"
-msgstr ""
+msgstr "Opret opslag, emne eller arrangment i en gruppe du er medlem af"
 
 msgid "A person created a post, event or topic in a group I joined"
-msgstr ""
+msgstr "En person har oprettet et opslag, arrangement eller emne i en gruppe jeg er medlem af"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> created [social_group:created_entity_link_html] in the <a href=\"[message:"
 "gurl]\">[message:gtitle]</a> group</p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> oprettede [social_group:created_entity_link_html] i <a href=\"[message:"
+"gurl]\">[message:gtitle]</a> gruppen</p>"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> created [social_group:created_entity_link_html] in the <a href=\"[message:"
 "gurl]\">[message:gtitle]</a> group</p><p>[message:additional_information]</p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> oprettede [social_group:created_entity_link_html] i <a href=\"[message:"
+"gurl]\">[message:gtitle]</a> gruppen</p><p>[message:additional_information]</p>"
 
 msgid "Create event"
-msgstr ""
+msgstr "Opret arrangement"
 
 msgid "A user created an event in the community"
-msgstr ""
+msgstr "En bruger har oprettet et arrangement i fællesskabet"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> created an event</p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> oprettede et arrangement</p>"
 
 msgid "Create event in group"
-msgstr ""
+msgstr "Opret arrangement i en gruppe"
 
 msgid "A user created an event in a group"
-msgstr ""
+msgstr "En bruger har oprettet et arrangement i en gruppe"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> created an event in <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> har oprettet et arrangement i <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 
 msgid "Create post in the community"
-msgstr ""
+msgstr "Opret opslag i fællseskabet"
 
 msgid "A user created a post in the community"
-msgstr ""
+msgstr "En bruger har oprettet et opslag i fællesskabet"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> posted</p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> skrev</p>"
 
 msgid "Create post in a group"
-msgstr ""
+msgstr "Opret opslag i gruppe"
 
 msgid "A user created a post in a group"
-msgstr ""
+msgstr "En bruger har oprettet et opslag i en gruppe"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> posted in <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> skrev i <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 
 msgid "Create post on profile"
-msgstr ""
+msgstr "Opret opslag på profil"
 
 msgid "A person created a post on my profile"
-msgstr ""
+msgstr "En person har oprettet et opslag på min profil"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> posted on your profile</p>\n"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> skrev på din profil</p>\n"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> posted on your <a href=\"[message:recipient-user-url]\">profile</a></"
 "p><p>[message:additional_information]</p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> skrev på din <a href=\"[message:recipient-user-url]\">profil</a></"
+"p><p>[message:additional_information]</p>"
 
 msgid "Create post on profile stream output"
 msgstr ""
@@ -11502,7 +11521,7 @@ msgstr ""
 "vises med den valgte tidszone."
 
 msgid "<em>Configure account settings:</em> @label"
-msgstr ""
+msgstr "<em>Konfigurer konto indstillinger:</em> @label"
 
 msgid "Passwords match:"
 msgstr "Adgangskoder er ens:"
@@ -36857,16 +36876,16 @@ msgid ""
 msgstr ""
 
 msgid "posted"
-msgstr ""
+msgstr "slået op"
 
 msgid "Leave a comment"
-msgstr ""
+msgstr "Skriv kommentar"
 
 msgid "Your post %label has been posted."
-msgstr ""
+msgstr "Dit opslag %label er blevet slået op"
 
 msgid "Join"
-msgstr ""
+msgstr "Tilmeld"
 
 msgid ""
 "By submitting this form you will become a member of the group. Please fill "
@@ -36879,10 +36898,10 @@ msgid "Join group %label"
 msgstr "Tilmeld dig gruppen %label "
 
 msgid "Remove image"
-msgstr ""
+msgstr "Fjern billede"
 
 msgid "Add enrollees"
-msgstr ""
+msgstr "Tilføj brugere"
 
 msgid "Add-ons"
 msgstr ""
@@ -36891,16 +36910,16 @@ msgid "Opens in new window"
 msgstr ""
 
 msgid "Search topics"
-msgstr ""
+msgstr "Søg emner"
 
 msgid "Administer block classes"
 msgstr ""
 
 msgid "Emner for gruppe"
-msgstr ""
+msgstr "Emner for gruppe"
 
 msgid "All statuses"
-msgstr ""
+msgstr "Alle statusser"
 
 msgid "Gruppe Arrangement"
 msgstr ""
