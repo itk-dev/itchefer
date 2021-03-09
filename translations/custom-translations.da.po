@@ -36906,6 +36906,9 @@ msgid "Gruppe Arrangement"
 msgstr ""
 
 msgid "Older items"
+msgstr "Næste"
+
+msgid "Newer items"
 msgstr "Forrige"
 
 msgid ""
