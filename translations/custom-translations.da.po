@@ -895,7 +895,7 @@ msgid "Offset"
 msgstr "Offset"
 
 msgid "Stream"
-msgstr ""
+msgstr "Opslagstavle"
 
 msgid "Homepage stream block"
 msgstr ""
@@ -913,7 +913,7 @@ msgid "header_postblock"
 msgstr ""
 
 msgid "Explore Stream"
-msgstr ""
+msgstr "Udforsk opslagstavle"
 
 msgid "activity_stream_group"
 msgstr ""
