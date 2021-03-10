@@ -2297,7 +2297,7 @@ msgid "Reset your password"
 msgstr "Nulstil din adgangskode"
 
 msgid "Set your password"
-msgstr ""
+msgstr "Indstil dit password"
 
 msgid "Configuration @configName has been successfully updated."
 msgstr ""
@@ -2462,10 +2462,10 @@ msgid ""
 msgstr ""
 
 msgid "Create comment on post in the community"
-msgstr ""
+msgstr "Opret kommentart på en post i fælleskabet"
 
 msgid "A user add a comment to post in the community"
-msgstr ""
+msgstr "En bruger har oprettet en kommentart på et opslag i fælleskabet"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -2498,27 +2498,32 @@ msgid ""
 msgstr ""
 
 msgid "Create comment on post in the group"
-msgstr ""
+msgstr "Opret kommentart på opslag i gruppen"
 
 msgid "A user add a comment to post in the group"
-msgstr ""
+msgstr "En bruger har oprettet en kommentart til et opslag i gruppen"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> commented on a post in <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> kommenterede at opslag i <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
 "a> and @count others commented on a post in <a href=\"[message:"
 "gurl]\">[message:gtitle]</a></p>"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> og @count andre kommenterede på et opslag i <a href=\"[message:"
+"gurl]\">[message:gtitle]</a></p>"
 
 msgid "Create comment on post on my profile"
-msgstr ""
+msgstr "Opret kommentar på et opslag på min kommentar"
 
 msgid "A person commented on a post on my profile"
-msgstr ""
+msgstr "En person kommenterede et opslag på min profil"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -2550,10 +2555,10 @@ msgid ""
 msgstr ""
 
 msgid "Create reply on my comment"
-msgstr ""
+msgstr "Opret svar på min kommentar"
 
 msgid "A person replied on my comments"
-msgstr ""
+msgstr "En person svarede på min kommentar"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -2561,6 +2566,10 @@ msgid ""
 "url:absolute]\">comment</a> in [social_comment:commented_entity_link_html]</"
 "p>\r\n"
 msgstr ""
+"<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
+"a> svare på din <a href=\"[message:field_message_related_object:entity:"
+"url:absolute]\">kommentart</a> i [social_comment:commented_entity_link_html]</"
+"p>\r\n"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -3401,7 +3410,7 @@ msgid ""
 msgstr ""
 
 msgid "Request to join a group"
-msgstr ""
+msgstr "Anmod om at blive medlem i en gruppe"
 
 msgid "A person requests membership to a group I manage"
 msgstr ""
@@ -4693,7 +4702,7 @@ msgid "The visibility of this content is set to @visibility_label"
 msgstr ""
 
 msgid "community"
-msgstr ""
+msgstr "fællesskabet"
 
 msgid "Edit content"
 msgstr "Rediger indhold"
@@ -7373,7 +7382,7 @@ msgid "Edit own posts entities"
 msgstr ""
 
 msgid "View community Posts"
-msgstr ""
+msgstr "Se opslag i fællesskabet"
 
 msgid "View own unpublished Post entities"
 msgstr ""
@@ -7445,13 +7454,13 @@ msgid "Administer User Settings"
 msgstr ""
 
 msgid "Block users"
-msgstr ""
+msgstr "Bloker brugere"
 
 msgid "View blocked user"
 msgstr ""
 
 msgid "View users"
-msgstr ""
+msgstr "Se brugere"
 
 msgid "Administer Swift Mailer"
 msgstr ""
@@ -8254,13 +8263,13 @@ msgid "Alle grupper"
 msgstr ""
 
 msgid "Open to join"
-msgstr ""
+msgstr "Åbn for tilmelding"
 
 msgid "Invite only"
-msgstr ""
+msgstr "Kun med invitation"
 
 msgid "Request to join"
-msgstr ""
+msgstr "Anmod om tilmelding"
 
 msgid "field"
 msgstr "felt"
@@ -11473,7 +11482,7 @@ msgid "- None -"
 msgstr "- Ingen -"
 
 msgid "Immediately"
-msgstr ""
+msgstr "Øjeblikkeligt"
 
 msgid "Daily"
 msgstr "Dagligt"
@@ -11482,13 +11491,13 @@ msgid "Weekly"
 msgstr "Ugentligt"
 
 msgid "Message to me"
-msgstr ""
+msgstr "Besked til mig"
 
 msgid "What I manage"
-msgstr ""
+msgstr "Hvad jeg administrerer"
 
 msgid "What I follow"
-msgstr ""
+msgstr "Hvad jeg følger"
 
 msgid "System notifications"
 msgstr ""
@@ -11580,7 +11589,7 @@ msgid "All caches cleared."
 msgstr ""
 
 msgid "Indhold"
-msgstr ""
+msgstr "Indhold"
 
 msgid "Emergency"
 msgstr "Nødsituation"
@@ -11874,7 +11883,7 @@ msgid "View activities"
 msgstr ""
 
 msgid "Mail to"
-msgstr ""
+msgstr "Mail til"
 
 msgid "Alle medlemmer"
 msgstr ""
@@ -12455,7 +12464,7 @@ msgid "Event location"
 msgstr ""
 
 msgid "Enroll"
-msgstr ""
+msgstr "Tilmeld"
 
 msgid ""
 "You have successfully enrolled to this event. Also you are now following the "
@@ -36709,7 +36718,7 @@ msgid "Pick a product and enroll"
 msgstr ""
 
 msgid "Join event"
-msgstr ""
+msgstr "Tilmeld"
 
 msgid "Add the products you wish for the event."
 msgstr ""
@@ -38559,3 +38568,6 @@ msgstr "Prøv at læse denne artikel fra Kit@, jeg tror den kan interessere dig:
 
 msgid "The entered username already exists or has an incorrect format. Please try again. "
 msgstr "Det indtastede brugernavn existerer allerede eller har ukorrekt format. Prøv venligst igen."
+
+msgid "By submitting this form you will become a member of the group. As a member of the group you will begin to receive notifications about changes and interactions within the group. Your profile will also be included in group membership."
+msgstr "Ved at indsende denne formular bliver du medlem af gruppen. Som medlem af gruppe vil du få notifikationer om ændringer og interaktioner i gruppen. Din profile bliver inkluderet i gruppe medlemsskabet."
