@@ -1123,25 +1123,25 @@ msgid "Publish status"
 msgstr "Status for publisering"
 
 msgid "Events for this user"
-msgstr "Denne brugers begivenheder"
+msgstr "Denne brugers arrangementer"
 
 msgid "No events found for this user"
-msgstr "Der er ikke fundet begivenheder for denne bruger"
+msgstr "Der er ikke fundet arrangementer for denne bruger"
 
 msgid "Events on profile block"
 msgstr ""
 
 msgid "Event time"
-msgstr "Begivenhedens tid"
+msgstr "Arrangementets tid"
 
 msgid "Upcoming events"
-msgstr "Kommende begivenheder"
+msgstr "Kommende arrangementer"
 
 msgid "Events profile overview"
 msgstr ""
 
 msgid "Events"
-msgstr "Begivenheder"
+msgstr "Arrangementer"
 
 msgid "Topics"
 msgstr "Emner"
@@ -1150,10 +1150,10 @@ msgid "Event date"
 msgstr "Begivenhed dato"
 
 msgid "Ongoing and upcoming events"
-msgstr "Igangværende og kommende begivenheder"
+msgstr "Igangværende og kommende arrangementer"
 
 msgid "Past events"
-msgstr "Tidligere begivenheder"
+msgstr "Tidligere arrangementer"
 
 msgid "Enrollments"
 msgstr "Tilmeldinger"
@@ -1360,7 +1360,7 @@ msgid "User Groups Block"
 msgstr ""
 
 msgid "Recently joined groups"
-msgstr ""
+msgstr "Fornyligt tilmeldte grupper"
 
 msgid "All groups"
 msgstr "Alle grupper"
@@ -1435,7 +1435,7 @@ msgid "Role"
 msgstr "Role"
 
 msgid "Joined date"
-msgstr ""
+msgstr "Tilmeldt dato"
 
 msgid "@total members"
 msgstr ""
@@ -2393,7 +2393,7 @@ msgid "Unpublish selected profile"
 msgstr ""
 
 msgid "Access denied. You must log in to view this page."
-msgstr ""
+msgstr "Adgang nægtet. Du skal logge ind for at se denne side"
 
 msgid "Notification archive"
 msgstr ""
@@ -8248,7 +8248,7 @@ msgstr ""
 
 msgctxt "Is a member"
 msgid "Joined"
-msgstr ""
+msgstr "Tilmeldt"
 
 msgid "Alle grupper"
 msgstr ""
@@ -35727,7 +35727,7 @@ msgid "Group node"
 msgstr "Gruppe-indholdselement"
 
 msgid "Joined"
-msgstr "Indmeldt"
+msgstr "Tilmeldt"
 
 msgid "Admin"
 msgstr "Administration"
@@ -36779,7 +36779,7 @@ msgid ""
 "Due to privacy concerns, we can't disclose the existence of registered email "
 "addresses. Please make sure the email address is entered correctly and try "
 "again."
-msgstr ""
+msgstr "Af privatlivshensyn kan vi ikke afsløre om emailadressen allerede er oprettet. Tjek venlist at emal adressen er tastet korrekt og prøv igen."
 
 msgid ""
 "Due to privacy concerns, the identity of registered email addresses will not "
@@ -38556,3 +38556,6 @@ msgstr "Jeg vil gerne dele denne artikel med dig"
 
 msgid "Check out this site"
 msgstr "Prøv at læse denne artikel fra Kit@, jeg tror den kan interessere dig: "
+
+msgid "The entered username already exists or has an incorrect format. Please try again. "
+msgstr "Det indtastede brugernavn existerer allerede eller har ukorrekt format. Prøv venligst igen."
