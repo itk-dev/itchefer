@@ -38153,10 +38153,10 @@ msgstr "Baseret på dine indstillinger @settings, bliver notifikationer sendt ti
 "frequency</strong>"
 
 msgid "Notification from %site_name"
-msgstr ""
+msgstr "Notifikation fra %site_name"
 
 msgid "Email notification settings"
-msgstr ""
+msgstr "Email notifikations indstillinger"
 
 msgid "The %field_name field needs to be updated."
 msgstr ""
@@ -38337,7 +38337,7 @@ msgid ""
 msgstr ""
 
 msgid "Dear @user,"
-msgstr ""
+msgstr "Kære @user,"
 
 msgid ""
 "This e-mail has been sent from @site by the Swift Mailer module. The module "
