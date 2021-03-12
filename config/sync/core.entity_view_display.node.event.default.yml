@@ -21,7 +21,6 @@ dependencies:
     - node.type.event
   module:
     - address
-    - dynamic_entity_reference
     - file
     - group_core_comments
     - text
@@ -36,19 +35,19 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: content
   field_event_address:
     type: address_plain
-    weight: 1
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     region: content
   field_event_comments:
-    weight: 3
+    weight: 5
     label: above
     settings:
       pager_id: 0
@@ -58,35 +57,28 @@ content:
     region: content
   field_event_location:
     type: string
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 4
+    weight: 6
     label: above
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content
-  field_product:
-    weight: 9
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: dynamic_entity_reference_label
-    region: content
   flag_follow_content:
-    weight: 5
+    weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   groups_type_flexible_group:
     label: above
-    weight: -5
+    weight: 0
     region: content
     settings:
       link: true
@@ -94,19 +86,14 @@ content:
     type: entity_reference_label
   groups_type_public_group:
     label: above
-    weight: -5
+    weight: 1
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  like_and_dislike:
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   links:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -119,9 +106,11 @@ hidden:
   field_event_enroll_outside_group: true
   field_event_image: true
   field_event_managers: true
+  field_product: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   langcode: true
+  like_and_dislike: true
   private_message_link: true
   search_api_excerpt: true
