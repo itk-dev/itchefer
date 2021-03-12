@@ -12,6 +12,7 @@ permissions:
   - 'access content'
   - 'access content search'
   - 'access group search'
+  - 'access site-wide contact form'
   - 'view like widget'
   - 'view node.event.field_content_visibility:public content'
   - 'view node.page.field_content_visibility:public content'
