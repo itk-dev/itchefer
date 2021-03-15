@@ -12118,17 +12118,17 @@ msgid "@function @ @organization"
 msgstr ""
 
 msgid "Say something to the Community"
-msgstr ""
+msgstr "Sig noget til alle"
 
 msgid "Add image"
-msgstr ""
+msgstr "Tilføj billede"
 
 msgctxt "Post button"
 msgid "Post"
-msgstr ""
+msgstr "Lav opslag"
 
 msgid "More options"
-msgstr ""
+msgstr "Flere indstillinger"
 
 msgid "Write a comment..."
 msgstr "Skriv en kommentar"
@@ -36761,7 +36761,11 @@ msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., ska
 En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
 
 msgid "Reset password with <b>username</b> or <b>email</b>"
-msgstr "Nulstil password med <b>brugernavn</b> eller <b>email</b>"
+msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
+En medlemskommune kan have et ubegrænset antal brugere. 
+
+Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse.
+"
 
 msgid "Nulstil din adgangskode"
 msgstr "Nulstil din adgangskode"
