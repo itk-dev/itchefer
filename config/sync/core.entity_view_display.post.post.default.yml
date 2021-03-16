@@ -40,11 +40,11 @@ content:
     region: content
   field_vedhaeftning:
     weight: 4
-    label: above
+    label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    type: file_table
     region: content
   like_and_dislike:
     weight: 3

@@ -14,6 +14,7 @@ dependencies:
     - image.style.social_post_photo
     - social_post.post_type.photo
   module:
+    - file
     - image
     - text
     - user
@@ -40,6 +41,14 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_vedhaeftning:
+    type: file_table
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
   user_id:
     label: hidden
     type: author
@@ -51,7 +60,6 @@ hidden:
   field_post_comments: true
   field_recipient_group: true
   field_recipient_user: true
-  field_vedhaeftning: true
   field_visibility: true
   like_and_dislike: true
   search_api_excerpt: true
