@@ -7,6 +7,7 @@ dependencies:
     - field.field.comment.post_comment.field_comment_body
     - field.field.comment.post_comment.field_vedhaeftet_fil
   module:
+    - file
     - text
 _core:
   default_config_hash: 2UxokzR_phIGQRgAuNPHZtmipVpKcs20gTIjWmNx0QQ
@@ -16,18 +17,25 @@ bundle: post_comment
 mode: default
 content:
   author:
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_comment_body:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_vedhaeftet_fil:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 0
@@ -36,5 +44,4 @@ content:
       include_locked: true
     third_party_settings: {  }
 hidden:
-  field_vedhaeftet_fil: true
   subject: true
