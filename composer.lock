@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11e0a11619293e5fee5a0f8fb8e8751a",
+    "content-hash": "bc387eaf386be96c538ec76fdb10b6a3",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -150,7 +150,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -212,7 +212,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highlightjs/highlight.js/zipball/3026925b1c57c9a9feb0713e663f8d1ef8ff08e9",
+                "url": "https://api.github.com/repos/isagalaev/highlight.js/zipball/3026925b1c57c9a9feb0713e663f8d1ef8ff08e9",
                 "reference": "3026925b1c57c9a9feb0713e663f8d1ef8ff08e9"
             },
             "type": "bower-asset"
@@ -7905,6 +7905,25 @@
             "time": "2016-03-16T23:24:34+00:00"
         },
         {
+            "name": "itk-dev/web_accessibility_statement",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itk-dev/web_accessibility_statement.git",
+                "reference": "730c1b4f47d0a5ed6626a86814f84bd1027b2dd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itk-dev/web_accessibility_statement/zipball/730c1b4f47d0a5ed6626a86814f84bd1027b2dd4",
+                "reference": "730c1b4f47d0a5ed6626a86814f84bd1027b2dd4",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Provides path for accessibility statement",
+            "time": "2020-09-23T13:23:11+00:00"
+        },
+        {
             "name": "laminas/laminas-diactoros",
             "version": "1.8.7p2",
             "source": {
@@ -12715,7 +12734,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "itk-dev/web_accessibility_statement": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
