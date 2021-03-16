@@ -15,6 +15,7 @@ dependencies:
     - social_post.post_type.photo
   module:
     - dropdown
+    - file
     - image
     - text
 _core:
@@ -40,9 +41,16 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_vedhaeftning:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   field_visibility:
     type: dropdown_widget_type
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -51,12 +59,11 @@ content:
     settings:
       display_label: true
     type: boolean_checkbox
-    weight: 20
+    weight: 4
     third_party_settings: {  }
 hidden:
   field_post_comments: true
   field_recipient_group: true
   field_recipient_user: true
-  field_vedhaeftning: true
   langcode: true
   user_id: true
