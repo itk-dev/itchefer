@@ -10151,10 +10151,10 @@ msgid "Password"
 msgstr "Adgangskode"
 
 msgid "Don't have an account yet? @link"
-msgstr ""
+msgstr "Har du ikke en bruger endnu? @link"
 
 msgid "Log in with <b>username</b> or <b>email</b>"
-msgstr ""
+msgstr "Log in med <b>brugernavn</b> eller <b>email</b>"
 
 msgid "Create new account"
 msgstr "Opret konto"
@@ -36715,13 +36715,13 @@ msgid "Alle dokumenter"
 msgstr ""
 
 msgid "Pick a product and enroll"
-msgstr ""
+msgstr "Vælg et produkt og tilmeld dig"
 
 msgid "Join event"
 msgstr "Tilmeld"
 
 msgid "Add the products you wish for the event."
-msgstr ""
+msgstr "Tilføj produkterne du ønsker til arrangementet"
 
 msgid "Your request has been sent successfully"
 msgstr ""
@@ -36761,11 +36761,7 @@ msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., ska
 En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
 
 msgid "Reset password with <b>username</b> or <b>email</b>"
-msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
-En medlemskommune kan have et ubegrænset antal brugere. 
-
-Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse.
-"
+msgstr "Nulstil password med brugernavn eller email"
 
 msgid "Nulstil din adgangskode"
 msgstr "Nulstil din adgangskode"
@@ -36917,7 +36913,7 @@ msgid "Add enrollees"
 msgstr "Tilføj brugere"
 
 msgid "Add-ons"
-msgstr ""
+msgstr "Produkter"
 
 msgid "Opens in new window"
 msgstr ""
