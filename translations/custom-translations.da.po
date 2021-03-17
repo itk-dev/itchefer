@@ -36757,12 +36757,17 @@ msgstr "Har du en bruger allerede? @link"
 msgid ""
 "A welcome message with further instructions will be sent to your email "
 "address after you successfully enter your email address and a username."
-msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
-En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
-"Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
-En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
-"Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
-En medlemskommune kan have et ubegrænset antal brugere. Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
+msgstr ""
+"Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune."
+"Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse."
+
+msgid ""
+"By submitting this form you will become a member of the group. Please fill "
+"out any available fields to complete your membership information."
+msgstr ""
+"Hvis du tilmelder dig gruppen bliver du medlem. Hvis der er en formular, så "
+"venligst udfyld denne, ellers så bare tryk på knappen \"Tilmeld gruppe\"."
+
 
 msgid "Reset password with <b>username</b> or <b>email</b>"
 msgstr "Nulstil password med brugernavn eller email"
@@ -36900,12 +36905,6 @@ msgstr "Dit opslag %label er blevet slået op"
 msgid "Join"
 msgstr "Tilmeld"
 
-msgid ""
-"By submitting this form you will become a member of the group. Please fill "
-"out any available fields to complete your membership information."
-msgstr ""
-"Hvis du tilmelder dig gruppen bliver du medlem. Hvis der er en formular, så "
-"venligst udfyld denne, ellers så bare tryk på knappen \"Tilmeld gruppe\"."
 
 msgid "Join group %label"
 msgstr "Tilmeld dig gruppen %label "
