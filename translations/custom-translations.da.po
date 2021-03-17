@@ -922,7 +922,7 @@ msgid "Activity stream on a group"
 msgstr ""
 
 msgid "Activity stream"
-msgstr ""
+msgstr "Aktivitets tavle"
 
 msgid "All"
 msgstr "Alle"
