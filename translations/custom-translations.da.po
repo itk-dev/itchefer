@@ -38572,3 +38572,10 @@ msgstr "Det indtastede brugernavn existerer allerede eller har ukorrekt format. 
 
 msgid "By submitting this form you will become a member of the group. As a member of the group you will begin to receive notifications about changes and interactions within the group. Your profile will also be included in group membership."
 msgstr "Ved at indsende denne formular bliver du medlem af gruppen. Som medlem af gruppe vil du få notifikationer om ændringer og interaktioner i gruppen. Din profile bliver inkluderet i gruppe medlemsskabet."
+
+msid "A welcome message with further instructions will be sent to your email address after you successfully enter your email address and a username."
+msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
+En medlemskommune kan have et ubegrænset antal brugere. 
+
+Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse.
+"
