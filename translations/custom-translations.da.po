@@ -10139,7 +10139,7 @@ msgid "Read more<span class=\"visually-hidden\"> about @title</span>"
 msgstr "Læs mere<span class=\"visually-hidden\"> om @title</span>"
 
 msgid "Forgot password?"
-msgstr ""
+msgstr "Glemt password?"
 
 msgid "Username or email address"
 msgstr "Brugernavn eller e-mail-adresse"
