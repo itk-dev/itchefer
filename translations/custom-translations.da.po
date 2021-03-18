@@ -4388,7 +4388,7 @@ msgid "Create New Event"
 msgstr "Opret nyt event"
 
 msgid "New Event"
-msgstr "Nyt event"
+msgstr "Nyt arrangement"
 
 msgid "Create New Topic"
 msgstr "Opret nyt emne"
@@ -36680,13 +36680,13 @@ msgid "Create New Magazine"
 msgstr "Opret nyt magasin"
 
 msgid "New Magazine"
-msgstr ""
+msgstr "Nyt magasin"
 
 msgid "Create New Article"
 msgstr "Opret ny artikel"
 
 msgid "New Article"
-msgstr ""
+msgstr "Ny artikel"
 
 msgid "Taxonomy menu"
 msgstr "Taxonomy Menu"
