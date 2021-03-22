@@ -5,7 +5,7 @@ dependencies: {  }
 id: contact_form
 label: 'Kontakt os'
 recipients:
-  - support@example.com
+  - mail@itchefer.dk
 reply: ''
 weight: 0
 message: ''

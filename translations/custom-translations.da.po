@@ -922,7 +922,7 @@ msgid "Activity stream on a group"
 msgstr ""
 
 msgid "Activity stream"
-msgstr ""
+msgstr "Aktivitets tavle"
 
 msgid "All"
 msgstr "Alle"
@@ -4388,7 +4388,7 @@ msgid "Create New Event"
 msgstr "Opret nyt event"
 
 msgid "New Event"
-msgstr "Nyt event"
+msgstr "Nyt arrangement"
 
 msgid "Create New Topic"
 msgstr "Opret nyt emne"
@@ -10139,7 +10139,7 @@ msgid "Read more<span class=\"visually-hidden\"> about @title</span>"
 msgstr "Læs mere<span class=\"visually-hidden\"> om @title</span>"
 
 msgid "Forgot password?"
-msgstr ""
+msgstr "Glemt password?"
 
 msgid "Username or email address"
 msgstr "Brugernavn eller e-mail-adresse"
@@ -36680,13 +36680,13 @@ msgid "Create New Magazine"
 msgstr "Opret nyt magasin"
 
 msgid "New Magazine"
-msgstr ""
+msgstr "Nyt magasin"
 
 msgid "Create New Article"
 msgstr "Opret ny artikel"
 
 msgid "New Article"
-msgstr ""
+msgstr "Ny artikel"
 
 msgid "Taxonomy menu"
 msgstr "Taxonomy Menu"

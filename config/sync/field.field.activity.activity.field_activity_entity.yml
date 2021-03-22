@@ -116,4 +116,10 @@ settings:
   vote_result:
     handler: 'default:vote_result'
     handler_settings: {  }
+  contact_message:
+    handler: 'default:contact_message'
+    handler_settings: {  }
+  redirect:
+    handler: 'default:redirect'
+    handler_settings: {  }
 field_type: dynamic_entity_reference
