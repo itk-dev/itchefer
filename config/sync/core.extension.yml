@@ -53,6 +53,7 @@ module:
   group: 0
   group_core_comments: 0
   gvbo: 0
+  honeypot: 0
   image: 0
   image_effects: 0
   image_widget_crop: 0
