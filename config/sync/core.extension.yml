@@ -53,6 +53,7 @@ module:
   group: 0
   group_core_comments: 0
   gvbo: 0
+  honeypot: 0
   image: 0
   image_effects: 0
   image_widget_crop: 0
@@ -134,6 +135,7 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0
+  web_accessibility_statement: 0
   itchefer_event_enrollment: 1
   menu_link_content: 1
   pathauto: 1
