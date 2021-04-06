@@ -108,9 +108,13 @@ display:
         options:
           view_modes:
             'entity:node':
-              book: teaser
+              advertisement: teaser
+              article: teaser
+              document: teaser
               event: teaser
+              magazine: teaser
               page: teaser
+              product_type: teaser
               topic: teaser
       fields:
         search_api_language:
