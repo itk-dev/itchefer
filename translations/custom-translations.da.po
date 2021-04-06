@@ -2943,7 +2943,7 @@ msgstr ""
 msgid ""
 "You can leave a message in your request. Once your request is approved, you "
 "will receive a notification via email and notification center."
-msgstr ""
+msgstr "Du kan skrive en besked med din anmodning. Når din anmodning er godkendt modtager du en notifikation."
 
 msgid "Request or invite status"
 msgstr "Anmodning eller invitations status"
@@ -3152,7 +3152,7 @@ msgid "Create mention in a post"
 msgstr ""
 
 msgid "A person mentioned me in a post"
-msgstr ""
+msgstr "En person har nævnt mig i et opslag"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -11503,7 +11503,7 @@ msgid "System notifications"
 msgstr ""
 
 msgid "Email notifications"
-msgstr ""
+msgstr "Email notifikationer"
 
 msgid "Show my email on my profile"
 msgstr ""
@@ -38586,3 +38586,6 @@ En medlemskommune kan have et ubegrænset antal brugere.
 
 Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse.
 "
+
+msgid "Send request"
+msgstr "Send anmodning"
