@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67af6e0eefafe8f3425449350d4bd302",
+    "content-hash": "3ce817d36b25a7130585c54b0f8e6ec6",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -150,7 +150,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -222,7 +222,7 @@
             "version": "3.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a"
             },
             "dist": {
@@ -2926,6 +2926,78 @@
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
+            }
+        },
+        {
+            "name": "drupal/captcha",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/captcha.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "2eaf6f00ea256652c09f785b26dc933cc5b3dd26"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1591160977",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "elachlan",
+                    "homepage": "https://www.drupal.org/user/1021502"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "soxofaan",
+                    "homepage": "https://www.drupal.org/user/41478"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
+            "description": "The CAPTCHA module provides this feature to virtually any user facing web form on a Drupal site.",
+            "homepage": "https://www.drupal.org/project/captcha",
+            "support": {
+                "source": "https://git.drupalcode.org/project/captcha",
+                "issues": "https://www.drupal.org/project/issues/captcha"
             }
         },
         {
@@ -6581,10 +6653,8 @@
                     }
                 },
                 "patches_applied": {
-                    "WSOD if wrong url or network unavailable": "https://www.drupal.org/files/issues/url_embed_WSOD_convert_url_to_embed-2871744-5.patch",
                     "Translate dialog title": "https://www.drupal.org/files/issues/2018-03-16/url_embed_translate_dialog_title-2953591-2.patch",
-                    "Improve performance for embeds": "https://www.drupal.org/files/issues/2020-04-08/url_embed-n2867668-23.patch",
-                    "Improve how the module deals with non-embeddable URLs (See: https://www.drupal.org/project/social/issues/2930457#comment-13790581)": "https://www.drupal.org/files/issues/2020-08-26/urlembed-non-embeddable-urls-2761187-opensocial-combined-15.patch"
+                    "Improve how the module deals with non-embeddable URLs & WSODs (See: https://www.drupal.org/project/social/issues/2930457#comment-13973067)": "https://www.drupal.org/files/issues/2021-01-22/urlembed-non-embeddable-urls-2761187-opensocial-combined-21.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
