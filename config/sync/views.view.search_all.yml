@@ -72,12 +72,17 @@ display:
           view_modes:
             'entity:group':
               closed_group: teaser
+              flexible_group: default
               open_group: teaser
               public_group: teaser
             'entity:node':
-              book: teaser
+              advertisement: teaser
+              article: teaser
+              document: teaser
               event: teaser
+              magazine: teaser
               page: teaser
+              product_type: teaser
               topic: teaser
             'entity:profile':
               profile: teaser
