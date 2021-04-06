@@ -13,6 +13,7 @@ module:
   block_class: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -53,6 +54,7 @@ module:
   group: 0
   group_core_comments: 0
   gvbo: 0
+  honeypot: 0
   image: 0
   image_effects: 0
   image_widget_crop: 0
@@ -118,6 +120,7 @@ module:
   statistics: 0
   swiftmailer: 0
   system: 0
+  system_status: 0
   taxonomy: 0
   taxonomy_menu: 0
   telephone: 0
@@ -134,6 +137,7 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0
+  web_accessibility_statement: 0
   itchefer_event_enrollment: 1
   menu_link_content: 1
   pathauto: 1
