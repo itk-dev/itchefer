@@ -1,4 +1,4 @@
-enabled_default: 1
+enabled_default: 0
 default_challenge: captcha/Math
 description: 'Dette spørgsmål tester hvorvidt du er et menneske, og for at forhindre automatisk indsendelse af spam.'
 administration_mode: false
