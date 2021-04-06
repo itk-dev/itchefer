@@ -10,7 +10,7 @@ id: node.document.field_directory
 field_name: field_directory
 entity_type: node
 bundle: document
-label: Directory
+label: Dokumentarkiv
 description: ''
 required: true
 translatable: false

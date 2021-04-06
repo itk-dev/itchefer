@@ -1,9 +1,9 @@
-uuid: 1279edf6-89fc-43f7-b224-0896dc81146d
+uuid: c379fb3a-0354-4299-b859-ce1f25d32b47
 langcode: da
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.small_teaser
     - field.field.node.article.body
     - field.field.node.article.field_article_image
     - field.field.node.article.field_author
@@ -11,27 +11,26 @@ dependencies:
   module:
     - text
     - user
-id: node.article.teaser
+id: node.article.small_teaser
 targetEntityType: node
 bundle: article
-mode: teaser
+mode: small_teaser
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
-  flag_follow_content:
-    weight: 10
+    type: text_default
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
+  flag_follow_content:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   groups:
     label: above
-    weight: -5
+    weight: 0
     region: content
     settings:
       link: true
@@ -39,7 +38,7 @@ content:
     type: entity_reference_label
   groups_type_closed_group:
     label: above
-    weight: -5
+    weight: 1
     region: content
     settings:
       link: true
@@ -47,7 +46,7 @@ content:
     type: entity_reference_label
   groups_type_flexible_group:
     label: above
-    weight: -5
+    weight: 2
     region: content
     settings:
       link: true
@@ -55,7 +54,7 @@ content:
     type: entity_reference_label
   groups_type_open_group:
     label: above
-    weight: -5
+    weight: 3
     region: content
     settings:
       link: true
@@ -63,17 +62,17 @@ content:
     type: entity_reference_label
   groups_type_public_group:
     label: above
-    weight: -5
+    weight: 4
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   links:
-    weight: 100
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_article_image: true
   field_author: true
