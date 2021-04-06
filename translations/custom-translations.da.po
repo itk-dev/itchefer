@@ -2946,6 +2946,13 @@ msgid ""
 msgstr ""
 "Du kan skrive en besked med din anmodning. Når din anmodning er godkendt modtager du en notifikation."
 
+msgid ""
+"You can leave a message in your request. Only when your request is approved, you "
+"will receive a notification via email and notification center."
+msgstr ""
+"Du kan skrive en besked med din anmodning. Når din anmodning er godkendt modtager du en notifikation."
+
+
 msgid "Request or invite status"
 msgstr "Anmodning eller invitations status"
 
