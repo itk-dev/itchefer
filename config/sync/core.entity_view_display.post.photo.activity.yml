@@ -1,5 +1,5 @@
-uuid: ea139385-0bb3-4460-a880-19d97c006e4e
-langcode: da
+uuid: b0fd7177-794c-494a-9b56-604e06075b3d
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,12 +9,10 @@ dependencies:
     - field.field.post.photo.field_post_image
     - field.field.post.photo.field_recipient_group
     - field.field.post.photo.field_recipient_user
-    - field.field.post.photo.field_vedhaeftning
     - field.field.post.photo.field_visibility
     - image.style.social_post_photo
     - social_post.post_type.photo
   module:
-    - file
     - image
     - social_post
     - text
@@ -35,7 +33,7 @@ content:
     third_party_settings: {  }
   field_post_comments:
     type: comment_post_activity
-    weight: 4
+    weight: 3
     region: content
     label: hidden
     settings:
@@ -51,19 +49,6 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_vedhaeftning:
-    type: file_table
-    weight: 3
-    region: content
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-  like_and_dislike:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   user_id:
     label: hidden
     type: author
@@ -75,4 +60,5 @@ hidden:
   field_recipient_group: true
   field_recipient_user: true
   field_visibility: true
+  like_and_dislike: true
   search_api_excerpt: true

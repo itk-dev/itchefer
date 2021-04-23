@@ -1,5 +1,5 @@
-uuid: e42b941a-8fcf-4a17-bdfc-8bc429970875
-langcode: da
+uuid: 06a39a96-17c2-485c-9262-5623b32e7277
+langcode: en
 status: true
 dependencies:
   config:
@@ -38,6 +38,5 @@ content:
 hidden:
   entity_id: true
   field_grequest_message: true
-  langcode: true
   search_api_excerpt: true
   uid: true

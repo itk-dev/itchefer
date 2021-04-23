@@ -1,5 +1,5 @@
-uuid: 30c32a3d-07d3-41ea-bc17-d4eca849a05c
-langcode: da
+uuid: ed6443ba-2855-482f-8905-db05756ef43c
+langcode: en
 status: true
 dependencies:
   module:
@@ -13,7 +13,7 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: false
+    activity_create_direct: 0
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-event: node-event

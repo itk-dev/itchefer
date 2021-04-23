@@ -1,5 +1,5 @@
-uuid: 8cafa4db-5b27-4ef9-9a49-c6bcdfe0ec26
-langcode: da
+uuid: fdd6ea02-609b-4a30-b665-a87564cd1c1b
+langcode: en
 status: true
 dependencies:
   config:
@@ -44,7 +44,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -293,7 +293,7 @@ display:
             decimal: .
             separator: ''
             format_plural: false
-            format_plural_string: !!binary Aw==
+            format_plural_string: !!binary MQNAY291bnQ=
             prefix: ''
             suffix: ''
             link_to_item: false
@@ -684,7 +684,7 @@ display:
             decimal: .
             separator: ''
             format_plural: false
-            format_plural_string: !!binary Aw==
+            format_plural_string: !!binary MQNAY291bnQ=
             prefix: ''
             suffix: ''
             link_to_item: false
@@ -767,7 +767,7 @@ display:
             decimal: .
             separator: ''
             format_plural: false
-            format_plural_string: !!binary Aw==
+            format_plural_string: !!binary MQNAY291bnQ=
             prefix: ''
             suffix: ''
             link_to_item: false
@@ -850,7 +850,7 @@ display:
             decimal: .
             separator: ''
             format_plural: false
-            format_plural_string: !!binary Aw==
+            format_plural_string: !!binary MQNAY291bnQ=
             prefix: ''
             suffix: ''
             link_to_item: false
@@ -965,7 +965,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed

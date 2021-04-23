@@ -1,10 +1,10 @@
-uuid: efb3d649-3f23-45df-9f58-f2119ed324fd
-langcode: da
+uuid: 8da43769-5514-4e26-a023-563bb08fef7b
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.compact_notification
-    - field.field.profile.profile.field_municipality
+    - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_first_name
@@ -17,8 +17,6 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
-    - field.field.profile.profile.field_region
-    - field.field.profile.profile.field_representative_of_municipa
     - image.style.social_medium
     - profile.type.profile
   module:
@@ -40,7 +38,7 @@ content:
     type: image
     region: content
 hidden:
-  field_municipality: true
+  field_profile_address: true
   field_profile_banner_image: true
   field_profile_expertise: true
   field_profile_first_name: true
@@ -52,6 +50,4 @@ hidden:
   field_profile_profile_tag: true
   field_profile_self_introduction: true
   field_profile_show_email: true
-  field_region: true
-  field_representative_of_municipa: true
   search_api_excerpt: true

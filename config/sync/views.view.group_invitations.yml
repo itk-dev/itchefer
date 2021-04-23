@@ -1,5 +1,5 @@
-uuid: 2784ebd4-ed5d-4884-b50f-88a35e2f4cb8
-langcode: da
+uuid: 9545efd1-1c6e-4e2c-a32e-fbada75aa834
+langcode: en
 status: true
 dependencies:
   config:
@@ -44,7 +44,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -66,7 +66,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -289,7 +289,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roller
+          label: Roles
           exclude: false
           alter:
             alter_text: false
@@ -673,7 +673,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: '{{ arguments.gid|placeholder }} invitations'
           default_argument_type: fixed

@@ -1,5 +1,5 @@
-uuid: 3016352d-9aa4-4234-af57-994b45f7308d
-langcode: da
+uuid: 6b5c0e9b-d48d-4f0c-b5b8-fbfccb705985
+langcode: en
 status: true
 dependencies:
   module:
@@ -40,7 +40,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc

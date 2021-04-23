@@ -1,7 +1,0 @@
-uuid: 9af53805-7062-4d6d-a607-0a1a44a6c02a
-langcode: da
-status: true
-dependencies: {  }
-formId: contact_form
-captchaType: default
-label: contact_form

@@ -1,12 +1,11 @@
-uuid: 6f05e42a-24b9-4b49-a1d8-4790c8b788f7
-langcode: da
+uuid: 54ebd73f-e9c9-4b0b-8561-bb83e3767c8e
+langcode: en
 status: true
 dependencies:
   config:
     - comment.type.comment
     - core.entity_view_mode.comment.activity
     - field.field.comment.comment.field_comment_body
-    - field.field.comment.comment.field_vedhaeftet_fil
   module:
     - text
 _core:
@@ -34,6 +33,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_vedhaeftet_fil: true
-  langcode: true
   search_api_excerpt: true

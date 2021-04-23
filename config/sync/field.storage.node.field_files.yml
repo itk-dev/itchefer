@@ -1,14 +1,10 @@
-uuid: 6b0846ad-c1d7-4411-bea8-92f5e25d5187
-langcode: da
+uuid: f85ae818-03e7-47cd-9aa2-28bd654e1748
+langcode: en
 status: true
 dependencies:
   module:
-    - field_permissions
     - file
     - node
-third_party_settings:
-  field_permissions:
-    permission_type: custom
 _core:
   default_config_hash: 12UNd-mLzWvpZ37ZBG9PLajT3iMOfu2hURxgA4FjDW0
 id: node.field_files
@@ -18,7 +14,7 @@ type: file
 settings:
   display_field: false
   display_default: false
-  uri_scheme: private
+  uri_scheme: public
   target_type: file
 module: file
 locked: false

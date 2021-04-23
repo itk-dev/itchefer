@@ -1,8 +1,0 @@
-third_party_settings:
-  field_group:
-    group_content:
-      label: Indhold
-    group_location:
-      label: Lokation
-    group_settings:
-      label: Indstillinger

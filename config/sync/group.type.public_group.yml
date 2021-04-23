@@ -1,11 +1,11 @@
-uuid: 543b1faa-0af1-4726-af12-583a886ba99b
-langcode: da
+uuid: f55fd288-8de4-4b1b-8706-e304a820c7f5
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: XBgnXb6ofDNp0DAAI3YPRXEyvAAvrZA3eicn1uv8NZs
 id: public_group
-label: 'Offentlig gruppe'
+label: 'Public group'
 description: 'This is a public group. Users may join without approval and all content added in this group will be visible to all community members and anonymous users.'
 creator_membership: true
 creator_wizard: false

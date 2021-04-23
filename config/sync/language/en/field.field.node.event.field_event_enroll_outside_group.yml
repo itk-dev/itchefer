@@ -1,5 +1,0 @@
-label: 'Allow non-group members to enroll or request to enroll'
-description: 'To allow users who have not join the group of this event to enroll or send request to enroll'
-settings:
-  on_label: 'On'
-  off_label: 'Off'

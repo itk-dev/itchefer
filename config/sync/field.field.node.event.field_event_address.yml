@@ -1,5 +1,5 @@
-uuid: 8c318205-feb8-47ec-a789-998e59281f60
-langcode: da
+uuid: 2944c2ef-ea03-4578-a4a5-7fa9f36b724c
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.event.field_event_address
 field_name: field_event_address
 entity_type: node
 bundle: event
-label: Adresse
+label: Address
 description: ''
 required: false
 translatable: false

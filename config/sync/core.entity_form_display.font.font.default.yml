@@ -1,5 +1,5 @@
-uuid: 6950b8ac-35f7-4e93-9f8d-c81cf93d2974
-langcode: da
+uuid: 8a09853e-363c-4df2-9aea-f86521fb794e
+langcode: en
 status: true
 dependencies:
   config:
@@ -28,13 +28,6 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0

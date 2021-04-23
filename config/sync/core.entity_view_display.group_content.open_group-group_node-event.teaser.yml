@@ -1,5 +1,5 @@
-uuid: ef6f14b4-6c3f-4c54-9e1d-beccbabe1ab7
-langcode: da
+uuid: 6cdf3c3e-c30e-458d-b99e-116ddea8768e
+langcode: en
 status: true
 dependencies:
   config:
@@ -22,6 +22,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  langcode: true
   search_api_excerpt: true
   uid: true

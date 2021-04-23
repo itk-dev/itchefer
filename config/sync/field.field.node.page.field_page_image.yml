@@ -1,5 +1,5 @@
-uuid: 60cff630-48e2-49a4-b133-62cc4ac99b5c
-langcode: da
+uuid: cf090d50-33d9-47ae-9000-1ba5c093eb2f
+langcode: en
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ field_name: field_page_image
 entity_type: node
 bundle: page
 label: Image
-description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
+description: 'Crop your image to select which part of your image to show on display.'
 required: false
 translatable: true
 default_value: {  }

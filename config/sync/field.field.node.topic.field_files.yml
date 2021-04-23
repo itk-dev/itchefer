@@ -1,5 +1,5 @@
-uuid: 76763102-f6ee-44fe-b9b3-e3a5b03e4e32
-langcode: da
+uuid: ce81c561-cecd-48d0-a894-87aef4fb37c0
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.topic.field_files
 field_name: field_files
 entity_type: node
 bundle: topic
-label: Filer
+label: Files
 description: ''
 required: false
 translatable: true
@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt pdf doc docx jpg png jpeg gif dotx xls xlsx ppt pptx'
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx csv'
   max_filesize: ''
   description_field: true
   handler: 'default:file'

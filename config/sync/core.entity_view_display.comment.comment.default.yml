@@ -1,13 +1,11 @@
-uuid: 163af95e-3167-48fe-b93d-699131b80e65
-langcode: da
+uuid: 06940082-2660-43b1-b44e-908b8ca46b1f
+langcode: en
 status: true
 dependencies:
   config:
     - comment.type.comment
     - field.field.comment.comment.field_comment_body
-    - field.field.comment.comment.field_vedhaeftet_fil
   module:
-    - file
     - text
 _core:
   default_config_hash: TRiNIOLp1fn8y1PUIxc4Gp3igg4d-CuPU2a5nzHE9eo
@@ -23,14 +21,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_vedhaeftet_fil:
-    weight: 4
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    region: content
   like_and_dislike:
     weight: 3
     settings: {  }
@@ -42,5 +32,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  langcode: true
   search_api_excerpt: true

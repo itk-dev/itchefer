@@ -1,5 +1,5 @@
-uuid: 32c772d8-8d9e-43c5-8bde-0acdb36dbbd6
-langcode: da
+uuid: c3b393f9-c94d-4644-8718-c4d0bf043ebf
+langcode: en
 status: true
 dependencies:
   config:
@@ -25,10 +25,10 @@ third_party_settings:
         - field_page_image
       parent_name: ''
       weight: 0
-      label: Indhold
+      label: Content
       format_type: fieldset
       format_settings:
-        label: Indhold
+        label: Content
         required_fields: true
         id: content
         classes: 'card '
@@ -37,10 +37,10 @@ third_party_settings:
         - body
       parent_name: ''
       weight: 2
-      label: 'Beskrivelse af siden'
+      label: 'Page description'
       format_type: fieldset
       format_settings:
-        label: 'Beskrivelse af siden'
+        label: 'Page description'
         required_fields: true
         id: description
         classes: 'card '
@@ -123,13 +123,6 @@ content:
     third_party_settings: {  }
     type: image_widget_crop
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 7

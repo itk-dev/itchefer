@@ -1,5 +1,5 @@
-uuid: 93c29df0-9252-4c9f-8ad1-350976771cdf
-langcode: da
+uuid: abf0ebad-bcf5-43c5-b624-eb962c8763af
+langcode: en
 status: true
 dependencies:
   config:
@@ -22,7 +22,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: Filtrer
+  views_label: Filter
 visibility:
   request_path:
     id: request_path

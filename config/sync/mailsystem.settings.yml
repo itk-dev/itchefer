@@ -10,4 +10,3 @@ modules:
     none:
       formatter: social_swiftmailer
       sender: social_swiftmailer
-langcode: da

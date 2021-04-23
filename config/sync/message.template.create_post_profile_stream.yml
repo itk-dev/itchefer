@@ -1,5 +1,5 @@
-uuid: f7e8e8e8-7122-4d28-a844-58f84804e39a
-langcode: da
+uuid: 9d5a191a-7d32-462d-88df-ccefb76d55fc
+langcode: en
 status: true
 dependencies:
   module:
@@ -9,11 +9,11 @@ third_party_settings:
     activity_context: profile_activity_context
     activity_destinations:
       stream_profile: stream_profile
-    activity_create_direct: true
+    activity_create_direct: 1
     activity_bundle_entities:
       post-post: post-post
     activity_action: create_entitiy_action
-    activity_aggregate: false
+    activity_aggregate: 0
 _core:
   default_config_hash: nWPJvxp7-QxxKj9ytIlxuI_ITZ72M2a50dMEjmbkw6w
 template: create_post_profile_stream

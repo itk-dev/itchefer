@@ -1,5 +1,5 @@
-uuid: 22ad24b5-a6ab-453d-97f7-5a5caa24c434
-langcode: da
+uuid: 93995380-d716-4e75-867f-c832ca306521
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: fsBo_zgUeLyYZdghaw4PkOHA-HqFxu7wmQLilF35XYg
 id: comment
-label: Kommentarer
+label: Comments
 module: comment
 description: 'Find and manage comments.'
 tag: default
@@ -41,7 +41,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -63,7 +63,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -813,7 +813,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: date
-      title: Kommentarer
+      title: Comments
       header: {  }
       footer: {  }
       empty:
@@ -867,14 +867,14 @@ display:
   page_published:
     display_plugin: page
     id: page_published
-    display_title: 'Publicerede kommentarer'
+    display_title: 'Published comments'
     position: 1
     display_options:
       path: admin/content/comment
       menu:
         type: tab
-        title: Kommentarer
-        description: 'Kommentarer er publiceret'
+        title: Comments
+        description: 'Comments published'
         parent: ''
         weight: 0
         context: '0'
@@ -903,7 +903,7 @@ display:
       menu:
         type: tab
         title: 'Unapproved comments'
-        description: 'Kommentarer er ikke godkendt'
+        description: 'Comments unapproved'
         parent: ''
         weight: 1
         context: '0'

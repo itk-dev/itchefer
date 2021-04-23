@@ -1,5 +1,5 @@
-uuid: 65efc1eb-f38a-48e2-8200-7314a87f70fd
-langcode: da
+uuid: 10ba4674-544b-4e68-aa17-9a5933a4d630
+langcode: en
 status: true
 dependencies:
   config:
@@ -97,5 +97,8 @@ settings:
     handler_settings: {  }
   path_alias:
     handler: 'default:path_alias'
+    handler_settings: {  }
+  redirect:
+    handler: 'default:redirect'
     handler_settings: {  }
 field_type: dynamic_entity_reference

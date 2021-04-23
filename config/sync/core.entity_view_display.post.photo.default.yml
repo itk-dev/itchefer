@@ -1,5 +1,5 @@
-uuid: 8ec9463c-0b39-4f5e-a57c-d264485120f8
-langcode: da
+uuid: 65fc73f2-6992-46ec-9063-4e00592ffa93
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,12 +8,10 @@ dependencies:
     - field.field.post.photo.field_post_image
     - field.field.post.photo.field_recipient_group
     - field.field.post.photo.field_recipient_user
-    - field.field.post.photo.field_vedhaeftning
     - field.field.post.photo.field_visibility
     - image.style.social_post_photo
     - social_post.post_type.photo
   module:
-    - file
     - image
     - social_post
     - text
@@ -49,19 +47,6 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
-  field_vedhaeftning:
-    weight: 4
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    region: content
-  like_and_dislike:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
     region: content
   user_id:
     type: author

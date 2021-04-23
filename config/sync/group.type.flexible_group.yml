@@ -1,11 +1,11 @@
-uuid: bfa884ee-0876-45eb-b652-29c44dbffd41
-langcode: da
+uuid: 0b42d971-f700-4a5a-a534-8d1677656823
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: pZ75jOD20YcsKBYj3vDeIC-Sqz_6RjZYbjWwm4ZVDoY
 id: flexible_group
-label: 'Fleksibel gruppe'
+label: 'Flexible group'
 description: 'By choosing this option you can customize many group settings to your needs.'
 creator_membership: true
 creator_wizard: false

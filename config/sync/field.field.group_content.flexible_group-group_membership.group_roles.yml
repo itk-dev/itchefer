@@ -1,5 +1,5 @@
-uuid: 2bbc4644-8f14-4b50-85ce-091c91482afc
-langcode: da
+uuid: 0244b82f-4c22-4196-b390-8f63d354bd78
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: group_content.flexible_group-group_membership.group_roles
 field_name: group_roles
 entity_type: group_content
 bundle: flexible_group-group_membership
-label: Roller
+label: Roles
 description: ''
 required: false
 translatable: true

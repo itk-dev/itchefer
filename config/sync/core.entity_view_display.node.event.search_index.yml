@@ -1,5 +1,5 @@
-uuid: 61e2dc9c-093f-44ba-80e8-bcaa221447a7
-langcode: da
+uuid: 30e4f8a8-1b6e-47e0-9564-7e7e48a91742
+langcode: en
 status: true
 dependencies:
   config:
@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
-    - field.field.node.event.field_product
     - node.type.event
   module:
     - comment
@@ -49,14 +48,6 @@ content:
   flag_follow_content:
     weight: 10
     region: content
-  groups_type_flexible_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   groups_type_public_group:
     label: above
     weight: -5
@@ -77,11 +68,9 @@ hidden:
   field_event_location: true
   field_event_managers: true
   field_files: true
-  field_product: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
-  langcode: true
   like_and_dislike: true
   links: true
   search_api_excerpt: true

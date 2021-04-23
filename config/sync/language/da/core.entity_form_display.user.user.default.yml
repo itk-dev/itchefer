@@ -1,8 +1,0 @@
-third_party_settings:
-  field_group:
-    group_information:
-      label: Konto
-      format_settings:
-        label: Konto
-    group_locale_settings:
-      label: Lokalitet

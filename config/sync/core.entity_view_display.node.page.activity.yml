@@ -1,5 +1,5 @@
-uuid: 33220a64-6531-4cdb-97d1-b48009cc4566
-langcode: da
+uuid: 80e5f5f0-000c-49e1-93f8-6206a978ae11
+langcode: en
 status: true
 dependencies:
   config:
@@ -40,14 +40,6 @@ content:
       image_link: content
     third_party_settings: {  }
     region: content
-  groups_type_flexible_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   links:
     weight: 2
     settings: {  }
@@ -62,5 +54,4 @@ hidden:
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
-  langcode: true
   search_api_excerpt: true

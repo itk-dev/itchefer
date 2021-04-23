@@ -1,5 +1,5 @@
-uuid: 47872a1b-e70a-464a-ba49-cd281184ec59
-langcode: da
+uuid: a064c99b-30f2-4d8d-b89f-09be964478c4
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: font.font.field_fonts
 field_name: field_fonts
 entity_type: font
 bundle: font
-label: Skrifttyper
+label: Fonts
 description: ''
 required: false
 translatable: false

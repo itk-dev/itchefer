@@ -1,5 +1,5 @@
-uuid: 1453946a-ddd2-4e1b-9aa0-e3f5c7ad511f
-langcode: da
+uuid: ae7d4ecf-28a3-427f-b683-abc626abd36d
+langcode: en
 status: true
 dependencies:
   module:
@@ -15,13 +15,13 @@ settings:
   allowed_values:
     -
       value: public
-      label: 'Offentlig - synlig for alle inklusiv folk som ikke er medlem.'
+      label: 'Public - visible to everyone including people who are not a member'
     -
       value: community
-      label: 'Fællesskabet - kun synligt for brugere som er logget ind.'
+      label: 'Community - visible only to logged in members'
     -
       value: group
-      label: 'Gruppemedlemmer - kun synligt for medlemmer af gruppen.'
+      label: 'Group members - visible only to group members'
   allowed_values_function: ''
 module: entity_access_by_field
 locked: false

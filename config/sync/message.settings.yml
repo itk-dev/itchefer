@@ -6,4 +6,3 @@ delete_on_entity_delete:
   user: user
 _core:
   default_config_hash: _QhkR_LYNacHU4oQybqcZgNge_q1SbQghAjqVBoognE
-langcode: da

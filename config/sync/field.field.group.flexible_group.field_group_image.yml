@@ -1,5 +1,5 @@
-uuid: 36c72283-fb51-4906-9954-9763e2673bb6
-langcode: da
+uuid: 6b58af85-d1a2-449a-b976-d2c30654da55
+langcode: en
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ field_name: field_group_image
 entity_type: group
 bundle: flexible_group
 label: 'Group Image'
-description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
+description: 'Crop your image to select which part of your image to show on display.'
 required: false
 translatable: false
 default_value: {  }

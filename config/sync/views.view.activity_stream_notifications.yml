@@ -1,5 +1,5 @@
-uuid: b5e9f45a-1343-4c9f-8ace-26af8ba514cc
-langcode: da
+uuid: fa440376-2ce1-4e3a-9a73-1d397bb0a00e
+langcode: en
 status: true
 dependencies:
   config:
@@ -48,7 +48,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -289,7 +289,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: current_user
@@ -385,7 +385,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       defaults:

@@ -1,5 +1,5 @@
-uuid: ccf74179-749f-4b2a-b747-8a46fd38680b
-langcode: da
+uuid: 31370c87-e7a4-4edc-8617-06b115144778
+langcode: en
 status: true
 dependencies:
   module:
@@ -13,8 +13,8 @@ third_party_settings:
     activity_destinations:
       stream_explore: stream_explore
       stream_profile: stream_profile
-    activity_create_direct: true
-    activity_aggregate: true
+    activity_create_direct: 1
+    activity_aggregate: 1
     activity_entity_condition: comment_not_reply
 _core:
   default_config_hash: xmVhFYSa1bt6h0utu9X8hjNw0dyYAuurwoju_vGwEeg

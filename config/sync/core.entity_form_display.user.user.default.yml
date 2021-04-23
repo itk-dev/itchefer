@@ -1,5 +1,5 @@
-uuid: 457b1666-2e49-4080-9f85-9dd626e4af97
-langcode: da
+uuid: 24d8a0b5-888a-4759-8780-02c5772d3a96
+langcode: en
 status: true
 dependencies:
   module:
@@ -22,7 +22,6 @@ third_party_settings:
     group_locale_settings:
       children:
         - timezone
-        - language
       parent_name: ''
       weight: 1
       format_type: fieldset
@@ -44,11 +43,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  language:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   timezone:
     weight: 0
     region: content
@@ -57,6 +51,5 @@ content:
 hidden:
   contact: true
   groups: true
-  langcode: true
   language: true
   profile_profiles: true

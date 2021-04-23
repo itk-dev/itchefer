@@ -1,5 +1,5 @@
-uuid: d79be4d9-1402-4396-9160-1a13ebb5d6db
-langcode: da
+uuid: d6dc70b0-a9ac-4b3a-8ee9-66850a033e7c
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,6 @@ dependencies:
     - field.field.group.flexible_group.field_group_description
     - field.field.group.flexible_group.field_group_image
     - field.field.group.flexible_group.field_group_location
-    - field.field.group.flexible_group.field_group_purpose
     - group.type.flexible_group
     - image.style.social_medium
   module:
@@ -47,7 +46,5 @@ hidden:
   field_group_allowed_visibility: true
   field_group_description: true
   field_group_location: true
-  field_group_purpose: true
-  langcode: true
   search_api_excerpt: true
   uid: true

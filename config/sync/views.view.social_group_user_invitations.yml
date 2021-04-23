@@ -1,15 +1,18 @@
-uuid: 2bc3a56b-fe42-41a3-bbc8-43cec594ddc8
+uuid: d57ad88a-2205-4287-944b-77cc611d79b7
 langcode: en
 status: true
 dependencies:
-  module:
-    - group
-    - social_group
-    - social_group_invite
-    - user
+  config:
+    - user.role.authenticated
   enforced:
     module:
       - social_group_invite
+  module:
+    - group
+    - social_group
+    - user
+_core:
+  default_config_hash: JwnEKx7K_wWX5zKoV-9RwzzsNBA11Belq6RE8cIa69s
 id: social_group_user_invitations
 label: 'Social Group User invitations'
 module: group

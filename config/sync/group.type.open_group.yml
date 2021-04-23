@@ -1,11 +1,11 @@
-uuid: 5ef4b27d-8f7c-4756-83c8-baa19aa42fd3
-langcode: da
+uuid: dac0393e-eed8-4993-8f4d-9be56549028b
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: zTX0b046Qkhpu_DAqU9ie1CocNfgA-0OnxP3Nt04jXs
 id: open_group
-label: 'Åben gruppe'
+label: 'Open group'
 description: 'This is an open group. Users may join without approval and all content added in this group will be visible to all community members.'
 creator_membership: true
 creator_wizard: false

@@ -1,5 +1,5 @@
-uuid: 40b05310-e43e-439d-8ba1-12ae9b950f08
-langcode: da
+uuid: c05f78af-bc34-46b3-a1e9-ff5e8c9f0c78
+langcode: en
 status: true
 dependencies:
   config:
@@ -30,13 +30,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 30

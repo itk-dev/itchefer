@@ -1,5 +1,5 @@
-uuid: 4693f795-1f00-4c76-8392-6db50b096541
-langcode: da
+uuid: a49424bb-0c81-4a3a-8f9e-a2e82fc68383
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,6 @@ dependencies:
     - field.field.group.flexible_group.field_group_description
     - field.field.group.flexible_group.field_group_image
     - field.field.group.flexible_group.field_group_location
-    - field.field.group.flexible_group.field_group_purpose
     - group.type.flexible_group
 _core:
   default_config_hash: DB3i_1Dtgi8elSB722JU-cgbgdPwmmVbEs6D_uxMnJg
@@ -28,8 +27,6 @@ hidden:
   field_group_description: true
   field_group_image: true
   field_group_location: true
-  field_group_purpose: true
   label: true
-  langcode: true
   search_api_excerpt: true
   uid: true

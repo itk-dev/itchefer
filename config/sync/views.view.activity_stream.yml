@@ -1,21 +1,16 @@
-uuid: 8e5c2714-8b21-42c0-b3c6-0734478849af
-langcode: da
+uuid: f977888b-7a20-47ec-9f78-287d812d1cdb
+langcode: en
 status: true
 dependencies:
   config:
     - block.block.postblock
-    - user.role.administrator
-    - user.role.authenticated
-    - user.role.contentmanager
-    - user.role.sitemanager
   module:
     - activity_creator
     - activity_viewer
     - options
     - social_post
-    - user
 _core:
-  default_config_hash: _JmlmKiydMMSHiHwKxrIgz1TclzTRi13Gz2Px8Upqv0
+  default_config_hash: ssMcOFXw7h5OxhqI7u-ThUecyOroG-cUPj8g3DS0KJY
 id: activity_stream
 label: 'Activity Stream'
 module: views
@@ -31,13 +26,8 @@ display:
     position: 0
     display_options:
       access:
-        type: role
-        options:
-          role:
-            authenticated: authenticated
-            administrator: administrator
-            contentmanager: contentmanager
-            sitemanager: sitemanager
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -54,7 +44,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -74,7 +64,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       style:
@@ -231,7 +221,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Opslagstavle
+      title: Stream
       header:
         post_form:
           id: post_form
@@ -260,10 +250,156 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
-        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
-        - 'config:core.entity_view_display.activity.activity.featured'
+        - 'config:core.entity_view_display.activity.activity.notification'
+        - 'config:core.entity_view_display.activity.activity.notification_archive'
+  block_stream_explore:
+    display_plugin: block
+    id: block_stream_explore
+    display_title: 'Explore Stream Block'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      filters:
+        field_activity_destinations_value:
+          id: field_activity_destinations_value
+          table: activity__field_activity_destinations
+          field: field_activity_destinations_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            stream_explore: stream_explore
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        activity_post_visibility_access_filter:
+          id: activity_post_visibility_access_filter
+          table: activity
+          field: activity_post_visibility_access_filter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: activity
+          plugin_id: activity_post_visibility_access
+        activity_explore_visibility_access_filter:
+          id: activity_explore_visibility_access_filter
+          table: activity
+          field: activity_explore_visibility_access_filter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: activity
+          plugin_id: activity_explore_visibility_access
+      defaults:
+        filters: false
+        filter_groups: false
+        title: false
+        header: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: Stream
+      display_description: ''
+      header: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+      tags:
+        - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage:
@@ -368,10 +504,8 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
-        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage_without_post:
@@ -478,10 +612,8 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
-        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_activity_stream:
@@ -505,13 +637,12 @@ display:
         - url.query_args
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
-        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_explore:
     display_plugin: page
     id: page_explore
-    display_title: Udforsk
+    display_title: Explore
     position: 1
     display_options:
       display_extenders: {  }
@@ -619,44 +750,44 @@ display:
           entity_type: activity
           plugin_id: activity_post_visibility_access
         activity_explore_visibility_access_filter:
+          id: activity_explore_visibility_access_filter
+          table: activity
+          field: activity_explore_visibility_access_filter
+          relationship: none
+          group_type: group
           admin_label: ''
-          entity_type: activity
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
           expose:
-            description: ''
-            identifier: ''
-            label: ''
-            multiple: false
-            operator: ''
             operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
             remember: false
+            multiple: false
             remember_roles:
               authenticated: authenticated
-            required: false
-            use_operator: false
-          exposed: false
-          field: activity_explore_visibility_access_filter
-          group: 1
+          is_grouped: false
           group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
             default_group: All
             default_group_multiple: {  }
-            description: ''
             group_items: {  }
-            identifier: ''
-            label: ''
-            multiple: false
-            optional: true
-            remember: false
-            widget: select
-          group_type: group
-          id: activity_explore_visibility_access_filter
-          is_grouped: false
-          operator: '='
+          entity_type: activity
           plugin_id: activity_explore_visibility_access
-          relationship: none
-          table: activity
-          value: ''
       filter_groups:
         operator: AND
         groups:
@@ -666,9 +797,7 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
-        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
-        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'

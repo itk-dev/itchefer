@@ -1,5 +1,5 @@
-uuid: 5a60ad24-d509-43be-83dc-4ea62ef8d8ce
-langcode: da
+uuid: ddb991ae-fdf8-4405-ab1b-8ebcf41f6439
+langcode: en
 status: true
 dependencies:
   config:
@@ -50,7 +50,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -72,7 +72,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -621,7 +621,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: 'Members of {{ arguments.gid }}'
           default_argument_type: group_id_from_url

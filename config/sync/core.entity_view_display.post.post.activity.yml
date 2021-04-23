@@ -1,5 +1,5 @@
-uuid: 139a7969-ea36-477c-aeac-cdf78f5bcdfc
-langcode: da
+uuid: 0b6cc94e-6ce3-41fb-b931-23e021091392
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,11 +8,9 @@ dependencies:
     - field.field.post.post.field_post_comments
     - field.field.post.post.field_recipient_group
     - field.field.post.post.field_recipient_user
-    - field.field.post.post.field_vedhaeftning
     - field.field.post.post.field_visibility
     - social_post.post_type.post
   module:
-    - file
     - social_post
     - text
     - user
@@ -39,16 +37,8 @@ content:
       order: ASC
     third_party_settings: {  }
     region: content
-  field_vedhaeftning:
-    type: file_table
-    weight: 3
-    region: content
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
   like_and_dislike:
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

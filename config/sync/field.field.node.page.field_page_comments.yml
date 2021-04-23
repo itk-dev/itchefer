@@ -1,5 +1,5 @@
-uuid: 873c78d6-3f7a-4fb3-9042-22f32633123c
-langcode: da
+uuid: e8c7e88e-82dc-427f-b773-9609dc387be1
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.page.field_page_comments
 field_name: field_page_comments
 entity_type: node
 bundle: page
-label: Kommentarer
+label: Comments
 description: ''
 required: false
 translatable: false

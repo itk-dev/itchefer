@@ -1,18 +1,18 @@
-uuid: 089317e3-ebad-4e75-8c1b-f47ef68e7917
+uuid: 3f69724d-bfba-4f45-a842-4e6778f72a1f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.group_content.invitation_status
     - field.storage.group_content.invitee_mail
-  module:
-    - group
-    - user
-    - social_group_invite
-    - ginvite
   enforced:
     module:
       - social_group_invite
+  module:
+    - group
+    - user
+_core:
+  default_config_hash: a350m2jr8Aip2H-F8BSP6LP2hAOmvsVjR-EI175q4ag
 id: social_group_invitations
 label: 'Social Group invitations'
 module: group

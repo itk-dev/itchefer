@@ -1,5 +1,5 @@
-uuid: cf260f4b-afff-4ac7-9c53-2562968c708a
-langcode: da
+uuid: 67f733bd-a1a6-44f4-849e-03291cca11f1
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.topic.field_topic_comments
 field_name: field_topic_comments
 entity_type: node
 bundle: topic
-label: Kommentarer
+label: Comments
 description: ''
 required: false
 translatable: false

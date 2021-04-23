@@ -1,5 +1,5 @@
-uuid: 76581ddd-43b1-4506-b8b0-89aae9f0b787
-langcode: da
+uuid: 0b5d72b3-a0a0-43a9-82da-cef1b4baed28
+langcode: en
 status: true
 dependencies:
   config:
@@ -70,6 +70,9 @@ settings:
     handler_settings: {  }
   profile:
     handler: 'default:profile'
+    handler_settings: {  }
+  redirect:
+    handler: 'default:redirect'
     handler_settings: {  }
   search_api_task:
     handler: 'default:search_api_task'

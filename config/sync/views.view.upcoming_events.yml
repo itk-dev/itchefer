@@ -1,5 +1,5 @@
-uuid: 7020de42-4283-4c4b-bf97-c780e80637a8
-langcode: da
+uuid: 4c1fa11a-c996-4360-a661-27f01953d7d9
+langcode: en
 status: true
 dependencies:
   config:
@@ -47,9 +47,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -71,7 +71,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -314,12 +314,12 @@ display:
   block_my_upcoming_events:
     display_plugin: block
     id: block_my_upcoming_events
-    display_title: 'Mine kommende begivenheder blokken'
+    display_title: 'My upcoming events block'
     position: 3
     display_options:
       display_extenders: {  }
       display_description: ''
-      block_description: 'Mine kommende begivenheder blokken'
+      block_description: 'My upcoming events block'
       pager:
         type: some
         options:
@@ -361,7 +361,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: current_user
@@ -559,10 +559,10 @@ display:
           tokenize: false
           content: 'No upcoming events you have enrolled for'
           plugin_id: text_custom
-      title: 'Mine kommende begivenheder'
+      title: 'My upcoming events'
       use_more: false
       use_more_always: true
-      use_more_text: 'Alle mine kommende events'
+      use_more_text: 'All my upcoming events'
     cache_metadata:
       max-age: -1
       contexts:
@@ -634,11 +634,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Igangværende og kommende events'
+                title: 'Ongoing and upcoming events'
                 operator: in
                 value: '1'
               2:
-                title: 'Afsluttede events'
+                title: 'Past events'
                 operator: in
                 value: '2'
               3:
@@ -697,7 +697,7 @@ display:
           exposed: true
           expose:
             operator_id: field_enroll_method_value_op
-            label: Tilmeldingsmetode
+            label: 'Enroll Method'
             description: ''
             use_operator: false
             operator: field_enroll_method_value_op
@@ -738,7 +738,7 @@ display:
         groups:
           1: AND
       exposed_block: true
-      title: 'Alle arrangementer'
+      title: 'All events'
       sorts:
         event_date:
           id: event_date
@@ -813,7 +813,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: group_id_from_url

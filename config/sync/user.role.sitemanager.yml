@@ -1,5 +1,5 @@
-uuid: 91cd56d3-083e-4882-a7f3-8cb0dca37250
-langcode: da
+uuid: 3cb4a35e-1827-4c29-a512-e0a8083f1ab9
+langcode: en
 status: true
 dependencies: {  }
 _core:
@@ -56,7 +56,6 @@ permissions:
   - 'cancel account'
   - 'change own username'
   - 'create closed_group group'
-  - 'create content translations'
   - 'create event content'
   - 'create flexible_group group'
   - 'create open_group group'
@@ -69,7 +68,6 @@ permissions:
   - 'delete any page content'
   - 'delete any post entities'
   - 'delete any topic content'
-  - 'delete content translations'
   - 'delete event revisions'
   - 'delete own comments'
   - 'delete own event content'
@@ -130,10 +128,8 @@ permissions:
   - 'set social event managers settings'
   - 'set social group settings'
   - 'skip comment approval'
-  - 'translate any entity'
   - 'unflag follow_content'
   - 'update any profile profile'
-  - 'update content translations'
   - 'update own profile profile'
   - 'use text format basic_html'
   - 'use text format full_html'

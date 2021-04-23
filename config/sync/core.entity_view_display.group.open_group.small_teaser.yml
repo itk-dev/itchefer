@@ -1,5 +1,5 @@
-uuid: 655035e2-fcd1-4578-8993-cec5b97420c7
-langcode: da
+uuid: 93bf26cd-02da-4359-bcb3-0be415aee261
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,6 @@ dependencies:
     - field.field.group.open_group.field_group_description
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
-    - field.field.group.open_group.field_group_purpose
     - group.type.open_group
     - image.style.social_medium
   module:
@@ -43,8 +42,6 @@ hidden:
   field_group_address: true
   field_group_description: true
   field_group_location: true
-  field_group_purpose: true
-  langcode: true
   search_api_excerpt: true
   social_tagging: true
   uid: true

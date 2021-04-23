@@ -1,8 +1,0 @@
-settings:
-  allowed_values:
-    -
-      label: Public
-    -
-      label: Community
-    -
-      label: 'Group members'

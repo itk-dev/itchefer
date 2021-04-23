@@ -1,16 +1,14 @@
-uuid: 4a356ae3-1279-45a6-895f-0c7d07933e66
-name: Itchefer
-mail: mail@itchefer.dk
+uuid: 59f73d8b-3494-4072-acd4-3d260dc10b04
+name: 'Drush Site-Install'
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /forside
+  front: /stream
 admin_compact_mode: false
 weight_select_max: 100
-langcode: da
-default_langcode: da
+langcode: en
+default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
-show_mail_in_messages: 0
-mail_notification: ''

@@ -1,5 +1,5 @@
-uuid: 1b3ae65b-9e59-44e5-b92d-3016c4075041
-langcode: da
+uuid: 6010c520-1f73-494e-ae29-1ab137ee3d80
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,11 +7,9 @@ dependencies:
     - field.field.event_enrollment.event_enrollment.field_email
     - field.field.event_enrollment.event_enrollment.field_enrollment_status
     - field.field.event_enrollment.event_enrollment.field_event
-    - field.field.event_enrollment.event_enrollment.field_product
     - field.field.event_enrollment.event_enrollment.field_request_message
     - field.field.event_enrollment.event_enrollment.field_request_or_invite_status
   module:
-    - dynamic_entity_reference
     - options
     - social_event
     - user
@@ -36,14 +34,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_product:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: dynamic_entity_reference_label
     region: content
   name:
     label: above

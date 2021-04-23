@@ -1,5 +1,5 @@
-uuid: 18302eed-aeed-47d7-8708-2a5352b13176
-langcode: da
+uuid: 68a35d65-c658-42c7-a24f-f32c7b1657d7
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,10 +7,7 @@ dependencies:
     - field.field.group.open_group.field_group_description
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
-    - field.field.group.open_group.field_group_purpose
     - group.type.open_group
-  module:
-    - options
 _core:
   default_config_hash: NPxQIhk3gaqgl0G7UeSWhZSdYCGyyTItgVoXuP_IKmY
 id: group.open_group.default
@@ -25,13 +22,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_group_purpose:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
 hidden:
   changed: true
   created: true
@@ -40,6 +30,5 @@ hidden:
   field_group_image: true
   field_group_location: true
   label: true
-  langcode: true
   search_api_excerpt: true
   uid: true

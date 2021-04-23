@@ -1,5 +1,5 @@
-uuid: 2a3a8a49-b1b1-4510-9443-b3b45eee6c1a
-langcode: da
+uuid: 579e1ff5-893b-4a27-b334-26653ef8d5a8
+langcode: en
 status: true
 dependencies:
   config:
@@ -43,7 +43,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -178,7 +178,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed

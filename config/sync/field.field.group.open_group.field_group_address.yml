@@ -1,5 +1,5 @@
-uuid: a98593d3-61fd-4405-8f06-053a5fa78141
-langcode: da
+uuid: eeb5bd4f-470e-4238-ad71-2365b88c83f7
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: group.open_group.field_group_address
 field_name: field_group_address
 entity_type: group
 bundle: open_group
-label: Adresse
+label: Address
 description: ''
 required: false
 translatable: false

@@ -1,5 +1,5 @@
-uuid: 3bb11247-592f-4a5d-8eff-164805996d44
-langcode: da
+uuid: ed9f570d-048d-45a9-bc66-c970a9b3cfdb
+langcode: en
 status: true
 dependencies:
   module:
@@ -12,8 +12,8 @@ third_party_settings:
     activity_context: mention_activity_context
     activity_destinations:
       stream_profile: stream_profile
-    activity_create_direct: true
-    activity_aggregate: false
+    activity_create_direct: 1
+    activity_aggregate: 0
     activity_entity_condition: mention_comment
 _core:
   default_config_hash: e9ySGUwNAUGgzw1TUY_26COAaAcxyFrTJvMaM9nYdOw

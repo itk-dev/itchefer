@@ -1,5 +1,5 @@
-uuid: 4b2a6007-1c83-4090-9f7f-b23964bca4e7
-langcode: da
+uuid: 8f34e78d-7e32-4a2b-a383-573655b2b84b
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: gLmoA0yjvlXfMRp9ihOhRKSSQQlbdLdvpDkbVwkYPrg
 id: files
-label: Filer
+label: Files
 module: file
 description: 'Find and manage files.'
 tag: default
@@ -39,9 +39,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -61,7 +61,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       style:
@@ -567,7 +567,7 @@ display:
           decimal: .
           separator: ','
           format_plural: true
-          format_plural_string: !!binary Aw==
+          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -700,7 +700,7 @@ display:
           entity_type: file
           entity_field: status
       sorts: {  }
-      title: Filer
+      title: Files
       header: {  }
       footer: {  }
       empty:
@@ -736,13 +736,13 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Filoversigt
+    display_title: 'Files overview'
     position: 1
     display_options:
       path: admin/content/files
       menu:
         type: tab
-        title: Filer
+        title: Files
         description: ''
         menu_name: admin
         weight: 0
@@ -806,7 +806,7 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
       filters: {  }
@@ -1015,7 +1015,7 @@ display:
           decimal: .
           separator: ','
           format_plural: false
-          format_plural_string: !!binary Aw==
+          format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
           plugin_id: numeric
@@ -1033,7 +1033,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed

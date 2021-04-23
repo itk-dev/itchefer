@@ -1,5 +1,5 @@
-uuid: 68761be4-7b05-4ffb-864c-738fb83548ea
-langcode: da
+uuid: f1da028e-3c7c-4148-9d62-a8a5efe9756d
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,7 +9,6 @@ dependencies:
     - field.field.group.flexible_group.field_group_description
     - field.field.group.flexible_group.field_group_image
     - field.field.group.flexible_group.field_group_location
-    - field.field.group.flexible_group.field_group_purpose
     - group.type.flexible_group
   module:
     - options
@@ -41,13 +40,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_group_purpose:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
 hidden:
   changed: true
   created: true
@@ -56,6 +48,5 @@ hidden:
   field_group_image: true
   field_group_location: true
   label: true
-  langcode: true
   search_api_excerpt: true
   uid: true
