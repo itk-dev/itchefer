@@ -11,7 +11,7 @@ id: profile.profile.field_profile_organization
 field_name: field_profile_organization
 entity_type: profile
 bundle: profile
-label: Organization
+label: Organisation
 description: ''
 required: false
 translatable: false

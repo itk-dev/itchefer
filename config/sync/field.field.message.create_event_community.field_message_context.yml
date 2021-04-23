@@ -13,7 +13,7 @@ id: message.create_event_community.field_message_context
 field_name: field_message_context
 entity_type: message
 bundle: create_event_community
-label: Context
+label: Kontext
 description: ''
 required: false
 translatable: false

@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: Kgiuiq9mM5NnRIjuKHDaqnWgAK_9xulXSYu0FsQ2h94
 id: who_liked_this_entity
-label: 'Who liked this entity'
+label: 'Hvem har sagt synes godt om til dette'
 module: views
 description: ''
 tag: ''
@@ -44,13 +44,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: infinite_scroll
         options:
@@ -63,14 +63,14 @@ display:
             next: 'Next ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           views_infinite_scroll:
-            button_text: 'show some more'
+            button_text: 'vis noget mere'
             automatically_load_content: false
       style:
         type: default
@@ -247,7 +247,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'see profile'
+          text: 'se profil'
           entity_type: user
           plugin_id: entity_link
           output_url_as_text: false
@@ -430,7 +430,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: false
-      use_more_text: 'show some more'
+      use_more_text: 'vis noget mere'
       use_ajax: true
     cache_metadata:
       max-age: -1
@@ -455,7 +455,7 @@ display:
   wholiked:
     display_plugin: page
     id: wholiked
-    display_title: 'Who liked this entity'
+    display_title: 'Hvem har sagt synes godt om til dette'
     position: 1
     display_options:
       display_extenders: {  }

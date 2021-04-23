@@ -23,7 +23,7 @@ third_party_settings:
 _core:
   default_config_hash: C8zK2D8RZQAPEr69eJ0l4vxlumyO8fT-jI1lh0e9rhE
 template: request_to_join_a_group
-label: 'Request to join a group'
+label: 'Anmod om at blive medlem i en gruppe'
 description: 'A person requests membership to a group I manage'
 text:
   -

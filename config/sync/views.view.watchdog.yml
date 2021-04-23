@@ -44,8 +44,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -55,7 +55,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -150,7 +150,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: Icon
+          admin_label: Ikon
           label: ''
           exclude: false
           alter:
@@ -348,7 +348,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Date
+          label: Dato
           exclude: false
           alter:
             alter_text: false
@@ -400,7 +400,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Message
+          label: Besked
           exclude: false
           alter:
             alter_text: false
@@ -515,7 +515,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operationer
           exclude: false
           alter:
             alter_text: false
@@ -697,7 +697,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

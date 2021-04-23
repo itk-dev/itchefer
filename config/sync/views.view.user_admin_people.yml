@@ -51,8 +51,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -63,11 +63,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -251,7 +251,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Username
+          label: 'Bruger navn (Fornavn(e) + Efternavn(e)'
           exclude: false
           alter:
             alter_text: false
@@ -348,8 +348,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: Aktiv
+            format_custom_false: Blokeret
           entity_type: user
           entity_field: status
         roles_target_id:
@@ -410,7 +410,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Member for'
+          label: 'Medlen i'
           exclude: false
           alter:
             alter_text: false
@@ -522,7 +522,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operationer
           exclude: false
           alter:
             alter_text: false
@@ -637,7 +637,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: 'First name'
+          label: Fornavn
           exclude: true
           alter:
             alter_text: false
@@ -700,7 +700,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: 'Last name'
+          label: Efternavn
           exclude: true
           alter:
             alter_text: false
@@ -897,7 +897,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Name or email contains'
+            label: 'Navn eller email indeholder'
             description: ''
             use_operator: false
             operator: combine_op
@@ -1027,7 +1027,7 @@ display:
           exposed: true
           expose:
             operator_id: permission_op
-            label: Permission
+            label: Tilleaderlse
             description: ''
             use_operator: false
             operator: permission_op
@@ -1096,11 +1096,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Active
+                title: Aktiv
                 operator: '='
                 value: '1'
               2:
-                title: Blocked
+                title: Blokeret
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -1122,7 +1122,7 @@ display:
           exposed: true
           expose:
             operator_id: id_op
-            label: Group
+            label: Gruppe
             description: ''
             use_operator: false
             operator: id_op
@@ -1349,7 +1349,7 @@ display:
           plugin_id: text_custom
       use_more: false
       use_more_always: false
-      use_more_text: more
+      use_more_text: mere
       display_comment: ''
       use_ajax: false
       hide_attachment_summary: false
@@ -1412,7 +1412,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       path: admin/people/list

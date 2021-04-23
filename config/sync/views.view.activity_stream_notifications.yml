@@ -46,13 +46,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: some
         options:
@@ -259,7 +259,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Notifications
+      title: Notifikationer
       header: {  }
       footer: {  }
       empty:
@@ -273,7 +273,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'You do not have any notifications.'
+            value: 'Du har ikke nogle notifikationer'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -315,7 +315,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: true
-      use_more_text: 'All notifications'
+      use_more_text: 'Alle notifikationer'
     cache_metadata:
       max-age: -1
       contexts:
@@ -330,7 +330,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Blok
     position: 2
     display_options:
       display_extenders: {  }
@@ -365,7 +365,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
@@ -382,7 +382,7 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'

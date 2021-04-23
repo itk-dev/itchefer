@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: 2Up5NUvwF4aBVoO6eFTPeBXtnpUw_yiexv9I5u6ZD-g
 id: message
-label: Message
+label: Besked
 module: views
 description: ''
 tag: ''
@@ -39,13 +39,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -55,17 +55,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ forrige'
+            next: 'næste ›'
+            first: '« første'
+            last: 'sidste »'
           quantity: 9
       style:
         type: table
@@ -373,7 +373,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Forfatter
           exclude: false
           alter:
             alter_text: false
@@ -530,7 +530,7 @@ display:
           entity_field: template
           plugin_id: bundle
       sorts: {  }
-      title: Message
+      title: Besked
       header: {  }
       footer: {  }
       empty:
@@ -566,14 +566,14 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
       path: admin/content/messages
       menu:
         type: tab
-        title: Message
+        title: Besked
         description: ''
         parent: system.admin_content
         weight: 0

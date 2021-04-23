@@ -13,7 +13,7 @@ id: activity.activity.field_activity_destinations
 field_name: field_activity_destinations
 entity_type: activity
 bundle: activity
-label: Destinations
+label: Destinationer
 description: ''
 required: false
 translatable: false

@@ -45,13 +45,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -64,7 +64,7 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -264,7 +264,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: 'Activity stream'
+      title: 'Aktivitets tavle'
       header:
         entity_block:
           id: entity_block
@@ -332,7 +332,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Blok
     position: 2
     display_options:
       display_extenders: {  }

@@ -48,13 +48,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: true
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -64,7 +64,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -173,7 +173,7 @@ display:
           exposed: true
           expose:
             operator_id: event_date_op
-            label: 'Event date'
+            label: 'Begivenhed dato'
             description: null
             use_operator: false
             operator: event_date_op
@@ -199,11 +199,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Ongoing and upcoming events'
+                title: 'Igangværende og kommende arrangementer'
                 operator: in
                 value: '1'
               2:
-                title: 'Past events'
+                title: 'Tidligere arrangementer'
                 operator: in
                 value: '2'
               3:
@@ -276,7 +276,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No events in this group'
+          content: 'Ingen events i denne gruppe'
           plugin_id: text_custom
       relationships:
         gc__node:
@@ -353,7 +353,7 @@ display:
   page_group_events:
     display_plugin: page
     id: page_group_events
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

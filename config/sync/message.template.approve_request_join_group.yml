@@ -23,7 +23,7 @@ _core:
   default_config_hash: Xhgfsd8evUGA3wgqOQStlgzXVoH6AG_2idsXE09ZVQo
 template: approve_request_join_group
 label: 'Approve request to join a group'
-description: 'My group membership request is approved'
+description: 'Mit gruppe medlemsskabs anmodning er godkendt'
 text:
   -
     value: "<p>Your membership request for the <a href=\"gurl]\">[message:gtitle]</a> group has been approved</p>\r\n"

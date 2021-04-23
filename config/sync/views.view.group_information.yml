@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: ibwsThar3S0ItnR3r1fZVk4-fIjavLDZNIjPMyxawOg
 id: group_information
-label: 'Group Information'
+label: 'Gruppe information'
 module: views
 description: ''
 tag: ''
@@ -38,13 +38,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: some
         options:
@@ -121,7 +121,7 @@ display:
           field_api_classes: false
       filters: {  }
       sorts: {  }
-      title: 'About Group'
+      title: 'Om gruppe'
       header: {  }
       footer: {  }
       empty: {  }
@@ -177,7 +177,7 @@ display:
   page_group_about:
     display_plugin: page
     id: page_group_about
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

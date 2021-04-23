@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: NvHTnZn-Y85aABkQEsCNty0XMRlwGDluZy3-KdImiiQ
 id: profile
-label: Profile
+label: Profil
 display_label: null
 multiple: false
 registration: false
