@@ -13,7 +13,7 @@ id: queue_storage_entity.email.field_message
 field_name: field_message
 entity_type: queue_storage_entity
 bundle: email
-label: message
+label: besked
 description: ''
 required: false
 translatable: false

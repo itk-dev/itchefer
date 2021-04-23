@@ -26,17 +26,17 @@ third_party_settings:
 _core:
   default_config_hash: zRkw-huT2WCpKopvlBjpzpDJRjCQyAyRzMTohKAJbA0
 template: create_content_in_joined_group
-label: 'Create a post, topic or event in a joined group'
-description: 'A person created a post, event or topic in a group I joined'
+label: 'Opret opslag, emne eller arrangment i en gruppe du er medlem af'
+description: 'En person har oprettet et opslag, arrangement eller emne i en gruppe jeg er medlem af'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede [social_group:created_entity_link_html] i <a href="[message:gurl]">[message:gtitle]</a> gruppen</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede [social_group:created_entity_link_html] i <a href="[message:gurl]">[message:gtitle]</a> gruppen</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p><p>[message:additional_information]</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede [social_group:created_entity_link_html] i <a href="[message:gurl]">[message:gtitle]</a> gruppen</p><p>[message:additional_information]</p>'
     format: full_html
 settings:
   'token options':

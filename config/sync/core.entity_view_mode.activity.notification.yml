@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: csrCjpnWE1-9fbYgCv8dEPEGahzEldvu9WvQv7uPqPw
 id: activity.notification
-label: Notification
+label: Notifikation
 targetEntityType: activity
 cache: true

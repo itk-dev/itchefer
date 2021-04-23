@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: kNQzSfXX8rkuLW6sShN4jOTkvcw46d45nxR-RxzEg4M
 id: latest_topics
-label: 'Latest topics'
+label: 'Seneste emner'
 module: views
 description: 'Displays the newest topics in the community'
 tag: ''
@@ -46,13 +46,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: true
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: ascending
-          sort_desc_label: descending
+          sort_asc_label: stigende
+          sort_desc_label: faldende
       pager:
         type: some
         options:
@@ -193,7 +193,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'All topics'
+      title: 'Alle emner'
       header: {  }
       footer: {  }
       empty:
@@ -206,7 +206,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No topics found'
+          content: 'Ingen emner fundet'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -222,13 +222,13 @@ display:
   block_latest_topics:
     display_plugin: block
     id: block_latest_topics
-    display_title: 'Latest topics block'
+    display_title: 'Seneste emner'
     position: 1
     display_options:
       display_extenders: {  }
       display_description: ''
       block_description: 'Latest topic block'
-      title: 'Newest topics'
+      title: 'Nyeste emner'
       defaults:
         title: false
         use_more: false
@@ -236,7 +236,7 @@ display:
         use_more_text: false
       use_more: true
       use_more_always: true
-      use_more_text: 'All topics'
+      use_more_text: 'Alle emner'
     cache_metadata:
       max-age: -1
       contexts:
@@ -264,7 +264,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No topics in this group'
+          content: 'Ingen emner i denne gruppe'
           plugin_id: text_custom
       defaults:
         empty: false
@@ -330,10 +330,10 @@ display:
         type: perm
         options:
           perm: 'access content'
-      title: 'Newest topics'
+      title: 'Nyeste emner'
       use_more: true
       use_more_always: true
-      use_more_text: 'All topics'
+      use_more_text: 'Alle emner'
     cache_metadata:
       max-age: -1
       contexts:
@@ -377,11 +377,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -428,7 +428,7 @@ display:
           exposed: true
           expose:
             operator_id: field_topic_type_target_id_op
-            label: 'is the type of'
+            label: 'er typen af'
             description: ''
             use_operator: false
             operator: field_topic_type_target_id_op
@@ -516,7 +516,7 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Sort by publish date'
+            label: 'Sorter efter publiseringsdato'
           granularity: second
           entity_type: node
           entity_field: created

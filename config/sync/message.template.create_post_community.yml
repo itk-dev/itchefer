@@ -18,12 +18,12 @@ third_party_settings:
 _core:
   default_config_hash: u1HJ3UrjWglhkdKMGqTUnZIFM_AkMu2L8Bq0tpUVI34
 template: create_post_community
-label: 'Create post in the community'
-description: 'A user created a post in the community'
+label: 'Opret opslag i fællseskabet'
+description: 'En bruger har oprettet et opslag i fællesskabet'
 text:
   -
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> skrev</p>'
 settings:
   'token options':
     clear: false

@@ -13,7 +13,7 @@ id: node.topic.field_topic_image
 field_name: field_topic_image
 entity_type: node
 bundle: topic
-label: Image
+label: Billede
 description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
 required: false
 translatable: false

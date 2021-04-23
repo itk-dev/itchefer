@@ -11,7 +11,7 @@ id: profile.profile.field_profile_show_email
 field_name: field_profile_show_email
 entity_type: profile
 bundle: profile
-label: 'Show email'
+label: 'Vis e-mailadresse'
 description: ''
 required: false
 translatable: false
@@ -20,6 +20,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: Til
+  off_label: Fra
 field_type: boolean

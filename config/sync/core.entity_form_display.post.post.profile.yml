@@ -27,7 +27,7 @@ content:
     weight: 0
     settings:
       rows: 5
-      placeholder: 'Hvad tænker du på lige nu?'
+      placeholder: 'What''s on your mind?'
     third_party_settings: {  }
     region: content
   field_vedhaeftning:

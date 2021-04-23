@@ -37,13 +37,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: none
         options:
@@ -212,7 +212,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'There are no profiles yet.'
+            value: 'Der er ingen profiler endnu'
             format: basic_html
           plugin_id: text
       relationships: {  }

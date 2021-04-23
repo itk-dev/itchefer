@@ -17,7 +17,7 @@ provider: null
 plugin: search_hero_block
 settings:
   id: search_hero_block
-  label: Search
+  label: Søg
   provider: social_search
   label_display: visible
 visibility:

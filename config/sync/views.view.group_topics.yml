@@ -18,7 +18,7 @@ dependencies:
 _core:
   default_config_hash: QfYYx-ckbKscwFS5Uy5F8QSkZx1T0fqPvxC_T-sUwtE
 id: group_topics
-label: 'Group Topics'
+label: 'Gruppe emner'
 module: views
 description: ''
 tag: ''
@@ -54,8 +54,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: ascending
-          sort_desc_label: descending
+          sort_asc_label: stigende
+          sort_desc_label: faldende
       pager:
         type: mini
         options:
@@ -65,7 +65,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -204,7 +204,7 @@ display:
           exposed: true
           expose:
             operator_id: field_topic_type_target_id_op
-            label: 'is the type of'
+            label: 'er typen af'
             description: ''
             use_operator: false
             operator: field_topic_type_target_id_op
@@ -333,12 +333,12 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Sort by publish date'
+            label: 'Sorter efter publiseringsdato'
           granularity: second
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: 'Group Topics'
+      title: 'Gruppe emner'
       header: {  }
       footer: {  }
       empty:
@@ -351,7 +351,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No topics in this group'
+          content: 'Ingen emner i denne gruppe'
           plugin_id: text_custom
       relationships:
         gc__node:
@@ -435,7 +435,7 @@ display:
   page_group_topics:
     display_plugin: page
     id: page_group_topics
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

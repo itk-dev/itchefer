@@ -50,8 +50,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: ascending
-          sort_desc_label: descending
+          sort_asc_label: stigende
+          sort_desc_label: faldende
       pager:
         type: full
         options:
@@ -61,7 +61,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -70,8 +70,8 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           quantity: 9
       style:
         type: default
@@ -183,7 +183,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Publish status'
+            label: 'Status for publisering'
             description: ''
             use_operator: false
             operator: status_op
@@ -265,7 +265,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: 'Events for this user'
+      title: 'Denne brugers arrangementer'
       header: {  }
       footer: {  }
       empty:
@@ -278,7 +278,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No events found for this user'
+          content: 'Der er ikke fundet arrangementer for denne bruger'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -384,7 +384,7 @@ display:
           exposed: false
           expose:
             operator_id: ''
-            label: 'Publish status'
+            label: 'Status for publisering'
             description: ''
             use_operator: false
             operator: status_op
@@ -430,7 +430,7 @@ display:
           exposed: false
           expose:
             operator_id: field_event_date_value_op
-            label: 'Event time'
+            label: 'Arrangementets tid'
             description: ''
             use_operator: false
             operator: field_event_date_value_op
@@ -540,7 +540,7 @@ display:
         operator: AND
         groups:
           1: AND
-      title: 'Upcoming events'
+      title: 'Kommende arrangementer'
     cache_metadata:
       max-age: -1
       contexts:
@@ -560,7 +560,7 @@ display:
       path: user/%user/events
       menu:
         type: none
-        title: Events
+        title: Arrangementer
         description: ''
         expanded: false
         parent: ''
@@ -569,7 +569,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Topics
+        title: Emner
         description: ''
         weight: 0
       exposed_block: true
@@ -630,7 +630,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Publish status'
+            label: 'Status for publisering'
             description: ''
             use_operator: false
             operator: status_op
@@ -672,7 +672,7 @@ display:
           exposed: true
           expose:
             operator_id: event_date_op
-            label: 'Event date'
+            label: 'Begivenhed dato'
             description: null
             use_operator: false
             operator: event_date_op
@@ -698,11 +698,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Ongoing and upcoming events'
+                title: 'Igangværende og kommende arrangementer'
                 operator: in
                 value: '1'
               2:
-                title: 'Past events'
+                title: 'Tidligere arrangementer'
                 operator: in
                 value: '2'
               3:

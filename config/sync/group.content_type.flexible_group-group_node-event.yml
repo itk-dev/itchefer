@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: I4Ru7pPdPphNee2H88HeLNmlNSzl-wxZAjXfgKuEzeg
 id: flexible_group-group_node-event
-label: event
+label: begivenhed
 description: 'Adds <em class="placeholder">Event</em> content to groups using private content settings.'
 group_type: flexible_group
 content_plugin: 'group_node:event'

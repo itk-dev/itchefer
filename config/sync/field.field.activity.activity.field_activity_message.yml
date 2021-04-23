@@ -12,7 +12,7 @@ id: activity.activity.field_activity_message
 field_name: field_activity_message
 entity_type: activity
 bundle: activity
-label: Message
+label: Besked
 description: ''
 required: false
 translatable: false

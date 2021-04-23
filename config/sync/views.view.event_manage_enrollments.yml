@@ -47,13 +47,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -64,11 +64,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -202,7 +202,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Enrollee
+          label: Tilmeldte
           exclude: false
           alter:
             alter_text: false
@@ -253,7 +253,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Organization
+          label: Organisation
           exclude: false
           alter:
             alter_text: false
@@ -316,7 +316,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Enroll date'
+          label: Tilmeldingsdato
           exclude: false
           alter:
             alter_text: false
@@ -537,7 +537,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          content: '@total Enrollees'
+          content: '@total Tilmeldte'
           plugin_id: result
       footer: {  }
       empty:
@@ -550,7 +550,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No one has enrolled for this event'
+          content: 'Der er ikke nogle tilmeldinger for denne begivenhed'
           plugin_id: text_custom
       relationships:
         field_event:
@@ -645,7 +645,7 @@ display:
   page_manage_enrollments:
     display_plugin: page
     id: page_manage_enrollments
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

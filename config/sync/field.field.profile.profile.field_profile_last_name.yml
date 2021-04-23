@@ -11,7 +11,7 @@ id: profile.profile.field_profile_last_name
 field_name: field_profile_last_name
 entity_type: profile
 bundle: profile
-label: 'Last name'
+label: Efternavn
 description: ''
 required: false
 translatable: false
