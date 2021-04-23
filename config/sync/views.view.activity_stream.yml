@@ -52,13 +52,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: mini
         options:
@@ -71,7 +71,7 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -487,7 +487,7 @@ display:
   page_activity_stream:
     display_plugin: page
     id: page_activity_stream
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
@@ -536,7 +536,7 @@ display:
         title: false
         filters: false
         filter_groups: false
-      title: 'Explore Stream'
+      title: 'Udforsk opslagstavle'
       filters:
         field_activity_destinations_value:
           id: field_activity_destinations_value

@@ -13,7 +13,7 @@ id: message.create_comment_reply.field_message_destination
 field_name: field_message_destination
 entity_type: message
 bundle: create_comment_reply
-label: Destinations
+label: Destinationer
 description: ''
 required: false
 translatable: false

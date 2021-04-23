@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: mjVDP-I0WhQt_AKq70fB7tlFbnlqaw8vetz_Lu5pqyA
 id: flexible_group-anonymous
-label: Anonymous
+label: Anonym
 weight: -102
 internal: true
 audience: anonymous

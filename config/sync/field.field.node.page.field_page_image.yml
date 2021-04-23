@@ -13,7 +13,7 @@ id: node.page.field_page_image
 field_name: field_page_image
 entity_type: node
 bundle: page
-label: Image
+label: Billede
 description: 'Beskær dit billede for at vælge hvilken del af billedet du vil vise.'
 required: false
 translatable: true

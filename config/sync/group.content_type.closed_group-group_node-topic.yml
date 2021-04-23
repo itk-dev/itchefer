@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: Fz4EZTuBDAIYY46oUbDEipsBPN-3LIuyEC9lhX24D6U
 id: closed_group-group_node-topic
-label: topic
+label: emne
 description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'
 group_type: closed_group
 content_plugin: 'group_node:topic'

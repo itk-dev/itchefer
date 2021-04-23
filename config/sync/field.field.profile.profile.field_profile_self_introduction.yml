@@ -13,7 +13,7 @@ id: profile.profile.field_profile_self_introduction
 field_name: field_profile_self_introduction
 entity_type: profile
 bundle: profile
-label: 'Self introduction'
+label: 'Præsentation af dig'
 description: ''
 required: false
 translatable: false

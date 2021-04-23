@@ -48,13 +48,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -65,11 +65,11 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -147,7 +147,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Recipient
+          label: Modtager
           exclude: false
           alter:
             alter_text: false
@@ -511,7 +511,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No one has been invited for this event yet.'
+          content: 'Der er ikke inviteret nogle til denne begivenhed endnu.'
           plugin_id: text_custom
       relationships:
         field_event:
@@ -593,7 +593,7 @@ display:
   page_manage_enrollment_invites:
     display_plugin: page
     id: page_manage_enrollment_invites
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

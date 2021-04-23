@@ -12,8 +12,8 @@ id: profile.profile.field_profile_interests
 field_name: field_profile_interests
 entity_type: profile
 bundle: profile
-label: Interests
-description: 'Separate multiple values by a comma.'
+label: Interesser
+description: 'Adskil flere værdier med et komma'
 required: false
 translatable: false
 default_value: {  }

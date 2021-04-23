@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: 8kODeKlUTzVjtaT3w8BcGpNLcTq3mDoT9hdqif-3QNM
 id: my_invitations
-label: 'My invitations'
+label: 'Mine invitationer'
 module: group
 description: ''
 tag: ''
@@ -43,13 +43,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -64,7 +64,7 @@ display:
             last: 'Last Â»'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -163,7 +163,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Group
+          label: Gruppe
           exclude: false
           alter:
             alter_text: false
@@ -487,11 +487,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Accept
+          label: Accepter
           exclude: true
           alter:
             alter_text: true
-            text: Accept
+            text: Accepter
             make_link: true
             path: 'ginvite/{{ id }}/accept?destination=/user/{{ uid }}/invitations'
             absolute: false
@@ -536,11 +536,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Decline
+          label: Aflså
           exclude: true
           alter:
             alter_text: true
-            text: Decline
+            text: Aflså
             make_link: true
             path: 'ginvite/{{ id }}/decline?destination=/user/{{ uid }}/invitations'
             absolute: false
@@ -585,7 +585,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operationer
           exclude: false
           alter:
             alter_text: false
@@ -763,15 +763,15 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
       path: user/%user/invitations
       menu:
         type: none
-        title: 'My Invitations'
-        description: 'User invitations to Groups'
+        title: 'Mine invitationer'
+        description: 'Invitationer til grupper'
         expanded: false
         parent: ''
         weight: 10

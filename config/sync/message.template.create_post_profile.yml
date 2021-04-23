@@ -18,18 +18,18 @@ third_party_settings:
 _core:
   default_config_hash: '-uWpQzoNQX4h_MuVNLJoB8qr6v1QVmRSZPk9d_d5AQk'
 template: create_post_profile
-label: 'Create post on profile'
-description: 'A person created a post on my profile'
+label: 'Opret opslag på profil'
+description: 'En person har oprettet et opslag på min profil'
 text:
   -
     format: full_html
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev på din profil</p>\n"
   -
     format: full_html
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev på din profil</p>\n"
   -
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p><p>[message:additional_information]</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> skrev på din <a href="[message:recipient-user-url]">profil</a></p><p>[message:additional_information]</p>'
 settings:
   'token options':
     clear: false

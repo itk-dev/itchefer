@@ -20,12 +20,12 @@ third_party_settings:
 _core:
   default_config_hash: s1MpTn9zFkt9GaS5LPqEJfh9KjvdPzltKHLqk-1JmIQ
 template: create_event_community
-label: 'Create event'
-description: 'A user created an event in the community'
+label: 'Opret arrangement'
+description: 'En bruger har oprettet et arrangement i fællesskabet'
 text:
   -
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created an event</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede et arrangement</p>'
 settings:
   'token options':
     clear: false

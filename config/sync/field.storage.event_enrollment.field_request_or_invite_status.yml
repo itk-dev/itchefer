@@ -15,25 +15,25 @@ settings:
   allowed_values:
     -
       value: 0
-      label: Pending
+      label: Afventer
     -
       value: 1
-      label: Approved
+      label: Godkendt
     -
       value: 2
-      label: Declined
+      label: Afvist
     -
       value: 3
-      label: Invited
+      label: Inviteret
     -
       value: 4
-      label: 'Pending reply'
+      label: 'Afventer svar'
     -
       value: 5
-      label: 'Accepted and joined'
+      label: 'Accepteret og tilmeldt'
     -
       value: 6
-      label: 'Invalid or expired'
+      label: 'Ugyldig eller udløbet'
   allowed_values_function: ''
 module: options
 locked: false

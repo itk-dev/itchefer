@@ -20,12 +20,12 @@ third_party_settings:
 _core:
   default_config_hash: Bw5yVJRJ-EanAEt1N7mO67u9Nn3keT9dkMLSgBeAOJ8
 template: create_topic_community
-label: 'Create topic'
-description: 'A user created a topic in the community'
+label: 'Opret et emne'
+description: 'En bruger har oprettet et emne i fællesskabet'
 text:
   -
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede et emne</p>'
 settings:
   'token options':
     clear: false

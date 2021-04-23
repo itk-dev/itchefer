@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: cj8s-Y9rbdZsFoEu8E_Oz9SZWtNZsDh1XFLgFeZXuMg
-name: Interests
+name: Interesser
 vid: interests
 description: 'A users interests for their profile.'
 weight: 0

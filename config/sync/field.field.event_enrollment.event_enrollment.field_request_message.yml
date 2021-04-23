@@ -13,7 +13,7 @@ field_name: field_request_message
 entity_type: event_enrollment
 bundle: event_enrollment
 label: 'Request message'
-description: 'You can leave a message in your request. Once your request is approved, you will receive a notification via email and notification center.'
+description: 'Du kan skrive en besked med din anmodning. Når din anmodning er godkendt modtager du en notifikation.'
 required: false
 translatable: false
 default_value: {  }

@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: tX4Hh9jAWBH2NDtauWJpsEhzY9cU1HwFBcR6PG44vjM
 id: closed_group-group_node-event
-label: event
+label: begivenhed
 description: 'Adds <em class="placeholder">Event</em> content to groups both publicly and privately.'
 group_type: closed_group
 content_plugin: 'group_node:event'

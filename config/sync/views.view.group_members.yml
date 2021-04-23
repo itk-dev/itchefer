@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: fVr_jDsceVoraLSXPAUMZCsCVpfR76wd3qIK3Gm5Vsk
 id: group_members
-label: 'Group Members'
+label: 'Gruppe medlemmer'
 module: views
 description: ''
 tag: ''
@@ -42,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: false
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -59,11 +59,11 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -173,7 +173,7 @@ display:
           entity_type: group_content
           entity_field: label
           plugin_id: standard
-      title: 'Group Members'
+      title: 'Gruppe medlemmer'
       header: {  }
       footer: {  }
       empty:
@@ -187,7 +187,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No members in this group'
+            value: 'Ingen medlemmer af denne gruppe'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -247,11 +247,11 @@ display:
   block_newest_members:
     display_plugin: block
     id: block_newest_members
-    display_title: Block
+    display_title: Blok
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Newest Members'
+      title: 'Nyeste medlemmer'
       defaults:
         title: false
         pager: false
@@ -291,11 +291,11 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No members in this group'
+          content: 'Ingen medlemmer af denne gruppe'
           plugin_id: text_custom
       use_more: true
       use_more_always: true
-      use_more_text: 'All members'
+      use_more_text: 'Alle medlemmer'
     cache_metadata:
       max-age: -1
       contexts:
@@ -309,7 +309,7 @@ display:
   page_group_members:
     display_plugin: page
     id: page_group_members
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

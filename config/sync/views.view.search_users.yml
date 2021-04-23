@@ -14,7 +14,7 @@ dependencies:
 _core:
   default_config_hash: SC6NdYYihc2V9eiiAPGgm9WcoxTWHmXSJKA5XflPh-8
 id: search_users
-label: 'Search Users'
+label: 'Søg i grupper'
 module: views
 description: ''
 tag: ''
@@ -48,8 +48,8 @@ display:
           reset_button_label: Nulstil
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -60,11 +60,11 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -150,7 +150,7 @@ display:
           expose:
             operator_id: field_profile_expertise_op
             label: Expertise
-            description: 'Separate multiple values by a comma.'
+            description: 'Adskil flere værdier med et komma'
             use_operator: false
             operator: field_profile_expertise_op
             identifier: expertise
@@ -196,8 +196,8 @@ display:
           exposed: true
           expose:
             operator_id: field_profile_interests_op
-            label: Interests
-            description: 'Separate multiple values by a comma.'
+            label: Interesser
+            description: 'Adskil flere værdier med et komma'
             use_operator: false
             operator: field_profile_interests_op
             identifier: interests
@@ -296,7 +296,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Registration Date'
+            label: 'Registrerings dato'
             description: ''
             use_operator: true
             operator: created_op
@@ -365,7 +365,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">Member results</h4>'
+            value: '<h4 class="section-title">Medlems resultat</h4>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -380,7 +380,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Ingen resultater fundet'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -431,7 +431,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
@@ -458,7 +458,7 @@ display:
       display_description: ''
       menu:
         type: tab
-        title: Users
+        title: Brugere
         description: ''
         expanded: false
         parent: ''
@@ -476,7 +476,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">Member results</h4>'
+            value: '<h4 class="section-title">Medlems resultat</h4>'
             format: basic_html
           plugin_id: text
       defaults:

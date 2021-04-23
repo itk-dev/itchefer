@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: MPmh7Lkf-WDCB5BO9mTGkrQHLIozwXVFIA-o6y6FpUQ
 id: search_content
-label: 'Search Content'
+label: 'Søg indhold'
 module: views
 description: ''
 tag: ''
@@ -41,7 +41,7 @@ display:
       exposed_form:
         type: bef
         options:
-          submit_button: Apply
+          submit_button: Anvend
           reset_button: true
           reset_button_label: Nulstil
           exposed_sorts_label: Sort
@@ -89,7 +89,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -98,8 +98,8 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Sidste »'
           quantity: 9
       style:
         type: default
@@ -263,7 +263,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Between
+                title: Mellem
                 operator: between
                 value:
                   type: offset
@@ -271,7 +271,7 @@ display:
                   min: now
                   max: 'now +1 day'
               2:
-                title: Before
+                title: Før
                 operator: '<'
                 value:
                   type: date
@@ -279,7 +279,7 @@ display:
                   min: ''
                   max: ''
               3:
-                title: After
+                title: Efter
                 operator: '>'
                 value:
                   type: date
@@ -310,7 +310,7 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Created date'
+            label: 'Oprettet dato'
           plugin_id: search_api
         title:
           id: title
@@ -324,7 +324,7 @@ display:
           expose:
             label: Titel
           plugin_id: search_api
-      title: 'Search content'
+      title: 'Søg indhold'
       header:
         area:
           id: area
@@ -336,7 +336,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<h4>Content results</h4>'
+            value: '<h4>Indholds resultater</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -351,7 +351,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Ingen resultater fundet'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -408,7 +408,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
@@ -425,7 +425,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4>Content results</h4>'
+            value: '<h4>Indholds resultater</h4>'
             format: full_html
           plugin_id: text
       defaults:
