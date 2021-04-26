@@ -1,8 +1,0 @@
-uuid: 2c9b19c2-c96f-4982-99e9-832be9913d0c
-langcode: da
-status: true
-dependencies: {  }
-id: directories-menu
-label: Mapper
-description: ''
-locked: false
