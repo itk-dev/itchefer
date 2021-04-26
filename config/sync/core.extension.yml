@@ -54,6 +54,7 @@ module:
   group: 0
   group_core_comments: 0
   gvbo: 0
+  hierarchical_taxonomy_menu: 0
   honeypot: 0
   image: 0
   image_effects: 0
