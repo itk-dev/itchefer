@@ -23,33 +23,10 @@ function itchefer_preprocess_input(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_menu().
+ * Implements hook_preprocess_block().
  */
-function itchefer_preprocess_menu(&$variables) {
-  if ($variables['menu_name'] === 'directories-menu') {
-    $items = [];
-    $variables['items'] = create_menu_directories($variables['items'], $items, 0);
-    // Finally adding the "all documents".
-    array_unshift($variables['items'], [
-      'title' => t('Alle dokumenter'),
-      'url' => Url::fromUri('base://documents/'),
-    ]);
+function itchefer_preprocess_block(&$variables) {
+  if ($variables['elements']['#id'] === 'hierarchicaltaxonomymenu') {
+    $variables['content']['#route_tid'] =\Drupal::routeMatch()->getCurrentRouteMatch()->getParameter('directory');
   }
-}
-
-/**
- * Recursive menu creation.
- */
-function create_menu_directories($items, $returnItems, $level) {
-  foreach ($items as $name => $item) {
-    $route_parameters = $item['url']->getRouteParameters();
-    $item['url'] = Url::fromUri('base://documents/' . array_values($route_parameters)[0]);
-    $item['level'] = $level;
-    $returnItems[$name] = $item;
-
-    if ($item['below']) {
-      $returnItems = create_menu_directories($item['below'], $returnItems, $level + 1);
-    }
-  }
-  return $returnItems;
 }

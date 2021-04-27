@@ -1,0 +1,43 @@
+uuid: 4be58d98-a316-4f85-85b6-991520683326
+langcode: da
+status: true
+dependencies:
+  module:
+    - hierarchical_taxonomy_menu
+    - system
+  theme:
+    - itchefer
+id: hierarchicaltaxonomymenu
+theme: itchefer
+region: complementary_top
+weight: 0
+provider: null
+plugin: hierarchical_taxonomy_menu
+settings:
+  id: hierarchical_taxonomy_menu
+  label: 'Hierarchical Taxonomy Menu'
+  provider: hierarchical_taxonomy_menu
+  label_display: '0'
+  vocabulary: directories|
+  max_depth: 100
+  dynamic_block_title: false
+  collapsible: true
+  stay_open: true
+  interactive_parent: true
+  hide_block: false
+  use_image_style: false
+  image_height: 16
+  image_width: 16
+  image_style: article_hero
+  max_age: '0'
+  base_term: ''
+  dynamic_base_term: false
+  show_count: 0
+  referencing_field: _none
+  calculate_count_recursively: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/documents\r\n/documents/*"
+    negate: false
+    context_mapping: {  }
