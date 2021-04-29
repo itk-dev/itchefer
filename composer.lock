@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ce817d36b25a7130585c54b0f8e6ec6",
+    "content-hash": "1da037e3ea1870c3a7ec36837c7c4534",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2632,6 +2632,50 @@
             "homepage": "https://www.drupal.org/project/ajax_comments",
             "support": {
                 "source": "https://git.drupalcode.org/project/ajax_comments"
+            }
+        },
+        {
+            "name": "drupal/antibot",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/antibot.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/antibot-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "2ef65587c34c94f6a7ec0538c755eef5cdd359fd"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1590592550",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mstef",
+                    "homepage": "https://www.drupal.org/user/107190"
+                }
+            ],
+            "description": "Prevent forms from being submitted without JavaScript enabled.",
+            "homepage": "https://www.drupal.org/project/antibot",
+            "support": {
+                "source": "https://git.drupalcode.org/project/antibot"
             }
         },
         {
