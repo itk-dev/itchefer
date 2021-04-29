@@ -25,7 +25,8 @@
         "drupal/honeypot": "^2.0",
         "drupal/system_status": "^2.9",
         "drupal/captcha": "^1.1",
-        "drupal/hierarchical_taxonomy_menu": "^1.42"
+        "drupal/hierarchical_taxonomy_menu": "^1.42",
+        "drupal/antibot": "^1.4"
 
     },
     "repositories": [
