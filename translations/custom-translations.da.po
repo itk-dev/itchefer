@@ -1354,7 +1354,7 @@ msgid "User Groups"
 msgstr "Bruger grupper"
 
 msgid "Groups"
-msgstr "Groups"
+msgstr "Grupper"
 
 msgid "No groups found for this user"
 msgstr "Ingen grupper fundet for denne bruger"
