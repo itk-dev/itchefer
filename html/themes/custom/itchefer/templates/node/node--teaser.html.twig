@@ -117,13 +117,12 @@
       {% block card_title %}
         {{ title_prefix }}
           <h4{{ title_attributes }} class="teaser__title">
-            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            <a href="{{ url }}" rel="bookmark">{{node.type.entity.label|capitalize}}:{{ label }}</a>
           </h4>
         {{ title_suffix }}
       {%- endblock -%}
 
       {% block card_body %}
-
         {% if display_submitted %}
           {% embed "node--teaser__field.html.twig" %}
             {%- block field_icon -%} account_circle {%- endblock -%}
