@@ -29,4 +29,3 @@ libraries-extend:
 libraries:
   - core/drupal
   - core/drupalSettings
-  - itchefer/base
