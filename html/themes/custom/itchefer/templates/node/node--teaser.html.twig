@@ -117,7 +117,7 @@
       {% block card_title %}
         {{ title_prefix }}
           <h4{{ title_attributes }} class="teaser__title">
-            <a href="{{ url }}" rel="bookmark">{{node.type.entity.label|capitalize}}:{{ label }}</a>
+            <a href="{{ url }}" rel="bookmark">{{node.type.entity.label|capitalize}} : &nbsp; {{ label }}</a>
           </h4>
         {{ title_suffix }}
       {%- endblock -%}
