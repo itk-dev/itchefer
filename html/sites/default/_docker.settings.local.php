@@ -51,3 +51,8 @@ $settings['trusted_host_patterns'] = [
   '^127\.0\.0\.1$',
   '^itchefer\.local\.itkdev\.dk$',
 ];
+
+$settings['memcache']['servers'] = ['memcached:11211' => 'default'];
+$settings['memcache']['bins'] = ['default' => 'default'];
+$settings['memcache']['key_prefix'] = 'itchefer';
+$settings['cache']['default'] = 'cache.backend.memcache';
