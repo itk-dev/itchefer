@@ -55,6 +55,7 @@ module:
   group: 0
   group_core_comments: 0
   gvbo: 0
+  hierarchical_taxonomy_menu: 0
   honeypot: 0
   image: 0
   image_effects: 0
@@ -67,6 +68,7 @@ module:
   link: 0
   locale: 0
   mailsystem: 0
+  memcache: 0
   mentions: 0
   menu_ui: 0
   message: 0

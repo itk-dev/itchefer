@@ -101,6 +101,9 @@ msgstr "Fallback date format"
 msgid "HTML Date"
 msgstr "HTML Date"
 
+msgid "All documents"
+msgstr "Alle dokumenter"
+
 msgid "HTML Datetime"
 msgstr "HTML Datetime"
 
@@ -753,7 +756,7 @@ msgstr ""
 "Kære [user:display-name],\r\n"
 "\r\n"
 "Tak for din registrering på [site:name]. "
-"Din ansøgning om en bruger afventer godkendelse. " 
+"Din ansøgning om en bruger afventer godkendelse. "
 "Når den er blevet godkendt, vil du modtage en e-mail med oplysninger om, hvordan du logger ind, og hvordan du indstiller din adgangskode og andre detaljer. "
 "\r\n"
 "Med venlig hilsen "
@@ -1345,13 +1348,13 @@ msgid "Last update"
 msgstr "Last update"
 
 msgid "Attachment"
-msgstr "Attachment"
+msgstr "Vedhæftet"
 
 msgid "User Groups"
 msgstr "Bruger grupper"
 
 msgid "Groups"
-msgstr "Groups"
+msgstr "Grupper"
 
 msgid "No groups found for this user"
 msgstr "Ingen grupper fundet for denne bruger"
@@ -1556,7 +1559,7 @@ msgid "Group Topics"
 msgstr "Gruppe emner"
 
 msgid "is the type of"
-msgstr "er typen af"
+msgstr "er af typen	"
 
 msgid "sort_created"
 msgstr ""
@@ -1601,13 +1604,13 @@ msgid "field_topic_type_expose_filter"
 msgstr ""
 
 msgid "Event organisers"
-msgstr ""
+msgstr "Arrangement arrangører"
 
 msgid "Organisers"
-msgstr ""
+msgstr "Arrangører"
 
 msgid "We could not find any event organisers for this event."
-msgstr ""
+msgstr "Der er ingen arrangører for dette arrangement"
 
 msgid "Organisers Block"
 msgstr ""
@@ -1780,7 +1783,7 @@ msgid "{{ nid }}{{ uid }}{{ id }}"
 msgstr ""
 
 msgid "See all results"
-msgstr ""
+msgstr "Se alle resultater"
 
 msgid "REST export"
 msgstr "REST export"
@@ -1902,7 +1905,7 @@ msgid "User Topics"
 msgstr "Bruger emner"
 
 msgid "has the publish status of"
-msgstr ""
+msgstr "har publiseringsstatus"
 
 msgid "No topics found for this user"
 msgstr "Ingen emner fundet for denne bruger"
@@ -2917,10 +2920,10 @@ msgid "social extra extra large (1200 x 423)"
 msgstr ""
 
 msgid "Content manager"
-msgstr ""
+msgstr "Indholds redaktør"
 
 msgid "Site manager"
-msgstr ""
+msgstr "Webmaster"
 
 msgid ""
 "a.btn.btn-default|Default link\r\n"
@@ -2972,17 +2975,21 @@ msgid "Group members - visible only to group members"
 msgstr "Gruppemedlemmer - kun synligt for medlemmer af gruppen."
 
 msgid "Open to enroll - users can enroll for this event without approval"
-msgstr ""
+msgstr "Åben for tilmeldinger - brugere kan tilmelde"
 
 msgid ""
 "Invite-only - users can only enroll for this event if they are added/invited "
 "by event organisers"
 msgstr ""
+"Kun ved initation - brugere kan tilmelde sig dette arrangement hvis de er inviteret "
+"af arrangementets arrangører"
 
 msgid ""
 "Request to enroll - users can \"request to enroll\" for this event which "
 "event organisers approve/decline"
 msgstr ""
+"Anmod om tilmelding - brugere kan anmode om at tilmelde sig til dette arrangement "
+"hvor arrangørerne skal godkende/afvise"
 
 msgid "Invite event enrollment"
 msgstr ""
@@ -3046,7 +3053,7 @@ msgid ""
 msgstr ""
 
 msgid "Assign event organisers to this event."
-msgstr ""
+msgstr "Tildel arrangører til dette arrangement."
 
 msgid "Follow content"
 msgstr ""
@@ -3102,10 +3109,10 @@ msgid "sans-serif"
 msgstr ""
 
 msgid "Create like on node or post"
-msgstr ""
+msgstr "Opret et like på et opslag eller en artikel"
 
 msgid "A person likes a post, topic, comment or event created by me"
-msgstr ""
+msgstr "En person kan lide et opslag, et emne, eller en kommentar oprettet af mig"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -3119,7 +3126,7 @@ msgid "Create reply on comment with mentions"
 msgstr ""
 
 msgid "A person replied to a comment where I am mentioned"
-msgstr ""
+msgstr "En person har svaret på en kommentar hvor jeg er nævnt"
 
 msgid ""
 "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</"
@@ -3307,7 +3314,7 @@ msgid "Request membership"
 msgstr "Anmod om medlemskab"
 
 msgid "Group Image"
-msgstr ""
+msgstr "Gruppe billede"
 
 msgid "Closed group: Group membership"
 msgstr ""
@@ -3337,6 +3344,8 @@ msgid ""
 "This is a closed group. Users can only join by invitation and the content in "
 "the group is hidden from non members."
 msgstr ""
+"Dette er en lukket gruppe. Bruger kan kun tilmelde sig via invitation og indholdet i "
+"gruppen er skjult fra ikke medlemmer."
 
 msgid "Open group"
 msgstr "Åben gruppe"
@@ -3345,6 +3354,8 @@ msgid ""
 "This is an open group. Users may join without approval and all content added "
 "in this group will be visible to all community members."
 msgstr ""
+"Dette er en åben gruppe. Brugere kan tilmelde sig uden godkendelse og alt indhold tilføjet "
+"i denne gruppe bliver synligt for alle medlemmer. "
 
 msgid "Public group"
 msgstr "Offentlig gruppe"
@@ -3354,46 +3365,48 @@ msgid ""
 "added in this group will be visible to all community members and anonymous "
 "users."
 msgstr ""
+"Dette er en offentlig gruppe. Brugere kan tilmelde sig uden nogen godkendelse og alt indhold "
+"tilføjet i denne gruppe vil være synlig for alle medlemmer og anonyme brugere."
 
 msgid "Allowed join method"
-msgstr ""
+msgstr "Tilladt metode for tilmeldinger"
 
 msgid "Choose how people can join this group."
-msgstr ""
+msgstr "Vælg hvordan brugere kan tilmelde sig denne gruppe"
 
 msgid "Available content visibility"
-msgstr ""
+msgstr "Muligheder for indhols synlighed"
 
 msgid "Choose the allowed visibility settings for the group content."
-msgstr ""
+msgstr "Vælg tilladt synlighed for gruppens indhold"
 
 msgid "Join directly"
-msgstr ""
+msgstr "Tilmeld direkte"
 
 msgid "Be added"
-msgstr ""
+msgstr "Bliv tilføjet"
 
 msgid "Flexible group: Group membership"
-msgstr ""
+msgstr "Flexibel gruppe: gruppe medlemskab"
 
 msgid "Flexible group"
 msgstr "Fleksibel gruppe"
 
 msgid ""
 "By choosing this option you can customize many group settings to your needs."
-msgstr ""
+msgstr "Ved at vælge denne mulighed kan du indstille mange gruppe indstillinger efter dine behov."
 
 msgid "Approved/Rejected by"
-msgstr ""
+msgstr "Godkendt/afvist af"
 
 msgid "Closed group: Group membership request"
-msgstr ""
+msgstr "Lukket gruppe: gruppe medlemskabs anmodning"
 
 msgid "Adds users as requesters for the group."
-msgstr ""
+msgstr "Tilføjger brugere som anmodere til gruppen."
 
 msgid "Approve request to join a group"
-msgstr ""
+msgstr "Godkend anmodning om at tilmelde sig en gruppe"
 
 msgid "My group membership request is approved"
 msgstr "Mit gruppe medlemsskabs anmodning er godkendt"
@@ -4960,7 +4973,7 @@ msgstr "Kommentarens sprogkode."
 
 msgctxt "Comment Button"
 msgid "Comment"
-msgstr "Kommenter"
+msgstr "Kommentér"
 
 msgid "Like"
 msgstr ""
@@ -10153,7 +10166,7 @@ msgid "Username or email address"
 msgstr "Brugernavn eller e-mail-adresse"
 
 msgid "Enter your @s username or email."
-msgstr ""
+msgstr "Skriv dit @s brugernavn eller email."
 
 msgid "Password"
 msgstr "Adgangskode"
@@ -11514,18 +11527,20 @@ msgid "Email notifications"
 msgstr "Email notifikationer"
 
 msgid "Show my email on my profile"
-msgstr ""
+msgstr "Vis email på min profil"
 
 msgid ""
 "This setting is currently being controlled by a platform wide setting and "
 "cannot be changed. Please contact a sitemanager if you have questions."
 msgstr ""
+"Denne indstilling bliver kontrolleret af indstillinger på sitet og kan ikke ændres. "
+"Kontakt din site manager hvis du har spørgsmål."
 
 msgid "Show my language on my profile"
-msgstr ""
+msgstr "Vis sprog på min profil"
 
 msgid "Privacy settings"
-msgstr ""
+msgstr "Privatlivsindstillinger"
 
 msgid "Time zone"
 msgstr "Tidszone"
@@ -11888,7 +11903,7 @@ msgid "The menu link has been saved."
 msgstr "Menulink gemt."
 
 msgid "View activities"
-msgstr ""
+msgstr "Se aktiviteter"
 
 msgid "Mail to"
 msgstr "Mail til"
@@ -12121,6 +12136,16 @@ msgid ""
 "        To solve the issue, try using different login information, try again "
 "later, or <a href=\":url\">request a new password</a>"
 msgstr ""
+"\n"
+"        Ups, der er sket en fejl. Dette kan være sket af følgende "
+"årsager: <br>\n"
+"        - Ugyldigt kombination af brugernavn og password <br>\n"
+"        - Der har været flere fejlede login forsøg på denne "
+"konto. Den er midlertidgt blokeret. <br>\n"
+"        - For mange fejlede login forsøg fra denne computer (IP adresse). "
+"Denne IP adresse er midlertidgt blokeret. <br> <br>\n"
+"        For at løse dette prøv at bruge anden login information, prøv igen "
+"senere, eller <a href=\":url\">anmod om nyt password</a>"
 
 msgid "@function @ @organization"
 msgstr ""
@@ -12194,7 +12219,7 @@ msgid "Revision information"
 msgstr "Versioner"
 
 msgid "The URL alias allows you to customise the link to this page."
-msgstr ""
+msgstr "URL alias giver mulighed for at lave dit eget link til denne side"
 
 msgid "URL path settings"
 msgstr "Alternativ URL"
@@ -12305,7 +12330,7 @@ msgid "@type %title has been updated."
 msgstr "@type %title opdateret."
 
 msgid "for this user"
-msgstr ""
+msgstr "for denne bruger"
 
 msgid "Either the path '%path' is invalid or you do not have access to it."
 msgstr ""
@@ -12425,7 +12450,7 @@ msgid "The @type %title has been deleted."
 msgstr "@type %title slettet."
 
 msgid "Group and visibility"
-msgstr ""
+msgstr "Gruppe og synlighed"
 
 msgid "Are you sure you want to delete this @item?"
 msgid_plural "Are you sure you want to delete these @items?"
@@ -12444,11 +12469,12 @@ msgid "Change your timezone here"
 msgstr ""
 
 msgid "All day"
-msgstr ""
+msgstr "Hele dagen"
 
 msgid ""
 "The event date and time are set based on your timezone. @change_timezone."
 msgstr ""
+"Arrangementets dato og tid er baseret på din tidszone. @change_timezone."
 
 msgid "@title (value @number)"
 msgstr "@title (værdi @number)"
@@ -12499,7 +12525,7 @@ msgid "Add @entity-type"
 msgstr "Tilføj @entity-type"
 
 msgid "Add @group_type_label"
-msgstr ""
+msgstr "Tilføj @group_type_label"
 
 msgid "Unable to install the %module module since it does not exist."
 msgstr ""
@@ -12728,7 +12754,7 @@ msgid "Use users' personal contact forms"
 msgstr "Brug brugeres personlige kontaktformularer"
 
 msgid "Change roles assigned to user."
-msgstr ""
+msgstr "Skift roller tildelt denne bruger."
 
 msgid "The roles have been updated."
 msgstr "Rollerne er blevet opdateret."
@@ -36451,7 +36477,7 @@ msgid "Flushed vote data for @type entities."
 msgstr "Ryddede afstemningsdata for @type entiteter."
 
 msgid "News"
-msgstr ""
+msgstr "Nyheder"
 
 msgid ""
 "The image was resized to fit within the maximum allowed dimensions of "
@@ -36788,13 +36814,13 @@ msgid "Nulstil din adgangskode"
 msgstr "Nulstil din adgangskode"
 
 msgid "Enable user tracking"
-msgstr ""
+msgstr "Brug tracking af brugere"
 
 msgid "Users are tracked by default, but you are able to opt out."
-msgstr ""
+msgstr "Brugere bliver tracket som standard, men du har mulighed for at vælge det fra."
 
 msgid "Google Analytics settings"
-msgstr ""
+msgstr "Google Analytics indstillinger"
 
 msgid "Add JavaScript snippets"
 msgstr ""
@@ -38590,10 +38616,17 @@ msgstr "Ved at indsende denne formular bliver du medlem af gruppen. Som medlem a
 
 msid "A welcome message with further instructions will be sent to your email address after you successfully enter your email address and a username."
 msgstr "Ønsker du en bruger og adgang til intranet, forum, nyhedsbreve mm., skal du udfylde nedenstående formular. Det er kun ansatte i medlemskommuner som kan få en bruger og adgang til sitet. Det er vigtigt at du bruger din mail med kommunens domæne, da dette er vores garanti for din tilknytning til en medlemskommune. Efter at vi har modtaget formularen bliver din bruger aktiveret af administratoren og du vil blive kontaktet, når du har adgang til sitet.
-En medlemskommune kan have et ubegrænset antal brugere. 
+En medlemskommune kan have et ubegrænset antal brugere.
 
 Er din kommune ikke medlem af KITA og ønsker du adgang til sitet skal du kontakte Kit@ på mail@itchefer.dk med henblik på indmeldelse.
 "
 
 msgid "Send request"
 msgstr "Send anmodning"
+
+msgid "Math question"
+msgstr "MAtematik spørgsmål"
+
+msgid "Solve this simple math problem and enter the result. E.g. for 1+3, enter 4."
+msgstr "Løs dette simple matematik problem og skriv resultatet."
+

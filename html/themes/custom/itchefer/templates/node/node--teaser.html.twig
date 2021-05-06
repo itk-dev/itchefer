@@ -74,6 +74,7 @@
     'teaser',
     'teaser-' ~ node.bundle|clean_class,
     view_mode == 'teaser' ? 'card',
+    view_mode == 'news_page' ? 'card',
     view_mode == 'activity' ? 'teaser--stream',
     view_mode == 'activity_comment' ? 'teaser--stream',
     node.isPromoted() ? 'promoted',
@@ -92,7 +93,7 @@
 
   <div class='teaser__image' aria-hidden="true">
 
-    {% if view_mode == 'teaser' or no_image %}
+    {% if view_mode == 'teaser' or view_mode == 'news_page' or no_image %}
       {% block card_teaser_type %}
         <a href="{{ url }}" title="{{- node.bundle|clean_class|capitalize -}} : &nbsp; {{- label|render|striptags|trim -}}">
           <div class="teaser__teaser-type">
@@ -117,13 +118,12 @@
       {% block card_title %}
         {{ title_prefix }}
           <h4{{ title_attributes }} class="teaser__title">
-            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            <a href="{{ url }}" rel="bookmark">{{node.type.entity.label|capitalize}} : &nbsp; {{ label }}</a>
           </h4>
         {{ title_suffix }}
       {%- endblock -%}
 
       {% block card_body %}
-
         {% if display_submitted %}
           {% embed "node--teaser__field.html.twig" %}
             {%- block field_icon -%} account_circle {%- endblock -%}

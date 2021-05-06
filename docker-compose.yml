@@ -1,3 +1,4 @@
+# itk-version: 1.0.0
 version: "3"
 
 networks:
@@ -22,24 +23,23 @@ services:
       - MYSQL_PASSWORD=db
       - MYSQL_DATABASE=db
       #- ENCRYPT=1 # Uncomment to enable database encryption.
-    # @see https://symfony.com/doc/current/setup/symfony_server.html#docker-integration
-    labels:
-      com.symfony.server.service-prefix: 'DATABASE'
 
   phpfpm:
     image: itkdev/php7.4-fpm:latest
     networks:
       - app
     environment:
-      - PHP_XDEBUG=${PHP_XDEBUG:-0}
-      - PHP_XDEBUG_REMOTE_AUTOSTART=${PHP_XDEBUG_REMOTE_AUTOSTART:-0}
-      - PHP_XDEBUG_REMOTE_CONNECT_BACK=${PHP_XDEBUG_REMOTE_CONNECT_BACK:-0}
-      - PHP_MAX_EXECUTION_TIME=120
+      - XDEBUG_MODE=${XDEBUG_MODE:-off}
+      - XDEBUG_SESSION=${XDEBUG_SESSION:-0}
+      - PHP_MAX_EXECUTION_TIME=30
       - PHP_MEMORY_LIMIT=256M
       # - PHP_MAIL=1 # Uncomment to enable mailhog.
+      - PHP_IDE_CONFIG=serverName=localhost
       - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
+      - COMPOSER_VERSION=1
     depends_on:
       - mariadb
+      - memcached
     volumes:
       - .:/app:delegated
       - drush-cache:/root/.drush
@@ -51,7 +51,6 @@ services:
       - frontend
     depends_on:
       - phpfpm
-      - memcached
     ports:
       - '80'
     volumes:

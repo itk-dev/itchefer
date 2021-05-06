@@ -1,60 +1,71 @@
-uuid: 44d33463-3a39-4ae0-8577-f7229e9b2375
+uuid: e21f5304-962f-4ba7-97e2-92ad250a8e97
 langcode: da
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.news_page
     - field.field.node.topic.body
     - field.field.node.topic.field_content_visibility
     - field.field.node.topic.field_files
     - field.field.node.topic.field_topic_comments
     - field.field.node.topic.field_topic_image
     - field.field.node.topic.field_topic_type
+    - image.style.social_x_large
     - node.type.topic
   module:
-    - file
-    - group_core_comments
+    - image
+    - lazy
+    - options
     - text
     - user
 _core:
   default_config_hash: nklLxWaEksFeM3G1wLFL20XlyjbRZcoDbjtefSxPyRE
-id: node.topic.default
+id: node.topic.news_page
 targetEntityType: node
 bundle: topic
-mode: default
+mode: news_page
 content:
   body:
-    label: hidden
+    label: above
     type: text_default
-    weight: 0
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_files:
-    weight: 3
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
+  field_content_visibility:
+    type: list_default
+    weight: 5
     region: content
-    type: file_default
-  field_topic_comments:
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_topic_image:
+    type: image
     weight: 1
-    label: above
-    settings:
-      pager_id: 0
-      view_mode: default
-    third_party_settings: {  }
     region: content
-    type: comment_group_content
+    label: hidden
+    settings:
+      image_style: social_x_large
+      image_link: content
+    third_party_settings:
+      lazy:
+        lazy_image: 0
+  field_topic_type:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
   flag_follow_content:
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   groups_type_flexible_group:
     label: above
-    weight: -5
+    weight: 0
     region: content
     settings:
       link: true
@@ -66,14 +77,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 6
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_content_visibility: true
-  field_topic_image: true
-  field_topic_type: true
+  field_files: true
+  field_topic_comments: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
