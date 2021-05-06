@@ -28,7 +28,6 @@
         "drupal/hierarchical_taxonomy_menu": "^1.42",
         "drupal/antibot": "^1.4",
         "drupal/memcache": "^2.3"
-
     },
     "repositories": [
         {
