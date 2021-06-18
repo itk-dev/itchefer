@@ -1,0 +1,22 @@
+diff --git a/modules/social_features/social_post/social_post.install b/modules/social_features/social_post/social_post.install
+index 046b178..31a4088 100644
+--- a/modules/social_features/social_post/social_post.install
++++ b/modules/social_features/social_post/social_post.install
+@@ -152,7 +152,7 @@
+ /**
+  * Create "Featured" view mode/display for post.
+  */
+-function social_post_update_8804() {
++function social_post__update_8804() {
+   // Create a new post featured entity view mode.
+   if (!EntityViewMode::load('post.featured')) {
+     EntityViewMode::create([
+@@ -187,7 +187,7 @@
+ /**
+  * Update likes in post activity and comment view modes.
+  */
+  -function social_post_update_8901() {
++function social_post__update_8901() {
+   /** @var \Drupal\update_helper\Updater $updateHelper */
+   $updateHelper = \Drupal::service('update_helper.updater');
+
