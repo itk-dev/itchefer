@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: 2lrd2Rx4O4q8-45Jfi6-wqFo_2mKCGurGPzz1oDf-fA
 id: contentmanager
-label: 'Content manager'
+label: 'Indholds redaktør'
 weight: 3
 is_admin: null
 permissions:
@@ -36,6 +36,7 @@ permissions:
   - 'administer nodes'
   - 'administer own comments'
   - 'administer post entities'
+  - 'bypass create group access'
   - 'cancel account'
   - 'change own username'
   - 'create closed_group group'

@@ -9,3 +9,7 @@ _core:
 langcode: da
 accent_color: '#39a8e0'
 focus_color: '#f9b13c'
+favicon:
+  use_default: false
+  path: themes/contrib/socialblue/favicon.ico
+  mimetype: image/vnd.microsoft.icon

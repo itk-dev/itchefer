@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: 2Up5NUvwF4aBVoO6eFTPeBXtnpUw_yiexv9I5u6ZD-g
 id: message
-label: Besked
+label: Message
 module: views
 description: ''
 tag: ''
@@ -530,7 +530,7 @@ display:
           entity_field: template
           plugin_id: bundle
       sorts: {  }
-      title: Besked
+      title: Message
       header: {  }
       footer: {  }
       empty:
@@ -573,7 +573,7 @@ display:
       path: admin/content/messages
       menu:
         type: tab
-        title: Besked
+        title: Message
         description: ''
         parent: system.admin_content
         weight: 0

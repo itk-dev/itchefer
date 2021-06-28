@@ -13,7 +13,7 @@ id: node.topic.body
 field_name: body
 entity_type: node
 bundle: topic
-label: Beskrivelse
+label: Description
 description: ''
 required: true
 translatable: true

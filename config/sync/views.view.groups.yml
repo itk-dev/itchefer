@@ -157,7 +157,7 @@ display:
           entity_type: group
           entity_field: created
           plugin_id: date
-      title: Groups
+      title: Grupper
       header: {  }
       footer: {  }
       empty:
@@ -271,7 +271,7 @@ display:
       display_description: ''
       menu:
         type: none
-        title: Groups
+        title: Grupper
         description: ''
         expanded: false
         parent: ''

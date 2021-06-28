@@ -15,7 +15,7 @@ dependencies:
     - dynamic_entity_reference
     - field_group
     - file
-    - image
+    - image_widget_crop
     - path
 third_party_settings:
   field_group:
@@ -52,7 +52,6 @@ third_party_settings:
     group_magazine_tt:
       children:
         - title
-        - field_summary
         - field_magazine_file
       parent_name: ''
       weight: 0
@@ -104,8 +103,14 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list: {  }
+      crop_types_required: {  }
+      show_crop_area: false
+      show_default_crop: true
+      warn_multiple_usages: true
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_highlighted_articles:
     weight: 9
@@ -129,8 +134,14 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list: {  }
+      crop_types_required: {  }
+      show_crop_area: false
+      show_default_crop: true
+      warn_multiple_usages: true
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   path:
     type: path

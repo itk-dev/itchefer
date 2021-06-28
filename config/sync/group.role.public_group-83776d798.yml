@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: OQSrt_P3FJuy_X3ysQlN-RPXuSDEBsCYbVMYNjau__w
 id: public_group-83776d798
-label: 'Content manager'
+label: 'Indholds redaktør'
 weight: 3
 internal: true
 audience: outsider

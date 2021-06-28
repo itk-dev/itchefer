@@ -13,7 +13,7 @@ id: group.open_group.field_group_description
 field_name: field_group_description
 entity_type: group
 bundle: open_group
-label: Beskrivelse
+label: Description
 description: ''
 required: false
 translatable: false

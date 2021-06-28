@@ -1,4 +1,3 @@
-uuid: 594215d8-ac24-4184-9b07-2bab1c6ce62b
 langcode: da
 status: true
 dependencies:
@@ -15,18 +14,15 @@ dependencies:
     - field.field.node.event.field_event_enroll_outside_group
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
-    - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
-    - field.field.node.event.field_product
+    - image.style.social_file_thumbnails
     - node.type.event
   module:
     - address
-    - file
     - group_core_comments
+    - social_core
     - text
     - user
-_core:
-  default_config_hash: dtdxx9_1Q-59mHTI6nbrpq23gI4VfMAlCniJQDfsb9Y
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -35,19 +31,19 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_event_address:
     type: address_plain
-    weight: 3
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     region: content
   field_event_comments:
-    weight: 5
+    weight: 3
     label: above
     settings:
       pager_id: 0
@@ -57,43 +53,41 @@ content:
     region: content
   field_event_location:
     type: string
-    weight: 2
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 6
+    weight: 4
     label: above
     settings:
-      use_description_as_link_text: true
+      image_style: social_file_thumbnails
+      image_link: file
     third_party_settings: {  }
-    type: file_default
+    type: file_image_default
     region: content
   flag_follow_content:
-    weight: 7
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
-  groups_type_flexible_group:
-    label: above
-    weight: 0
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   groups_type_public_group:
     label: above
-    weight: 1
+    weight: -5
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  like_and_dislike:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -105,12 +99,8 @@ hidden:
   field_event_enroll: true
   field_event_enroll_outside_group: true
   field_event_image: true
-  field_event_managers: true
-  field_product: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
-  langcode: true
-  like_and_dislike: true
   private_message_link: true
   search_api_excerpt: true
