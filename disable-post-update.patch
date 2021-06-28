@@ -15,7 +15,7 @@ index 046b178..31a4088 100644
  /**
   * Update likes in post activity and comment view modes.
   */
-  -function social_post_update_8901() {
+-function social_post_update_8901() {
 +function social_post__update_8901() {
    /** @var \Drupal\update_helper\Updater $updateHelper */
    $updateHelper = \Drupal::service('update_helper.updater');
