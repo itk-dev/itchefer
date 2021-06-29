@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: dsUpeKJcaJtRB-zCa4UaE1r7PDz47lx3_PaXN8NJaXM
 id: public_group-ba5854c29
-label: 'Site manager'
+label: Webmaster
 weight: 4
 internal: true
 audience: outsider

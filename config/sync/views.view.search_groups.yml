@@ -308,7 +308,7 @@ display:
       display_description: ''
       menu:
         type: tab
-        title: Groups
+        title: Grupper
         description: ''
         expanded: false
         parent: ''

@@ -6,7 +6,7 @@ _core:
   default_config_hash: XBgnXb6ofDNp0DAAI3YPRXEyvAAvrZA3eicn1uv8NZs
 id: public_group
 label: 'Offentlig gruppe'
-description: 'This is a public group. Users may join without approval and all content added in this group will be visible to all community members and anonymous users.'
+description: 'Dette er en offentlig gruppe. Brugere kan tilmelde sig uden nogen godkendelse og alt indhold tilføjet i denne gruppe vil være synlig for alle medlemmer og anonyme brugere.'
 creator_membership: true
 creator_wizard: false
 creator_roles:

@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: e7ifmALP1LgHYB2TPUjBSpLDFntuhhGeMLF2c-uWXJ8
 id: flexible_group-group_membership
-label: 'Flexible group: Group membership'
+label: 'Flexibel gruppe: gruppe medlemskab'
 description: 'Adds users to groups as members.'
 group_type: flexible_group
 content_plugin: group_membership

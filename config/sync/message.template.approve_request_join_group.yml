@@ -22,7 +22,7 @@ third_party_settings:
 _core:
   default_config_hash: Xhgfsd8evUGA3wgqOQStlgzXVoH6AG_2idsXE09ZVQo
 template: approve_request_join_group
-label: 'Approve request to join a group'
+label: 'Godkend anmodning om at tilmelde sig en gruppe'
 description: 'Mit gruppe medlemsskabs anmodning er godkendt'
 text:
   -

@@ -13,8 +13,8 @@ id: group.flexible_group.field_group_allowed_join_method
 field_name: field_group_allowed_join_method
 entity_type: group
 bundle: flexible_group
-label: 'Allowed join method'
-description: 'Choose how people can join this group.'
+label: 'Tilladt metode for tilmeldinger'
+description: 'Vælg hvordan brugere kan tilmelde sig denne gruppe'
 required: true
 translatable: false
 default_value:

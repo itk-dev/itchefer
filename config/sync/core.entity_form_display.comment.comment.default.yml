@@ -5,6 +5,7 @@ dependencies:
   config:
     - comment.type.comment
     - field.field.comment.comment.field_comment_body
+    - field.field.comment.comment.field_comment_files
     - field.field.comment.comment.field_vedhaeftet_fil
   module:
     - text
@@ -36,5 +37,6 @@ content:
       include_locked: true
     third_party_settings: {  }
 hidden:
+  field_comment_files: true
   field_vedhaeftet_fil: true
   subject: true
