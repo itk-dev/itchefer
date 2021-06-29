@@ -15,13 +15,13 @@ settings:
   allowed_values:
     -
       value: 1
-      label: 'Open to enroll - users can enroll for this event without approval'
+      label: 'Åben for tilmeldinger - brugere kan tilmelde'
     -
       value: 3
-      label: 'Invite-only - users can only enroll for this event if they are added/invited by event organisers'
+      label: 'Kun ved initation - brugere kan tilmelde sig dette arrangement hvis de er inviteret af arrangementets arrangører'
     -
       value: 2
-      label: 'Request to enroll - users can "request to enroll" for this event which event organisers approve/decline'
+      label: 'Anmod om tilmelding - brugere kan anmode om at tilmelde sig til dette arrangement hvor arrangørerne skal godkende/afvise'
   allowed_values_function: ''
 module: options
 locked: false

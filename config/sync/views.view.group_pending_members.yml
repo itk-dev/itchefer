@@ -457,7 +457,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operationer
+          label: Operations
           exclude: false
           alter:
             alter_text: false

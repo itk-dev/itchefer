@@ -14,7 +14,7 @@ id: group_content.group_content_type_c8bae2527294c.grequest_updated_by
 field_name: grequest_updated_by
 entity_type: group_content
 bundle: group_content_type_c8bae2527294c
-label: 'Approved/Rejected by'
+label: 'Godkendt/afvist af'
 description: ''
 required: false
 translatable: true

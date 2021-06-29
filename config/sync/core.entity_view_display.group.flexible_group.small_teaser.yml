@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.group.small_teaser
+    - field.field.group.flexible_group.field_flexible_group_visibility
     - field.field.group.flexible_group.field_group_address
     - field.field.group.flexible_group.field_group_allowed_join_method
     - field.field.group.flexible_group.field_group_allowed_visibility
@@ -11,6 +12,7 @@ dependencies:
     - field.field.group.flexible_group.field_group_image
     - field.field.group.flexible_group.field_group_location
     - field.field.group.flexible_group.field_group_purpose
+    - field.field.group.flexible_group.field_group_type
     - group.type.flexible_group
     - image.style.social_medium
   module:
@@ -42,12 +44,14 @@ content:
 hidden:
   changed: true
   created: true
+  field_flexible_group_visibility: true
   field_group_address: true
   field_group_allowed_join_method: true
   field_group_allowed_visibility: true
   field_group_description: true
   field_group_location: true
   field_group_purpose: true
+  field_group_type: true
   langcode: true
   search_api_excerpt: true
   uid: true

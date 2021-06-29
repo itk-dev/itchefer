@@ -15,10 +15,10 @@ settings:
   allowed_values:
     -
       value: direct
-      label: 'Join directly'
+      label: 'Tilmeld direkte'
     -
       value: added
-      label: 'Be added'
+      label: 'Bliv tilføjet'
   allowed_values_function: ''
 module: options
 locked: false

@@ -13,8 +13,8 @@ id: group.flexible_group.field_group_allowed_visibility
 field_name: field_group_allowed_visibility
 entity_type: group
 bundle: flexible_group
-label: 'Available content visibility'
-description: 'Choose the allowed visibility settings for the group content.'
+label: 'Muligheder for indhols synlighed'
+description: 'Vælg tilladt synlighed for gruppens indhold'
 required: true
 translatable: false
 default_value:

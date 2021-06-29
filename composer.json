@@ -7,10 +7,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4.0",
-        "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.6.1",
-        "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "~9.0",
+        "goalgorilla/open_social": "~10.1.1",
         "monolog/monolog": "^1.17",
         "drush/drush": "^10.3",
         "drupal/field_permissions": "^1.1",
@@ -27,7 +24,14 @@
         "drupal/captcha": "^1.1",
         "drupal/hierarchical_taxonomy_menu": "^1.42",
         "drupal/antibot": "^1.4",
-        "drupal/memcache": "^2.3"
+        "drupal/memcache": "^2.3",
+        "drupal/social_api": "1.1",
+        "drupal/social_auth": "1.0",
+        "drupal/social_auth_extra": "1.x-dev",
+        "drupal/social_auth_facebook": "1",
+        "drupal/social_auth_google": "1",
+        "drupal/social_search_autocomplete": "^1.2",
+        "drupal/field_group": "^3.0"
     },
     "repositories": [
         {
@@ -40,12 +44,6 @@
         }
     ],
     "scripts": {
-      "post-install-cmd": [
-        "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-      ],
-      "post-update-cmd": [
-        "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-      ],
       "check-coding-standards/phpcs": [
         "vendor/bin/phpcs --standard=phpcs.xml.dist"
       ],
@@ -60,6 +58,11 @@
       ]
     },
     "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        },
         "installer-types": [
             "bower-asset",
             "npm-asset"
@@ -89,7 +92,15 @@
                 "type:drupal-drush"
             ]
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "goalgorilla/open_social": {
+                "Disable two post update functions": "disable-post-update.patch"
+            }
+        }
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*",

@@ -15,13 +15,13 @@ settings:
   allowed_values:
     -
       value: public
-      label: Offentlig
+      label: 'Offentlig - synlig for alle inklusiv folk som ikke er medlem.'
     -
       value: community
-      label: Fællesskab
+      label: 'Fællesskabet - kun synligt for brugere som er logget ind.'
     -
       value: group
-      label: Gruppemedlemmer
+      label: 'Gruppemedlemmer - kun synligt for medlemmer af gruppen.'
   allowed_values_function: ''
 module: options
 locked: false

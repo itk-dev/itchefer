@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: xWbc2o96o-mwekHr6DcdYVj6DAf0Oj9tygpEBB8ZC50
 id: sitemanager
-label: 'Site manager'
+label: Webmaster
 weight: 4
 is_admin: null
 permissions:
@@ -43,6 +43,7 @@ permissions:
   - 'administer profile settings'
   - 'administer site configuration'
   - 'administer social swiftmail'
+  - 'administer social_comment_upload settings'
   - 'administer social_event settings'
   - 'administer social_topic settings'
   - 'administer social_user settings'
@@ -53,6 +54,7 @@ permissions:
   - 'assign contentmanager role'
   - 'assign sitemanager role'
   - 'block users'
+  - 'bypass create group access'
   - 'cancel account'
   - 'change own username'
   - 'create closed_group group'

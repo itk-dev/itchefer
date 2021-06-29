@@ -36,9 +36,10 @@ third_party_settings:
       children:
         - title
         - field_event_image
+        - body
       parent_name: ''
       weight: 12
-      label: 'Titel og billede'
+      label: 'Basic information'
       format_type: fieldset
       format_settings:
         description: ''
@@ -64,7 +65,7 @@ third_party_settings:
         - field_event_date
         - field_event_date_end
       parent_name: ''
-      weight: 15
+      weight: 1
       label: 'Dato og tid'
       format_type: fieldset
       format_settings:
@@ -78,21 +79,8 @@ third_party_settings:
         - field_event_location
         - field_event_address
       parent_name: ''
-      weight: 16
+      weight: 2
       label: Lokation
-      format_type: fieldset
-      format_settings:
-        description: ''
-        classes: ''
-        id: ''
-        required_fields: true
-      region: hidden
-    group_description:
-      children:
-        - body
-      parent_name: ''
-      weight: 17
-      label: Beskrivelse
       format_type: fieldset
       format_settings:
         description: ''
@@ -104,40 +92,47 @@ third_party_settings:
       children:
         - field_content_visibility
         - groups
+        - group_enrollment
       parent_name: ''
-      weight: 13
-      label: Synlighed
+      weight: 3
+      label: 'Access permissions'
       format_type: fieldset
       format_settings:
         required_fields: true
         id: visibility
         classes: 'card '
+        description: ''
       region: hidden
     group_attachments:
       children:
         - field_files
+        - field_event_managers
       parent_name: ''
       weight: 18
-      label: 'Vedhæftede filer'
-      format_type: fieldset
+      label: 'Additional information'
+      format_type: details
       format_settings:
         required_fields: true
         id: attachments
-        classes: card
+        classes: social-collapsible-fieldset
+        description: ''
+        open: false
       region: hidden
     group_enrollment:
       children:
         - field_event_enroll
         - group_enrollment_methods
-      parent_name: ''
-      weight: 14
-      label: Tilmeldingsmuligheder
-      format_type: fieldset
+      parent_name: group_event_visibility
+      weight: 18
+      label: Enrollment
+      format_type: details
       format_settings:
         required_fields: true
         id: enrollment
-        classes: card
-      region: hidden
+        classes: ''
+        description: ''
+        open: false
+      region: content
     group_enrollment_methods:
       children:
         - field_enroll_method
@@ -156,20 +151,25 @@ third_party_settings:
         classes: enrollment-methods
         required_fields: false
       label: 'Enrollment options fieldset'
-      region: hidden
-    group_event_managers:
+      region: content
+    group_settings:
       children:
-        - field_event_managers
-      parent_name: ''
-      weight: 9
-      label: 'Event organisers'
-      format_type: fieldset
+        - uid
+        - created
+        - field_event_comments
+        - path
+        - status
       format_settings:
-        id: event-managers
-        classes: card
-        required_fields: false
-        label: 'Event organisers'
+        classes: social-collapsible-fieldset
+        description: ''
+        id: ''
+        open: false
+        required_fields: true
+      format_type: details
+      label: Indstillinger
+      parent_name: ''
       region: hidden
+      weight: 20
 _core:
   default_config_hash: UGtiI-22lVvm5jYwetccuc4QTVlyfhg2bON1zwowOUY
 id: node.event.default
@@ -275,8 +275,8 @@ content:
       match_limit: 10
     type: entity_reference_autocomplete
     weight: 1
-    third_party_settings: {  }
     region: content
+    third_party_settings: {  }
   field_files:
     weight: 2
     settings:
@@ -357,4 +357,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  sticky: true

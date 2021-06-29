@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: VF8_dCGefUOth0EGx8gq-2RkXbORBrEL0n-E55dsRD4
 id: managers
-label: 'Event organisers'
+label: 'Arrangement arrangører'
 module: views
 description: ''
 tag: ''
@@ -131,7 +131,7 @@ display:
           view_mode: default
       filters: {  }
       sorts: {  }
-      title: Organisers
+      title: Arrangører
       header: {  }
       footer: {  }
       empty:
@@ -144,7 +144,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'We could not find any event organisers for this event.'
+          content: 'Der er ingen arrangører for dette arrangement'
           plugin_id: text_custom
       relationships:
         uid:
@@ -331,7 +331,7 @@ display:
       path: node/%node/organisers
       menu:
         type: tab
-        title: Organisers
+        title: Arrangører
         description: ''
         expanded: false
         parent: ''

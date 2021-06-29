@@ -2,8 +2,6 @@ third_party_settings:
   field_group:
     group_location:
       label: Lokation
-    group_description:
-      label: Beskrivelse
     group_event_visibility:
       label: Synlighed
     group_attachments:

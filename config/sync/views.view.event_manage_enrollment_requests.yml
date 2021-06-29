@@ -261,7 +261,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Besked
+          label: Message
           exclude: false
           alter:
             alter_text: false

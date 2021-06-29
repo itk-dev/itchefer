@@ -428,7 +428,7 @@ display:
           exposed: true
           expose:
             operator_id: field_topic_type_target_id_op
-            label: 'er typen af'
+            label: "er af typen\t"
             description: ''
             use_operator: false
             operator: field_topic_type_target_id_op
