@@ -20,9 +20,14 @@
   {% endif %}
 
   {% if content.body %}
-    {% embed "node--teaser__body.html.twig" %}
-      {% block field_body %} {{ content.body }} {% endblock %}
-    {% endembed %}
+    <div class="overflow-ellipsis">
+      {{ content.body }}
+    </div>
+    <div class="card__actionbar">
+      <a href="{{ url }}" class="card__link" title="{{ label }}">
+        {% trans %}Read more{% endtrans %}
+      </a>
+    </div>
   {% endif %}
 
 {% endblock %}
