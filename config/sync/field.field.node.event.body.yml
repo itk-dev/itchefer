@@ -13,7 +13,7 @@ id: node.event.body
 field_name: body
 entity_type: node
 bundle: event
-label: Description
+label: Beskrivelse
 description: ''
 required: true
 translatable: true

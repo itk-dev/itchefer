@@ -365,7 +365,7 @@ display:
       tags: {  }
   attachment_1:
     id: attachment_1
-    display_title: Attachment
+    display_title: Vedhæftet
     display_plugin: attachment
     position: 2
     display_options:
