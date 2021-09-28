@@ -1,0 +1,17 @@
+uuid: eedb6ac3-19d8-4ae8-846d-767d63b087ef
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+  enforced:
+    config:
+      - user.role.exporter
+id: open_group-10bfded1e
+label: Exporter
+weight: 5
+internal: true
+audience: outsider
+group_type: open_group
+permissions_ui: false
+permissions: {  }
