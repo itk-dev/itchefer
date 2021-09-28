@@ -31,7 +31,7 @@ third_party_settings:
         - title
       parent_name: ''
       weight: 0
-      label: 'Basic information'
+      label: Indhold
       format_type: fieldset
       format_settings:
         required_fields: true
@@ -46,7 +46,7 @@ third_party_settings:
         - field_content_visibility
       parent_name: ''
       weight: 1
-      label: 'Access permissions'
+      label: Synlighed
       format_type: fieldset
       format_settings:
         required_fields: true
@@ -60,7 +60,7 @@ third_party_settings:
         - field_files
       parent_name: ''
       weight: 5
-      label: 'Additional information'
+      label: Bilag
       format_type: details
       format_settings:
         required_fields: true
@@ -79,6 +79,9 @@ third_party_settings:
         - uid
         - created
         - status
+        - langcode
+        - url_redirects
+        - revision_log
       format_settings:
         classes: social-collapsible-fieldset
         description: ''

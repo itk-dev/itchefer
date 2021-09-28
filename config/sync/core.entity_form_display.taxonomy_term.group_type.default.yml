@@ -1,3 +1,4 @@
+uuid: a4475506-07b5-4fb2-84e5-61d10705f98f
 langcode: en
 status: true
 dependencies:
@@ -26,6 +27,13 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -39,5 +47,12 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
     third_party_settings: {  }
 hidden: {  }

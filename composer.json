@@ -77,6 +77,11 @@
             "html/profiles/contrib/social": [
                 "goalgorilla/open_social"
             ],
+            "html/profiles/contrib/social/themes/{$name}": [
+                "drupal/gin",
+                "drupal/socialbase",
+                "drupal/socialblue"
+            ],
             "html/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],

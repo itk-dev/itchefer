@@ -13,7 +13,7 @@ id: post.photo.field_post_image
 field_name: field_post_image
 entity_type: post
 bundle: photo
-label: 'Gruppe billede'
+label: Billede
 description: ''
 required: false
 translatable: false
