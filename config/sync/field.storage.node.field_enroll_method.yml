@@ -15,13 +15,13 @@ settings:
   allowed_values:
     -
       value: 1
-      label: 'Åben for tilmeldinger - brugere kan tilmelde'
+      label: 'Åben for tilmeldinger'
     -
       value: 3
-      label: 'Kun ved initation - brugere kan tilmelde sig dette arrangement hvis de er inviteret af arrangementets arrangører'
+      label: 'Anmod om at tilmelde'
     -
       value: 2
-      label: 'Anmod om tilmelding - brugere kan anmode om at tilmelde sig til dette arrangement hvor arrangørerne skal godkende/afvise'
+      label: 'Tilmelding kun via invitation'
   allowed_values_function: ''
 module: options
 locked: false

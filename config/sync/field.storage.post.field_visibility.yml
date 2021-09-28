@@ -15,19 +15,19 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: 'Fællesskabet - kun synligt for brugere som er logget ind.'
+      label: Fællesskab
       description: 'Kun synlig for brugere som er logget ind'
     -
       value: '1'
-      label: 'Offentlig - synlig for alle inklusiv folk som ikke er medlem.'
+      label: Offentlig
       description: 'Synlig for alle besøgende af siden'
     -
       value: '2'
-      label: 'Fællesskabet - kun synligt for brugere som er logget ind.'
+      label: Fællesskab
       description: 'Kun synlig for brugere som er logget ind'
     -
       value: '3'
-      label: 'Gruppemedlemmer - kun synligt for medlemmer af gruppen.'
+      label: Gruppemedlemmer
       description: 'Synlig for medlemmer af gruppen'
 module: dropdown
 locked: false

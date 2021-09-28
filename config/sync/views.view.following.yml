@@ -255,7 +255,7 @@ display:
           relationship: flag_relationship
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operationer
           exclude: false
           alter:
             alter_text: true

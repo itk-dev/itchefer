@@ -92,7 +92,7 @@ third_party_settings:
         id: ''
         required_fields: true
       format_type: fieldset
-      label: 'Access permissions'
+      label: Synlighed
       parent_name: ''
       region: content
       weight: 1

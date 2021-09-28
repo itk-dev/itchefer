@@ -95,7 +95,7 @@ third_party_settings:
         - group_enrollment
       parent_name: ''
       weight: 3
-      label: 'Access permissions'
+      label: Synlighed
       format_type: fieldset
       format_settings:
         required_fields: true
@@ -106,6 +106,7 @@ third_party_settings:
     group_attachments:
       children:
         - field_files
+        - field_event_managers
         - field_event_managers
       parent_name: ''
       weight: 18
@@ -159,6 +160,11 @@ third_party_settings:
         - field_event_comments
         - path
         - status
+        - langcode
+        - promote
+        - sticky
+        - url_redirects
+        - revision_log
       format_settings:
         classes: social-collapsible-fieldset
         description: ''

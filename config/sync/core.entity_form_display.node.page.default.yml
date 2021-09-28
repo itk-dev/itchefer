@@ -55,7 +55,7 @@ third_party_settings:
         - field_content_visibility
       parent_name: ''
       weight: 1
-      label: 'Access permissions'
+      label: Synlighed
       format_type: fieldset
       format_settings:
         required_fields: true

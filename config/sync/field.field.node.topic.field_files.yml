@@ -1,3 +1,4 @@
+uuid: null
 langcode: da
 status: true
 dependencies:
@@ -12,7 +13,7 @@ id: node.topic.field_files
 field_name: field_files
 entity_type: node
 bundle: topic
-label: Attachment
+label: Vedhæftet
 description: ''
 required: false
 translatable: true

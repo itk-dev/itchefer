@@ -7,6 +7,7 @@ dependencies:
     - field.storage.profile.field_profile_function
     - field.storage.profile.field_profile_phone_number
     - profile.type.profile
+    - user.role.exporter
   module:
     - csv_serialization
     - options
@@ -31,8 +32,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            exporter: exporter
       cache:
         type: tag
         options: {  }
@@ -495,6 +498,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:field.storage.profile.field_municipality'
         - 'config:field.storage.profile.field_profile_function'
@@ -530,12 +534,15 @@ display:
             encoding: utf8
             utf8_bom: '0'
             use_serializer_encode_only: false
+      auth:
+        - basic_auth
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - user.roles
       tags:
         - 'config:field.storage.profile.field_municipality'
         - 'config:field.storage.profile.field_profile_function'
@@ -554,6 +561,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:field.storage.profile.field_municipality'
         - 'config:field.storage.profile.field_profile_function'

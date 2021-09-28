@@ -13,7 +13,7 @@ id: comment.comment.field_comment_files
 field_name: field_comment_files
 entity_type: comment
 bundle: comment
-label: Files
+label: Filer
 description: ''
 required: false
 translatable: true
