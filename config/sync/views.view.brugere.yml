@@ -10,6 +10,7 @@ dependencies:
     - field.storage.profile.field_region
     - field.storage.profile.field_representative_of_municipa
     - profile.type.profile
+    - user.role.administrator
     - user.role.exporter
   module:
     - csv_serialization
@@ -177,15 +178,15 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
+        - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
         - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.small_teaser'
         - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'
-        - 'config:core.entity_view_display.profile.profile.default'
-        - 'config:core.entity_view_display.profile.profile.small'
-        - 'config:core.entity_view_display.profile.profile.small_teaser'
   data_export_1:
     display_plugin: data_export
     id: data_export_1
@@ -198,7 +199,7 @@ display:
         default: '0'
       path: export
       filename: itchefer-brugere.csv
-      automatic_download: false
+      automatic_download: true
       store_in_public_file_directory: false
       redirect_to_display: none
       custom_redirect_path: false
@@ -773,9 +774,9 @@ display:
         type: role
         options:
           role:
+            administrator: administrator
             exporter: exporter
-      auth:
-        - basic_auth
+      auth: {  }
     cache_metadata:
       max-age: -1
       contexts:
