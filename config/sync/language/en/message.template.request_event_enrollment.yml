@@ -1,9 +1,0 @@
-label: 'Request event enrollment'
-description: 'A user request an enrollment for event'
-text:
-  -
-    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has requested enrollment to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
-  -
-    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has requested enrollment to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
-  -
-    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has requested enrollment to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
