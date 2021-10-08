@@ -186,6 +186,12 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_group_type:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: categorized_options_buttons
+    weight: 100
   label:
     type: string_textfield
     weight: 101
@@ -207,12 +213,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_group_type:
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-    type: categorized_options_buttons
-    weight: 100
 hidden:
   field_flexible_group_visibility: true
   field_group_type: true
