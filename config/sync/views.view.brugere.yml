@@ -36,8 +36,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            exporter: exporter
       cache:
         type: tag
         options: {  }
@@ -173,20 +175,21 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.statistic'
+        - 'config:core.entity_view_display.profile.profile.table'
+        - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
-        - 'config:core.entity_view_display.profile.profile.medium_teaser'
-        - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
-        - 'config:core.entity_view_display.profile.profile.statistic'
-        - 'config:core.entity_view_display.profile.profile.table'
-        - 'config:core.entity_view_display.profile.profile.teaser'
   data_export_1:
     display_plugin: data_export
     id: data_export_1
@@ -804,6 +807,7 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
