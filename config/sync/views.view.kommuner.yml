@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.group.field_group_description
+    - user.role.exporter
   module:
     - csv_serialization
     - group
@@ -11,6 +12,7 @@ dependencies:
     - rest
     - serialization
     - text
+    - user
     - views_data_export
 id: kommuner
 label: Kommuner
@@ -27,8 +29,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            exporter: exporter
       cache:
         type: tag
         options: {  }
@@ -320,6 +324,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:field.storage.group.field_group_description'
   data_export_1:
@@ -359,6 +364,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - user.roles
       tags:
         - 'config:field.storage.group.field_group_description'
   page_1:
@@ -375,5 +381,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags:
         - 'config:field.storage.group.field_group_description'
