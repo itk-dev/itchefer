@@ -3,12 +3,12 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.event_enrollment.field_email
     - field.storage.event_enrollment.field_enrollment_status
     - field.storage.event_enrollment.field_event
     - field.storage.event_enrollment.field_product
     - field.storage.profile.field_municipality
     - field.storage.profile.field_region
+    - user.role.exporter
   module:
     - csv_serialization
     - dynamic_entity_reference
@@ -34,8 +34,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            exporter: exporter
       cache:
         type: tag
         options: {  }
@@ -338,11 +340,11 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_email:
-          id: field_email
-          table: event_enrollment__field_email
-          field: field_email
-          relationship: none
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
+          relationship: user_id
           group_type: group
           admin_label: ''
           label: 'Deltagers e-mailadresse'
@@ -399,6 +401,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: user
+          entity_field: mail
           plugin_id: field
         field_municipality:
           id: field_municipality
@@ -596,8 +600,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user.roles
       tags:
-        - 'config:field.storage.event_enrollment.field_email'
         - 'config:field.storage.event_enrollment.field_enrollment_status'
         - 'config:field.storage.event_enrollment.field_event'
         - 'config:field.storage.event_enrollment.field_product'
@@ -641,8 +645,8 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
+        - user.roles
       tags:
-        - 'config:field.storage.event_enrollment.field_email'
         - 'config:field.storage.event_enrollment.field_enrollment_status'
         - 'config:field.storage.event_enrollment.field_event'
         - 'config:field.storage.event_enrollment.field_product'
@@ -663,8 +667,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user.roles
       tags:
-        - 'config:field.storage.event_enrollment.field_email'
         - 'config:field.storage.event_enrollment.field_enrollment_status'
         - 'config:field.storage.event_enrollment.field_event'
         - 'config:field.storage.event_enrollment.field_product'
