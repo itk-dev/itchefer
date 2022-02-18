@@ -30,13 +30,13 @@ label: 'Opret opslag, emne eller arrangment i en gruppe du er medlem af'
 description: 'En person har oprettet et opslag, arrangement eller emne i en gruppe jeg er medlem af'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede indhold i <a href=\"[message:gurl]\">[message:gtitle]</a> gruppen</p>\r\n"
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede [social_group:created_entity_link_html] i <a href="[message:gurl]">[message:gtitle]</a> gruppen</p>'
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede indhold i <a href=\"[message:gurl]\">[message:gtitle]</a> gruppen</p>\r\n"
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede [social_group:created_entity_link_html] i <a href="[message:gurl]">[message:gtitle]</a> gruppen</p>'
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede indhold i <a href=\"[message:gurl]\">[message:gtitle]</a> gruppen</p>\r\n"
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede [social_group:created_entity_link_html] i <a href="[message:gurl]">[message:gtitle]</a> gruppen</p><p>[message:additional_information]</p>'
     format: full_html
 settings:
   'token options':

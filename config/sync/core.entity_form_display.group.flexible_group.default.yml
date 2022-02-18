@@ -31,7 +31,7 @@ third_party_settings:
         - field_group_type
       parent_name: ''
       weight: 0
-      label: 'Basic information'
+      label: Indhold
       format_type: fieldset
       format_settings:
         description: ''
@@ -105,7 +105,7 @@ third_party_settings:
         open: false
         required_fields: true
       format_type: details
-      label: 'Additional information'
+      label: Bilag
       parent_name: ''
       region: content
       weight: 3
