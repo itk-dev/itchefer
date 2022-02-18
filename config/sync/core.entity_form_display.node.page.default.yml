@@ -26,7 +26,7 @@ third_party_settings:
         - body
       parent_name: ''
       weight: 0
-      label: 'Basic information'
+      label: Indhold
       format_type: fieldset
       format_settings:
         required_fields: true
@@ -40,7 +40,7 @@ third_party_settings:
         - field_files
       parent_name: ''
       weight: 3
-      label: 'Additional information'
+      label: Bilag
       format_type: details
       format_settings:
         required_fields: true
