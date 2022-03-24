@@ -123,7 +123,6 @@ module:
   social_queue_storage: 0
   social_react: 0
   social_search: 0
-  social_search_autocomplete: 0
   social_swiftmail: 0
   social_topic: 0
   social_user: 0
