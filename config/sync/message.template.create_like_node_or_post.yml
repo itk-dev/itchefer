@@ -1,4 +1,3 @@
-uuid: 9044c63c-acb8-4006-a433-0c81477cdb19
 langcode: da
 status: true
 dependencies:
@@ -16,20 +15,18 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
-_core:
-  default_config_hash: kim6DZ0vijq6vn76LASXJbCrnCgkLJbtnrSrHhFzZgI
 template: create_like_node_or_post
-label: 'Opret et like på et opslag eller en artikel'
-description: 'En person kan lide et opslag, et emne, eller en kommentar oprettet af mig'
+label: 'Create like on node or post'
+description: 'A person likes a post, topic, comment or event created by me'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> likes your [social_like:liked_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> likes your [social_like:liked_entity_link_html]</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> likes your [social_like:liked_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> likes your [social_like:liked_entity_link_html]</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> likes your [social_like:liked_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> likes your [social_like:liked_entity_link_html]</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

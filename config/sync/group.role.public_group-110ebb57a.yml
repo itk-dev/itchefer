@@ -1,0 +1,17 @@
+uuid: 59dae102-e29d-469a-a68b-e13b50bce6b5
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+  enforced:
+    config:
+      - user.role.verified
+id: public_group-110ebb57a
+label: 'Verified User'
+weight: 5
+internal: true
+audience: outsider
+group_type: public_group
+permissions_ui: false
+permissions: {  }

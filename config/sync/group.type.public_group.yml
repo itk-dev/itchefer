@@ -11,3 +11,4 @@ creator_membership: true
 creator_wizard: false
 creator_roles:
   - public_group-group_manager
+new_revision: false

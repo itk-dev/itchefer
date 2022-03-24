@@ -2,7 +2,7 @@ label: Watchdog
 description: 'Recent log messages'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       exposed_form:
         options:

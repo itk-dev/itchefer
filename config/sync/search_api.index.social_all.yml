@@ -122,7 +122,6 @@ field_settings:
       module:
         - profile
         - user
-        - user
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -219,7 +218,6 @@ field_settings:
     dependencies:
       module:
         - profile
-        - user
         - user
 datasource_settings:
   'entity:group':
@@ -357,6 +355,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     all_fields: true
     fields:
@@ -373,10 +372,14 @@ processor_settings:
     weights:
       preprocess_index: -20
       preprocess_query: -20
+  verified_users:
+    weights:
+      preprocess_query: 30
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   index_directly: false
   cron_limit: 50
+  track_changes_in_references: true
 server: social_database

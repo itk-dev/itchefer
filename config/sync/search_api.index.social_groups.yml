@@ -8,6 +8,7 @@ dependencies:
     - search_api
   config:
     - field.storage.group.field_group_description
+    - field.storage.group.field_group_allowed_join_method
     - search_api.server.social_database
     - core.entity_view_mode.group.teaser
 _core:
@@ -25,6 +26,14 @@ field_settings:
     dependencies:
       module:
         - group
+  field_group_allowed_join_method:
+    label: 'Allowed join method'
+    datasource_id: 'entity:group'
+    property_path: field_group_allowed_join_method
+    type: string
+    dependencies:
+      config:
+        - field.storage.group.field_group_allowed_join_method
   field_group_description:
     label: Description
     datasource_id: 'entity:group'
@@ -50,7 +59,6 @@ field_settings:
     dependencies:
       module:
         - group
-        - user
         - user
   rendered_item:
     label: 'Rendered HTML output'
@@ -141,6 +149,7 @@ processor_settings:
     plugin_id: ignorecase
     all_fields: true
     fields:
+      - field_group_allowed_join_method
       - field_group_description
       - label
       - name
@@ -149,6 +158,7 @@ processor_settings:
     weights:
       preprocess_index: -10
       preprocess_query: -10
+  language_with_fallback: {  }
   rendered_item:
     plugin_id: rendered_item
     weights:
@@ -204,6 +214,7 @@ processor_settings:
     all_fields: true
     fields:
       - field_group_description
+      - label
       - rendered_item
     spaces: ''
     overlap_cjk: 1
@@ -211,13 +222,17 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     plugin_id: transliteration
     all_fields: true
     fields:
+      - field_group_allowed_join_method
       - field_group_description
       - label
+      - name
       - rendered_item
+      - type
     weights:
       preprocess_index: -10
       preprocess_query: -10
@@ -227,4 +242,5 @@ tracker_settings:
 options:
   index_directly: false
   cron_limit: 50
+  track_changes_in_references: true
 server: social_database

@@ -218,6 +218,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     plugin_id: transliteration
     all_fields: true
@@ -234,4 +235,5 @@ tracker_settings:
 options:
   index_directly: false
   cron_limit: 50
+  track_changes_in_references: true
 server: social_database

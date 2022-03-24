@@ -15,6 +15,7 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: mention_comment
+    email_subject: ''
 _core:
   default_config_hash: e9ySGUwNAUGgzw1TUY_26COAaAcxyFrTJvMaM9nYdOw
 template: create_mention_comment_stream
@@ -22,7 +23,8 @@ label: 'Create mention in a comment (stream: profile)'
 description: 'A person mentioned me in a comment (stream: profile)'
 text:
   -
-    value: "<p><a href=\"\">[message:author:display-name]</a> mentioned<a href=\"\"> [social_mentions:mentioned_user] </a>in a comment</p>\n"
+    value: |
+      <p><a href="">[message:author:display-name]</a> mentioned<a href=""> [social_mentions:mentioned_user] </a>in a comment</p>
     format: basic_html
 settings:
   'token options':

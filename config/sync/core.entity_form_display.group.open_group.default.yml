@@ -25,7 +25,7 @@ third_party_settings:
         - field_group_image
       parent_name: ''
       weight: 0
-      label: Indhold
+      label: 'Basic information'
       format_type: fieldset
       format_settings:
         description: ''
@@ -60,7 +60,7 @@ third_party_settings:
         description: ''
         required_fields: true
         open: false
-      label: Indstillinger
+      label: Settings
       region: content
     group_request_membership:
       children:

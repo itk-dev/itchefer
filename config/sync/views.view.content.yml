@@ -28,10 +28,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nulstil
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
           sort_asc_label: Stigende
           sort_desc_label: Faldende
@@ -40,8 +40,8 @@ display:
         options:
           items_per_page: 50
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Forrige'
+            next: 'Næste ›'
             first: '« Første'
             last: 'Sidste »'
       style:
@@ -311,7 +311,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operationer
+          label: Handlinger
           exclude: false
           alter:
             alter_text: false

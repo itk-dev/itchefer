@@ -55,7 +55,7 @@ content:
         view_mode: stream
         link: false
       group_content:
-        view_mode: default
+        view_mode: activity
         link: false
       mentions:
         view_mode: default
@@ -86,6 +86,18 @@ content:
         link: false
       post:
         view_mode: activity
+      contact_message:
+        view_mode: default
+        link: false
+      redirect:
+        view_mode: default
+        link: false
+      vote:
+        view_mode: default
+        link: false
+      vote_result:
+        view_mode: default
+        link: false
     third_party_settings: {  }
     type: dynamic_entity_reference_entity_view
     region: content

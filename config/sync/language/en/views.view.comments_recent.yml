@@ -2,7 +2,7 @@ label: 'Recent comments'
 description: 'Recent comments.'
 display:
   default:
-    display_title: Master
+    display_title: Default
     display_options:
       title: 'Recent comments'
       empty:
