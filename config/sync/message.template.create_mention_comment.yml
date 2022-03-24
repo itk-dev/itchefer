@@ -1,4 +1,3 @@
-uuid: f43985c8-2832-4a09-9502-65534ade4187
 langcode: da
 status: true
 dependencies:
@@ -16,20 +15,18 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: mention_comment
-_core:
-  default_config_hash: AeVe3Qc0AkC7mQYMdLAthzZ5dGRcTSdgYfd0yBrWuBg
 template: create_mention_comment
 label: 'Create mention in a comment'
 description: 'A person mentioned me in a comment'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> on [social_mentions:commented_entity_link_html]</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> on [social_mentions:commented_entity_link_html]</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a>&nbsp;made on the [social_mentions:commented_entity_link_html]</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

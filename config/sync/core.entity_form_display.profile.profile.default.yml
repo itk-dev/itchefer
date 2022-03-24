@@ -40,6 +40,7 @@ third_party_settings:
         required_fields: true
         id: name
         classes: scrollspy
+        label: 'Names and profile image'
       region: hidden
     group_profile_funct_organization:
       children:
@@ -57,6 +58,7 @@ third_party_settings:
         required_fields: true
         id: work
         classes: scollspy
+        label: 'Function and organization'
       region: hidden
     group_profile_self_intro:
       children:
@@ -72,6 +74,7 @@ third_party_settings:
         required_fields: true
         id: details
         classes: scrollspy
+        label: 'Self introduction, expertise and interests'
       region: hidden
     group_profile_contact_info:
       children:
@@ -84,6 +87,7 @@ third_party_settings:
         required_fields: true
         id: contact
         classes: scollspy
+        label: 'Phone number and location'
       region: hidden
 _core:
   default_config_hash: SWFMmrj2JnJ86oE3KHqTojFn5tWoarYSUbplbYYbxJQ

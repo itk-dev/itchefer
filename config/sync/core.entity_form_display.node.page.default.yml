@@ -26,7 +26,7 @@ third_party_settings:
         - body
       parent_name: ''
       weight: 0
-      label: Indhold
+      label: 'Basic information'
       format_type: fieldset
       format_settings:
         required_fields: true
@@ -40,7 +40,7 @@ third_party_settings:
         - field_files
       parent_name: ''
       weight: 3
-      label: Bilag
+      label: 'Additional information'
       format_type: details
       format_settings:
         required_fields: true
@@ -71,6 +71,9 @@ third_party_settings:
         - field_page_comments
         - path
         - status
+        - langcode
+        - url_redirects
+        - revision_log
       format_settings:
         classes: social-collapsible-fieldset
         description: ''
@@ -78,7 +81,7 @@ third_party_settings:
         open: false
         required_fields: true
       format_type: details
-      label: Indstillinger
+      label: Settings
       parent_name: ''
       region: hidden
       weight: 20

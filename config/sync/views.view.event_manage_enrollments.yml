@@ -1,5 +1,4 @@
-uuid: 0fa3ba7f-1c3c-4718-80cb-4f5871eb3eaf
-langcode: da
+langcode: en
 status: true
 dependencies:
   config:
@@ -14,8 +13,6 @@ dependencies:
     - social_event_managers
     - social_profile
     - user
-_core:
-  default_config_hash: UzOyHIp2Hq8Ivvzqheg4wXnYHfZyIX4zG-oUNBmKLr8
 id: event_manage_enrollments
 label: 'Manage All Enrollments'
 module: views
@@ -47,13 +44,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -64,14 +61,14 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« Første'
-            last: 'Sidste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -184,16 +181,18 @@ display:
           clear_on_exposed: 0
           action_title: Action
           selected_actions:
-            comment_delete_action: 0
-            social_event_managers_delete_event_enrollment_action: social_event_managers_delete_event_enrollment_action
-            social_event_managers_send_email_action: social_event_managers_send_email_action
-            views_bulk_operations_delete_entity: 0
-            'entity:save_action:event_enrollment': 0
-          preconfiguration:
-            social_event_managers_delete_event_enrollment_action:
-              label_override: Remove
-            social_event_managers_send_email_action:
-              label_override: Email
+            -
+              action_id: social_event_managers_delete_event_enrollment_action
+              preconfiguration:
+                label_override: Remove
+            -
+              action_id: social_event_managers_send_email_action
+              preconfiguration:
+                label_override: Email
+            -
+              action_id: social_event_enrolments_export_enrollments_action
+              preconfiguration:
+                label_override: Eksportér
           plugin_id: social_views_bulk_operations_bulk_form_enrollments
         profile_entity_sortable:
           id: profile_entity_sortable
@@ -202,7 +201,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Tilmeldte
+          label: Enrollee
           exclude: false
           alter:
             alter_text: false
@@ -253,7 +252,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Organisation
+          label: Organization
           exclude: false
           alter:
             alter_text: false
@@ -316,7 +315,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Tilmeldingsdato
+          label: 'Enroll date'
           exclude: false
           alter:
             alter_text: false
@@ -537,7 +536,7 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          content: '@total Tilmeldte'
+          content: '@total Enrollees'
           plugin_id: result
       footer: {  }
       empty:
@@ -550,7 +549,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Der er ikke nogle tilmeldinger for denne begivenhed'
+          content: 'No one has enrolled for this event'
           plugin_id: text_custom
       relationships:
         field_event:
@@ -593,7 +592,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -645,7 +644,7 @@ display:
   page_manage_enrollments:
     display_plugin: page
     id: page_manage_enrollments
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

@@ -4,3 +4,4 @@ login_help: ''
 social_user_profile_landingpage: social_user.stream
 _core:
   default_config_hash: zsoYpjDulVBs5NgSouB-lAdq6iwr6EqrQRnL0GTc6jU
+verified_immediately: true

@@ -42,10 +42,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
           sort_asc_label: Stigende
           sort_desc_label: Faldende
@@ -63,12 +63,12 @@ display:
             last: 'Sidste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Antal elementer'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskydning
           quantity: 9
       style:
         type: table
@@ -280,7 +280,10 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ state }}\n\n{{ num_retries }}"
+            text: |-
+              {{ state }}
+
+              {{ num_retries }}
             make_link: false
             path: ''
             absolute: false
@@ -480,7 +483,10 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ processed }}\n\n{{ message }}"
+            text: |-
+              {{ processed }}
+
+              {{ message }}
             make_link: false
             path: ''
             absolute: false
@@ -577,7 +583,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operationer
+          label: Handlinger
           exclude: false
           alter:
             alter_text: false

@@ -1,21 +1,17 @@
-uuid: 0b66b63f-c132-4d3c-866a-fe09601eff1b
-langcode: da
+langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.profile.field_municipality
+    - core.entity_view_mode.profile.name
     - field.storage.profile.field_profile_first_name
     - field.storage.profile.field_profile_last_name
-    - field.storage.profile.field_representative_of_municipa
   module:
     - group
-    - options
     - profile
+    - social_profile
     - social_user
     - user
     - views_bulk_operations
-_core:
-  default_config_hash: HnlK_0ROWxcBuGyD-u-X4aPf6q4NvOBOKmYlV9HwXAU
 id: user_admin_people
 label: People
 module: user
@@ -46,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -63,14 +59,14 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« Første'
-            last: 'Sidste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -87,6 +83,7 @@ display:
           description: ''
           columns:
             views_bulk_operations_bulk_form: views_bulk_operations_bulk_form
+            profile_entity_sortable: profile_entity_sortable
             name: name
             status: status
             roles_target_id: roles_target_id
@@ -98,6 +95,13 @@ display:
             field_profile_last_name: field_profile_last_name
           info:
             views_bulk_operations_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            profile_entity_sortable:
+              sortable: true
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -223,26 +227,28 @@ display:
           clear_on_exposed: true
           action_title: Action
           selected_actions:
-            comment_delete_action: 0
-            social_user_send_email: social_user_send_email
-            user_unblock_user_action: user_unblock_user_action
-            user_block_user_action: user_block_user_action
-            user_remove_role_action: user_remove_role_action
-            user_add_role_action: user_add_role_action
-            vbo_cancel_user_action: vbo_cancel_user_action
-            views_bulk_operations_delete_entity: 0
-            'entity:save_action:user': 0
-          preconfiguration:
-            user_unblock_user_action:
-              label_override: ''
-            user_block_user_action:
-              label_override: ''
-            user_remove_role_action:
-              label_override: ''
-            user_add_role_action:
-              label_override: ''
-            vbo_cancel_user_action:
-              label_override: ''
+            -
+              action_id: social_user_send_email
+            -
+              action_id: user_unblock_user_action
+              preconfiguration:
+                label_override: ''
+            -
+              action_id: user_block_user_action
+              preconfiguration:
+                label_override: ''
+            -
+              action_id: user_remove_role_action
+              preconfiguration:
+                label_override: ''
+            -
+              action_id: user_add_role_action
+              preconfiguration:
+                label_override: ''
+            -
+              action_id: vbo_cancel_user_action
+              preconfiguration:
+                label_override: ''
           plugin_id: views_bulk_operations_bulk_form
         name:
           id: name
@@ -251,7 +257,72 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Bruger navn (Fornavn(e) + Efternavn(e)'
+          label: Username
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: user_name
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+          entity_type: user
+          entity_field: name
+        profile_entity_sortable:
+          id: profile_entity_sortable
+          table: profile
+          field: profile_entity_sortable
+          relationship: profile
+          group_type: group
+          admin_label: ''
+          label: Username
           exclude: false
           alter:
             alter_text: false
@@ -292,10 +363,9 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: field
-          type: user_name
-          entity_type: user
-          entity_field: name
+          view_mode: name
+          entity_type: profile
+          plugin_id: profile_entity_sortable
         status:
           id: status
           table: users_field_data
@@ -348,8 +418,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Aktiv
-            format_custom_false: Blokeret
+            format_custom_true: Active
+            format_custom_false: Blocked
           entity_type: user
           entity_field: status
         roles_target_id:
@@ -359,7 +429,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roller
+          label: Roles
           exclude: false
           alter:
             alter_text: false
@@ -410,7 +480,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Medlen i'
+          label: 'Member for'
           exclude: false
           alter:
             alter_text: false
@@ -522,7 +592,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operationer
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -637,7 +707,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Fornavn
+          label: 'First name'
           exclude: true
           alter:
             alter_text: false
@@ -700,7 +770,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Efternavn
+          label: 'Last name'
           exclude: true
           alter:
             alter_text: false
@@ -756,133 +826,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_representative_of_municipa:
-          id: field_representative_of_municipa
-          table: profile__field_representative_of_municipa
-          field: field_representative_of_municipa
-          relationship: profile
-          group_type: group
-          admin_label: ''
-          label: 'Ansvarlig for kommunen'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
-          settings:
-            format: default
-            format_custom_true: ''
-            format_custom_false: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_municipality:
-          id: field_municipality
-          table: profile__field_municipality
-          field: field_municipality
-          relationship: profile
-          group_type: group
-          admin_label: ''
-          label: Kommune
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
       filters:
         combine:
           id: combine
@@ -897,7 +840,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Navn eller email indeholder'
+            label: 'Name or email contains'
             description: ''
             use_operator: false
             operator: combine_op
@@ -1027,7 +970,7 @@ display:
           exposed: true
           expose:
             operator_id: permission_op
-            label: Tilleaderlse
+            label: Permission
             description: ''
             use_operator: false
             operator: permission_op
@@ -1096,11 +1039,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Aktiv
+                title: Active
                 operator: '='
                 value: '1'
               2:
-                title: Blokeret
+                title: Blocked
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -1122,7 +1065,7 @@ display:
           exposed: true
           expose:
             operator_id: id_op
-            label: Gruppe
+            label: Group
             description: ''
             use_operator: false
             operator: id_op
@@ -1223,6 +1166,11 @@ display:
             description: ''
             use_operator: true
             operator: created_op
+            operator_limit_selection: true
+            operator_list:
+              '<': '<'
+              '>': '>'
+              between: between
             identifier: created
             required: false
             remember: false
@@ -1233,11 +1181,10 @@ display:
               administrator: '0'
               contentmanager: '0'
               sitemanager: '0'
+              verified: '0'
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1274,6 +1221,11 @@ display:
             description: ''
             use_operator: true
             operator: login_op
+            operator_limit_selection: true
+            operator_list:
+              '<': '<'
+              '>': '>'
+              between: between
             identifier: login
             required: false
             remember: false
@@ -1284,11 +1236,10 @@ display:
               administrator: '0'
               contentmanager: '0'
               sitemanager: '0'
+              verified: '0'
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1349,7 +1300,7 @@ display:
           plugin_id: text_custom
       use_more: false
       use_more_always: false
-      use_more_text: mere
+      use_more_text: more
       display_comment: ''
       use_ajax: false
       hide_attachment_summary: false
@@ -1405,21 +1356,32 @@ display:
         - url.query_args
       max-age: 0
       tags:
-        - 'config:field.storage.profile.field_municipality'
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
+        - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
+        - 'config:core.entity_view_display.profile.profile.default'
+        - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
+        - 'config:core.entity_view_display.profile.profile.table'
+        - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:field.storage.profile.field_profile_first_name'
         - 'config:field.storage.profile.field_profile_last_name'
-        - 'config:field.storage.profile.field_representative_of_municipa'
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       path: admin/people/list
       show_admin_links: false
       menu:
         type: 'default tab'
-        title: 'Liste af grupper'
+        title: List
         description: 'Find and manage people interacting with your site.'
         menu_name: admin
         weight: -10
@@ -1441,7 +1403,18 @@ display:
         - url.query_args
       max-age: 0
       tags:
-        - 'config:field.storage.profile.field_municipality'
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
+        - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
+        - 'config:core.entity_view_display.profile.profile.default'
+        - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
+        - 'config:core.entity_view_display.profile.profile.table'
+        - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:field.storage.profile.field_profile_first_name'
         - 'config:field.storage.profile.field_profile_last_name'
-        - 'config:field.storage.profile.field_representative_of_municipa'

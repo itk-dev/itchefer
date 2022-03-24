@@ -7,8 +7,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4.0",
-        "goalgorilla/open_social": "~10.1.1",
-        "monolog/monolog": "^1.17",
+        "goalgorilla/open_social": "~11.0.0",
+        "monolog/monolog": "^2.3.5",
         "drush/drush": "^10.3",
         "drupal/field_permissions": "^1.1",
         "drupal/contact_block": "^1.5",
@@ -25,13 +25,12 @@
         "drupal/hierarchical_taxonomy_menu": "^1.42",
         "drupal/antibot": "^1.4",
         "drupal/memcache": "^2.3",
-        "drupal/social_api": "1.1",
-        "drupal/social_auth": "1.0",
-        "drupal/social_auth_extra": "1.x-dev",
-        "drupal/social_auth_facebook": "1",
-        "drupal/social_auth_google": "1",
-        "drupal/social_search_autocomplete": "^1.2",
-        "drupal/field_group": "^3.0"
+        "drupal/social_api": "^3.0",
+        "drupal/social_auth": "^3.0",
+        "drupal/social_auth_facebook": "^3.0",
+        "drupal/social_auth_google": "^3.0",
+        "drupal/field_group": "^3.0",
+        "drupal/message_notify": "^1.2"
     },
     "repositories": [
         {
@@ -111,5 +110,15 @@
         "squizlabs/php_codesniffer": "*",
         "drupal/coder": "^8.3.1",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
