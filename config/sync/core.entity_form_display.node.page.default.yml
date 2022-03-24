@@ -71,6 +71,9 @@ third_party_settings:
         - field_page_comments
         - path
         - status
+        - langcode
+        - url_redirects
+        - revision_log
       format_settings:
         classes: social-collapsible-fieldset
         description: ''

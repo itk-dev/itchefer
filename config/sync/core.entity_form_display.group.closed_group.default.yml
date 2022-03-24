@@ -51,6 +51,7 @@ third_party_settings:
       children:
         - field_group_purpose
         - path
+        - langcode
       parent_name: ''
       weight: 10
       format_type: details
@@ -67,7 +68,7 @@ third_party_settings:
         - allow_request
       parent_name: ''
       weight: 99
-      label: 'Request membership'
+      label: 'Anmod om medlemskab'
       format_type: fieldset
       format_settings:
         description: ''
