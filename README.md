@@ -123,6 +123,6 @@ $databases['default']['default'] = [
 ## Build assets
 
 ```sh
-docker run --volume ${PWD}:/app --workdir /app node:latest yarn install
-docker run --volume ${PWD}:/app --workdir /app node:latest yarn encore dev
+docker run --volume ${PWD}:/app --workdir /app node:14 yarn install
+docker run --volume ${PWD}:/app --workdir /app node:14 yarn encore dev
  ```
