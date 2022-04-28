@@ -43,18 +43,26 @@
         }
     ],
     "scripts": {
-      "check-coding-standards/phpcs": [
-        "vendor/bin/phpcs --standard=phpcs.xml.dist"
-      ],
-      "check-coding-standards": [
-        "@check-coding-standards/phpcs"
-      ],
-      "apply-coding-standards/phpcs": [
-         "vendor/bin/phpcbf --standard=phpcs.xml.dist"
-      ],
-      "apply-coding-standards": [
-         "@apply-coding-standards/phpcs"
-      ]
+        "check-coding-standards/phpcs": [
+            "vendor/bin/phpcs --standard=phpcs.xml.dist"
+        ],
+        "check-coding-standards": [
+            "@check-coding-standards/phpcs"
+        ],
+        "apply-coding-standards/phpcs": [
+            "vendor/bin/phpcbf --standard=phpcs.xml.dist"
+        ],
+        "apply-coding-standards": [
+            "@apply-coding-standards/phpcs"
+        ],
+        "pre-install-cmd": [
+            "mkdir -p profiles/contrib/social/themes"
+        ],
+        "post-install-cmd": [
+            "php -r \"symlink('../../profiles/contrib/social/themes/gin/', 'html/themes/contrib/gin');\"",
+            "php -r \"symlink('../../profiles/contrib/social/themes/socialbase/', 'html/themes/contrib/socialbase');\"",
+            "php -r \"symlink('../../profiles/contrib/social/themes/socialblue/', 'html/themes/contrib/socialblue');\""
+        ]
     },
     "extra": {
         "drupal-scaffold": {
