@@ -117,8 +117,8 @@ class EnrollButton extends FormBase implements ContainerInjectionInterface {
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('current_route_match'),
-      $container->get('entity.manager')->getStorage('event_enrollment'),
-      $container->get('entity.manager')->getStorage('user'),
+      $container->get('entity_field.manager')->getStorage('event_enrollment'),
+      $container->get('entity_field.manager')->getStorage('user'),
       $container->get('entity_type.manager'),
       $container->get('current_user'),
       $container->get('config.factory'),
