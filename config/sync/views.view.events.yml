@@ -45,10 +45,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nulstil
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
           sort_asc_label: stigende
           sort_desc_label: faldende
@@ -61,15 +61,15 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Antal elementer'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskydning
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Forrige'
+            next: 'Næste ›'
             first: '« Første'
             last: 'Sidste »'
           quantity: 9
@@ -541,6 +541,7 @@ display:
         groups:
           1: AND
       title: 'Kommende arrangementer'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
@@ -667,7 +668,7 @@ display:
           group_type: group
           admin_label: ''
           operator: in
-          value: {  }
+          value: null
           group: 1
           exposed: true
           expose:
@@ -698,17 +699,17 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Igangværende og kommende arrangementer'
+                title: 'Ongoing and upcoming events'
                 operator: in
                 value: '1'
               2:
-                title: 'Tidligere arrangementer'
+                title: 'Past events'
                 operator: in
                 value: '2'
               3:
                 title: ''
                 operator: in
-                value: {  }
+                value: null
           plugin_id: social_event_date_filter
         event_enrolled_or_created_filter:
           id: event_enrolled_or_created_filter
@@ -809,6 +810,7 @@ display:
             label: ''
           granularity: minute
           plugin_id: social_event_date_sort
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:

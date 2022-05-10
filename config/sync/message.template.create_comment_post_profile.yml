@@ -1,4 +1,3 @@
-uuid: 427397f4-8947-46a5-a674-363e8e401aa7
 langcode: da
 status: true
 dependencies:
@@ -16,11 +15,10 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: comment_not_reply
-_core:
-  default_config_hash: jq2qo66PdjnEKwqI2Wd4FUTGcM2cDNg37P76dfyZI0M
+    email_subject: 'You have a new comment on a post'
 template: create_comment_post_profile
-label: 'Opret kommentar på et opslag på min kommentar'
-description: 'En person kommenterede et opslag på min profil'
+label: 'Create comment on post on my profile'
+description: 'A person commented on a post on my profile'
 text:
   -
     value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
@@ -29,7 +27,7 @@ text:
     value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n<table class=\"comments\">\r\n<tr>\r\n<td class=\"post\"><strong>[social_comment:comment_author]</strong> <small>• [social_comment:comment_date]</small>\r\n<p>[social_comment:comment_text]</p>\r\n</td>\r\n</tr>\r\n</table>\r\n<table class=\"btn-wrapp\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[social_comment:comment_reply_link_html]\">Reply to this comment </a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a>&nbsp;left a comment on a post in your <a href=\"[message:recipient-user-url]\">profile stream</a></p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

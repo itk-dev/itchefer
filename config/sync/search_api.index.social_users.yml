@@ -32,7 +32,6 @@ field_settings:
       module:
         - profile
         - user
-        - user
   field_profile_expertise:
     label: Expertise
     datasource_id: 'entity:profile'
@@ -50,7 +49,6 @@ field_settings:
       config:
         - field.storage.profile.field_profile_expertise
       module:
-        - taxonomy
         - taxonomy
   field_profile_first_name:
     label: 'First name'
@@ -79,7 +77,6 @@ field_settings:
         - field.storage.profile.field_profile_interests
       module:
         - taxonomy
-        - taxonomy
   field_profile_last_name:
     label: 'Last name'
     datasource_id: 'entity:profile'
@@ -106,7 +103,6 @@ field_settings:
     dependencies:
       module:
         - profile
-        - user
         - user
   rendered_item:
     label: 'Rendered HTML output'
@@ -135,7 +131,6 @@ field_settings:
     dependencies:
       module:
         - profile
-        - user
         - user
 datasource_settings:
   'entity:profile':
@@ -257,6 +252,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     plugin_id: transliteration
     all_fields: true
@@ -270,10 +266,14 @@ processor_settings:
     weights:
       preprocess_index: -10
       preprocess_query: -10
+  verified_users:
+    weights:
+      preprocess_query: 30
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   index_directly: false
   cron_limit: 50
+  track_changes_in_references: true
 server: social_database

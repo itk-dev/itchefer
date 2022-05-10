@@ -14,6 +14,7 @@ third_party_settings:
       post-post: post-post
     activity_action: create_entitiy_action
     activity_aggregate: false
+    email_subject: ''
 _core:
   default_config_hash: nWPJvxp7-QxxKj9ytIlxuI_ITZ72M2a50dMEjmbkw6w
 template: create_post_profile_stream
@@ -22,10 +23,12 @@ description: 'A person created a post on my profile and I see it on the stream'
 text:
   -
     format: full_html
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> &gt; <a href=\"[message:recipient-user-url]\">[activity:field_activity_recipient_user_display_name]</a></p>\n"
+    value: |
+      <p><a href="[message:author:url:absolute]">[message:author:display-name]</a> &gt; <a href="[message:recipient-user-url]">[activity:field_activity_recipient_user_display_name]</a></p>
   -
     format: full_html
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev på din profil</p>\n"
+    value: |
+      <p><a href="[message:author:url:absolute]">[message:author:display-name]</a> skrev på din profil</p>
   -
     format: full_html
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p>'

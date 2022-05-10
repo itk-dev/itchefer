@@ -1,5 +1,4 @@
-uuid: 5a60ad24-d509-43be-83dc-4ea62ef8d8ce
-langcode: da
+langcode: en
 status: true
 dependencies:
   config:
@@ -15,8 +14,6 @@ dependencies:
     - social_group
     - social_profile
     - user
-_core:
-  default_config_hash: M8YFGAdluRLfUuH_On__rSlW_s3V7yJeKHpFxpfh4fU
 id: group_manage_members
 label: 'Group Manage Members'
 module: views
@@ -48,13 +45,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nulstil
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -65,14 +62,14 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« Første'
-            last: 'Sidste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
@@ -184,24 +181,23 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          batch: 1
-          batch_size: '10'
+          batch: true
+          batch_size: 10
           form_step: true
-          buttons: 0
-          clear_on_exposed: 0
+          buttons: false
+          clear_on_exposed: false
           action_title: Action
           selected_actions:
-            comment_delete_action: 0
-            views_bulk_operations_delete_entity: 0
-            social_group_change_member_role_action: social_group_change_member_role_action
-            social_group_delete_group_content_action: social_group_delete_group_content_action
-            social_group_send_email_action: social_group_send_email_action
-            'entity:save_action:group_content': 0
-          preconfiguration:
-            social_group_change_member_role_action:
-              label_override: 'Change the role'
-            social_group_delete_group_content_action:
-              label_override: Remove
+            -
+              action_id: social_group_change_member_role_action
+              preconfiguration:
+                label_override: 'Change the role'
+            -
+              action_id: social_group_delete_group_content_action
+              preconfiguration:
+                label_override: Remove
+            -
+              action_id: social_group_send_email_action
           plugin_id: social_views_bulk_operations_bulk_form_group
         profile_entity_sortable:
           id: profile_entity_sortable
@@ -210,7 +206,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Medlem
+          label: Member
           exclude: false
           alter:
             alter_text: false
@@ -261,7 +257,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Organisation
+          label: Organization
           exclude: false
           alter:
             alter_text: false
@@ -387,7 +383,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Tilmeldt dato'
+          label: 'Joined date'
           exclude: false
           alter:
             alter_text: false
@@ -621,7 +617,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: 'Members of {{ arguments.gid }}'
           default_argument_type: group_id_from_url
@@ -674,7 +670,7 @@ display:
   page_group_manage_members:
     display_plugin: page
     id: page_group_manage_members
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

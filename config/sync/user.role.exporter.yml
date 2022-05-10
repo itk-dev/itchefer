@@ -6,4 +6,6 @@ id: exporter
 label: Exporter
 weight: 5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'flag mute_group_notifications'
+  - 'unflag mute_group_notifications'
