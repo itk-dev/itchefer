@@ -56,7 +56,7 @@
             "@apply-coding-standards/phpcs"
         ],
         "pre-install-cmd": [
-            "mkdir -p profiles/contrib/social/themes"
+            "mkdir -p html/profiles/contrib/social/themes"
         ],
         "post-install-cmd": [
             "ln -fs ../../profiles/contrib/social/themes/gin/ html/themes/contrib/gin",
