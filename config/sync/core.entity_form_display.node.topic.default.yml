@@ -207,5 +207,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  groups_type_closed_group: true
+  groups_type_flexible_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
   promote: true
   sticky: true
