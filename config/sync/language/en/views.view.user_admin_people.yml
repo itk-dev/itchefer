@@ -32,8 +32,6 @@ display:
           settings:
             format_custom_true: Active
             format_custom_false: Blocked
-        roles_target_id:
-          label: Roles
         created:
           label: 'Member for'
         access:
@@ -52,12 +50,6 @@ display:
         combine:
           expose:
             label: 'Name or email contains'
-        roles_target_id:
-          expose:
-            label: Role
-        permission:
-          expose:
-            label: Permission
         status:
           group_info:
             label: Status
