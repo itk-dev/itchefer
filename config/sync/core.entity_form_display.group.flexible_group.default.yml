@@ -213,6 +213,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
 hidden:
   field_flexible_group_visibility: true
   field_group_type: true
