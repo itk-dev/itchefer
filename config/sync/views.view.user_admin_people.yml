@@ -1,3 +1,4 @@
+uuid: null
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,7 @@ dependencies:
     - core.entity_view_mode.profile.name
     - field.storage.profile.field_profile_first_name
     - field.storage.profile.field_profile_last_name
+    - field.storage.profile.field_representative_of_municipa
   module:
     - group
     - profile
@@ -422,14 +424,14 @@ display:
             format_custom_false: Blocked
           entity_type: user
           entity_field: status
-        roles_target_id:
-          id: roles_target_id
-          table: user__roles
-          field: roles_target_id
-          relationship: none
+        field_representative_of_municipa:
+          id: field_representative_of_municipa
+          table: profile__field_representative_of_municipa
+          field: field_representative_of_municipa
+          relationship: profile
           group_type: group
           admin_label: ''
-          label: Roles
+          label: Rolle
           exclude: false
           alter:
             alter_text: false
@@ -470,9 +472,23 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          type: ul
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: custom
+            format_custom_true: Kommuneansvarlig
+            format_custom_false: 'Alm. bruger'
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
           separator: ', '
-          plugin_id: user_roles
+          field_api_classes: false
+          plugin_id: field
         created:
           id: created
           table: users_field_data
@@ -915,90 +931,58 @@ display:
           entity_type: user
           entity_field: default_langcode
           plugin_id: boolean
-        roles_target_id:
-          id: roles_target_id
-          table: user__roles
-          field: roles_target_id
-          relationship: none
+        field_representative_of_municipa_value:
+          id: field_representative_of_municipa_value
+          table: profile__field_representative_of_municipa
+          field: field_representative_of_municipa_value
+          relationship: profile
           group_type: group
           admin_label: ''
-          operator: or
-          value: {  }
+          operator: '='
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: roles_target_id_op
-            label: Role
+            operator_id: ''
+            label: Kommuneansvarlig
             description: ''
             use_operator: false
-            operator: roles_target_id_op
-            identifier: role
-            required: false
+            operator: field_representative_of_municipa_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_representative_of_municipa_value
+            required: true
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
+              contentmanager: '0'
+              sitemanager: '0'
+              exporter: '0'
+              verified: '0'
+          is_grouped: true
           group_info:
-            label: ''
+            label: Rolle
             description: ''
-            identifier: ''
+            identifier: field_representative_of_municipa_value
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: user_roles
-        permission:
-          id: permission
-          table: user__roles
-          field: permission
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: permission_op
-            label: Permission
-            description: ''
-            use_operator: false
-            operator: permission_op
-            identifier: permission
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: user_permissions
+            group_items:
+              1:
+                title: Kommuneansvarlig
+                operator: '='
+                value: '1'
+              2:
+                title: 'Alm. bruger'
+                operator: '='
+                value: '0'
+          plugin_id: boolean
         status:
           id: status
           table: users_field_data
@@ -1363,6 +1347,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
@@ -1371,6 +1356,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:field.storage.profile.field_profile_first_name'
         - 'config:field.storage.profile.field_profile_last_name'
+        - 'config:field.storage.profile.field_representative_of_municipa'
   page_1:
     display_plugin: page
     id: page_1
@@ -1410,6 +1396,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
@@ -1418,3 +1405,4 @@ display:
         - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:field.storage.profile.field_profile_first_name'
         - 'config:field.storage.profile.field_profile_last_name'
+        - 'config:field.storage.profile.field_representative_of_municipa'

@@ -20,7 +20,12 @@ id: group.flexible_group.stream
 targetEntityType: group
 bundle: flexible_group
 mode: stream
-content: {  }
+content:
+  flag_mute_group_notifications:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   changed: true
   created: true

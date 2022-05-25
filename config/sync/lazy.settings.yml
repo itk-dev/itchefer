@@ -27,3 +27,6 @@ visibility:
   id: request_path
   pages: /rss.xml
   negate: 0
+skipClass: ''
+placeholderSrc: ''
+cssEffect: false
