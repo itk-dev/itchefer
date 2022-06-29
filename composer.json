@@ -110,8 +110,8 @@
         },
         "patches": {
             "goalgorilla/open_social": {
-                "Disable two post update functions": "disable-post-update.patch",
-                "Disable post comment confirmation step": "disable_post_comment_confirmation_step.patch"
+                "Disable two post update functions": "patches/disable-post-update.patch",
+                "Disable caching of invite group action": "patches/disable_invite_action_caching.patch"
             }
         }
     },
