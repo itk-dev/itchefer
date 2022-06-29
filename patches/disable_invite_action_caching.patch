@@ -1,0 +1,17 @@
+diff --git a/modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialInviteLocalActionsBlock.php b/modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialInviteLocalActionsBlock.php
+--- a/modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialInviteLocalActionsBlock.php
++++ b/modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialInviteLocalActionsBlock.php
+@@ -120,6 +120,13 @@
+   /**
+    * {@inheritdoc}
+    */
++  public function getCacheMaxAge() {
++    return 0;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
+   public function build() {
+     $build = [];
+
