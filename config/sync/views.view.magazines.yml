@@ -190,11 +190,12 @@ display:
         type: normal
         title: 'Magasinet KITA'
         description: ''
-        expanded: false
+        expanded: true
         parent: ''
         weight: -46
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
