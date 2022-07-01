@@ -14,7 +14,7 @@ dependencies:
 _core:
   default_config_hash: xwuotyJYxWKqrO7rhALHKrzzEKn4P8ktl9FbJPllVXs
 id: topics
-label: 'Bruger emner'
+label: 'Bruger nyheder'
 module: views
 description: ''
 tag: ''
@@ -61,7 +61,7 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Antal nyheder'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Alle -'
@@ -324,7 +324,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Emner
+      title: Nyheder
       header: {  }
       footer: {  }
       empty:
@@ -338,7 +338,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Ingen emner fundet for denne bruger'
+            value: 'Ingen nyheder fundet for denne bruger'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -431,8 +431,8 @@ display:
         options:
           items_per_page: 2
           offset: 0
-      title: 'Fornyligt oprettede emner'
-      block_description: 'Fornyligt oprettede emner'
+      title: 'Nyligt oprettede nyheder'
+      block_description: 'Nyligt oprettede nyheder'
       arguments:
         uid:
           id: uid
@@ -625,7 +625,7 @@ display:
           plugin_id: date
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle emner'
+      use_more_text: 'Alle Nyheder'
       rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
@@ -646,7 +646,7 @@ display:
       path: user/%user/topics
       menu:
         type: none
-        title: Emner
+        title: Nyheder
         description: ''
         expanded: false
         parent: ''
@@ -655,7 +655,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Emner
+        title: Nyheder
         description: ''
         weight: 0
       exposed_block: true

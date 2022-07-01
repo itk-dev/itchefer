@@ -12,14 +12,14 @@ display:
       fields:
         title:
           separator: ', '
-      title: 'Alle emner'
+      title: 'Alle nyheder'
       empty:
         area_text_custom:
           content: 'Ingen emner fundet'
   block_latest_topics:
     display_options:
-      title: 'Seneste emner'
-      use_more_text: 'Alle emner'
+      title: 'Seneste nyheder'
+      use_more_text: 'Alle nyheder'
   group_topics_block:
     display_options:
       empty:
@@ -29,8 +29,8 @@ display:
         gid:
           exception:
             title: Alle
-      title: 'Seneste emner'
-      use_more_text: 'Alle emner'
+      title: 'Seneste nyheder'
+      use_more_text: 'Alle nyheder'
   page_latest_topics:
     display_options:
       pager:

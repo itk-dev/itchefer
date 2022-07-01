@@ -22,6 +22,10 @@ _core:
 template: create_topic_group
 label: 'Opret et emne i gruppen'
 description: 'En bruger oprettede et emne i en gruppe'
+text:
+  -
+    format: full_html
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'
 settings:
   'token options':
     clear: false
@@ -31,7 +35,3 @@ settings:
     enabled: false
     quota: null
     days: null
-text:
-  -
-    format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'

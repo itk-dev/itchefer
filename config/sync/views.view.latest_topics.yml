@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: kNQzSfXX8rkuLW6sShN4jOTkvcw46d45nxR-RxzEg4M
 id: latest_topics
-label: 'Seneste emner'
+label: 'Seneste nyheder'
 module: views
 description: 'Displays the newest topics in the community'
 tag: ''
@@ -233,7 +233,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Alle emner'
+      title: 'Alle nyheder'
       header: {  }
       footer: {  }
       empty:
@@ -246,7 +246,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen emner fundet'
+          content: 'Ingen nyheder fundet'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -262,13 +262,13 @@ display:
   block_latest_topics:
     display_plugin: block
     id: block_latest_topics
-    display_title: 'Seneste emner'
+    display_title: 'Seneste nyheder'
     position: 1
     display_options:
       display_extenders: {  }
       display_description: ''
       block_description: 'Latest topic block'
-      title: 'Nyeste emner'
+      title: 'Seneste nyheder'
       defaults:
         title: false
         use_more: false
@@ -276,12 +276,11 @@ display:
         use_more_text: false
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle emner'
+      use_more_text: 'Alle nyheder'
       rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
@@ -289,7 +288,7 @@ display:
   group_topics_block:
     display_plugin: block
     id: group_topics_block
-    display_title: 'Latest topics group'
+    display_title: 'Seneste nyheder gruppe'
     position: 3
     display_options:
       display_extenders: {  }
@@ -305,7 +304,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen emner i denne gruppe'
+          content: 'Ingen nyheder i denne gruppe'
           plugin_id: text_custom
       defaults:
         empty: false
@@ -371,15 +370,14 @@ display:
         type: perm
         options:
           perm: 'access content'
-      title: 'Nyeste emner'
+      title: 'Seneste nyheder'
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle emner'
+      use_more_text: 'Alle nyheder'
       rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - route
         - url
@@ -389,7 +387,7 @@ display:
   page_latest_topics:
     display_plugin: page
     id: page_latest_topics
-    display_title: 'Latest topics page'
+    display_title: 'Seneste nyheder side'
     position: 2
     display_options:
       display_extenders: {  }
@@ -567,7 +565,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args

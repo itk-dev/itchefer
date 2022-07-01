@@ -21,6 +21,7 @@ settings:
   provider: contact_block
   label_display: visible
   contact_form: contact_form
+  form_display: default
 visibility:
   request_path:
     id: request_path

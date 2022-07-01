@@ -10,7 +10,7 @@ display:
       pager:
         options:
           expose:
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Antal nyheder'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
           tags:
@@ -29,13 +29,13 @@ display:
   block_user_topics:
     display_title: Blok
     display_options:
-      title: 'Nyligt oprettede emner'
-      block_description: 'Nyligt oprettede emner'
+      title: 'Nyligt oprettede nyheder'
+      block_description: 'Nyligt oprettede nyheder'
       arguments:
         uid:
           exception:
             title: Alle
-      use_more_text: 'Alle emner'
+      use_more_text: 'Alle Nyheder'
   page_profile:
     display_title: Side
     display_options:
