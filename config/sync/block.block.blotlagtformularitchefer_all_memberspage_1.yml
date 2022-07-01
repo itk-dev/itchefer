@@ -1,0 +1,28 @@
+uuid: 0f7e9a19-05bc-45c1-b251-52664a18ec49
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.itchefer_all_members
+  module:
+    - system
+    - views
+  theme:
+    - itchefer
+id: blotlagtformularitchefer_all_memberspage_1
+theme: itchefer
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:itchefer_all_members-page_1'
+settings:
+  id: 'views_exposed_filter_block:itchefer_all_members-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /all-members
+    negate: false

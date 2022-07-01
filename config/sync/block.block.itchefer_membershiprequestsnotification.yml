@@ -16,7 +16,7 @@ _core:
 id: itchefer_membershiprequestsnotification
 theme: itchefer
 region: content
-weight: -28
+weight: -30
 provider: null
 plugin: membership_requests_notification
 settings:

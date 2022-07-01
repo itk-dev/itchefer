@@ -15,7 +15,7 @@ _core:
 id: itchefer_views_block__event_enrollments_event_enrollments_socialbase
 theme: itchefer
 region: complementary_top
-weight: -20
+weight: -26
 provider: null
 plugin: 'views_block:event_enrollments-event_enrollments'
 settings:

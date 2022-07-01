@@ -12,7 +12,7 @@ _core:
 id: itchefer_event_add_block
 theme: itchefer
 region: complementary_top
-weight: -99
+weight: -31
 provider: null
 plugin: event_add_block
 settings:

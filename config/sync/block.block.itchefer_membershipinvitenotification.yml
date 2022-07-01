@@ -18,7 +18,7 @@ _core:
 id: itchefer_membershipinvitenotification
 theme: itchefer
 region: content
-weight: -29
+weight: -31
 provider: null
 plugin: membership_invite_notification
 settings:

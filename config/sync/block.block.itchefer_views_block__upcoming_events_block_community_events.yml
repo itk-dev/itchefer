@@ -18,7 +18,7 @@ _core:
 id: itchefer_views_block__upcoming_events_block_community_events
 theme: itchefer
 region: complementary_bottom
-weight: 2
+weight: -31
 provider: null
 plugin: 'views_block:upcoming_events-block_community_events'
 settings:

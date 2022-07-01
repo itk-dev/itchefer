@@ -1,25 +1,25 @@
-uuid: 46d439ea-3913-4c30-996a-184c5f304f91
+uuid: 88045221-67b8-4091-b763-b262e59b94cb
 langcode: da
 status: true
 dependencies:
   config:
-    - views.view.frontpage_news
+    - views.view.itchefer_all_members
   module:
     - system
     - views
   theme:
     - itchefer
-id: views_block__frontpage_news_block_1
+id: views_block__itchefer_all_members_block_1
 theme: itchefer
-region: content
-weight: -21
+region: complementary_bottom
+weight: 0
 provider: null
-plugin: 'views_block:frontpage_news-block_1'
+plugin: 'views_block:itchefer_all_members-block_1'
 settings:
-  id: 'views_block:frontpage_news-block_1'
+  id: 'views_block:itchefer_all_members-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
   type: none
@@ -28,4 +28,3 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
-    context_mapping: {  }

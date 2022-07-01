@@ -12,7 +12,7 @@ _core:
 id: itchefer_pagetitleblock_2
 theme: itchefer
 region: content
-weight: -32
+weight: -34
 provider: null
 plugin: social_page_title_block
 settings:

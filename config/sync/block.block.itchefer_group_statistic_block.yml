@@ -12,7 +12,7 @@ _core:
 id: itchefer_group_statistic_block
 theme: itchefer
 region: complementary_top
-weight: -100
+weight: -33
 provider: null
 plugin: group_statistic_block
 settings:
