@@ -6,6 +6,7 @@ dependencies:
     - views.view.itchefer_all_members
   module:
     - system
+    - user
     - views
   theme:
     - itchefer
@@ -28,3 +29,10 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
