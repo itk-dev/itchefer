@@ -351,7 +351,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen emner i denne gruppe'
+          content: 'Ingen nyheder i denne gruppe'
           plugin_id: text_custom
       relationships:
         gc__node:
