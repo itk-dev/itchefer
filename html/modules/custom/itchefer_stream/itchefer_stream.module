@@ -1,0 +1,9 @@
+<?php
+
+function itchefer_stream_activity_send_email_notifications_alter(array &$items, array $email_message_templates) {
+  // If a create_private_message template is enabled then we add it in the
+  // "Message to Me" section.
+  if (isset($email_message_templates['create_post_community'])) {
+    $items['message_to_me']['templates'][] = 'create_post_community';
+  }
+}

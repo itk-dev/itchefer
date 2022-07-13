@@ -1,0 +1,11 @@
+<h3>{{ notification_count }}</h3>
+TESTESTESTSE
+<ul>
+    {% for notification in notifications %}
+        <li>li{{ notification|striptags('<p><a><strong><small><em><div><table><tbody><tr><td><span><img>')|raw }}/li</li>
+    {% endfor %}
+</ul>
+
+<p>ekstraP</p>
+
+<p><small>{{ notification_settings|striptags('<a><strong>')|raw }}</small></p>

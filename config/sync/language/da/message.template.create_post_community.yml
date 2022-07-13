@@ -1,0 +1,10 @@
+text:
+  -
+    value: 'Lorem A'
+    format: restricted_html
+  -
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev</p>\r\n"
+    format: full_html
+  -
+    value: 'Lorem B'
+    format: restricted_html
