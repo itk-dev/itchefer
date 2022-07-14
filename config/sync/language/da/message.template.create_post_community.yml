@@ -1,10 +1,10 @@
 text:
   -
-    value: 'Lorem A'
-    format: restricted_html
+    value: "<p>[message:author:display-name] skrev [message:field_message_related_object:entity:field_post]</p>\r\n"
+    format: basic_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev [message:field_message_related_object:entity:field_post]</p>\r\n"
     format: full_html
   -
-    value: 'Lorem B'
-    format: restricted_html
+    value: "<strong>[message:author:display-name]&nbsp;har oprettet et nyt indlæg på opslagstavlen</strong><br>\r\n[message:field_message_related_object:entity:field_post]<br>\r\n<a href=\"/post/[message:field_message_related_object:entity:id]\">Læs mere</a><br><br>\r\n"
+    format: full_html_no_editor

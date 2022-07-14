@@ -1,9 +1,32 @@
 <?php
 
+/**
+ * Implements hook_activity_send_email_notifications_alter().
+ *
+ * Add create_post_community as configurable email notification on user profile.
+ */
 function itchefer_stream_activity_send_email_notifications_alter(array &$items, array $email_message_templates) {
   // If a create_private_message template is enabled then we add it in the
   // "Message to Me" section.
   if (isset($email_message_templates['create_post_community'])) {
     $items['message_to_me']['templates'][] = 'create_post_community';
+  }
+}
+
+/**
+ * Implements hook_tokens_alter().
+ *
+ * Truncate message post tokens.
+ * @todo Create a new token instead e.g: [message:field_message_related_object:entity:field_post:max150]
+ */
+function itchefer_stream_tokens_alter(array &$replacements, array $context, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) {
+  $token = '[message:field_message_related_object:entity:field_post]';
+  if(isset($context['tokens']['field_post']) && $token === $context['tokens']['field_post']) {
+    if ($replacements[$token] instanceof \Drupal\Core\Render\Markup) {
+      $currentValueStripped = strip_tags($replacements[$token]->__toString());
+      if (strlen($currentValueStripped) > 20) {
+        $replacements[$token] = substr($currentValueStripped, 0, 150) . '...';
+      }
+    }
   }
 }

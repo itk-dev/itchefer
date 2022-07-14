@@ -3,13 +3,14 @@ langcode: da
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - filter.format.full_html
-    - filter.format.restricted_html
+    - filter.format.full_html_no_editor
   module:
     - activity_logger
 third_party_settings:
   activity_logger:
-    activity_context: platform_activity_context
+    activity_context: community_activity_with_recipients_context
     activity_destinations:
       stream_home: stream_home
       stream_profile: stream_profile
@@ -20,7 +21,7 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post
-    email_subject: 'Lorem test'
+    email_subject: 'Nyt indlæg på opslagstavlen'
     activity_aggregate: false
     activity_entity_condition: ''
 _core:
@@ -30,14 +31,14 @@ label: 'Opret opslag i fællesskabet'
 description: 'En bruger har oprettet et opslag i fællesskabet'
 text:
   -
-    value: 'Lorem A'
-    format: restricted_html
+    value: "<p>[message:author:display-name] skrev [message:field_message_related_object:entity:field_post]</p>\r\n"
+    format: basic_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> skrev [message:field_message_related_object:entity:field_post]</p>\r\n"
     format: full_html
   -
-    value: 'Lorem B'
-    format: restricted_html
+    value: "<strong>[message:author:display-name]&nbsp;har oprettet et nyt indlæg på opslagstavlen</strong><br>\r\n[message:field_message_related_object:entity:field_post]<br>\r\n<a href=\"/post/[message:field_message_related_object:entity:id]\">Læs mere</a><br><br>\r\n"
+    format: full_html_no_editor
 settings:
   'token options':
     clear: false

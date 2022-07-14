@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Set up users to receive create_post_community mails daily.
+ */
+function itchefer_stream_install() {
+  $connection = \Drupal::service('database');
+
+  // Remove all create_post_community entries from user_activity_send table.
+  $num_deleted = $connection->delete('user_activity_send')
+    ->condition('message_template', 'create_post_community')
+    ->execute();
+
+  // Add all users as daily recipients of create_post_community mails.
+  $query = \Drupal::entityQuery('user');
+  $uids = $query->execute();
+  $query = $connection->insert('user_activity_send')->fields(['uid', 'destination', 'message_template', 'frequency']);
+  foreach ($uids as $uid) {
+    $query->values([
+      'uid' => $uid,
+      'destination' => 'email',
+      'message_template' => 'create_post_community',
+      'frequency' => 'daily',
+    ]);
+  }
+  $query->execute();
+}
