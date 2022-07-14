@@ -20,8 +20,8 @@ third_party_settings:
 _core:
   default_config_hash: 1m-4pe3-yspP6lmDB-jJNJXg1QwsKDZ97TN0asd-ILc
 template: create_topic_group
-label: 'Opret et emne i gruppen'
-description: 'En bruger oprettede et emne i en gruppe'
+label: 'Opret en nyhed i gruppen'
+description: 'En bruger oprettede en nyhed i en gruppe'
 text:
   -
     format: full_html

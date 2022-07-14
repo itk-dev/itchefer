@@ -1,5 +1,5 @@
-label: 'Seneste emner'
-description: 'Vis seneste emner'
+label: 'Seneste nyheder'
+description: 'Vis seneste nyheder'
 display:
   default:
     display_title: Master
@@ -15,7 +15,7 @@ display:
       title: 'Alle nyheder'
       empty:
         area_text_custom:
-          content: 'Ingen emner fundet'
+          content: 'Ingen nyheder fundet'
   block_latest_topics:
     display_options:
       title: 'Seneste nyheder'
@@ -24,7 +24,7 @@ display:
     display_options:
       empty:
         area_text_custom:
-          content: 'Ingen emner i denne gruppe'
+          content: 'Ingen nyheder i denne gruppe'
       arguments:
         gid:
           exception:

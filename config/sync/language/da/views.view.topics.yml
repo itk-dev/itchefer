@@ -21,7 +21,7 @@ display:
       fields:
         title:
           separator: ', '
-      title: Emner
+      title: Nyheder
       arguments:
         uid:
           exception:
@@ -40,6 +40,6 @@ display:
     display_title: Side
     display_options:
       menu:
-        title: Emner
+        title: Nyheder
       tab_options:
-        title: Emner
+        title: Nyheder

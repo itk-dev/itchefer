@@ -193,7 +193,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Emne
+          label: Nyhed
           exclude: false
           alter:
             alter_text: false
@@ -682,7 +682,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Emne
+            label: Nyhed
             description: ''
             use_operator: false
             operator: subject_op
@@ -963,7 +963,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Emne
+            label: Nyhed
             description: ''
             use_operator: false
             operator: subject_op
@@ -1146,7 +1146,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Emne
+          label: Nyhed
           exclude: false
           alter:
             alter_text: false
