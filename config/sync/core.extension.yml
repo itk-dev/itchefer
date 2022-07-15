@@ -65,6 +65,7 @@ module:
   image_widget_crop: 0
   inline_form_errors: 0
   itchefer_link_in_create_header: 0
+  itchefer_stream: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
   language: 0

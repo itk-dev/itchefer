@@ -18,9 +18,10 @@ template_frequencies:
   member_added_by_event_organiser: immediately
   request_event_enrollment: immediately
   request_to_join_a_group: immediately
+  create_post_community: daily
 template_header:
-  value: AAA
+  value: ''
   format: mail_html
 template_footer:
-  value: BBB
+  value: ''
   format: mail_html
