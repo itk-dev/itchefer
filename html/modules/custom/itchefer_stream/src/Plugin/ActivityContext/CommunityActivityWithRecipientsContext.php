@@ -81,14 +81,15 @@ class CommunityActivityWithRecipientsContext extends ActivityContextBase {
       $related_entity = $this->activityFactory->getActivityRelatedEntity($data);
       $entity_storage = $this->entityTypeManager->getStorage($related_entity['target_type']);
       $entity = $entity_storage->load($related_entity['target_id']);
-      $allUsers = $this->entityTypeManager->getStorage('user')->getQuery()->execute();
+
       // It could happen that a notification has been queued but the content
       // has since been deleted. In that case we can find no additional
       // recipients.
-      if (!$entity) {
+      if (!isset($entity)) {
         return $recipients;
       }
 
+      $allUsers = $this->entityTypeManager->getStorage('user')->getQuery()->execute();
       foreach ($allUsers as $user) {
         $recipients[] = [
           'target_type' => 'user',
@@ -120,10 +121,8 @@ class CommunityActivityWithRecipientsContext extends ActivityContextBase {
     }
 
     if ($entity->getEntityTypeId() === 'post') {
-      if (!$entity->field_recipient_group->isEmpty()) {
-        return FALSE;
-      }
-      elseif (!$entity->field_recipient_user->isEmpty()) {
+      if (!$entity->field_recipient_group->isEmpty()
+        || !$entity->field_recipient_user->isEmpty()) {
         return FALSE;
       }
     }

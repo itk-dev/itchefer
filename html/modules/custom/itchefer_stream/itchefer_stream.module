@@ -24,7 +24,7 @@ function itchefer_stream_tokens_alter(array &$replacements, array $context, \Dru
   if(isset($context['tokens']['field_post']) && $token === $context['tokens']['field_post']) {
     if ($replacements[$token] instanceof \Drupal\Core\Render\Markup) {
       $currentValueStripped = strip_tags($replacements[$token]->__toString());
-      if (strlen($currentValueStripped) > 20) {
+      if (strlen($currentValueStripped) > 150) {
         $replacements[$token] = substr($currentValueStripped, 0, 150) . '...';
       }
     }
