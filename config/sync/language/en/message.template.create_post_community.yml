@@ -2,4 +2,11 @@ label: 'Create post in the community'
 description: 'A user created a post in the community'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted</p>'
+    value: "<p>[message:author:display-name] created a post in the community</p>\r\n"
+    format: basic_html
+  -
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> created a post in the community</p>\r\n"
+    format: full_html
+  -
+    value: "<strong>[message:author:display-name]&nbsp;har oprettet et nyt indlæg på opslagstavlen</strong><br>\r\n[message:field_message_related_object:entity:field_post]<br>\r\n<a href=\"/post/[message:field_message_related_object:entity:id]\">Read more</a><br><br>\r\n"
+    format: full_html_no_editor

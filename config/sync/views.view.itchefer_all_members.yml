@@ -1,0 +1,646 @@
+uuid: 7a153444-19f2-4727-adc8-37d7d40e24ec
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.small_teaser
+    - core.entity_view_mode.profile.teaser
+    - field.storage.profile.field_profile_first_name
+    - field.storage.profile.field_profile_last_name
+  module:
+    - options
+    - profile
+    - user
+id: itchefer_all_members
+label: 'All members'
+module: views
+description: ''
+tag: ''
+base_table: profile
+base_field: profile_id
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Default
+    position: 0
+    display_options:
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          expose_sort_order: true
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        type: full
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Alle -'
+            offset: false
+            offset_label: Forskydning
+          quantity: 9
+      style:
+        type: default
+      row:
+        type: fields
+      fields:
+        field_profile_last_name:
+          id: field_profile_last_name
+          table: profile__field_profile_last_name
+          field: field_profile_last_name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_profile_first_name:
+          id: field_profile_first_name
+          table: profile__field_profile_first_name
+          field: field_profile_first_name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        rendered_entity:
+          id: rendered_entity
+          table: profile
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: teaser
+          entity_type: profile
+          plugin_id: rendered_entity
+      filters:
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: Søg
+            description: ''
+            use_operator: false
+            operator: combine_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: combine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              exporter: '0'
+              verified: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            field_profile_last_name: field_profile_last_name
+            field_profile_first_name: field_profile_first_name
+          plugin_id: combine
+        field_region_value:
+          id: field_region_value
+          table: profile__field_region
+          field: field_region_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_region_value_op
+            label: Region
+            description: ''
+            use_operator: false
+            operator: field_region_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_region_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              exporter: '0'
+              verified: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_municipality_value:
+          id: field_municipality_value
+          table: profile__field_municipality
+          field: field_municipality_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_municipality_value_op
+            label: Kommune
+            description: ''
+            use_operator: false
+            operator: field_municipality_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_municipality_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              exporter: '0'
+              verified: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value: admin
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: user
+          entity_field: name
+          plugin_id: string
+      sorts:
+        profile_name_value:
+          id: profile_name_value
+          table: profile__profile_name
+          field: profile_name_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: profile
+          entity_field: profile_name
+          plugin_id: standard
+      title: 'Alle medlemmer'
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships:
+        uid:
+          id: uid
+          table: profile
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: User
+          required: true
+          entity_type: profile
+          entity_field: uid
+          plugin_id: standard
+      arguments: {  }
+      display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Alle brugere'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
+        - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
+        - 'config:core.entity_view_display.profile.profile.default'
+        - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
+        - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
+        - 'config:core.entity_view_display.profile.profile.table'
+        - 'config:core.entity_view_display.profile.profile.teaser'
+        - 'config:field.storage.profile.field_profile_first_name'
+        - 'config:field.storage.profile.field_profile_last_name'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Blok
+    position: 2
+    display_options:
+      display_extenders: {  }
+      style:
+        type: default
+        options: {  }
+      defaults:
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        sorts: false
+        title: false
+        pager: false
+      row:
+        type: 'entity:profile'
+        options:
+          relationship: none
+          view_mode: small_teaser
+      filters:
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value: admin
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: user
+          entity_field: name
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        created:
+          id: created
+          table: users_field_data
+          field: created
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: user
+          entity_field: created
+          plugin_id: date
+      title: 'Seneste medlemmmer'
+      pager:
+        type: some
+        options:
+          items_per_page: 4
+          offset: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
+        - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
+        - 'config:core.entity_view_display.profile.profile.default'
+        - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
+        - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
+        - 'config:core.entity_view_display.profile.profile.table'
+        - 'config:core.entity_view_display.profile.profile.teaser'
+        - 'config:field.storage.profile.field_profile_first_name'
+        - 'config:field.storage.profile.field_profile_last_name'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: all-members
+      exposed_block: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
+        - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
+        - 'config:core.entity_view_display.profile.profile.default'
+        - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
+        - 'config:core.entity_view_display.profile.profile.search_index'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
+        - 'config:core.entity_view_display.profile.profile.table'
+        - 'config:core.entity_view_display.profile.profile.teaser'
+        - 'config:field.storage.profile.field_profile_first_name'
+        - 'config:field.storage.profile.field_profile_last_name'

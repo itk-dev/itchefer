@@ -1,0 +1,10 @@
+text:
+  -
+    value: "<p>[message:author:display-name] skrev en ny besked på opslagstavlen</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>[message:author:display-name] skrev en ny besked på opslagstavlen</p>\r\n"
+    format: full_html
+  -
+    value: "<strong>[message:author:display-name]&nbsp;har oprettet et nyt indlæg på opslagstavlen</strong><br>\r\n[message:field_message_related_object:entity:field_post]<br>\r\n<a href=\"/post/[message:field_message_related_object:entity:id]\">Læs mere</a><br><br>\r\n"
+    format: full_html_no_editor

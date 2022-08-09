@@ -10,7 +10,7 @@ dependencies:
 id: hierarchicaltaxonomymenu
 theme: itchefer
 region: complementary_top
-weight: 0
+weight: -17
 provider: null
 plugin: hierarchical_taxonomy_menu
 settings:

@@ -14,7 +14,7 @@ _core:
 id: itchefer_exposedformlatest_topicspage_latest_topics
 theme: itchefer
 region: complementary_top
-weight: 1
+weight: -14
 provider: null
 plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
 settings:

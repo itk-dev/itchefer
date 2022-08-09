@@ -112,6 +112,9 @@
             "goalgorilla/open_social": {
                 "Disable two post update functions": "patches/disable-post-update.patch",
                 "Disable caching of invite group action": "patches/disable_invite_action_caching.patch"
+            },
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/2107455": "https://www.drupal.org/files/issues/2022-04-01/2107455-72.patch"
             }
         }
     },

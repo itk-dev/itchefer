@@ -1,0 +1,16 @@
+{% extends "input.html.twig" %}
+
+{% set attributes = attributes.addClass('btn--comment-submit') %}
+
+{% block input %}
+  {% apply spaceless %}
+    <button{{ attributes.addClass(classes) }}>
+      <span class="label">{{ 'Add comment'|t }}</span>
+      <svg class="btn-icon" aria-hidden="true">
+        <title>{{ 'Add comment'|t }}</title>
+        <use xlink:href="#icon-send"></use>
+      </svg>
+
+    </button>{{ children }}
+  {% endapply %}
+{% endblock %}

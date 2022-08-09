@@ -2,35 +2,46 @@ uuid: e25a61ad-1641-4ebd-a2e6-02a5fcd88c71
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.full_html_no_editor
   module:
     - activity_logger
 third_party_settings:
   activity_logger:
-    activity_context: community_activity_context
+    activity_context: community_activity_with_recipients_context
     activity_destinations:
-      stream_explore: stream_explore
       stream_home: stream_home
       stream_profile: stream_profile
+      notifications: notifications
+      stream_explore: stream_explore
+      email: email
     activity_create_direct: true
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post
-    email_subject: ''
+    email_subject: 'Nyt indlæg på opslagstavlen'
+    activity_aggregate: false
+    activity_entity_condition: ''
 _core:
   default_config_hash: u1HJ3UrjWglhkdKMGqTUnZIFM_AkMu2L8Bq0tpUVI34
 template: create_post_community
-label: 'Opret opslag i fællseskabet'
+label: 'Opret opslag i fællesskabet'
 description: 'En bruger har oprettet et opslag i fællesskabet'
 text:
   -
+    value: "<p>[message:author:display-name] skrev en ny besked på opslagstavlen</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>[message:author:display-name] skrev en ny besked på opslagstavlen</p>\r\n"
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> skrev</p>'
+  -
+    value: "<strong>[message:author:display-name]&nbsp;har oprettet et nyt indlæg på opslagstavlen</strong><br>\r\n[message:field_message_related_object:entity:field_post]<br>\r\n<a href=\"/post/[message:field_message_related_object:entity:id]\">Læs mere</a><br><br>\r\n"
+    format: full_html_no_editor
 settings:
   'token options':
     clear: false
     'token replace': true
-  purge:
-    override: false
-    enabled: false
-    quota: null
-    days: null
+  purge_override: false
+  purge_methods: {  }

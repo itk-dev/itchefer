@@ -1,0 +1,13 @@
+<div class="mail-template">
+  <h3>{{ notification_count }}</h3>
+  <ul>
+    {% for notification in notifications %}
+      <li style="list-style-position: outside;">
+        {{ notification|striptags('<a><br><strong>')|raw }}</br></br>
+      </li>
+    {% endfor %}
+  </ul>
+  <p></p>
+
+  <p><small>{{ notification_settings|striptags('<a><strong>')|raw }}</small></p>
+</div>

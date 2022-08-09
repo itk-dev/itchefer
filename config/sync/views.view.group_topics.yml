@@ -18,7 +18,7 @@ dependencies:
 _core:
   default_config_hash: QfYYx-ckbKscwFS5Uy5F8QSkZx1T0fqPvxC_T-sUwtE
 id: group_topics
-label: 'Gruppe emner'
+label: Gruppenyhed
 module: views
 description: ''
 tag: ''
@@ -338,7 +338,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: 'Gruppe emner'
+      title: Gruppenyheder
       header: {  }
       footer: {  }
       empty:
@@ -351,7 +351,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen emner i denne gruppe'
+          content: 'Ingen nyheder i denne gruppe'
           plugin_id: text_custom
       relationships:
         gc__node:

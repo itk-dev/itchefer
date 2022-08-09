@@ -12,7 +12,7 @@ _core:
 id: itchefer_topic_add_block
 theme: itchefer
 region: complementary_top
-weight: -98
+weight: -30
 provider: null
 plugin: topic_add_block
 settings:

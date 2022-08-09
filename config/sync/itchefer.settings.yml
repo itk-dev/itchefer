@@ -9,7 +9,7 @@ features:
   favicon: 1
   node_user_picture: true
 logo:
-  path: 'public://KITA_logo.png'
+  path: themes/custom/itchefer/logo.svg
   url: ''
   use_default: 0
 schemas:
@@ -26,3 +26,5 @@ font_primary: '2'
 email_logo: {  }
 hero_gradient_opacity: '50'
 style: ''
+content_entity_form_style: open_social
+header_style: one_line

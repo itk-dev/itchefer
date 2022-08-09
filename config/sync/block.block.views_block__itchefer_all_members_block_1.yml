@@ -1,0 +1,38 @@
+uuid: 88045221-67b8-4091-b763-b262e59b94cb
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.itchefer_all_members
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - itchefer
+id: views_block__itchefer_all_members_block_1
+theme: itchefer
+region: complementary_bottom
+weight: 0
+provider: null
+plugin: 'views_block:itchefer_all_members-block_1'
+settings:
+  id: 'views_block:itchefer_all_members-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

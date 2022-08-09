@@ -1,4 +1,4 @@
-label: 'Emner for gruppe'
+label: 'Nyheder for gruppe'
 display:
   default:
     display_title: Master
@@ -24,10 +24,10 @@ display:
         status:
           expose:
             label: Publiceringsstatus
-      title: 'Emner for gruppe'
+      title: 'Nyheder for gruppe'
       empty:
         area_text_custom:
-          content: 'Ingen emner i denne gruppe'
+          content: 'Ingen nyheder i denne gruppe'
       arguments:
         gid:
           exception:

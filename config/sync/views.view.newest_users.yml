@@ -1,12 +1,12 @@
 uuid: 3b64b4ff-6f26-4559-ab01-a01e512b84e5
 langcode: da
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.profile.small_teaser
     - core.entity_view_mode.profile.teaser
     - profile.type.profile
   module:
+    - better_exposed_filters
     - profile
     - user
 _core:
@@ -41,15 +41,36 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
-          reset_button: false
+          reset_button: true
           reset_button_label: Gendan
           exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
           sort_asc_label: Stigende
           sort_desc_label: Faldende
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: restricted_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              type_1:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
       pager:
         type: mini
         options:
@@ -71,18 +92,17 @@ display:
       style:
         type: default
       row:
-        type: 'entity:profile'
+        type: fields
         options:
-          relationship: none
-          view_mode: teaser
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         rendered_entity:
+          id: rendered_entity
           table: profile
           field: rendered_entity
-          id: rendered_entity
-          entity_type: null
-          entity_field: null
-          plugin_id: rendered_entity
           relationship: none
           group_type: group
           admin_label: ''
@@ -119,7 +139,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -127,7 +147,140 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view_mode: default
+          view_mode: teaser
+          entity_type: null
+          entity_field: null
+          plugin_id: rendered_entity
+        profile_name_value:
+          id: profile_name_value
+          table: profile__profile_name
+          field: profile_name_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: profile
+          entity_field: profile_name
+          plugin_id: field
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: user_name
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: user
+          entity_field: name
+          plugin_id: field
       filters:
         type:
           id: type
@@ -141,6 +294,7 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+          group: 1
         status:
           id: status
           table: users_field_data
@@ -265,22 +419,115 @@ display:
           relationship: uid
           table: user__roles
           value: {  }
-      sorts:
-        created:
-          id: created
+        type_1:
+          id: type_1
           table: profile
-          field: created
+          field: type
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_1_op
+            label: 'Profil type'
+            description: ''
+            use_operator: false
+            operator: type_1_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: type_1
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              exporter: '0'
+              verified: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: profile
+          entity_field: type
+          plugin_id: bundle
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: 'Kombinér felter filter'
+            description: ''
+            use_operator: false
+            operator: combine_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: combine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              exporter: '0'
+              verified: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            name: name
+          plugin_id: combine
+      sorts:
+        profile_name_value:
+          id: profile_name_value
+          table: profile__profile_name
+          field: profile_name_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: minute
           entity_type: profile
-          entity_field: created
-          plugin_id: date
+          entity_field: profile_name
+          plugin_id: standard
       title: 'Nyeste medlemmer'
       header: {  }
       footer: {  }
@@ -299,24 +546,34 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.default'
+        - 'config:core.entity_view_display.profile.profile.small'
+        - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
-        - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
-        - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
-        - 'config:core.entity_view_display.profile.profile.teaser'
   block_newest_users:
     display_plugin: block
     id: block_newest_users
@@ -342,19 +599,23 @@ display:
         type: default
         options: {  }
       row:
-        type: 'entity:profile'
+        type: fields
         options:
-          relationship: none
-          view_mode: small_teaser
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       display_description: ''
       block_description: 'Newest users block'
-      use_more: true
-      use_more_always: true
+      use_more: false
+      use_more_always: false
       use_more_text: 'Alle medlemmer'
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - user.permissions
       tags:
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
@@ -363,9 +624,12 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'
   page_newest_users:
@@ -375,7 +639,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: all-members
+      path: new-members-deprecated
       pager:
         type: full
         options:
@@ -403,10 +667,13 @@ display:
       display_description: ''
       title: 'Alle medlemmer'
       exposed_block: true
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags:
@@ -416,8 +683,11 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'

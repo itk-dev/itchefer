@@ -570,7 +570,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Emner
+        title: Nyheder
         description: ''
         weight: 0
       exposed_block: true

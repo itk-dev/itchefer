@@ -12,7 +12,7 @@ dependencies:
 id: exposedformsearch_topicspage
 theme: itchefer
 region: complementary_top
-weight: 0
+weight: -18
 provider: null
 plugin: 'views_exposed_filter_block:search_topics-page'
 settings:
