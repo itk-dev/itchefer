@@ -14,7 +14,7 @@ _core:
 id: itchefer_views_block__managers_event_managers_2
 theme: itchefer
 region: complementary_bottom
-weight: 0
+weight: -34
 provider: null
 plugin: 'views_block:managers-event_managers'
 settings:

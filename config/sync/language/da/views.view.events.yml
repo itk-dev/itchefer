@@ -40,7 +40,7 @@ display:
       menu:
         title: Begivenheder
       tab_options:
-        title: Emner
+        title: Nyheder
       filters:
         status:
           expose:

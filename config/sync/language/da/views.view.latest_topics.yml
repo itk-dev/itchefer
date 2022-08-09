@@ -1,5 +1,5 @@
-label: 'Seneste emner'
-description: 'Vis seneste emner'
+label: 'Seneste nyheder'
+description: 'Vis seneste nyheder'
 display:
   default:
     display_title: Master
@@ -12,25 +12,25 @@ display:
       fields:
         title:
           separator: ', '
-      title: 'Alle emner'
+      title: 'Alle nyheder'
       empty:
         area_text_custom:
-          content: 'Ingen emner fundet'
+          content: 'Ingen nyheder fundet'
   block_latest_topics:
     display_options:
-      title: 'Seneste emner'
-      use_more_text: 'Alle emner'
+      title: 'Seneste nyheder'
+      use_more_text: 'Alle nyheder'
   group_topics_block:
     display_options:
       empty:
         area_text_custom:
-          content: 'Ingen emner i denne gruppe'
+          content: 'Ingen nyheder i denne gruppe'
       arguments:
         gid:
           exception:
             title: Alle
-      title: 'Seneste emner'
-      use_more_text: 'Alle emner'
+      title: 'Seneste nyheder'
+      use_more_text: 'Alle nyheder'
   page_latest_topics:
     display_options:
       pager:

@@ -1,0 +1,27 @@
+remove_open_social_branding: false
+do_not_send_emails_new_users: false
+template_frequencies:
+  activity_on_events_im_organizing: immediately
+  approve_request_join_group: immediately
+  background_process_finished: immediately
+  create_comment_author_node_post: immediately
+  create_comment_following_node: immediately
+  create_comment_post_profile: immediately
+  create_comment_reply: immediately
+  create_comment_reply_mention: immediately
+  create_content_in_joined_group: immediately
+  create_like_node_or_post: immediately
+  create_mention_comment: immediately
+  create_mention_post: immediately
+  create_post_profile: immediately
+  join_to_group: immediately
+  member_added_by_event_organiser: immediately
+  request_event_enrollment: immediately
+  request_to_join_a_group: immediately
+  create_post_community: daily
+template_header:
+  value: ''
+  format: mail_html
+template_footer:
+  value: ''
+  format: mail_html

@@ -40,3 +40,6 @@ private-files/
 .vscode
 /.editorconfig
 /.gitattributes
+
+# Ignore mac finder settings
+.DS_Store

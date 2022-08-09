@@ -20,76 +20,105 @@
  */
 #}
 
-
-
-  {{ attach_library('socialbase/teaser')}}
-  <div class="card teaser">
-    <a href="{{ profile_home }}" class="teaser__image">
-      {% if content.field_profile_image %}
-        {% if 'default-profile-picture.png' in content.field_profile_image  %}
-         <img src="{{ base_path }}/themes/custom/itchefer/default-profile-picture.png" alt = ""/>
-        {% else %}
-        {{ content.field_profile_image }}
-       {% endif %}
-
-      {% endif %}
-    </a>
-    <div class="teaser__body">
-      <div class="teaser__content">
-        <h4 class="teaser__title">
-        <a href="{{ profile_home }}">
-          {{ profile_name }} {{ profile_name_extra }}
-          </a>
-        </h4>
-          {% if content.field_profile_function|render or content.field_profile_organization|render %}
-          <div class="teaser__content-line">
-            <svg class="teaser__content-type-icon">
-              <use xlink:href="#icon-business_center"></use>
-            </svg>
-            <span class="teaser__content-text">
-              {% if content.field_profile_organization|render %}
-                {{ '@function at @organization'|t({'@function': content.field_profile_function|render, '@organization': content.field_profile_organization|render}) }}
-              {% else %}
-                {{ content.field_profile_function }}
+{{ attach_library('socialbase/teaser')}}
+<div class="card teaser">
+  <a href="{{ profile_home }}" class="teaser__image">
+    {% if content.field_profile_image %}
+      {{ content.field_profile_image }}
+     {% endif %}
+  </a>
+  <div class="teaser__body">
+    <div class="teaser__content">
+      <h4 class="teaser__title">
+      <a href="{{ profile_home }}">
+        {{ profile_name }} {{ profile_name_extra }}
+        </a>
+      </h4>
+        {% if content.field_profile_function|render or content.field_profile_organization|render %}
+        <div class="teaser__content-line">
+          <svg class="teaser__content-type-icon">
+            <use xlink:href="#icon-business_center"></use>
+          </svg>
+          <span class="teaser__content-text">
+            {% if content.field_profile_organization|render %}
+              {{ '@function at @organization'|t({'@function': content.field_profile_function|render, '@organization': content.field_profile_organization|render}) }}
+            {% else %}
+              {{ content.field_profile_function }}
+            {% endif %}
+          </span>
+        </div>
+        {% endif %}
+        {% if content.field_municipality|render or content.field_region|render %}
+          {% if content.field_municipality|render %}
+            <div class="teaser__content-line">
+              {% if content.field_municipality|render or content.field_region|render %}
+                <svg class="teaser__content-type-icon">
+                  <use xlink:href="#icon-location"></use>
+                </svg>
               {% endif %}
+              <span class="teaser__content-text">
+                {{ content.field_municipality|render }}
+              </span>
+            </div>
+          {% endif %}
+          {% if content.field_region|render %}
+          <div class="teaser__content-line">
+              <svg class="teaser__content-type-icon">
+                {% if not content.field_municipality|render %}
+                  <use xlink:href="#icon-location"></use>
+                {% endif %}
+              </svg>
+            <span class="teaser__content-text">
+              {{ content.field_region|render }}
             </span>
           </div>
           {% endif %}
+        {% endif %}
+      {% if content.field_profile_phone_number|render %}
+        <div class="teaser__content-line">
+          <svg class="teaser__content-type-icon">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <span class="teaser__content-text">
+              {{ content.field_profile_phone_number|render }}
+            </span>
+        </div>
+      {% endif %}
 
-          {% if content.field_profile_profile_tag['#items'] or badges %}
-            <div style="margin-left: 30px; margin-top: 5px;">
-              {% for badge in badges %}
-                {% set badge_classes = badge.classes|merge(['badge']) %}
-                <div{{ attributes.addClass(badge_classes) }}>{{ badge.label }}</div>
-              {% endfor %}
-              {% for item in content.field_profile_profile_tag['#items'] %}
-                <div class="badge badge-default">{{ item.entity.label }}</div>
-              {% endfor %}
-            </div>
-          {% endif %}
+        {% if content.field_profile_profile_tag['#items'] or badges %}
+          <div style="margin-left: 30px; margin-top: 5px;">
+            {% for badge in badges %}
+              {% set badge_classes = badge.classes|merge(['badge']) %}
+              <div{{ attributes.addClass(badge_classes) }}>{{ badge.label }}</div>
+            {% endfor %}
+            {% for item in content.field_profile_profile_tag['#items'] %}
+              <div class="badge badge-default">{{ item.entity.label }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
 
-      </div>
+    </div>
 
-      <div class="card__actionbar">
-        <a href="{{ profile_contact_url }}" class="card__link">
-          {% if profile_contact_label == 'private_message' %}
-            {% trans %}Private message{% endtrans %}
-          {% else %}
-            {% trans %}View profile{% endtrans %}
-          {% endif %}
-        </a>
-        <a href="{{ profile_stream_url }}" class="card__link hidden-for-phone-only">
-          {% trans %}View activities{% endtrans %}
-        </a>
-      
-  {% set mail %}
-     {{ user_mail }}
+    <div class="card__actionbar">
+      <a href="{{ profile_contact_url }}" class="card__link">
+        {% if profile_contact_label == 'private_message' %}
+          {% trans %}Private message{% endtrans %}
+        {% else %}
+          {% trans %}View profile{% endtrans %}
+        {% endif %}
+      </a>
+      <a href="{{ profile_stream_url }}" class="card__link hidden-for-phone-only">
+        {% trans %}View activities{% endtrans %}
+      </a>
+
+{% set mail %}
+   {{ user_mail }}
 {% endset %}
-        
-        <a href="mailto: {{mail|split('<a href="mailto:')[1]|split('"')[0]}}" class="card__link">
-          {% trans %}Mail to{% endtrans %}
-        </a>
-      </div>
+
+      <a href="mailto: {{mail|split('<a href="mailto:')[1]|split('"')[0]}}" class="card__link">
+        {% trans %}Mail to{% endtrans %}
+      </a>
     </div>
   </div>
+</div>
 

@@ -15,7 +15,7 @@ _core:
 id: itchefer_views_block__group_managers_block_list_managers
 theme: itchefer
 region: content
-weight: -24
+weight: -26
 provider: null
 plugin: 'views_block:group_managers-block_list_managers'
 settings:

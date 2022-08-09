@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 _core:
   default_config_hash: xhRhN6lmn1rYqHrnA4nfetCj2g1B4oePPydva7tqBn8
-name: Emne
+name: Nyhed
 type: topic
 description: ''
 help: ''

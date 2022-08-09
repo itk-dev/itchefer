@@ -1,0 +1,19 @@
+uuid: 7c15eac7-8867-49e2-996f-b508da5a5f8e
+langcode: da
+status: true
+dependencies:
+  module:
+    - mentions
+name: 'Full HTML - No editor'
+format: full_html_no_editor
+weight: 0
+filters:
+  filter_mentions:
+    id: filter_mentions
+    provider: mentions
+    status: false
+    weight: -10
+    settings:
+      mentions_filter:
+        ProfileMention: '0'
+        UserMention: '0'

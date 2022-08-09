@@ -26,7 +26,7 @@ display:
         comment_bulk_form:
           action_title: Handling
         subject:
-          label: Emne
+          label: Nyhed
           separator: ', '
         uid:
           separator: ', '
@@ -46,7 +46,7 @@ display:
       filters:
         subject:
           expose:
-            label: Emne
+            label: Nyhed
         combine:
           expose:
             label: Forfatternavn
@@ -74,7 +74,7 @@ display:
       filters:
         subject:
           expose:
-            label: Emne
+            label: Nyhed
         combine:
           expose:
             label: Forfatternavn
@@ -85,7 +85,7 @@ display:
         comment_bulk_form:
           action_title: Handling
         subject:
-          label: Emne
+          label: Nyhed
           separator: ', '
         uid:
           separator: ', '
