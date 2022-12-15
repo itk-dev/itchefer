@@ -2,6 +2,8 @@ uuid: 3bb11247-592f-4a5d-8eff-164805996d44
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
     - activity_logger
 third_party_settings:

@@ -9,7 +9,7 @@ palette:
   navbar-active-text: '#000'
   navbar-sec-bg: '#39a8e0'
   navbar-sec-text: '#ffffff'
-  brand-accent-text: '#4d4d4d'
+  brand-accent-text: '#343434'
 logo: 'public://color/socialblue-93866606/logo.svg'
 stylesheets:
   - 'public://color/socialblue-93866606/brand.css'

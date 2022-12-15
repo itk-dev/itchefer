@@ -1,10 +1,39 @@
 uuid: 52306862-6e85-4192-bfa7-ad9e096481ad
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.mail_html
+    - filter.format.simple_text
+    - node.type.event
+    - node.type.topic
+  module:
+    - comment
+    - contact
+    - entity_access_by_field
+    - field_permissions
+    - filter
+    - flag
+    - google_analytics
+    - group
+    - like_and_dislike
+    - mentions
+    - node
+    - override_node_options
+    - profile
+    - social_comment
+    - social_event
+    - social_group
+    - social_like
+    - social_post
+    - social_profile
+    - social_search
+    - social_topic
+    - system
 id: verified
 label: 'Verified User'
-weight: 5
+weight: 3
 is_admin: null
 permissions:
   - 'access comments'

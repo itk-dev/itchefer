@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: da
 uuid: 4a356ae3-1279-45a6-895f-0c7d07933e66
 name: Itchefer
 mail: mail@itchefer.dk
@@ -8,9 +11,6 @@ page:
   front: /forside
 admin_compact_mode: false
 weight_select_max: 100
-langcode: da
 default_langcode: da
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
-show_mail_in_messages: 0
 mail_notification: ''
+show_mail_in_messages: 0

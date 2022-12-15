@@ -18,16 +18,16 @@ third_party_settings:
         - title
         - field_file
         - field_directory
+      label: Document
+      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: ''
         required_fields: true
-      label: Document
 id: node.document.default
 targetEntityType: node
 bundle: document
@@ -40,18 +40,18 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_directory:
+    type: social_group_selector_widget
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: social_group_selector_widget
-    region: content
   field_file:
+    type: file_generic
     weight: 2
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   status:
     type: boolean_checkbox
     weight: 2

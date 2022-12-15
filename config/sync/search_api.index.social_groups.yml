@@ -2,15 +2,15 @@ uuid: 1d999fc9-2c0c-4428-b322-ec331aab931f
 langcode: da
 status: true
 dependencies:
-  module:
-    - group
-    - user
-    - search_api
   config:
     - field.storage.group.field_group_description
     - field.storage.group.field_group_allowed_join_method
     - search_api.server.social_database
     - core.entity_view_mode.group.teaser
+  module:
+    - group
+    - user
+    - search_api
 _core:
   default_config_hash: tUFXFR3gN_XD85cd0oLbYRHP-Gwf0CZgtBjzeLfHyJI
 id: social_groups
@@ -66,7 +66,7 @@ field_settings:
     type: text
     configuration:
       roles:
-        anonymous: anonymous
+        - anonymous
       view_mode:
         'entity:group':
           closed_group: teaser
@@ -81,24 +81,26 @@ field_settings:
         - group
 datasource_settings:
   'entity:group':
-    plugin_id: 'entity:group'
     bundles:
       default: true
       selected: {  }
     languages:
       default: true
       selected: {  }
+    plugin_id: 'entity:group'
 processor_settings:
   add_url:
-    plugin_id: add_url
     weights:
       preprocess_index: -30
+    plugin_id: add_url
   aggregated_field:
-    plugin_id: aggregated_field
     weights:
       add_properties: 20
+    plugin_id: aggregated_field
   html_filter:
-    plugin_id: html_filter
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
     all_fields: false
     fields:
       - field_group_description
@@ -113,11 +115,11 @@ processor_settings:
       h3: 2
       strong: 2
       u: 1
+    plugin_id: html_filter
+  ignore_character:
     weights:
       preprocess_index: -10
       preprocess_query: -10
-  ignore_character:
-    plugin_id: ignore_character
     all_fields: false
     fields:
       - field_group_description
@@ -125,6 +127,15 @@ processor_settings:
       - name
       - type
     ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    plugin_id: ignore_character
     strip:
       character_sets:
         Pc: Pc
@@ -134,19 +145,10 @@ processor_settings:
         Pi: Pi
         Po: Po
         Ps: Ps
+  ignorecase:
     weights:
       preprocess_index: -10
       preprocess_query: -10
-    ignorable_classes:
-      - Pc
-      - Pd
-      - Pe
-      - Pf
-      - Pi
-      - Po
-      - Ps
-  ignorecase:
-    plugin_id: ignorecase
     all_fields: true
     fields:
       - field_group_allowed_join_method
@@ -155,17 +157,17 @@ processor_settings:
       - name
       - rendered_item
       - type
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
+    plugin_id: ignorecase
   language_with_fallback: {  }
   rendered_item:
-    plugin_id: rendered_item
     weights:
       add_properties: 0
       pre_index_save: -10
+    plugin_id: rendered_item
   stopwords:
-    plugin_id: stopwords
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
     all_fields: false
     fields:
       - field_group_description
@@ -206,25 +208,25 @@ processor_settings:
       - was
       - will
       - with
-    weights:
-      preprocess_index: -5
-      preprocess_query: -2
+    plugin_id: stopwords
   tokenizer:
-    plugin_id: tokenizer
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
     all_fields: true
     fields:
       - field_group_description
       - label
       - rendered_item
     spaces: ''
+    ignored: ._-
     overlap_cjk: 1
     minimum_word_size: '3'
-    weights:
-      preprocess_index: -6
-      preprocess_query: -6
-    ignored: ._-
+    plugin_id: tokenizer
   transliteration:
-    plugin_id: transliteration
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
     all_fields: true
     fields:
       - field_group_allowed_join_method
@@ -233,14 +235,12 @@ processor_settings:
       - name
       - rendered_item
       - type
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
+    plugin_id: transliteration
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: false
   cron_limit: 50
+  index_directly: false
   track_changes_in_references: true
 server: social_database

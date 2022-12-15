@@ -2,11 +2,11 @@ uuid: fc245414-efca-4b72-8ab3-87323d5b78f3
 langcode: da
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - social_event
-  module:
-    - node
 id: node.field_event_all_day
 field_name: field_event_all_day
 entity_type: node

@@ -1,20 +1,23 @@
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: da
 definitions:
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__documents_menu__10':
+    menu_name: documents-menu
+    parent: ''
     weight: -50
-    menu_name: documents-menu
-    parent: ''
-    enabled: true
     expanded: true
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__documents_menu__11':
+    menu_name: documents-menu
+    parent: ''
     weight: -49
-    parent: ''
-    menu_name: documents-menu
-    enabled: true
     expanded: true
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__documents_menu__9':
-    weight: -48
     menu_name: documents-menu
     parent: ''
+    weight: -48
     expanded: true
     enabled: true
   message__admin_content:
@@ -23,6 +26,3 @@ definitions:
     weight: 0
     expanded: false
     enabled: false
-_core:
-  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
-langcode: da

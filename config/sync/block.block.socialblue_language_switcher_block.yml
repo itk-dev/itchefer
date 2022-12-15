@@ -17,6 +17,6 @@ plugin: language_switcher_block
 settings:
   id: language_switcher_block
   label: 'Sprogskifter blok'
-  provider: social_language
   label_display: '0'
+  provider: social_language
 visibility: {  }

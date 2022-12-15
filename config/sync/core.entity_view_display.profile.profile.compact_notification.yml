@@ -17,6 +17,7 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_summary
     - field.field.profile.profile.field_region
     - field.field.profile.profile.field_representative_of_municipa
     - image.style.social_medium
@@ -31,13 +32,15 @@ bundle: profile
 mode: compact_notification
 content:
   field_profile_image:
-    weight: 7
+    type: image
     label: hidden
     settings:
-      image_style: social_medium
       image_link: ''
+      image_style: social_medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 7
     region: content
 hidden:
   field_municipality: true
@@ -52,6 +55,7 @@ hidden:
   field_profile_profile_tag: true
   field_profile_self_introduction: true
   field_profile_show_email: true
+  field_profile_summary: true
   field_region: true
   field_representative_of_municipa: true
   search_api_excerpt: true

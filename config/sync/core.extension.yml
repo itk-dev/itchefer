@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
+langcode: da
 module:
   activity_basics: 0
   activity_creator: 0
@@ -68,6 +71,9 @@ module:
   itchefer_stream: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
+  jquery_ui_datepicker: 0
+  jquery_ui_slider: 0
+  jquery_ui_touch_punch: 0
   language: 0
   lazy: 0
   like_and_dislike: 0
@@ -79,6 +85,7 @@ module:
   menu_ui: 0
   message: 0
   message_notify: 0
+  mysql: 0
   node: 0
   options: 0
   override_node_options: 0
@@ -172,6 +179,3 @@ theme:
   itchefer: 0
   stable: 0
 profile: social
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
-langcode: da

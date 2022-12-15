@@ -7,8 +7,8 @@ _core:
 id: flexible_group
 label: 'Fleksibel gruppe'
 description: 'Ved at vælge denne mulighed kan du indstille mange gruppe indstillinger efter dine behov.'
+new_revision: false
 creator_membership: true
 creator_wizard: false
 creator_roles:
   - flexible_group-group_manager
-new_revision: false

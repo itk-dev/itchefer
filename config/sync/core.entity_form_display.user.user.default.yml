@@ -10,28 +10,28 @@ third_party_settings:
     group_information:
       children:
         - account
+      label: 'Account information'
       parent_name: ''
       weight: 0
-      label: 'Account information'
       format_type: fieldset
       format_settings:
         label: 'Account information'
-        required_fields: true
-        id: ''
         classes: ''
+        id: ''
+        required_fields: true
     group_locale_settings:
       children:
         - timezone
         - language
+      label: 'Locale settings'
       parent_name: ''
       weight: 1
       format_type: fieldset
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: ''
         required_fields: true
-      label: 'Locale settings'
 _core:
   default_config_hash: 0nZ2z-1drifgtazQ7sCHMq5tzD4JvQ5oYqoHa0z3koI
 id: user.user.default

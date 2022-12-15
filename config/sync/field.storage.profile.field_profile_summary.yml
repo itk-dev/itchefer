@@ -1,0 +1,24 @@
+uuid: 5ea7c293-610b-442e-88d6-b8ac880eb3b4
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - social_profile
+id: profile.field_profile_summary
+field_name: field_profile_summary
+entity_type: profile
+type: string
+settings:
+  max_length: 140
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

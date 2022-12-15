@@ -10,6 +10,9 @@ dependencies:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      post-post: post-post
+    activity_action: create_entitiy_action
     activity_context: community_activity_with_recipients_context
     activity_destinations:
       stream_home: stream_home
@@ -18,12 +21,9 @@ third_party_settings:
       stream_explore: stream_explore
       email: email
     activity_create_direct: true
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      post-post: post-post
-    email_subject: 'Nyt indlæg på opslagstavlen'
     activity_aggregate: false
     activity_entity_condition: ''
+    email_subject: 'Nyt indlæg på opslagstavlen'
 _core:
   default_config_hash: u1HJ3UrjWglhkdKMGqTUnZIFM_AkMu2L8Bq0tpUVI34
 template: create_post_community
@@ -44,4 +44,8 @@ settings:
     clear: false
     'token replace': true
   purge_override: false
-  purge_methods: {  }
+  purge:
+    days: null
+    enabled: false
+    override: false
+    quota: null

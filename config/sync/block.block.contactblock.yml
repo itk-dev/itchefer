@@ -18,13 +18,13 @@ plugin: contact_block
 settings:
   id: contact_block
   label: 'Kontakt os'
-  provider: contact_block
   label_display: visible
+  provider: contact_block
   contact_form: contact_form
   form_display: default
 visibility:
   request_path:
     id: request_path
-    pages: /kontakt
     negate: false
     context_mapping: {  }
+    pages: /kontakt

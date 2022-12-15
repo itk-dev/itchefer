@@ -30,70 +30,23 @@ base_table: profile
 base_field: profile_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: role
-        options:
-          role:
-            exporter: exporter
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 300
-          offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
-      style:
-        type: default
-      row:
-        type: fields
+      title: Brugere
       fields:
         rendered_entity:
+          id: rendered_entity
           table: profile
           field: rendered_entity
-          id: rendered_entity
-          entity_type: null
-          entity_field: null
-          plugin_id: rendered_entity
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: rendered_entity
           label: ''
           exclude: false
           alter:
@@ -136,39 +89,86 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view_mode: default
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 300
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: role
+        options:
+          role:
+            exporter: exporter
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: profile
           field: status
-          plugin_id: boolean
           entity_type: profile
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: profile
           field: type
-          value:
-            profile: profile
           entity_type: profile
           entity_field: type
           plugin_id: bundle
+          value:
+            profile: profile
           expose:
             operator_limit_selection: false
             operator_list: {  }
-      sorts: {  }
-      title: Brugere
+      style:
+        type: default
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -191,36 +191,11 @@ display:
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
   data_export_1:
-    display_plugin: data_export
     id: data_export_1
     display_title: 'Data export'
+    display_plugin: data_export
     position: 2
     display_options:
-      display_extenders: {  }
-      displays:
-        page_1: page_1
-        default: '0'
-      path: export
-      filename: itchefer-brugere.csv
-      automatic_download: true
-      store_in_public_file_directory: false
-      redirect_to_display: none
-      custom_redirect_path: false
-      include_query_params: false
-      style:
-        type: data_export
-        options:
-          formats:
-            csv: csv
-          csv_settings:
-            delimiter: ','
-            enclosure: '"'
-            escape_char: \
-            strip_tags: true
-            trim: true
-            encoding: utf8
-            utf8_bom: '0'
-            use_serializer_encode_only: false
       fields:
         field_profile_first_name:
           id: field_profile_first_name
@@ -229,6 +204,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -284,7 +260,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_profile_last_name:
           id: field_profile_last_name
           table: profile__field_profile_last_name
@@ -292,6 +267,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -347,7 +323,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         name:
           id: name
           table: users_field_data
@@ -355,6 +330,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: name
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -410,9 +388,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: user
-          entity_field: name
-          plugin_id: field
         mail:
           id: mail
           table: users_field_data
@@ -420,6 +395,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: mail
+          plugin_id: field
           label: Email
           exclude: false
           alter:
@@ -474,9 +452,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: user
-          entity_field: mail
-          plugin_id: field
         field_profile_phone_number:
           id: field_profile_phone_number
           table: profile__field_profile_phone_number
@@ -484,6 +459,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -539,7 +515,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_municipality:
           id: field_municipality
           table: profile__field_municipality
@@ -547,6 +522,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -601,7 +577,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_representative_of_municipa:
           id: field_representative_of_municipa
           table: profile__field_representative_of_municipa
@@ -609,6 +584,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -654,8 +630,8 @@ display:
           type: boolean
           settings:
             format: yes-no
-            format_custom_true: ''
             format_custom_false: ''
+            format_custom_true: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -666,7 +642,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_region:
           id: field_region
           table: profile__field_region
@@ -674,6 +649,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -728,23 +704,26 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-      defaults:
-        fields: false
-        relationships: false
-        access: false
-      relationships:
-        uid:
-          id: uid
-          table: profile
-          field: uid
-          relationship: none
-          group_type: group
-          admin_label: User
-          required: false
-          entity_type: profile
-          entity_field: uid
-          plugin_id: standard
+      access:
+        type: role
+        options:
+          role:
+            administrator: administrator
+            exporter: exporter
+      style:
+        type: data_export
+        options:
+          formats:
+            csv: csv
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
       row:
         type: data_field
         options:
@@ -773,13 +752,34 @@ display:
             field_region:
               alias: Region
               raw_output: false
-      access:
-        type: role
-        options:
-          role:
-            administrator: administrator
-            exporter: exporter
+      defaults:
+        access: false
+        relationships: false
+        fields: false
+      relationships:
+        uid:
+          id: uid
+          table: profile
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: User
+          entity_type: profile
+          entity_field: uid
+          plugin_id: standard
+          required: false
+      display_extenders: {  }
+      path: export
       auth: {  }
+      displays:
+        page_1: page_1
+        default: '0'
+      filename: itchefer-brugere.csv
+      automatic_download: true
+      store_in_public_file_directory: false
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -795,9 +795,9 @@ display:
         - 'config:field.storage.profile.field_region'
         - 'config:field.storage.profile.field_representative_of_municipa'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

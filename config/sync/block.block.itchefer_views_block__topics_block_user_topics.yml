@@ -20,15 +20,15 @@ plugin: 'views_block:topics-block_user_topics'
 settings:
   id: 'views_block:topics-block_user_topics'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
   type: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*/stream\r\n<front>"
     negate: false
     context_mapping: {  }
+    pages: "/user/*/stream\r\n<front>"

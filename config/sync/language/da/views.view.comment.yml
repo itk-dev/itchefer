@@ -25,9 +25,6 @@ display:
       fields:
         comment_bulk_form:
           action_title: Handling
-        subject:
-          label: Nyhed
-          separator: ', '
         uid:
           separator: ', '
         name:
@@ -44,9 +41,6 @@ display:
         name_1:
           separator: ', '
       filters:
-        subject:
-          expose:
-            label: Nyhed
         combine:
           expose:
             label: Forfatternavn
@@ -72,9 +66,6 @@ display:
         title: 'Ikke-godkendte kommentarer'
         description: 'Ikke-godkendte kommentarer'
       filters:
-        subject:
-          expose:
-            label: Nyhed
         combine:
           expose:
             label: Forfatternavn
@@ -84,9 +75,6 @@ display:
       fields:
         comment_bulk_form:
           action_title: Handling
-        subject:
-          label: Nyhed
-          separator: ', '
         uid:
           separator: ', '
         name:

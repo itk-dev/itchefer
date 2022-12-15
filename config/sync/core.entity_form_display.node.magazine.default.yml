@@ -23,60 +23,60 @@ third_party_settings:
       children:
         - field_highlighted_articles
         - field_articles
+      label: Artikler
+      region: content
       parent_name: ''
       weight: 2
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
+        id: ''
         description: ''
         required_fields: true
-        id: ''
-        classes: ''
-      label: Artikler
     group_meta_information:
       children:
         - created
         - uid
         - path
         - status
+      label: Metainformation
+      region: content
       parent_name: ''
       weight: 3
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
+        id: ''
         description: ''
         required_fields: true
-        id: ''
-        classes: ''
-      label: Metainformation
     group_magazine_tt:
       children:
         - title
         - field_magazine_file
+      label: Magasinet
+      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
+        id: ''
         description: ''
         required_fields: true
-        id: ''
-        classes: ''
-      label: Magasinet
     group_images:
       children:
         - field_cover_image
         - field_magazine_image
+      label: Billeder
+      region: content
       parent_name: ''
       weight: 1
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
+        id: ''
         description: ''
         required_fields: true
-        id: ''
-        classes: ''
-      label: Billeder
 id: node.magazine.default
 targetEntityType: node
 bundle: magazine
@@ -89,60 +89,60 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_articles:
+    type: dynamic_entity_reference_default
     weight: 10
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 40
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: dynamic_entity_reference_default
-    region: content
   field_cover_image:
+    type: image_widget_crop
     weight: 5
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list: {  }
       crop_types_required: {  }
+      warn_multiple_usages: true
       show_crop_area: false
       show_default_crop: true
-      warn_multiple_usages: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   field_highlighted_articles:
+    type: dynamic_entity_reference_default
     weight: 9
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 40
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: dynamic_entity_reference_default
-    region: content
   field_magazine_file:
+    type: file_generic
     weight: 3
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_magazine_image:
+    type: image_widget_crop
     weight: 6
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list: {  }
       crop_types_required: {  }
+      warn_multiple_usages: true
       show_crop_area: false
       show_default_crop: true
-      warn_multiple_usages: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   path:
     type: path
     weight: 5
@@ -151,10 +151,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -167,12 +167,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 4
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
     weight: 4

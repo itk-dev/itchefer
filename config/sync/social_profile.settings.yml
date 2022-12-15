@@ -1,6 +1,6 @@
-social_profile_show_email: true
-social_profile_show_language: false
 _core:
   default_config_hash: Xs7m5TPAuLJnpnp7mr531swW3p7HHV1EckAU_usZXsE
 langcode: da
+social_profile_show_email: true
+social_profile_show_language: false
 enable_profile_tagging: true
