@@ -19,7 +19,7 @@ settings:
     -
       value: added
       label: 'Bliv tilføjet'
-  allowed_values_function: ''
+  allowed_values_function: _social_group_allowed_values_callback
 module: options
 locked: false
 cardinality: -1

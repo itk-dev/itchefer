@@ -2,10 +2,15 @@ uuid: 1407e0e0-9c60-4def-8539-1fc7c70fc8a0
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      node-topic: node-topic
+    activity_action: create_entitiy_action
     activity_context: group_activity_context
     activity_destinations:
       notifications: notifications
@@ -13,9 +18,6 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: false
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      node-topic: node-topic
     email_subject: ''
 _core:
   default_config_hash: 1m-4pe3-yspP6lmDB-jJNJXg1QwsKDZ97TN0asd-ILc
@@ -24,8 +26,8 @@ label: 'Opret en nyhed i gruppen'
 description: 'En bruger oprettede en nyhed i en gruppe'
 text:
   -
-    format: full_html
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'
+    format: full_html
 settings:
   'token options':
     clear: false

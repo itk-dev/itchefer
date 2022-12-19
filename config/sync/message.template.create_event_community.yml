@@ -2,10 +2,15 @@ uuid: 7afdc74d-68da-497a-a4a9-a1992100bf41
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      node-event: node-event
+    activity_action: create_entitiy_action
     activity_context: community_activity_context
     activity_destinations:
       notifications: notifications
@@ -14,9 +19,6 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: false
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      node-event: node-event
     activity_aggregate: false
     activity_entity_condition: ''
     email_subject: ''
@@ -34,4 +36,8 @@ settings:
     clear: false
     'token replace': true
   purge_override: false
-  purge_methods: {  }
+  purge:
+    days: null
+    enabled: false
+    override: false
+    quota: null

@@ -7,8 +7,8 @@ _core:
 id: closed_group
 label: 'Lukket gruppe'
 description: 'Dette er en lukket gruppe. Bruger kan kun tilmelde sig via invitation og indholdet i gruppen er skjult fra ikke medlemmer.'
+new_revision: false
 creator_membership: true
 creator_wizard: false
 creator_roles:
   - closed_group-group_manager
-new_revision: false

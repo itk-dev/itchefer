@@ -2,15 +2,15 @@ uuid: f732049e-bc5b-4cea-a156-f2cc21072e94
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - social_group_request
   module:
     - group
     - social_group_request
     - system
   theme:
     - itchefer
+  enforced:
+    module:
+      - social_group_request
 _core:
   default_config_hash: OM6qRShqDgq03LyRqi_wUWg4B__xcBGghfp9OP5OkQc
 id: itchefer_membershiprequestsnotification
@@ -22,21 +22,21 @@ plugin: membership_requests_notification
 settings:
   id: membership_requests_notification
   label: 'Membership requests notification'
-  provider: social_group_request
   label_display: '0'
+  provider: social_group_request
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/edit\r\n/group/*/delete\r\n/group/*/content/*/approve-membership\r\n/group/*/content/*/reject-membership\r\n/group/*/content/*"
     negate: true
     context_mapping: {  }
+    pages: "/group/*/edit\r\n/group/*/delete\r\n/group/*/content/*/approve-membership\r\n/group/*/content/*/reject-membership\r\n/group/*/content/*"
   group_type:
     id: group_type
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
     group_types:
       closed_group: closed_group
       open_group: open_group
       public_group: public_group
       flexible_group: flexible_group
-    negate: false
-    context_mapping:
-      group: '@group.group_route_context:group'

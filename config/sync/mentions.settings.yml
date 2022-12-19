@@ -1,4 +1,4 @@
 supported_entity_types:
   comment: comment
-suggestions_format: full_name
 suggestions_amount: '8'
+suggestions_format: full_name

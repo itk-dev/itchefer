@@ -16,8 +16,8 @@ plugin: hierarchical_taxonomy_menu
 settings:
   id: hierarchical_taxonomy_menu
   label: 'Hierarchical Taxonomy Menu'
-  provider: hierarchical_taxonomy_menu
   label_display: '0'
+  provider: hierarchical_taxonomy_menu
   vocabulary: directories|
   max_depth: 100
   dynamic_block_title: false
@@ -38,6 +38,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/documents\r\n/documents/*"
     negate: false
     context_mapping: {  }
+    pages: "/documents\r\n/documents/*"

@@ -43,3 +43,6 @@ private-files/
 
 # Ignore mac finder settings
 .DS_Store
+
+# Ignore docker files
+.env.docker.local

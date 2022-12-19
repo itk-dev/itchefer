@@ -22,14 +22,14 @@ plugin: 'views_block:newest_magazine-block_1'
 settings:
   id: 'views_block:newest_magazine-block_1'
   label: 'Nyeste magasin'
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Nyeste magasin'
   items_per_page: none
   type: none
 visibility:
   request_path:
     id: request_path
-    pages: "/om\r\n<front>"
     negate: false
     context_mapping: {  }
+    pages: "/om\r\n<front>"

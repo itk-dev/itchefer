@@ -2,11 +2,11 @@ uuid: 269081de-88e5-4b26-8179-1d01a4d47759
 langcode: da
 status: true
 dependencies:
+  module:
+    - group
   enforced:
     module:
       - social_group_request
-  module:
-    - group
 _core:
   default_config_hash: a5rdmS15LQNWtLnPRg4k-gHdG_lh0bBQMm79yHv77aA
 id: group_content.field_grequest_message

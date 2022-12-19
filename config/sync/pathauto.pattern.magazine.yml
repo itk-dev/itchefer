@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: '/magasin/[node:title]'
 selection_criteria:
   02312e00-b8b3-43b9-8cd8-57ab997b577b:
-    id: node_type
-    bundles:
-      magazine: magazine
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 02312e00-b8b3-43b9-8cd8-57ab997b577b
     context_mapping:
       node: node
-    uuid: 02312e00-b8b3-43b9-8cd8-57ab997b577b
+    bundles:
+      magazine: magazine
 selection_logic: and
 weight: -5
 relationships: {  }

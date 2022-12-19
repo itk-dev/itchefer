@@ -26,8 +26,6 @@ display:
           separator: ', '
         invitation_status:
           separator: ', '
-        dropbutton:
-          label: Handlinger
       empty:
         area_text_custom:
           content: 'Ingen invitationer til rådighed.'

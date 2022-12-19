@@ -25,9 +25,6 @@ display:
       fields:
         comment_bulk_form:
           action_title: Action
-        subject:
-          label: Subject
-          separator: ', '
         uid:
           separator: ', '
         name:
@@ -35,6 +32,12 @@ display:
           separator: ', '
         entity_id:
           label: 'Posted in'
+          separator: ', '
+        type:
+          label: 'Content type'
+          separator: ', '
+        label:
+          label: Group
           separator: ', '
         changed:
           label: Updated
@@ -44,15 +47,21 @@ display:
         name_1:
           separator: ', '
       filters:
-        subject:
-          expose:
-            label: Subject
         combine:
           expose:
             label: 'Author name'
         langcode:
           expose:
             label: Language
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: 'Content type'
+        filter_by_group:
+          expose:
+            label: Group
       title: Comments
       empty:
         area_text_custom:
@@ -73,21 +82,24 @@ display:
         description: 'Comments unapproved'
       display_description: 'The unapproved comments listing.'
       filters:
-        subject:
-          expose:
-            label: Subject
         combine:
           expose:
-            label: 'Author Name'
+            label: 'Author name'
         langcode:
           expose:
             label: Language
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: 'Content type'
+        filter_by_group:
+          expose:
+            label: Group
       fields:
         comment_bulk_form:
           action_title: Action
-        subject:
-          label: Subject
-          separator: ', '
         uid:
           separator: ', '
         name:
@@ -95,6 +107,12 @@ display:
           separator: ', '
         entity_id:
           label: 'Posted in'
+          separator: ', '
+        type:
+          label: 'Content type'
+          separator: ', '
+        label:
+          label: Group
           separator: ', '
         changed:
           label: Updated

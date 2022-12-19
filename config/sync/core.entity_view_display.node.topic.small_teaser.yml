@@ -24,53 +24,55 @@ mode: small_teaser
 content:
   field_topic_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: social_medium
       image_link: content
+      image_style: social_medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
+    region: content
   groups:
+    type: entity_reference_label
     label: above
-    weight: -5
-    region: content
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
   groups_type_closed_group:
+    type: entity_reference_label
     label: above
-    weight: -5
-    region: content
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
   groups_type_flexible_group:
+    type: entity_reference_label
     label: above
-    weight: -5
-    region: content
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
   groups_type_open_group:
+    type: entity_reference_label
     label: above
-    weight: -5
-    region: content
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
   groups_type_public_group:
+    type: entity_reference_label
     label: above
-    weight: -5
-    region: content
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
 hidden:
   body: true
   field_content_visibility: true

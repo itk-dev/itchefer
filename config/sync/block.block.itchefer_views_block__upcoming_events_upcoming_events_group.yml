@@ -22,29 +22,29 @@ plugin: 'views_block:upcoming_events-upcoming_events_group'
 settings:
   id: 'views_block:upcoming_events-upcoming_events_group'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
   type: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/stream\r\n/group/*/about\r\n"
     negate: false
     context_mapping: {  }
+    pages: "/group/*/stream\r\n/group/*/about\r\n"
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@social_user.user_route_context:user'
-  node_type:
-    id: node_type
-    bundles:
-      page: page
+    roles:
+      authenticated: authenticated
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      page: page

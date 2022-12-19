@@ -6,15 +6,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.4.0",
-        "goalgorilla/open_social": "~11.0.0",
+        "php": "~8.0.0",
+        "goalgorilla/open_social": "~11.5.0",
         "monolog/monolog": "^2.3.5",
-        "drush/drush": "^10.3",
+        "drush/drush": "^11.4",
         "drupal/field_permissions": "^1.1",
         "drupal/contact_block": "^1.5",
         "drupal/views_data_export": "^1.0",
         "drupal/twig_field_value": "^2.0",
-        "drupal/google_analytics": "^3.1",
+        "drupal/google_analytics": "^4.0",
         "drupal/taxonomy_menu": "^3.4",
         "drupal/block_class": "^1.3",
         "drupal/config_ignore": "^2.3",
@@ -110,11 +110,13 @@
         },
         "patches": {
             "goalgorilla/open_social": {
-                "Disable two post update functions": "patches/disable-post-update.patch",
                 "Disable caching of invite group action": "patches/disable_invite_action_caching.patch"
             },
             "drupal/core": {
                 "https://www.drupal.org/project/drupal/issues/2107455": "https://www.drupal.org/files/issues/2022-04-01/2107455-72.patch"
+            },
+            "drupal/csv_serialization": {
+                "https://www.drupal.org/project/csv_serialization/issues/3254327": "https://www.drupal.org/files/issues/2022-03-16/3254327-php_8_1_auto_detect_line_endings.patch"
             }
         }
     },

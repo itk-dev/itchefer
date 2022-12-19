@@ -17,70 +17,70 @@ bundle: article
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 7
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 7
     region: content
   field_author:
     type: string
-    weight: 8
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 8
+    region: content
   flag_follow_content:
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
   groups:
+    type: entity_reference_label
     label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 0
     region: content
+  groups_type_closed_group:
+    type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_closed_group:
-    label: above
     weight: 1
     region: content
+  groups_type_flexible_group:
+    type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_flexible_group:
-    label: above
     weight: 2
     region: content
+  groups_type_open_group:
+    type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_open_group:
-    label: above
     weight: 3
     region: content
+  groups_type_public_group:
+    type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_public_group:
-    label: above
     weight: 4
     region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   links:
-    weight: 6
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   field_article_image: true
   langcode: true
