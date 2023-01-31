@@ -2,6 +2,8 @@ uuid: 974dd554-96a8-469a-82ec-38bcdeac1ec3
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:

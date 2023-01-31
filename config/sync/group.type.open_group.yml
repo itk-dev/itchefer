@@ -7,8 +7,8 @@ _core:
 id: open_group
 label: 'Åben gruppe'
 description: 'Dette er en åben gruppe. Brugere kan tilmelde sig uden godkendelse og alt indhold tilføjet i denne gruppe bliver synligt for alle medlemmer. '
+new_revision: false
 creator_membership: true
 creator_wizard: false
 creator_roles:
   - open_group-group_manager
-new_revision: false

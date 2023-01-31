@@ -3,7 +3,7 @@ langcode: da
 status: true
 dependencies:
   config:
-    - crop.type.profile_medium
+    - crop.type.teaser
   module:
     - crop
     - image_effects
@@ -17,15 +17,15 @@ effects:
     id: image_scale_and_crop
     weight: 2
     data:
-      anchor: center-center
       width: 44
       height: 44
+      anchor: center-center
   151b526b-cb42-4553-a9ab-9c2407ee4134:
     uuid: 151b526b-cb42-4553-a9ab-9c2407ee4134
     id: crop_crop
     weight: 1
     data:
-      crop_type: profile_medium
+      crop_type: teaser
       automatic_crop_provider: null
   28522c8f-258e-4c5c-a307-e4905d55aee9:
     uuid: 28522c8f-258e-4c5c-a307-e4905d55aee9
@@ -33,3 +33,9 @@ effects:
     weight: 3
     data:
       scan_exif: true
+  e3623c97-66c6-4d27-81dd-8f841a5fa4e8:
+    uuid: e3623c97-66c6-4d27-81dd-8f841a5fa4e8
+    id: image_convert
+    weight: 4
+    data:
+      extension: webp

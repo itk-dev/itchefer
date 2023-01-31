@@ -24,11 +24,11 @@ label: 'Opret kommentart på opslag i gruppen'
 description: 'En bruger har oprettet en kommentart til et opslag i gruppen'
 text:
   -
-    format: full_html
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> kommenterede at opslag i <a href="[message:gurl]">[message:gtitle]</a></p>'
-  -
     format: full_html
+  -
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> og @count andre kommenterede på et opslag i <a href="[message:gurl]">[message:gtitle]</a></p>'
+    format: full_html
 settings:
   'token options':
     clear: false

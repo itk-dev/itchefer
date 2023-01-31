@@ -26,59 +26,12 @@ base_table: profile
 base_field: profile_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: role
-        options:
-          role:
-            exporter: exporter
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 10
-          offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
-      style:
-        type: default
-      row:
-        type: fields
+      title: 'Ansvarlig for kommunen'
       fields:
         field_municipality:
           id: field_municipality
@@ -87,6 +40,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Kommune
           exclude: false
           alter:
@@ -141,7 +95,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         name:
           id: name
           table: users_field_data
@@ -149,6 +102,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: name
+          plugin_id: field
           label: 'Repræsentant for kommunen'
           exclude: false
           alter:
@@ -204,9 +160,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: user
-          entity_field: name
-          plugin_id: field
         mail:
           id: mail
           table: users_field_data
@@ -214,6 +167,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: mail
+          plugin_id: field
           label: E-mailadresse
           exclude: false
           alter:
@@ -268,9 +224,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: user
-          entity_field: mail
-          plugin_id: field
         field_profile_phone_number:
           id: field_profile_phone_number
           table: profile__field_profile_phone_number
@@ -278,6 +231,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Telefonnummer
           exclude: false
           alter:
@@ -333,7 +287,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_profile_function:
           id: field_profile_function
           table: profile__field_profile_function
@@ -341,6 +294,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Funktion
           exclude: false
           alter:
@@ -396,30 +350,81 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: role
+        options:
+          role:
+            exporter: exporter
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_municipality_value:
+          id: field_municipality_value
+          table: profile__field_municipality
+          field: field_municipality_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_municipality_value
+          exposed: false
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: profile
           field: status
-          plugin_id: boolean
           entity_type: profile
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: profile
           field: type
-          value:
-            profile: profile
           entity_type: profile
           entity_field: type
           plugin_id: bundle
+          value:
+            profile: profile
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -430,6 +435,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -460,24 +466,18 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
-      sorts:
-        field_municipality_value:
-          id: field_municipality_value
-          table: profile__field_municipality
-          field: field_municipality_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      title: 'Ansvarlig for kommunen'
-      header: {  }
-      footer: {  }
-      empty: {  }
+      style:
+        type: default
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         uid:
           id: uid
@@ -486,11 +486,12 @@ display:
           relationship: none
           group_type: group
           admin_label: User
-          required: false
           entity_type: profile
           entity_field: uid
           plugin_id: standard
-      arguments: {  }
+          required: false
+      header: {  }
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -504,22 +505,11 @@ display:
         - 'config:field.storage.profile.field_profile_function'
         - 'config:field.storage.profile.field_profile_phone_number'
   data_export_1:
-    display_plugin: data_export
     id: data_export_1
     display_title: 'Data export'
+    display_plugin: data_export
     position: 2
     display_options:
-      display_extenders: {  }
-      displays:
-        page_1: page_1
-        default: '0'
-      path: representative-of-municipality/export
-      filename: repraesentanter-for-kommunen.csv
-      automatic_download: false
-      store_in_public_file_directory: false
-      redirect_to_display: none
-      custom_redirect_path: false
-      include_query_params: false
       style:
         type: data_export
         options:
@@ -534,8 +524,19 @@ display:
             encoding: utf8
             utf8_bom: '0'
             use_serializer_encode_only: false
+      display_extenders: {  }
+      path: representative-of-municipality/export
       auth:
         - basic_auth
+      displays:
+        page_1: page_1
+        default: '0'
+      filename: repraesentanter-for-kommunen.csv
+      automatic_download: false
+      store_in_public_file_directory: false
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -548,9 +549,9 @@ display:
         - 'config:field.storage.profile.field_profile_function'
         - 'config:field.storage.profile.field_profile_phone_number'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

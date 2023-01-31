@@ -1,4 +1,10 @@
 remove_open_social_branding: false
+template_header:
+  value: ''
+  format: mail_html
+template_footer:
+  value: ''
+  format: mail_html
 do_not_send_emails_new_users: false
 template_frequencies:
   activity_on_events_im_organizing: immediately
@@ -19,9 +25,3 @@ template_frequencies:
   request_event_enrollment: immediately
   request_to_join_a_group: immediately
   create_post_community: daily
-template_header:
-  value: ''
-  format: mail_html
-template_footer:
-  value: ''
-  format: mail_html

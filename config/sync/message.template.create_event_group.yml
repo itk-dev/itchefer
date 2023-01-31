@@ -2,10 +2,15 @@ uuid: 30c32a3d-07d3-41ea-bc17-d4eca849a05c
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      node-event: node-event
+    activity_action: create_entitiy_action
     activity_context: group_activity_context
     activity_destinations:
       notifications: notifications
@@ -13,9 +18,6 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: false
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      node-event: node-event
     activity_aggregate: false
     activity_entity_condition: ''
     email_subject: ''
@@ -24,13 +26,13 @@ _core:
 template: create_event_group
 label: 'Opret arrangement i en gruppe'
 description: 'En bruger har oprettet et arrangement i en gruppe'
+text:
+  -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created an event in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'
+    format: full_html
 settings:
   'token options':
     clear: false
     'token replace': true
   purge_override: false
   purge_methods: {  }
-text:
-  -
-    format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created an event in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'

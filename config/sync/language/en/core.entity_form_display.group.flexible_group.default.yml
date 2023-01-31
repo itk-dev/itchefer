@@ -10,3 +10,5 @@ third_party_settings:
       label: 'Access permissions'
     group_additional_details:
       label: 'Additional information'
+    group_personalisation:
+      label: Personalisation

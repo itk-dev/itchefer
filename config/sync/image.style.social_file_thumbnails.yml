@@ -1,3 +1,4 @@
+uuid: null
 langcode: da
 status: true
 dependencies:
@@ -30,3 +31,9 @@ effects:
     weight: 3
     data:
       scan_exif: true
+  022d9a67-5d7b-4c6a-a7ac-0e3e2f01cb6e:
+    uuid: 022d9a67-5d7b-4c6a-a7ac-0e3e2f01cb6e
+    id: image_convert
+    weight: 4
+    data:
+      extension: webp

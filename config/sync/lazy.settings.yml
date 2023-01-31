@@ -1,4 +1,15 @@
 langcode: da
+skipClass: ''
+disable_admin: true
+visibility:
+  id: request_path
+  pages: /rss.xml
+  negate: 0
+placeholderSrc: ''
+preferNative: false
+cssEffect: false
+minified: true
+libraryPath: /libraries/lazysizes
 lazysizes:
   lazyClass: lazyload
   loadedClass: lazyloaded
@@ -19,14 +30,3 @@ lazysizes:
   ricTimeout: 0
   throttleDelay: 125
   plugins: {  }
-preferNative: false
-libraryPath: /libraries/lazysizes
-minified: true
-disable_admin: true
-visibility:
-  id: request_path
-  pages: /rss.xml
-  negate: 0
-skipClass: ''
-placeholderSrc: ''
-cssEffect: false

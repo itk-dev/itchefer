@@ -25,11 +25,11 @@ content:
   field_post:
     type: text_textarea
     weight: 0
+    region: content
     settings:
       rows: 5
       placeholder: 'What''s on your mind?'
     third_party_settings: {  }
-    region: content
   field_vedhaeftning:
     type: file_generic
     weight: 1
@@ -40,15 +40,15 @@ content:
   field_visibility:
     type: dropdown_widget_type
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   status:
+    type: boolean_checkbox
+    weight: 3
     region: content
     settings:
       display_label: true
-    type: boolean_checkbox
-    weight: 3
     third_party_settings: {  }
 hidden:
   field_post_comments: true

@@ -1,4 +1,8 @@
+_core:
+  default_config_hash: k7WfBSzzmG-nGCieW-Rh3Z5LQ0fVq8pre9uLqRIpxVI
+langcode: da
 allow_cancel_vote: true
+hide_vote_widget: false
 enabled_types:
   comment:
     - comment
@@ -8,8 +12,4 @@ enabled_types:
     - event
   post:
     - post
-_core:
-  default_config_hash: k7WfBSzzmG-nGCieW-Rh3Z5LQ0fVq8pre9uLqRIpxVI
-hide_vote_widget: false
 delete_everywhere: false
-langcode: da

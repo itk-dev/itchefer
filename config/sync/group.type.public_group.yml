@@ -7,8 +7,8 @@ _core:
 id: public_group
 label: 'Offentlig gruppe'
 description: 'Dette er en offentlig gruppe. Brugere kan tilmelde sig uden nogen godkendelse og alt indhold tilføjet i denne gruppe vil være synlig for alle medlemmer og anonyme brugere.'
+new_revision: false
 creator_membership: true
 creator_wizard: false
 creator_roles:
   - public_group-group_manager
-new_revision: false

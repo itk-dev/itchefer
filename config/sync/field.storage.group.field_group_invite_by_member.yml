@@ -1,0 +1,21 @@
+uuid: e93b50eb-64cf-4a9f-9314-3ad9d879ce53
+langcode: da
+status: true
+dependencies:
+  module:
+    - group
+  enforced:
+    module:
+      - social_group_invite
+id: group.field_group_invite_by_member
+field_name: field_group_invite_by_member
+entity_type: group
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
