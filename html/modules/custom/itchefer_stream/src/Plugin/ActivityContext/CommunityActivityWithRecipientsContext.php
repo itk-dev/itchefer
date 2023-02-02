@@ -104,7 +104,7 @@ class CommunityActivityWithRecipientsContext extends ActivityContextBase {
   /**
    * {@inheritdoc}
    */
-  public function isValidEntity(EntityInterface $entity) {
+  public function isValidEntity(EntityInterface $entity): bool {
     // Special cases for comments.
     if ($entity->getEntityTypeId() === 'comment') {
       // Returns the entity to which the comment is attached.
