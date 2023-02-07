@@ -5,6 +5,7 @@
  * The primary PHP file for the Itchefer theme.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\user\Entity\User;
 use Drupal\Core\Url;
 
@@ -41,5 +42,12 @@ function itchefer_preprocess_page_title(&$variables) {
   if ('comment.reply' === $route_name) {
     $variables['title'] = t('Verify comment');
   }
+}
 
+function itchefer_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (!empty($form['field_post']) && !empty($form['field_post']['widget'][0])) {
+    // For posting on the stream on the group stream.
+    $form['field_post']['widget'][0]['#format'] = 'post_editor';
+    $form['field_post']['widget'][0]['#allowed_formats'] = ['post_editor'];
+  }
 }

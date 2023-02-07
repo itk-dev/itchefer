@@ -473,3 +473,8 @@ h1 {
     font-size: 1.4em;
   }
 }
+
+// Overwrite !important strong from base theme.
+strong {
+  font-weight: 500!important;
+}

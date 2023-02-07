@@ -1,0 +1,12 @@
+diff --git a/modules/social_features/social_editor/social_editor.module b/modules/social_features/social_editor/social_editor.module
+--- a/modules/social_features/social_editor/social_editor.module
++++ b/modules/social_features/social_editor/social_editor.module
+@@ -39,7 +39,7 @@
+ 
+   // Forms.
+   $forms = [
+-    "social_post_entity_form",
++    //"social_post_entity_form",
+     "comment_post_comment_form",
+     "comment_comment_form",
+   ];
