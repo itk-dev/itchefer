@@ -1,7 +1,21 @@
 uuid: 2b34ace9-399d-4906-9b88-ffb04b86fe8e
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.simple_text
+  module:
+    - contact
+    - entity_access_by_field
+    - filter
+    - flag
+    - node
+    - profile
+    - social_like
+    - social_post
+    - social_search
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

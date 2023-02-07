@@ -1,0 +1,10 @@
+text:
+  -
+    value: "<p><a href=\"absolute]\">[message:recipient-user:display-name]</a> har anmodet om medlemskab til&nbsp; <a href=\"gurl]\">[message:gtitle]</a> gruppen</p>\r\n"
+    format: basic_html
+  -
+    value: "<p><a href=\"absolute]\">[message:recipient-user:display-name]</a> har anmodet om medlemskab til&nbsp; <a href=\"gurl]\">[message:gtitle]</a> gruppen</p>\r\n"
+    format: basic_html
+  -
+    value: "<p><a href=\"[message:recipient-user:url:absolute]\">[message:recipient-user:display-name]</a> har anmodet om medlemskab til&nbsp;&nbsp;<a href=\"[message:gurl]\">[message:gtitle]</a></p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
+    format: full_html

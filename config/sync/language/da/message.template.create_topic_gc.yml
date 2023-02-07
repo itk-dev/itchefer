@@ -1,0 +1,4 @@
+text:
+  -
+    value: "<p><a href=\"absolute]\">[message:author:display-name]</a> &nbsp;tilføjede indhold til <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+    format: basic_html

@@ -1,4 +1,4 @@
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede et arrangement</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede et arrangement</p>\r\n"
     format: full_html

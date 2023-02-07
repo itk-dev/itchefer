@@ -55,7 +55,6 @@ module:
   gin_toolbar: 0
   ginvite: 0
   gnode: 0
-  google_analytics: 0
   grequest: 0
   group: 0
   group_core_comments: 0
@@ -80,6 +79,7 @@ module:
   locale: 0
   mailsystem: 0
   memcache: 0
+  memcache_admin: 0
   mentions: 0
   menu_ui: 0
   message: 0
