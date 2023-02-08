@@ -31,7 +31,7 @@ function itchefer_preprocess_block(&$variables) {
     $variables['content']['#route_tid'] =\Drupal::routeMatch()->getCurrentRouteMatch()->getParameter('directory');
   }
 }
-
+  
 /**
  * Implements hook_preprocess_HOOK().
  *
@@ -44,7 +44,10 @@ function itchefer_preprocess_page_title(&$variables) {
   }
 }
 
-function itchefer_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function itchefer_form_social_post_entity_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if (!empty($form['field_post']) && !empty($form['field_post']['widget'][0])) {
     // For posting on the stream on the group stream.
     $form['field_post']['widget'][0]['#format'] = 'post_editor';
