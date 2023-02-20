@@ -5,11 +5,8 @@
  * The primary PHP file for the Itchefer theme.
  */
 
-<<<<<<< Updated upstream
-=======
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StreamWrapper\PublicStream;
->>>>>>> Stashed changes
 use Drupal\user\Entity\User;
 use Drupal\Core\Url;
 
@@ -46,10 +43,7 @@ function itchefer_preprocess_page_title(&$variables) {
   if ('comment.reply' === $route_name) {
     $variables['title'] = t('Verify comment');
   }
-
-<<<<<<< Updated upstream
 }
-=======
 
 /**
  * Implements image().
@@ -75,4 +69,3 @@ function itchefer_form_social_post_entity_form_alter(&$form, FormStateInterface 
     $form['field_post']['widget'][0]['#allowed_formats'] = ['post_editor'];
   }
 }
->>>>>>> Stashed changes
