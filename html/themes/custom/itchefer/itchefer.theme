@@ -5,6 +5,11 @@
  * The primary PHP file for the Itchefer theme.
  */
 
+<<<<<<< Updated upstream
+=======
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\StreamWrapper\PublicStream;
+>>>>>>> Stashed changes
 use Drupal\user\Entity\User;
 use Drupal\Core\Url;
 
@@ -42,4 +47,32 @@ function itchefer_preprocess_page_title(&$variables) {
     $variables['title'] = t('Verify comment');
   }
 
+<<<<<<< Updated upstream
 }
+=======
+
+/**
+ * Implements image().
+ *
+ * Set variables for image template.
+ */
+function itchefer_preprocess_image(&$variables) {
+  if ('Default profile image' === $variables['title']) {
+    $themeHandler = \Drupal::service('theme_handler');
+    $themePath = $themeHandler->getTheme($themeHandler->getDefault())->getPath();
+    $variables['default_image'] = $themePath . '/assets/images/default-profile-picture.png';
+  }
+}
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function itchefer_form_social_post_entity_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (!empty($form['field_post']) && !empty($form['field_post']['widget'][0])) {
+    // For posting on the stream on the group stream.
+    $form['field_post']['widget'][0]['#format'] = 'post_editor';
+    $form['field_post']['widget'][0]['#allowed_formats'] = ['post_editor'];
+  }
+}
+>>>>>>> Stashed changes
