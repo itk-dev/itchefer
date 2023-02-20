@@ -269,7 +269,7 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 'Intet tilgængeligt indhold'
+          content: 'Der er intet indhold at vise.'
       sorts: {  }
       arguments: {  }
       filters:

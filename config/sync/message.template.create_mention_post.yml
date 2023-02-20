@@ -1,6 +1,9 @@
+uuid: null
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
@@ -15,18 +18,19 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: mention_post
+    email_subject: 'Notifikation fra [site:name]'
 template: create_mention_post
-label: 'Create mention in a post'
-description: 'A person mentioned me in a post'
+label: 'En person nævnte dig i et opslag'
+description: 'En person nævnte dig i et opslag'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">post</a></p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> nævnte dig i et opslag</p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">post</a></p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> nævnte dig i et opslag</p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">post</a></p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> nævnte dig i et opslag</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

@@ -14,14 +14,14 @@ third_party_settings:
     activity_context: community_activity_context
     activity_destinations:
       notifications: notifications
-      stream_explore: stream_explore
-      stream_group: stream_group
-      stream_home: stream_home
       stream_profile: stream_profile
+      stream_home: stream_home
+      stream_group: stream_group
+      stream_explore: stream_explore
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
-    email_subject: ''
+    email_subject: 'Notifikation fra [site:name]'
 _core:
   default_config_hash: s1MpTn9zFkt9GaS5LPqEJfh9KjvdPzltKHLqk-1JmIQ
 template: create_event_community
@@ -29,15 +29,11 @@ label: 'Opret arrangement'
 description: 'En bruger har oprettet et arrangement i fællesskabet'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> oprettede et arrangement</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede et arrangement</p>\r\n"
     format: full_html
 settings:
   'token options':
     clear: false
     'token replace': true
   purge_override: false
-  purge:
-    days: null
-    enabled: false
-    override: false
-    quota: null
+  purge_methods: {  }

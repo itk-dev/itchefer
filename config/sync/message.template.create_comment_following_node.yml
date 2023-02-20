@@ -1,6 +1,9 @@
+uuid: null
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
@@ -15,18 +18,19 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: comment_all
+    email_subject: 'Notifikation fra [site:name]'
 template: create_comment_following_node
-label: 'Create comment on following node'
-description: 'A person commented on content I am following'
+label: 'En person har kommenteret på indhold jeg følger'
+description: 'En person har kommenteret på indhold jeg følger'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type] <a href=\"[message:field_message_related_object:entity:url:absolute]\">[message:node-title]</a> you are following</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> har kommenteret på [social_comment:parent_entity_author]'s [social_comment:commented_content_type] <a href=\"[message:field_message_related_object:entity:url:absolute]\">[message:node-title]</a> som du følger</p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type] <a href=\"[message:field_message_related_object:entity:url:absolute]\">[message:node-title]</a> you are following</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> har kommenteret på [social_comment:parent_entity_author]'s [social_comment:commented_content_type] <a href=\"[message:field_message_related_object:entity:url:absolute]\">[message:node-title]</a> som du følger</p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:commented_content_type] <a href=\"[message:field_message_related_object:entity:url:absolute]\">[message:node-title]</a> you are following</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n\r\n<table class=\"btn-wrapp\">\r\n\t<tbody>\r\n\t</tbody>\r\n</table>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> har kommenteret på [social_comment:commented_content_type] <a href=\"[message:field_message_related_object:entity:url:absolute]\">[message:node-title]</a> som du følger</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n\r\n<table class=\"btn-wrapp\">\r\n\t<tbody>\r\n\t</tbody>\r\n</table>\r\n"
     format: full_html
 settings:
   'token options':

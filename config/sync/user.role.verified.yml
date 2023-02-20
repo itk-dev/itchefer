@@ -15,7 +15,6 @@ dependencies:
     - field_permissions
     - filter
     - flag
-    - google_analytics
     - group
     - like_and_dislike
     - mentions
@@ -72,7 +71,6 @@ permissions:
   - 'edit own topic content'
   - 'flag follow_content'
   - 'flag mute_group_notifications'
-  - 'opt-in or out of google analytics tracking'
   - 'override event published option'
   - 'override topic published option'
   - 'post comments'

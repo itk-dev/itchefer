@@ -14,13 +14,13 @@ third_party_settings:
     activity_context: group_activity_context
     activity_destinations:
       notifications: notifications
-      stream_explore: stream_explore
-      stream_home: stream_home
       stream_profile: stream_profile
+      stream_home: stream_home
+      stream_explore: stream_explore
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
-    email_subject: ''
+    email_subject: 'Notifikation fra [site:name]'
 _core:
   default_config_hash: X4VHlsdq3ub9gMMjzhHmtc9AHZvPc9C54coZEJcuYuc
 template: create_event_group
@@ -28,7 +28,7 @@ label: 'Opret arrangement i en gruppe'
 description: 'En bruger har oprettet et arrangement i en gruppe'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created an event in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede en begivenhed i <a href=\"[message:gurl]\">[message:gtitle]</a> [message:count_groups_per_node]</p>\r\n"
     format: full_html
 settings:
   'token options':

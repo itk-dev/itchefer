@@ -1,0 +1,37 @@
+uuid: 9cf659ab-f807-410a-9a94-ed380de2c11d
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.post_editor
+  module:
+    - ckeditor
+format: post_editor
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatering
+          items:
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lister
+          items:
+            - Format
+  plugins: {  }
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

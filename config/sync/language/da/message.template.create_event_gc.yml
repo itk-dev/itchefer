@@ -1,0 +1,4 @@
+text:
+  -
+    value: "<p><a href=\"absolute]\">[message:author:display-name]</a> oprettede en begivenhed <a href=\"gurl]\">[message:gtitle]</a> i en gruppe</p>\r\n"
+    format: basic_html

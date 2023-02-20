@@ -32,7 +32,7 @@ function itchefer_preprocess_block(&$variables) {
     $variables['content']['#route_tid'] =\Drupal::routeMatch()->getCurrentRouteMatch()->getParameter('directory');
   }
 }
-
+  
 /**
  * Implements hook_preprocess_HOOK().
  *
