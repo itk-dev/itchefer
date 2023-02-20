@@ -478,3 +478,8 @@ h1 {
 strong {
   font-weight: 500!important;
 }
+
+.teaser__title {
+  max-height: 100%;
+  overflow: unset;
+}
