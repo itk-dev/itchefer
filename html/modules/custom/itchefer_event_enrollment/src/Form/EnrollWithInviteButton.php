@@ -28,15 +28,16 @@ class EnrollWithInviteButton extends EnrollActionForm {
   public function buildForm(array $form, FormStateInterface $form_state, Node $node = NULL) {
     $form = parent::buildForm($form, $form_state);
     $nid = $this->routeMatch->getRawParameter('node');
-    $current_user = $this->currentUser;
-    $uid = $current_user->id();
+    $uid = \Drupal::currentUser()->id();
+    $current_user = $this->userStorage->load($uid);
 
     if (!$current_user->isAnonymous()) {
       $conditions = [
         'field_account' => $uid,
         'field_event' => $nid,
       ];
-      $enrollments = $this->entityStorage->loadByProperties($conditions);
+      $enrollments = \Drupal::entityTypeManager()->getStorage('event_enrollment')->loadByProperties($conditions);
+      //$enrollments = $this->entityStorage->loadByProperties($conditions);
 
       // If the event is invite only and you have not been invited, return.
       // Unless you are the node owner or organizer.
