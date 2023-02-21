@@ -18,15 +18,15 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: ''
-    email_subject: ''
+    email_subject: 'Notifikation fra [site:name]'
 _core:
   default_config_hash: YblqfSJAFwvF9Zlx_JVm6ZA0uwexjAdLfilegDF1tDc
 template: moved_content_between_groups
-label: 'Moved event or topic between groups'
-description: 'A person moved event or topic to other group'
+label: 'En person flyttede et opslag eller en begivenhed til en anden gruppe'
+description: 'En person flyttede et opslag eller en begivenhed til en anden gruppe'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:content_type] in <a href="[message:gurl]">[message:gtitle]</a></p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> oprettede [social_group:content_type] i <a href=\"[message:gurl]\">[message:gtitle]</a></p>\r\n"
     format: full_html
 settings:
   'token options':

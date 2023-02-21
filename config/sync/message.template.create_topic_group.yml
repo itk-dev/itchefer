@@ -14,11 +14,13 @@ third_party_settings:
     activity_context: group_activity_context
     activity_destinations:
       notifications: notifications
-      stream_explore: stream_explore
-      stream_home: stream_home
       stream_profile: stream_profile
+      stream_home: stream_home
+      stream_explore: stream_explore
     activity_create_direct: false
-    email_subject: ''
+    activity_aggregate: false
+    activity_entity_condition: ''
+    email_subject: 'Notifikation fra [site:name]'
 _core:
   default_config_hash: 1m-4pe3-yspP6lmDB-jJNJXg1QwsKDZ97TN0asd-ILc
 template: create_topic_group
@@ -26,14 +28,11 @@ label: 'Opret en nyhed i gruppen'
 description: 'En bruger oprettede en nyhed i en gruppe'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> created a topic in <a href=\"[message:gurl]\">[message:gtitle]</a> [message:count_groups_per_node]</p>\r\n"
     format: full_html
 settings:
   'token options':
     clear: false
     'token replace': true
-  purge:
-    override: false
-    enabled: false
-    quota: null
-    days: null
+  purge_override: false
+  purge_methods: {  }

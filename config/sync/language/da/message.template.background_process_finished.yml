@@ -1,0 +1,10 @@
+text:
+  -
+    value: "<p>Baggrunds opgave \"[queue_storage_entity:mail_task_subject]\" er fuldført</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>Baggrunds opgave \"[queue_storage_entity:mail_task_subject]\" er fuldført</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>Baggrunds opgave \"[queue_storage_entity:mail_task_subject]\" er fuldført</p>\r\n"
+    format: basic_html

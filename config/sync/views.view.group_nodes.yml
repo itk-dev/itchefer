@@ -629,7 +629,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Udfør
           reset_button: false
           reset_button_label: Gendan
           exposed_sorts_label: 'Sortér efter'
@@ -653,7 +653,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Intet tilgængeligt indhold'
+          content: 'Der er intet indhold at vise.'
           tokenize: false
       sorts: {  }
       arguments:

@@ -15,8 +15,8 @@ dependencies:
     - core.entity_view_mode.node.search_index
     - core.entity_view_mode.profile.search_index
   module:
-    - node
     - group
+    - node
     - profile
     - user
     - search_api
@@ -143,8 +143,13 @@ field_settings:
           open_group: teaser
           public_group: ''
         'entity:node':
+          advertisement: ''
+          article: ''
+          document: ''
           event: search_index
+          magazine: ''
           page: search_index
+          product_type: ''
           topic: search_index
         'entity:profile':
           profile: search_index
@@ -250,6 +255,7 @@ processor_settings:
   entity_access_by_field:
     weights:
       preprocess_query: -30
+  entity_type: {  }
   html_filter:
     weights:
       preprocess_index: -15

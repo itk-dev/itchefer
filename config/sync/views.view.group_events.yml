@@ -232,7 +232,7 @@ display:
           exposed: true
           expose:
             operator_id: event_date_op
-            label: 'Begivenhed dato'
+            label: Løbsdato
             description: null
             use_operator: false
             operator: event_date_op

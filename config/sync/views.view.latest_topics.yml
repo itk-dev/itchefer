@@ -28,7 +28,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Alle nyheder'
+      title: 'Alle Nyheder'
       fields:
         title:
           id: title
@@ -391,7 +391,7 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle nyheder'
+      use_more_text: 'Alle Nyheder'
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
       block_description: 'Latest topic block'
@@ -525,7 +525,7 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle nyheder'
+      use_more_text: 'Alle Nyheder'
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
       block_description: 'Latest group topics'

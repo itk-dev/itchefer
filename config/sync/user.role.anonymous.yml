@@ -1,7 +1,14 @@
 uuid: aaaff813-d024-4c9d-b7d7-8c2cb30cb353
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact
+    - entity_access_by_field
+    - social_like
+    - social_post
+    - social_search
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous

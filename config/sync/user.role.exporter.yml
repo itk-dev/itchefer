@@ -1,7 +1,9 @@
 uuid: aee95264-1b02-4613-9a3c-b3f8a102c884
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - flag
 id: exporter
 label: Exporter
 weight: 5

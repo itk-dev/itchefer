@@ -6,8 +6,11 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_article_image
     - field.field.node.article.field_author
+    - image.style.article_hero
     - node.type.article
   module:
+    - image
+    - lazy
     - text
     - user
 id: node.article.default
@@ -20,12 +23,27 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 3
+    region: content
+  field_article_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: article_hero
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '0'
+        placeholder_style: ''
+        data_uri: false
+    weight: 4
     region: content
   flag_follow_content:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   groups:
     type: entity_reference_label
@@ -70,10 +88,9 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 2
     region: content
 hidden:
-  field_article_image: true
   field_author: true
   langcode: true
   search_api_excerpt: true
