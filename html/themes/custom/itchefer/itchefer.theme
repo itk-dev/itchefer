@@ -7,6 +7,7 @@
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StreamWrapper\PublicStream;
+use Drupal\image\Entity\ImageStyle;
 use Drupal\user\Entity\User;
 use Drupal\Core\Url;
 
@@ -54,7 +55,7 @@ function itchefer_preprocess_image(&$variables) {
   if ('Default profile image' === $variables['title']) {
     $themeHandler = \Drupal::service('theme_handler');
     $themePath = $themeHandler->getTheme($themeHandler->getDefault())->getPath();
-    $variables['default_image'] = $themePath . '/assets/images/default-profile-picture.png';
+    $variables['default_image'] = '/' . $themePath . '/assets/images/default-profile-picture.png';
   }
 }
 
@@ -67,5 +68,19 @@ function itchefer_form_social_post_entity_form_alter(&$form, FormStateInterface 
     // For posting on the stream on the group stream.
     $form['field_post']['widget'][0]['#format'] = 'post_editor';
     $form['field_post']['widget'][0]['#allowed_formats'] = ['post_editor'];
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function itchefer_preprocess_node(&$variables) {
+  $variables['article_styled_image_url'] = '';
+  $image_field = 'field_article_image';
+  if ('article' === $variables['node']->getType()) {
+    if ($variables['node']->hasField($image_field) && !empty($variables['node']->{$image_field}->entity)) {
+      $variables['article_styled_image_url'] = ImageStyle::load('article_hero')
+        ->buildUrl($variables['node']->{$image_field}->entity->getFileUri());
+    }
   }
 }

@@ -6,7 +6,7 @@ label: 'Article hero'
 id: article_hero
 description: ''
 aspect_ratio: '1136:260'
-soft_limit_width: null
-soft_limit_height: null
+soft_limit_width: 1136
+soft_limit_height: 260
 hard_limit_width: null
 hard_limit_height: null
