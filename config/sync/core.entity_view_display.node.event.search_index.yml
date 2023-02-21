@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.event.field_files
     - field.field.node.event.field_hide_enrollments
     - field.field.node.event.field_product
+    - field.field.node.event.field_public_files
     - node.type.event
   module:
     - comment
@@ -86,6 +87,7 @@ hidden:
   field_files: true
   field_hide_enrollments: true
   field_product: true
+  field_public_files: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

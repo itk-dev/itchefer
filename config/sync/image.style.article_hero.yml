@@ -1,15 +1,18 @@
 uuid: 36b1b69f-f3c9-47f5-8a2e-4bd2dcda6deb
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.article_hero
+  module:
+    - crop
 name: article_hero
 label: article_hero
 effects:
-  6d3a3afb-c1f7-4ab5-9122-b8e874c87d18:
-    uuid: 6d3a3afb-c1f7-4ab5-9122-b8e874c87d18
-    id: image_crop
-    weight: 1
+  5351f677-4f42-4bf3-9d9e-ee207a95c50d:
+    uuid: 5351f677-4f42-4bf3-9d9e-ee207a95c50d
+    id: crop_crop
+    weight: 2
     data:
-      width: 1136
-      height: 260
-      anchor: center-center
+      crop_type: article_hero
+      automatic_crop_provider: null

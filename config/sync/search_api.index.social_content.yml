@@ -3,8 +3,8 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.node.field_event_date
     - field.storage.node.field_event_date_end
+    - field.storage.node.field_event_date
     - search_api.server.social_database
     - core.entity_view_mode.node.search_index
   module:
@@ -58,9 +58,13 @@ field_settings:
         - anonymous
       view_mode:
         'entity:node':
-          book: search_index
+          advertisement: ''
+          article: ''
+          document: ''
           event: search_index
+          magazine: ''
           page: search_index
+          product_type: ''
           topic: search_index
   status:
     label: 'Publishing status'
@@ -126,6 +130,7 @@ processor_settings:
   entity_access_by_field:
     weights:
       preprocess_query: -30
+  entity_type: {  }
   html_filter:
     weights:
       preprocess_index: -10

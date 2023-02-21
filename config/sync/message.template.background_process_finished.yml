@@ -2,6 +2,8 @@ uuid: 9752f122-16b0-47df-8f98-12321b49acb6
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
     - activity_logger
 third_party_settings:
@@ -16,21 +18,21 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: queue_store_entity_send_activity_condition
-    email_subject: 'A background task has been finished'
+    email_subject: 'Baggrunds opgave er fuldført'
 _core:
   default_config_hash: FGWTZUl78Qd4E3oodEaIhN7VVEHV3f_zs65mte-npPs
 template: background_process_finished
-label: 'Background process finished'
-description: 'A background process (e.g. sending bulk emails) has finished'
+label: 'Baggrunds opgave er fuldført'
+description: 'Baggrunds opgave er fuldført (fx. afsending af emails)'
 text:
   -
-    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+    value: "<p>Baggrunds opgave \"[queue_storage_entity:mail_task_subject]\" er fuldført</p>\r\n"
     format: basic_html
   -
-    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+    value: "<p>Baggrunds opgave \"[queue_storage_entity:mail_task_subject]\" er fuldført</p>\r\n"
     format: basic_html
   -
-    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+    value: "<p>Baggrunds opgave \"[queue_storage_entity:mail_task_subject]\" er fuldført</p>\r\n"
     format: basic_html
 settings:
   'token options':

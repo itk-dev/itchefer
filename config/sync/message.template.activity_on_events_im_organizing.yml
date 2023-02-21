@@ -2,6 +2,8 @@ uuid: null
 langcode: da
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
@@ -16,18 +18,19 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
+    email_subject: 'Notifikation fra [site:name]'
 template: activity_on_events_im_organizing
-label: 'Activity on events I am organizing'
-description: 'Activity on events I am organizing'
+label: 'Aktivitet på begivenheder jeg organiserer'
+description: 'Aktivitet på begivenheder jeg organiserer'
 text:
   -
-    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
+    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> har tilmeldt sig [social_event:event_iam_organizing] som du organiserer</p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
+    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> har tilmeldt sig [social_event:event_iam_organizing] som du organiserer</p>\r\n"
     format: full_html
   -
-    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
+    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a>har tilmeldt sig [social_event:event_iam_organizing] som du organiserer</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

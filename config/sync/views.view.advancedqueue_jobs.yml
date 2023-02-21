@@ -401,7 +401,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: standard
-          label: Besked
+          label: Meddelelse
           exclude: false
           alter:
             alter_text: false
@@ -515,7 +515,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Udfør
           reset_button: false
           reset_button_label: Gendan
           exposed_sorts_label: 'Sortér efter'

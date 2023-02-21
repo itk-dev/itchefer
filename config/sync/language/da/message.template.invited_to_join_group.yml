@@ -1,0 +1,10 @@
+text:
+  -
+    value: "<p>Du er inviteret til at deltage i en gruppe <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+    format: full_html
+  -
+    value: "<p>Du er inviteret til at deltage i en gruppe <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+    format: full_html
+  -
+    value: "<p>Hej</p>\r\n\r\n<p>Du er inviteret til at deltage i en gruppe [message:gtitle] på [site:name].</p>\r\n\r\n<table class=\"btn-wrap\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[message:gurl]\">Accept invite</a></td>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[site:url]\">About [site:name]</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    format: full_html

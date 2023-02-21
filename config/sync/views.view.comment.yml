@@ -350,7 +350,7 @@ display:
           entity_type: group
           entity_field: label
           plugin_id: field
-          label: Group
+          label: Gruppe
           exclude: false
           alter:
             alter_text: false
@@ -636,7 +636,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Der er ingen tilgængelige kommentarer.'
+          content: 'Der er ingen kommentarer at vise.'
           tokenize: false
       sorts:
         changed:
@@ -799,7 +799,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Titel
             description: ''
             use_operator: false
             operator: title_op
@@ -890,7 +890,7 @@ display:
           exposed: true
           expose:
             operator_id: filter_by_group_op
-            label: Group
+            label: Gruppe
             description: ''
             use_operator: false
             operator: filter_by_group_op
@@ -1424,7 +1424,7 @@ display:
           entity_type: group
           entity_field: label
           plugin_id: field
-          label: Group
+          label: Gruppe
           exclude: false
           alter:
             alter_text: false
@@ -1805,7 +1805,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Titel
             description: ''
             use_operator: false
             operator: title_op
@@ -1896,7 +1896,7 @@ display:
           exposed: true
           expose:
             operator_id: filter_by_group_op
-            label: Group
+            label: Gruppe
             description: ''
             use_operator: false
             operator: filter_by_group_op
