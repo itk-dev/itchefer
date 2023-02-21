@@ -7,6 +7,7 @@ dependencies:
     - field.storage.profile.field_profile_organization
     - node.type.event
   module:
+    - itchefer_event_enrollment
     - node
     - options
     - profile
@@ -362,7 +363,7 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: manage_by_organizers_only
+        type: organizers_or_admin_access
         options: {  }
       cache:
         type: tag
