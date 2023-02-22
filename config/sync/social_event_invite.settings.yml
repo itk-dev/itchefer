@@ -5,8 +5,8 @@ invite_enroll: true
 invite_group_types:
   open_group: open_group
   public_group: public_group
-  closed_group: 0
-  flexible_group: 0
+  closed_group: closed_group
+  flexible_group: flexible_group
 invite_subject: '[current-user:display-name] har inviteret dig til arrangementet [node:title] på [site:name]'
 invite_message: "<p>Hej,</p>\r\n<p>Jeg vil gerne invitere dig til mit arrangement <strong>[node:title]</strong> på <strong>[site:name]</strong>.</p>\r\n<p>Med venlig hilsen, [user:display-name]</p>\r\n\r\n<table class=\"btn-wrap\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[social_event_invite:register_link]\">Se arrangement</a></td>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[site:url]\">Om [site:name]</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
 invite_helper: '<p>Beskeden ovenfor er redigeret af itchefers sekretariat. Kontakt dem for ændringsønsker</p>'
