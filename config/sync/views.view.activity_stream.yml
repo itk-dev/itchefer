@@ -230,7 +230,7 @@ display:
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage:
     id: block_stream_homepage
-    display_title: 'Homepage stream block'
+    display_title: 'Homepage stream block (with post form)'
     display_plugin: block
     position: 3
     display_options:

@@ -665,6 +665,8 @@ display:
       defaults:
         title: false
         pager: false
+        filters: false
+        filter_groups: false
       display_description: ''
       exposed_block: true
       display_extenders: {  }
@@ -674,7 +676,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
         - user.permissions
       tags:

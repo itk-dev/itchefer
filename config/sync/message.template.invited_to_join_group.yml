@@ -19,7 +19,7 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: ''
-    email_subject: 'Notifikation fra [site:name]'
+    email_subject: 'Du er inviteret til at deltage i en gruppe '
 _core:
   default_config_hash: JHC8qDlq6DgXcvsUMVb0wm15WJlL-4R3ID5Qc3baBtc
 template: invited_to_join_group
