@@ -320,44 +320,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        flexible_group_node_access:
-          id: flexible_group_node_access
-          table: node_access
-          field: flexible_group_node_access
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: flexible_group_node_access
-          operator: '='
-          value: {  }
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       style:
         type: default
         options:
@@ -439,45 +401,7 @@ display:
         options:
           offset: 0
           items_per_page: 2
-      filters:
-        flexible_group_node_access:
-          id: flexible_group_node_access
-          table: node_access
-          field: flexible_group_node_access
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: flexible_group_node_access
-          operator: '='
-          value: {  }
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+      filters: {  }
       style:
         type: default
         options: {  }
@@ -719,44 +643,6 @@ display:
           plugin_id: node_access
           operator: '='
           value: ''
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        flexible_group_node_access:
-          id: flexible_group_node_access
-          table: node_access
-          field: flexible_group_node_access
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: flexible_group_node_access
-          operator: '='
-          value: {  }
           group: 1
           exposed: false
           expose:
@@ -1089,44 +975,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-        flexible_group_node_access:
-          id: flexible_group_node_access
-          table: node_access
-          field: flexible_group_node_access
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: flexible_group_node_access
-          operator: '='
-          value: {  }
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -1377,44 +1225,6 @@ display:
           plugin_id: node_access
           operator: '='
           value: ''
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        flexible_group_node_access:
-          id: flexible_group_node_access
-          table: node_access
-          field: flexible_group_node_access
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: flexible_group_node_access
-          operator: '='
-          value: {  }
           group: 1
           exposed: false
           expose:
