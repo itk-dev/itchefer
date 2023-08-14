@@ -195,7 +195,7 @@ display:
           order: ASC
           expose:
             label: ''
-            field_identifier: label
+            field_identifier: ''
           exposed: false
       arguments: {  }
       filters:
@@ -413,9 +413,6 @@ display:
         - url.query_args
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.group.open_group.default'
-        - 'config:core.entity_view_display.group.open_group.small_teaser'
-        - 'config:core.entity_view_display.group.open_group.teaser'
         - 'config:core.entity_view_display.group.closed_group.default'
         - 'config:core.entity_view_display.group.closed_group.hero'
         - 'config:core.entity_view_display.group.closed_group.small_teaser'
@@ -426,8 +423,11 @@ display:
         - 'config:core.entity_view_display.group.flexible_group.small_teaser'
         - 'config:core.entity_view_display.group.flexible_group.stream'
         - 'config:core.entity_view_display.group.flexible_group.teaser'
+        - 'config:core.entity_view_display.group.open_group.default'
         - 'config:core.entity_view_display.group.open_group.hero'
+        - 'config:core.entity_view_display.group.open_group.small_teaser'
         - 'config:core.entity_view_display.group.open_group.stream'
+        - 'config:core.entity_view_display.group.open_group.teaser'
         - 'config:core.entity_view_display.group.public_group.default'
         - 'config:core.entity_view_display.group.public_group.hero'
         - 'config:core.entity_view_display.group.public_group.small_teaser'
@@ -474,10 +474,9 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        0: 'languages:language_interface'
-        1: url
-        2: user.permissions
-        user: user
+        - 'languages:language_interface'
+        - url
+        - user.permissions
       tags:
         - 'config:core.entity_view_display.group.closed_group.default'
         - 'config:core.entity_view_display.group.closed_group.hero'

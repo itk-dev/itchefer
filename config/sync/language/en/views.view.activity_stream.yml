@@ -21,7 +21,7 @@ display:
             offset_label: Offset
       title: Stream
   block_stream_homepage:
-    display_title: 'Homepage stream block'
+    display_title: 'Homepage stream block (with post form)'
   block_stream_homepage_without_post:
     display_title: 'Homepage stream block'
   page_activity_stream:
